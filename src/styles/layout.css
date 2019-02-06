@@ -1,0 +1,117 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+:root{
+	--main-blue: #1b8bf9; /*<-- brand color */
+
+	--base-light-bg: #F6F9FC; /*<-- base background light */
+	--base-bg: #060C46; /*<-- base background */
+
+	--base-color: #0D1726; /*<-- texto de encabezados */
+	--base-medium: #384B67; /*<-- texto de cuerpo */
+	--base-light: #A1A6BB; /*<-- texto de cuerpo claro */
+	--tag-color: #F63064; /*<-- tags color */
+	--cta-color: #58F9FB; /*<-- cta color */
+}
+
+body{
+	background: var(--base-light-bg);
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	-webkit-font-smoothing: antialiasd;
+	vertical-align: baseline;
+	font-size: 16px;
+	line-height: 1.6;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/* blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,F63064
+q:before, q:after {
+	content: '';
+	content: none;
+} */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+.responsive-table{
+  width: 100%;
+}
+
+.responsive-table li{
+  border-radius: 3px;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.table-header {
+  background-color: var(--main-blue);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color:  white;
+}
+.table-row {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+}
+.col-1 {
+  flex-basis: 35%;
+}
+.col-2 {
+  flex-basis: 35%;
+}
+.col-3 {
+  flex-basis: 30%;
+}
+  
+@media all and (max-width: 767px) {
+  .col {
+    flex-basis: 100%;
+  }
+  .col {
+    display: flex;
+    padding: 10px 0;
+  }
+  .col:before {
+    color: #6C7A89;
+    padding-right: 10px;
+    content: attr(data-label);
+    flex-basis: 50%;
+    text-align: right;
+  }
+}

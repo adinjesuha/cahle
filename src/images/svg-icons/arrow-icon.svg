@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home" transform="translate(-1248.000000, -2835.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="subscribe-block" transform="translate(0.000000, 2734.000000)">
+                <g id="Subscribe" transform="translate(733.000000, 80.000000)">
+                    <g id="Button" transform="translate(363.000000, 0.000000)">
+                        <path d="M164.01839,26.9423179 C164.01839,26.3910629 163.563583,25.9441825 163.014782,25.9441825 L155.559129,25.9441825 L158.664512,22.7153563 L158.664512,22.7153563 C158.996638,22.3700279 158.956268,21.7690615 158.570125,21.368687 L158.501713,21.2977542 C158.117458,20.8993377 157.489342,20.9046424 157.117383,21.29031 L152.282102,26.3037949 C151.901812,26.6981001 151.910143,27.3460328 152.282102,27.7317003 L157.117383,32.7451852 C157.497672,33.1394904 158.11557,33.1381155 158.501713,32.737741 L158.570125,32.6668082 C158.954379,32.2683916 158.949844,31.616813 158.568668,31.2204848 L155.559129,28.0913127 L163.014782,28.0913127 C163.569059,28.0913127 164.01839,27.6359616 164.01839,27.0931774 L164.01839,26.9423179 Z" id="Arrow" transform="translate(158.009195, 27.019739) scale(-1, 1) translate(-158.009195, -27.019739) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

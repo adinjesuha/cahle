@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Loup icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Objetivos-page" transform="translate(-887.000000, -46.000000)" fill="#BBBBBB">
+            <g id="Search-bar" transform="translate(520.000000, 30.000000)">
+                <path d="M382.73575,30.3205 L379.58575,27.1715 C381.63575,24.4295 381.44075,20.5415 378.94975,18.0505 C376.21575,15.3165 371.78375,15.3165 369.04975,18.0505 C366.31675,20.7835 366.31675,25.2155 369.04975,27.9495 C371.54175,30.4415 375.42975,30.6355 378.17175,28.5855 L381.32075,31.7355 C381.71175,32.1255 382.34475,32.1255 382.73575,31.7355 C383.12575,31.3445 383.12575,30.7115 382.73575,30.3205 L382.73575,30.3205 Z M377.53575,26.5355 C375.58275,28.4875 372.41675,28.4875 370.46475,26.5355 C368.51175,24.5825 368.51175,21.4165 370.46475,19.4645 C372.41675,17.5115 375.58275,17.5115 377.53575,19.4645 C379.48775,21.4165 379.48775,24.5825 377.53575,26.5355 L377.53575,26.5355 Z" id="Loup-icon"></path>
+            </g>
+        </g>
+    </g>
+</svg>
