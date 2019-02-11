@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled, { keyframes, css } from 'styled-components'
 
+import { acercaDe, asociados, documentacion, perfilComercial} from '../utils/menuConfig'
+
 const subMenuFade = keyframes`
   0% {
     opacity: 0;
@@ -20,7 +22,6 @@ const NavMenu = styled.ul`
   align-items: center;
   margin: 0 auto;
   padding: 0;
-  list-style: none;
 `
 const MenuItem = styled.li`
   margin: 0;
@@ -41,9 +42,12 @@ const MenuItem = styled.li`
       display: block;
     }
   }
-  &:nth-child(3){
+  &:last-child{
+    padding-right: 0;
+  }
+  &:nth-child(3), &:nth-child(4) {
     ul {
-      left: -20%;
+      left: -25%;
     }
   }
 `
@@ -60,6 +64,7 @@ const NavSubMenu = styled.ul`
   left: -50%;
   min-width: 220px;
   box-shadow: 0 50px 100px -20px rgba(50,50,93,.25),0 30px 60px -30px rgba(0,0,0,.3);
+  animation: ${subMenuFade} 0.2s ease-in;
   &:nth-child(3){
     left: -20%;
   }
@@ -85,15 +90,15 @@ const SubMenuItem = styled.li`
     opacity: 1;
     font-family: 'montserrat';
     font-weight: 700;
-    color: var(--base-color);
+    color: var(--blue);
     text-transform: uppercase;
     font-size: 12px;
     display: block;
-    transition: opacity 0.3s ease;
+    transition: color 0.3s ease;
   }
   &:hover{
     a{
-      opacity: 0.4;
+      color: var(--green);
     }
   }
 `
@@ -127,56 +132,13 @@ class Menu extends React.Component {
   };
   
   render() {
-    const acercaDe = [
-      {
-        name: 'Visión y Misión',
-        link: '/acerca-de/vision-y-mision'
-      },
-      {
-        name: 'Objetivos',
-        link: '/acerca-de/objetivos'
-      },
-      {
-        name: 'Personal Administrativo',
-        link: '/acerca-de/personal-administrativo'
-      },
-    ] 
-    const asociados = [
-      {
-        name: 'Junta Directiva',  
-        link: '/asociados/junta-directiva'
-      },
-      {
-        name: 'Beneficios',
-        link: '/asociados/beneficios'
-      },
-      {
-        name: 'Representaciones',
-        link: '/'
-      },
-    ]
-    const documentacion = [
-      {
-        name: 'Reglamentaciones',
-        link: '/reglamentaciones'
-      },
-      {
-        name: 'Documentos Técnicos',
-        link: '/documentos-tecnicos'
-      },
-      {
-        name: 'Perfil Comercial',
-        link: '/perfil-comercial'
-      },
-    ] 
     return (
       <NavEl>
         <NavMenu>
           <MenuItem onMouseLeave={this.handleLeave}>
             <span onMouseEnter={this.handleHover}>
             Acerca de</span>
-            { this.state.showAboutMenu && <Submenu items={acercaDe}  /> 
-            }
+            { this.state.showAboutMenu && <Submenu items={acercaDe}  /> }
           </MenuItem>
           <MenuItem onMouseLeave={this.handleLeave}>
             <span onMouseEnter={this.handleHover}>
@@ -187,6 +149,16 @@ class Menu extends React.Component {
             <span onMouseEnter={this.handleHover}>
             Documentación</span>
             { this.state.showAboutMenu && <Submenu items={documentacion} /> }
+          </MenuItem>
+          <MenuItem onMouseLeave={this.handleLeave}>
+            <span onMouseEnter={this.handleHover}>
+            Perfil Comercial</span>
+            { this.state.showAboutMenu && <Submenu items={perfilComercial} /> }
+          </MenuItem>
+          <MenuItem>
+            <Link to="/noticias-y-eventos">
+              <span style={{color: 'white'}}>Noticias y Eventos</span>
+            </Link>
           </MenuItem>
         </NavMenu>
       </NavEl>

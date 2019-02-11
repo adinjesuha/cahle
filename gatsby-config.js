@@ -1,33 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
-    menuLinks: [
-      {
-        name: 'Acerca de CAHLE',
-        link: '/acerca-de-cahle/'
-      },
-      {
-        name: 'Asociados',
-        link: '/asociados'
-      },
-      {
-        name: 'Documentación',
-        link: '/documentacion'
-      },
-      {
-        name: 'Noticias y Eventos',
-        link: '/noticias-y-eventos'
-      },
-    ] 
+    title: 'Gatsby Default Starter'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/styles/typography`,
-      },
-    },
     {
 		  resolve: 'gatsby-plugin-react-svg',
 		  options: {
@@ -56,13 +32,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Cámara hondureña de la leche',
+        short_name: 'CAHLE',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/logo.png', // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

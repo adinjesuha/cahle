@@ -1,6 +1,7 @@
 import React from 'react'
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 import styled from 'styled-components'
+import Slider from 'react-slick'
 
 import CardPost from './cardPost'
 
@@ -8,8 +9,7 @@ const PostList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 auto;
-  margin-bottom: 70px;
+  margin: 70px auto;
   list-style: none;
   &::after {
     content: '';
@@ -17,6 +17,21 @@ const PostList = styled.ul`
   }
 `
 
+const ButtonLink = styled(Link)`
+  background-color: none;
+  border-radius: 50px;
+  border: 1px solid var(--green);
+  padding: 15px 40px;
+  color: var(--green);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  transition: background 0.3s ease, color 0.3s ease;
+  &:hover{
+    background-color: var(--green);
+    color: white;
+  }
+`
 
 export default () => (
   <StaticQuery
@@ -56,6 +71,9 @@ export default () => (
           {posts.slice(1).map(({ node: post }) => (
             <CardPost key={post.id} {...post} />
           ))}
+          <div style={{paddingTop: '50px', textAlign:'center', width: '100%'}}>
+            <ButtonLink to="/noticias-y-eventos">Ver todos</ButtonLink>
+          </div>
         </PostList> 
       )
     }}

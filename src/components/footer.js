@@ -1,118 +1,73 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'gatsby';
 
 import Container from '../components/container'
-import LogoWrapper from './logo'
-import { device } from '../styles/breakpoints';
+import Subscribe from './subscribe'
+import { device } from '../styles/breakpoints'
+import Milk from '../images/milk.png'
 import PhoneIcon from '../images/svg-icons/phone-icon.svg'
 import MailIcon from '../images/svg-icons/mail-icon.svg'
 
 const Wrapper = styled.footer`
-  background-color: #242526;
+  background-image: url(${Milk});
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom right;
   position: relative;
-  color: var(--base-light-bg);
-  padding-top: 80px;
-  font-family: 'Montserrat';
+  color: white;
+  padding: 100px 0 0;
+  h2{
+    color: var(--blue);
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  p, span{
+    font-size: 14px;
+    color: var(--base-light);
+  }
 `
-const Content = styled.div`
-  line-height: 1.5;
+const FlexContainer = styled.div`
   display: flex;
-  margin-top: 20px;
-  padding: 0 0 80px;
-  p{
-    a{
-      color: rgba(256,256,256, 0.5);
-      transition: color 0.3s ease;
-      font-size: 12px;
-      &:hover{
-        color: rgba(256,256,256, 0.8);
-      }
-    }
-  }
+  justify-content: space-between;
+  margin-bottom: 50px;
 `
+
 const Direction = styled.div`
-  padding-right: 20px;
-  flex: 0 0 100%;
-  @media ${device.tablet}{
-    max-width: 420px;
-    flex: 0 0 40%;
-  }
+  flex: 0 0 50%;
 `
 
-const Box = styled.div`
-  flex: 0 0 20%;
-  text-align: right;
-  display: none;
-  @media ${device.tablet}{
-    display: block;
-  }
-  &:last-child{
-    margin-right: 0;
-  }
-`
-const Title = styled.p`
-  font-size: 14px !important;
-  font-weight: 600 !important;
-  letter-spacing: 1px !important;
-  @media ${device.laptop}{
-    font-size: 18px !important;
-  }
-`
-const FooterMenu = styled.div`
-
-`
 const FooterDescription = styled.div`
   padding: 23px 0 25px;
-  border-top: 1px solid rgba(256,256,256, 0.2);
-  p{
+  border-top: 1px solid rgba(0,0,0,0.1);
+  p {
     text-align: center;
     margin: 0;
     font-size: 12px;
-    color: rgba(256,256,256, 0.5);
   }
 `
 
+
 const Footer = () => (
   <Wrapper>
-    <Container>
-      <LogoWrapper />
-      <Content>
+    <Container>  
+      <FlexContainer>
         <Direction>
-          <Title>Dirección</Title>
+          <h2>Dirección</h2>
           <p>Edificio FENAGH, Blvd. Suyapa, Col. Florencia Sector Sur, Casa #3802, contiguo a la SUZUKI, frente a Banrural, Tegucigalpa, Honduras, C.A.</p>
+          <div>
+            <p>(504) 2239-1303</p>
+            <p>(504) 9442-4710</p>
+          </div>
+          <div>
+            <a href="mailto:info@cahle.org">info@cahle.org</a>
+          </div>
         </Direction>
-        <Box>
-          <FooterMenu>
-            <Title>Acerca de</Title>
-            <p><a href="#"> Vision y Misión</a></p>
-            <p><a href="#"> Objetivos</a></p>
-            <p><a href="#"> Personal Administrativo</a></p>
-          </FooterMenu>
-        </Box>
-        <Box>
-          <FooterMenu>
-            <Title>Asociados</Title>
-            <p><a href="#"> Junta Directiva</a></p>
-            <p><a href="#"> Beneficios</a></p>
-            <p><a href="#"> Representaciones</a></p>
-          </FooterMenu>
-        </Box>
-        <Box>
-          <FooterMenu>
-            <Title>Documentación</Title>
-            <p><a href="#"> Reglamentaciones</a></p>
-            <p><a href="#"> Documentos Técnicos</a></p>
-            <p><a href="#"> Perfil Comercial</a></p>
-          </FooterMenu>
-        </Box>
-      </Content>
-    </Container>
-    <FooterDescription>
-      <Container>
+        <Subscribe />
+      </FlexContainer>
+      <FooterDescription>
         <p>© 2019 Camara Hondureña de la Leche</p>
-      </Container>
-    </FooterDescription>
+      </FooterDescription>
+    </Container>
   </Wrapper>
 )
 

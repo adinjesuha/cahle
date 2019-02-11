@@ -11,8 +11,8 @@ const iconLimits = {
 
 const IconWrapper = styled.div`
 	position: fixed;
-  top: 35px;
-  right: 20px;
+  top: 20px;
+  right: 40px;
   margin: auto;
   width: ${iconLimits.barWidth};
 	height: calc(${iconLimits.barHeight} + ${iconLimits.barSpacing} * 2);

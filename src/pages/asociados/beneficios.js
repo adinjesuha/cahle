@@ -136,8 +136,7 @@ export default () => {
                   <StyleLi><b>Fortalecimiento de los sistemas de certificación de inocuidad de los productos agropecuarios de los pequeños y medianos productores de SENASA:</b> Donación de un equipo de laboratorio (Contador de células somáticas).</StyleLi>
                   <StyleLi><b> Apoyo a la promoción del desarrollo de la cadena láctea de las Américas:</b> (Vinculación de las instituciones del sector lácteo panamericano en la 37 reunión del consejo directivo de FEPALE).</StyleLi>
                   <StyleLi><b> Apoyo a la sostenibilidad energética del Centro de recolección y enfriamiento de leche:</b> La Patagonia. (Sistema fotovoltaico y 2 biodigestores).</StyleLi>
-                  <StyleLi><b>Encuentros:</b> Realizamos encuentros entre productores con el objetivo de intercambiar experiencias y desarrollar el crecimiento del rubro.</StyleLi>
-                  <StyleLi><b>Incentivo económico para la obtención de animales y desarrollar el mejoramiento genético de los hatos, (Subasta ganadera organizada por CAFOGA):</b> 26 productores beneficiados. </StyleLi>
+                  <StyleLi><b>Incentivo económico para la obtención de animales y desarrollar el mejoramiento genético de los hatos, (Subasta ganadera organizada por CAFOGAH):</b> 26 productores beneficiados. </StyleLi>
                   <StyleLi>
                     <b>Asistencia técnica en alianza con Zamorano, SAGO y AGAA (unos 400 productores atendidos), capacitados en:</b>
                     <NestedUl>
@@ -160,7 +159,7 @@ export default () => {
                       <li>3. Donación de libros (8,000 niños beneficiados)</li>
                     </NestedUl>
                   </StyleLi>
-                  <StyleLi><b>Inseminación Artificial. Donación de un termo de inseminación al CREL:</b> Sociedad Medina Fernández ubicado en ubicado en San Antonio, Cortés. (20 productores beneficiados).</StyleLi>
+                  <StyleLi><b>Inseminación Artificial. Donación de un termo de inseminación al CREL:</b> Sociedad Medina Fernández ubicado en San Antonio, Cortés. (20 productores beneficiados).</StyleLi>
                 </ul>
               </div>
             </BoxRight>

@@ -6,47 +6,37 @@ import { device } from '../styles/breakpoints';
 import Arrow from '../images/svg-icons/arrow-icon.svg'
 
 const Wrapper = styled.div`
-  text-align: center;
-  background-color: #1b8bf9;
-  padding: 70px 0;
+  text-align: left;
+  margin-bottom: 20px;
   h2{
-    color: white;
-    font-weight: 700;
+    color: var(--blue);
+    font-size: 32px;
     margin-bottom: 10px;
-    color: white;
-    font-size: 44px;
-    line-height: 1.3;
   }
   span{
     font-weight: 300;
     font-family: 'Montserrat';
     display: inline-block;
-    max-width: 400px;
-    margin: auto auto 60px;
-    margin-bottom: 60px;
+    margin: 0 auto;
+    margin-bottom: 20px;
     font-size: 16px;
-    color: white;
-  }
-  form{
-    margin: 'auto';
-    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    color: var(--text);
   }
 `
 const SubscribeForm = styled.div`
   position: relative;
   max-width: 470px;
   padding-right: 30px;
-  margin: auto;
   input{
     width: 100%;
-    background-color: rgba(36, 37, 38, 0.3);
-    border: none;
+    background-color: transparent;
+    border: 1px solid var(--blue);
     height: 42px;
     padding-left: 15px;
     border-radius: 4px;
     font-weight: 400;
     font-size: 11px;
-    color: white;
+    color: var(--blue);
   }
   button{
     position: absolute;
@@ -54,7 +44,8 @@ const SubscribeForm = styled.div`
     top: 0;
     box-shadow: 4px 6.9px 16px rgba(0, 0, 0, 0.2);
     border: none;
-    background-color: white;
+    background-color: var(--green);
+    color: var(--blue);
     text-decoration: none;
     font-weight: 700;
     display: inline-block;
@@ -76,16 +67,14 @@ const SubscribeForm = styled.div`
 export default function subscribe() {
   return (
     <Wrapper>
-      <Container>
-        <h2>Suscribete</h2>
-        <span>Recibe noticias, proximos eventos e información relevante</span>
-        <form>
-          <SubscribeForm>
-            <input type="text" placeholder="Ingresa tu correo"/>
-            <button>Suscribete</button>
-          </SubscribeForm>
-        </form>
-      </Container>
+      <h2>Suscribete</h2>
+      <span>Recibe noticias, proximos eventos e información relevante</span>
+      <form>
+        <SubscribeForm>
+          <input type="text" placeholder="Ingresa tu correo"/>
+          <button>Suscribete</button>
+        </SubscribeForm>
+      </form>
     </Wrapper>
   )
 }

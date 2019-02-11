@@ -10,8 +10,7 @@ const Post = styled.li`
   width: 100%;
   margin-bottom: 40px;
   background: white;
-  border: 1px solid #eeeeee;
-  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.05);
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.06);
   border-radius: 6px;
   overflow: hidden;
   @media ${device.tablet}{
@@ -24,6 +23,22 @@ const Post = styled.li`
   }
   .gatsby-image-wrapper {
     max-height: 250px;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: black;
+      opacity: 0.3;
+      z-index: 1;
+      transition: opacity 0.3s ease;
+    }
+    &:hover::before{
+      opacity: 0.5;
+    }
   }
   a{
     text-decoration: none;
@@ -39,21 +54,24 @@ const Post = styled.li`
 
     }
   `}
+  &:hover{
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.08);
+  }
 `
 
 const Data = styled.div`
   padding: 5% 7.5% 8%;
-  font-family: 'Montserrat';
 `
 
 const Title = styled.h2`
   margin-bottom: 8px;
   font-size: 32px;
-  color: var(--base-bg);
+  color: var(--blue);
   opacity: 1;
-  transition: opacity 0.3s ease;
+  transition: color 0.3s ease;
+  line-height: 1.16;
   &:hover{
-    opacity: 0.3;
+    color: var(--text);
   }
 `
 
@@ -61,12 +79,12 @@ const Tag = styled.span`
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600;
+  color: var(--blue);
 `
 const Excerpt = styled.p`
-  line-height: 24px;
-  font-size: 14px;
-  font-weight: 500;
-  margin: 12px 0 20px;
+  font-weight: 400;
+  margin: 12px 0;
+  color: var(--text);
 `
 
 const CardPost = ({slug, createdAt, heroImage, title, body, tags, ...props}) => (

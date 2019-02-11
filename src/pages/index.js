@@ -5,10 +5,9 @@ import { Link } from 'gatsby';
 import Layout from '../components/layout'
 import Container from '../components/container'
 import PostListing from '../components/postListing'
-import VideoBG from '../video/custom-video.mp4'
+import VideoBG from '../video/video-bg.mp4'
 
 const FullScreenBg = styled.div`
-  top: -80px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -38,23 +37,43 @@ const CoverContent = styled.div`
   margin: auto;
   transform: translateY(-50%);
   text-align: center;
-`
-const CoverTitle = styled.h1`
-  font-weight: 700;
-  font-size: 44px;
-  color: white;
-  letter-spacing: 0.02em;
-  line-height: 1.2;
-`
-const CoverDescription = styled.div`
-  max-width: 550px;
-  margin: 20px auto 0 ;
-  > span{
-    font-family: 'lora';                    
-    font-style: italic;
+  span{                
     font-weight: 400;
-    color: rgba(256,256,256, 0.7);
+    display: block;
+    color: white;
+  }
+  h1{
+    font-weight: 700;
+    font-size: 64px;
+    color: white;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    margin: 0;
+  }
+  h2{
+    color: white;
     font-size: 22px;
+    letter-spacing: 0.02em;
+    margin-top: 0;
+  }
+  p{
+    margin-bottom: 40px;
+    color: white;
+  }
+`
+const ButtonLink = styled(Link)`
+  background-color: none;
+  border-radius: 50px;
+  border: 1px solid var(--green);
+  padding: 15px 40px;
+  color: var(--green);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  transition: background 0.3s ease, color 0.3s ease;
+  &:hover{
+    background-color: var(--green);
+    color: white;
   }
 `
 
@@ -79,10 +98,10 @@ const IndexPage = () => (
         </video>
       </FullScreenBg>
       <CoverContent>
-        <CoverTitle>Cámara Hondureña de la Leche</CoverTitle>
-        <CoverDescription>
-          <span>"Fomentando la competitividad y sostenibilidad del rubro de la leche"</span>
-        </CoverDescription>
+        <p style={{marginBottom: '10px'}}>La cámara hondureña de la leche te invita al</p>
+        <h1>VII CONGRESO <br/> DE LA LECHE</h1>
+        <p>La Ceiba, Atlantida</p>
+        <ButtonLink to="/">Quieres saber más?</ButtonLink>
       </CoverContent>
       <Container>
         <PostListing />

@@ -1,11 +1,19 @@
 export const acercaDe = [
   {
     name: 'Visión y Misión',
-    link: '/acerca-de/vision-y-mision'
+    link: 'vision-y-mision'
+  },
+  {
+    name: 'Historia',
+    link: 'historia'
   },
   {
     name: 'Objetivos',
     link: '/acerca-de/objetivos'
+  },
+  {
+    name: 'Junta Directiva',  
+    link: '/acerca-de/junta-directiva'
   },
   {
     name: 'Personal Administrativo',
@@ -15,16 +23,20 @@ export const acercaDe = [
 
 export const asociados = [
   {
-    name: 'Junta Directiva',  
-    link: '/asociados/junta-directiva'
+    name: 'Beneficios',
+    link: '/beneficios'
   },
   {
-    name: 'Beneficios',
-    link: '/asociados/beneficios'
+    name: 'Proyectos Ejecutados',
+    link: '/proyectos-ejecutados'
+  },
+  {
+    name: 'Creles',
+    link: '/'
   },
   {
     name: 'Representaciones',
-    link: '/'
+    link: '/asociados/representaciones'
   },
 ]
 
@@ -38,7 +50,22 @@ export const documentacion = [
     link: '/documentos-tecnicos'
   },
   {
-    name: 'Perfil Comercial',
-    link: '/perfil-comercial'
+    name: 'Memorias Congresos',
+    link: '/memorias-congresos'
+  },
+] 
+
+export const perfilComercial = [
+  {
+    name: 'Importaciones',
+    link: '/'
+  },
+  {
+    name: 'Exportaciones',
+    link: '/'
+  },
+  {
+    name: 'Balanza',
+    link: '/'
   },
 ] 

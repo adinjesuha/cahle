@@ -21,12 +21,10 @@ const Hero = styled.div`
   background: #000;
   color: #fff;
   text-align: center;
-  margin-top: -80px;
   background-image: url(${Vision});
   background-position: center center;
   background-size: cover;
-  padding: 300px 0 50px;
-  height:  60vh;
+  padding: 300px 0 100px;
   &::before{
     content: "";
     position: absolute;
@@ -46,30 +44,7 @@ const Title = styled.h1`
   margin-bottom: 5px;
   position: relative;
 `
-const Flex = styled.div`
-  display: flex;
-  flex-direction: column;
-  @media ${device.laptop} {
-    flex-direction: row;
-  }
-`
-const BoxRight = styled.div`
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-  flex: 0 0 100%;
-  @media ${device.tablet}{
-    flex: 0 0 70%;
-  }
-`
-const BoxLeft = styled.div`
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-  flex: 0 0 0%;
-  padding-right:60px;
-  display: none;
-  @media ${device.laptop}{
-    display: block;
-    flex: 0 0 30%;
-  }
-`
+
 export default () => {
   return (
     <Layout>
@@ -80,35 +55,59 @@ export default () => {
       </Hero>
       <Wrapper>
         <Container>
-          <Flex>
-            <BoxLeft>
-              <LeftNav title="Acerca de CAHLE" data={acercaDe} />
-            </BoxLeft>
-            <BoxRight>
-              <ul className="responsive-table">
-                <li className="table-header">
-                  <div className="col col-1">Nombre</div>
-                  <div className="col col-2">Cargo</div>
-                  <div className="col col-3">E-mail</div>
-                </li>
-                <li className="table-row">
-                  <div className="col col-1" data-label="Job Id">Carmen A. García</div>
-                  <div className="col col-2" data-label="Customer Name">Directora Ejecutiva</div>
-                  <div className="col col-3" data-label="Amount"><a href="mailto:tecnicodecampo@gmail.org">tecnicodecampo@gmail.org</a></div>
-                </li>
-                <li className="table-row">
-                  <div className="col col-1" data-label="Job Id">Luis Figueroa</div>
-                  <div className="col col-2" data-label="Customer Name">Dirección Técnica de Campo</div>
-                  <div className="col col-3" data-label="Amount"><a href="mailto:tecnicodecampo@gmail.org">tecnicodecampo@gmail.org</a></div>
-                </li>
-                <li className="table-row">
-                  <div className="col col-1" data-label="Job Id">Carmen Chávez</div>
-                  <div className="col col-2" data-label="Customer Name">Administradora de Empresas</div>
-                  <div className="col col-3" data-label="Amount"><a href="mailto:administracion@cahle.org">administracion@cahle.org</a></div>
-                </li>
-              </ul>
-            </BoxRight>
-          </Flex>
+        <div className="wrapper">
+            <div className="table">
+            
+              <div className="row header">
+                <div className="cell">
+                  Nombre
+                </div>
+                <div className="cell">
+                  Cargo
+                </div>
+                <div className="cell">
+                  E-mail
+                </div>
+              </div>
+              
+              <div className="row">
+                <div className="cell" data-title="Nombre">
+                Carmen A. García
+                </div>
+                <div className="cell" data-title="Cargo">
+                Directora Ejecutiva
+                </div>
+                <div className="cell" data-title="E-mail">
+                  <a href="mailto:tecnicodecampo@gmail.org">tecnicodecampo@gmail.org</a>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="cell" data-title="Nombre">
+                  Luis Figueroa
+                </div>
+                <div className="cell" data-title="Cargo">
+                  Dirección Técnica de Campo
+                </div>
+                <div className="cell" data-title="E-mail">
+                  <a href="mailto:tecnicodecampo@gmail.org">tecnicodecampo@gmail.org</a>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="cell" data-title="Nombre" datatype>
+                  Carmen Chávez
+                </div>
+                <div className="cell" data-title="Cargo">
+                  Administradora de Empresas
+                </div>
+                <div className="cell" data-title="E-mail">
+                  <a href="mailto:administracion@cahle.org">administracion@cahle.org</a>
+                </div>
+              </div>
+            
+            </div>
+          </div>
         </Container>
       </Wrapper>
     </Layout>

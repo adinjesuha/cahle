@@ -10,7 +10,6 @@ const Hero = styled.div`
   background: #000;
   color: #fff;
   text-align: center;
-  margin-top: -80px;
   background-image: url(${props => props.imageURL});
   background-position: center center;
   background-size: cover;
@@ -33,7 +32,7 @@ const HeroImage = styled(Img)`
     Ensure golden ratio for the hero size while limiting it to some extend to
     the viewport width
   */
-  height: 70vh;
+  height: 40vh;
 `
 const FutureTitle = styled.div`
   position: relative;
