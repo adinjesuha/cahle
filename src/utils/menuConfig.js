@@ -1,11 +1,7 @@
 export const acercaDe = [
   {
-    name: 'Visión y Misión',
+    name: 'Historia, Visión y Misión',
     link: 'vision-y-mision'
-  },
-  {
-    name: 'Historia',
-    link: 'historia'
   },
   {
     name: 'Objetivos',
@@ -32,7 +28,7 @@ export const asociados = [
   },
   {
     name: 'Creles',
-    link: '/'
+    link: '/creles'
   },
   {
     name: 'Representaciones',
@@ -52,20 +48,5 @@ export const documentacion = [
   {
     name: 'Memorias Congresos',
     link: '/memorias-congresos'
-  },
-] 
-
-export const perfilComercial = [
-  {
-    name: 'Importaciones',
-    link: '/'
-  },
-  {
-    name: 'Exportaciones',
-    link: '/'
-  },
-  {
-    name: 'Balanza',
-    link: '/'
   },
 ] 

@@ -6,7 +6,6 @@ import Container from '../../components/container'
 import Vision from '../../images/vision.jpg'
 import { device } from '../../styles/breakpoints'
 import { acercaDe } from '../../utils/menuConfig'
-import LeftNav from '../../components/leftNav'
 
 
 const Wrapper = styled.div`
@@ -78,7 +77,7 @@ export default () => {
                 Directora Ejecutiva
                 </div>
                 <div className="cell" data-title="E-mail">
-                  <a href="mailto:tecnicodecampo@gmail.org">tecnicodecampo@gmail.org</a>
+                  <a href="mailto:tecnicodecampo@gmail.org">camaradelaleche@gmail.org</a>
                 </div>
               </div>
 
@@ -99,7 +98,7 @@ export default () => {
                   Carmen Chávez
                 </div>
                 <div className="cell" data-title="Cargo">
-                  Administradora de Empresas
+                  Ingeniera de Negocios
                 </div>
                 <div className="cell" data-title="E-mail">
                   <a href="mailto:administracion@cahle.org">administracion@cahle.org</a>

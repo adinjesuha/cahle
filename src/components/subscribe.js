@@ -20,7 +20,6 @@ const Wrapper = styled.div`
     margin: 0 auto;
     margin-bottom: 20px;
     font-size: 16px;
-    color: var(--text);
   }
 `
 const SubscribeForm = styled.div`

@@ -14,7 +14,6 @@ const Wrapper = styled.footer`
   background-size: contain;
   background-position: bottom right;
   position: relative;
-  color: white;
   padding: 100px 0 0;
   h2{
     color: var(--blue);
@@ -23,17 +22,23 @@ const Wrapper = styled.footer`
   }
   p, span{
     font-size: 14px;
-    color: var(--base-light);
   }
 `
 const FlexContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+  flex-direction: column;
+  @media ${device.tablet}{
+    flex-direction: row;
+  }
 `
 
 const Direction = styled.div`
-  flex: 0 0 50%;
+  flex: 0 0 100%;
+  @media ${device.tablet}{
+    flex: 0 0 50%;
+  }
 `
 
 const FooterDescription = styled.div`

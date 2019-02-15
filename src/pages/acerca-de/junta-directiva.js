@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Layout from '../../components/layout'
 import Container from '../../components/container'
 import Vision from '../../images/vision.jpg'
-import Pic from '../../images/pic.png'
+import Pic from '../../images/Ferreira.png'
 import { device } from '../../styles/breakpoints'
 
 const Wrapper = styled.div`
@@ -42,7 +42,6 @@ const Title = styled.h1`
 const Flexcard = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
   @media ${device.tablet}{
     flex-direction: row;
   }
@@ -79,16 +78,22 @@ export default () => {
         <Container>
           <Flexcard>
             <FlexImage>
-              <figure style={{margin:"0 40px 20px"}}>
+              <figure style={{margin:"20px 20px 0 0"}}>
                 <img src={Pic} alt="Presidente de CAHLE"/>
               </figure>
             </FlexImage>
             <FlexContent>
               <h2>Héctor Alberto Ferreira</h2>
               <p>Presitende CAHLE</p>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci doloremque repudiandae nostrum ipsa minima eos atque quae soluta culpa, molestias optio nemo ducimus, aliquid molestiae esse beatae saepe sapiente assumenda.</p>
+              <p>Para iniciar es preciso agradecer el apoyo de la junta directiva, personal técnico y administrativo de la Cámara Hondureña de la Leche (CAHLE), gracias a todos por fortalecer esta Cámara y convertirla en una fuente inagotable de conocimiento, amistad y compañerismo.</p> 
             </FlexContent>
           </Flexcard>
+          <p>Deseo manifestar mi intención de trabajar para mantener y mejorar las condiciones que nos permitan promover y fomentar la competitividad y el desarrollo de la ganadería. Sin duda alguna, una de mis estrategias está dirigida al fortalecimiento y acción del gremio velando porque las políticas públicas se logren implementar de manera adecuada y asertiva.
+              Comparto con ustedes el hecho de que son múltiples los beneficios que la ganadería genera en Honduras al representar uno de los pilares más importantes de la economía. Favorece la generación de más de cuatrocientos mil empleos directos y contribuye con aproximadamente el 13% del PIB agropecuario. Estas variables económicas generadas por una cultura ganadera bovina que aún se mantiene en el país, a pesar de múltiples dificultades y limitaciones que enfrentan, favorece de manera significativa la seguridad alimentaria y evita entre otros factores, la emigración hacia las ciudades urbanas y al exterior.
+              Ante las razones antes expuestas, necesitamos fortalecer la ganadería de manera que apunte hacia el progreso. Por eso hoy quiero invitar al sector ganadero que no está organizado, a que nos acompañe para construir juntos un plan desarrollo pensando en la integralidad del desarrollo rural, por ese campo con inversión, con empleo, un campo con visión emprendedora.
+              Hoy me siento agradecido ya que el ser presidente de CAHLE, para mi representa el reconocimiento a la labor de tantas personas, a la labor de pequeños, medianos y grandes ganaderos nacionales que se levantan todos los días a trabajar, que van a sus ordeños, que venden sus productos. 
+              Finalmente permítanme despedirme diciéndoles a ustedes: gracias, infinitas gracias por su trabajo por este país y a la vez motivarles a que, con su deseo de crecer, apostemos a que nuestra ganadería sea productiva.</p>
+              <p style={{marginBottom: '40px'}}>Muchas Gracias.</p>
           <div className="wrapper">
             <div className="table">
             

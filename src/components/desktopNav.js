@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled, { keyframes, css } from 'styled-components'
 
-import { acercaDe, asociados, documentacion, perfilComercial} from '../utils/menuConfig'
+import { acercaDe, asociados, documentacion } from '../utils/menuConfig'
 
 const subMenuFade = keyframes`
   0% {
@@ -150,10 +150,10 @@ class Menu extends React.Component {
             Documentación</span>
             { this.state.showAboutMenu && <Submenu items={documentacion} /> }
           </MenuItem>
-          <MenuItem onMouseLeave={this.handleLeave}>
-            <span onMouseEnter={this.handleHover}>
-            Perfil Comercial</span>
-            { this.state.showAboutMenu && <Submenu items={perfilComercial} /> }
+          <MenuItem>
+            <Link to="/perfil-comercial">
+              <span style={{color: 'white'}}>Perfil Comercial</span>
+            </Link>
           </MenuItem>
           <MenuItem>
             <Link to="/noticias-y-eventos">

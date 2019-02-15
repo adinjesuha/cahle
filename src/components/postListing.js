@@ -1,7 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql, Link } from "gatsby"
 import styled from 'styled-components'
-import Slider from 'react-slick'
 
 import CardPost from './cardPost'
 
