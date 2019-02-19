@@ -1,19 +1,19 @@
 export const acercaDe = [
   {
     name: 'Historia, Visión y Misión',
-    link: 'vision-y-mision'
+    link: '/vision-y-mision'
   },
   {
     name: 'Objetivos',
-    link: '/acerca-de/objetivos'
+    link: '/objetivos'
   },
   {
     name: 'Junta Directiva',  
-    link: '/acerca-de/junta-directiva'
+    link: '/junta-directiva'
   },
   {
     name: 'Personal Administrativo',
-    link: '/acerca-de/personal-administrativo'
+    link: '/personal-administrativo'
   },
 ] 
 
@@ -27,12 +27,12 @@ export const asociados = [
     link: '/proyectos-ejecutados'
   },
   {
-    name: 'Creles',
-    link: '/creles'
+    name: 'Crels',
+    link: '/crels'
   },
   {
     name: 'Representaciones',
-    link: '/asociados/representaciones'
+    link: '/representaciones'
   },
 ]
 

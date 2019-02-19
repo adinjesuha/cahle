@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Layout from '../../components/layout'
-import Container from '../../components/container'
-import Vision from '../../images/vision.jpg'
-import Check from '../../images/icons/check.svg'
+import Layout from '../components/layout'
+import Container from '../components/container'
+import Vision from '../images/vision.jpg'
+import Check from '../images/icons/check.svg'
 
 const Wrapper = styled.div`
   padding: 70px 0;

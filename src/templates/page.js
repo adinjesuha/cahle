@@ -4,43 +4,18 @@ import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import Container from '../components/container'
-import Vision from '../images/vision.jpg'
 import Check from '../images/icons/check.svg'
+import Hero from '../components/hero'
 
 const Wrapper = styled.div`
   padding: 0 20px;
   margin: 70px auto;
 `
-const Hero = styled.div`
-  position: relative;
-  background: #000;
-  color: #fff;
-  text-align: center;
-  background-image: url(${Vision});
-  background-position: center center;
-  background-size: cover;
-  padding: 300px 0 100px;
-  &::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
-  }
-`
-const Title = styled.h1`
-  font-size: 54px;
-  line-height: 54px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  position: relative;
-`
 
 const ContentfulDiv = styled.div`
+  p{
+    text-align: justify;
+  }
   ul{
     list-style: none;
     margin: 0;
@@ -66,14 +41,10 @@ const ContentfulDiv = styled.div`
 `
 
 const Page = ({data}) => {
-  const { body, title, section } = data.contentfulPage
+  const { body, heroImage, title, section } = data.contentfulPage
   return (
     <Layout>
-      <Hero>
-        <Container>
-          <Title>{title}</Title>
-        </Container>
-      </Hero>
+      <Hero heroData={heroImage} title={title} tags={section}/>
       <Wrapper>
         <Container>
           <ContentfulDiv dangerouslySetInnerHTML={{ __html: body.childMarkdownRemark.html }} />
@@ -91,9 +62,6 @@ export const query = graphql`
       section
       slug
       heroImage{
-        file {
-          url
-        }
         fluid(maxWidth: 2000){
           ...GatsbyContentfulFluid
         }

@@ -68,9 +68,6 @@ export const query = graphql`
       title
       createdAt(formatString: "MMMM DD, YYYY")
       heroImage{
-        file {
-          url
-        }
         fluid(maxWidth: 2000){
           ...GatsbyContentfulFluid
         }

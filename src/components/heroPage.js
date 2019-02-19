@@ -1,5 +1,4 @@
 import React from 'react'
-import Img from "gatsby-image";
 import styled from "styled-components"
 
 import { device } from '../styles/breakpoints'
@@ -8,8 +7,11 @@ const Wrapper =styled.div`
   position: relative;
 `
 
-const HeroImage = styled(Img)`
-  position: absolute;
+const HeroImage = styled.div`
+  position: relative;
+  background-image: url(${props => props.bgImage});
+  background-position: center center;
+  background-size: cover;
   top: 0;
   left: 0;
   width: 100%;
@@ -34,6 +36,7 @@ const HeroImage = styled(Img)`
     z-index: 1;
   }
 `
+
 const FutureTitle = styled.div`
   position: absolute;
   width: 100%;
@@ -69,14 +72,17 @@ const FutureTitle = styled.div`
   }
 `
 
-export default ({heroData, title, tags}) => (
-  <Wrapper>
-    <HeroImage 
-      fluid={heroData.fluid}
-    />
-    <FutureTitle>
-      <span>{tags}</span>
-      <h1>{title}</h1>
-    </FutureTitle>
-  </Wrapper>
-)
+const HeroPage = props => {
+  console.log(props)
+  return (
+    <Wrapper>
+      <HeroImage bgImage={props.bgImage}/>
+      <FutureTitle>
+        <span>{props.tags}</span>
+        <h1>{props.title}</h1>
+      </FutureTitle>
+    </Wrapper> 
+  ) 
+}
+
+export default HeroPage

@@ -77,7 +77,6 @@ const ButtonLink = styled(Link)`
   }
 `
 
-
 const IndexPage = () => (
   <React.Fragment>
     <Layout>
@@ -105,6 +104,9 @@ const IndexPage = () => (
       </CoverContent>
       <Container>
         <PostListing />
+        <div style={{paddingTop: '50px', textAlign:'center', width: '100%'}}>
+          <ButtonLink to="/noticias-y-eventos">Ver todos</ButtonLink>
+        </div>
       </Container>
     </Layout>
   </React.Fragment>

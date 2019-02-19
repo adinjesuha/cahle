@@ -1,12 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Layout from '../../components/layout'
-import Container from '../../components/container'
-import Vision from '../../images/vision.jpg'
-import { device } from '../../styles/breakpoints'
-import { acercaDe } from '../../utils/menuConfig'
-
+import Layout from '../components/layout'
+import Container from '../components/container'
+import Vision from '../images/vision.jpg'
+import HeroPage from '../components/heroPage'
 
 const Wrapper = styled.div`
   padding: 70px 0;
@@ -24,6 +22,9 @@ const Hero = styled.div`
   background-position: center center;
   background-size: cover;
   padding: 300px 0 100px;
+  margin-top: 80px;
+  min-height: 300px;
+  height: 60vh;
   &::before{
     content: "";
     position: absolute;
@@ -33,7 +34,7 @@ const Hero = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+    background: rgba(0, 0, 0, 0.5);
   }
 `
 const Title = styled.h1`
@@ -47,11 +48,7 @@ const Title = styled.h1`
 export default () => {
   return (
     <Layout>
-      <Hero>
-        <Container>
-          <Title>Personal Administrativo</Title>
-        </Container>
-      </Hero>
+      <HeroPage title="Personal Administrativo" tags="acerca de" bgImage={Vision}/>
       <Wrapper>
         <Container>
         <div className="wrapper">
