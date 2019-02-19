@@ -7,7 +7,6 @@ import Fenagh from '../images/fenagh.png'
 import Fepale from '../images/fepale.jpg'
 import Fecalac from '../images/fecalac.png'
 import Vision from '../images/vision.jpg'
-import { device } from '../styles/breakpoints'
 import HeroPage from '../components/heroPage'
 
 const FlexContainer = styled.div`

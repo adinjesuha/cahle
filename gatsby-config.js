@@ -36,10 +36,10 @@ module.exports = {
         name: 'Cámara hondureña de la leche',
         short_name: 'CAHLE',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#010855',
+        theme_color: '#010855',
         display: 'minimal-ui',
-        icon: 'src/images/logo.png', // This path is relative to the root of the site.
+        icon: 'src/images/favicon.png', // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

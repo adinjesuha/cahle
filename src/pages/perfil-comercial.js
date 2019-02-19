@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Vision from '../images/vision.jpg'
 import Layout from '../components/layout'
 import Container from '../components/container'
 import Check from '../images/icons/check.svg'
@@ -20,6 +19,8 @@ import Grafico10 from '../images/perfil-comercial/grafico-10.png'
 import Grafico11 from '../images/perfil-comercial/grafico-11.png'
 import Grafico12 from '../images/perfil-comercial/grafico-12.png'
 import { device } from '../styles/breakpoints'
+import Vision from '../images/vision.jpg'
+import HeroPage from '../components/heroPage'
 
 const Hero = styled.div`
   position: relative;
@@ -89,11 +90,7 @@ const Wrapper = styled.div`
 
 const blog = () => (
   <Layout>
-    <Hero>
-      <Container>
-        <Title>Perfil Comercial</Title>
-      </Container>
-    </Hero>
+    <HeroPage title="Perfil Comercial" bgImage={Vision}/>
     <Wrapper>
         <Container>
           <h2>Perfil comercial de productos lácteos en Honduras</h2>
