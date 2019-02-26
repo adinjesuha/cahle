@@ -2,12 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Container from '../components/container'
-import Subscribe from './subscribe'
-import ContactForm from './contactForm'
 import { device } from '../styles/breakpoints'
 import Milk from '../images/milkdrop.jpg'
-import PhoneIcon from '../images/svg-icons/phone-icon.svg'
-import MailIcon from '../images/svg-icons/mail-icon.svg'
 
 const Wrapper = styled.footer`
   background-image: url(${Milk});
@@ -44,9 +40,11 @@ const Direction = styled.div`
 `
 
 const FooterDescription = styled.div`
+  background: var(--blue);
   padding: 23px 0 25px;
   border-top: 1px solid rgba(0,0,0,0.1);
   p {
+    color: white;
     text-align: center;
     margin: 0;
     font-size: 12px;
@@ -69,12 +67,11 @@ const Footer = () => (
             <a href="mailto:info@cahle.org">info@cahle.org</a>
           </div>
         </Direction>
-        <ContactForm />
       </FlexContainer>
-      <FooterDescription>
-        <p>© 2019 Camara Hondureña de la Leche</p>
-      </FooterDescription>
     </Container>
+    <FooterDescription>
+      <p>© 2019 Camara Hondureña de la Leche</p>
+    </FooterDescription>
   </Wrapper>
 )
 

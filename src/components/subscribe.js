@@ -6,41 +6,42 @@ import { device } from '../styles/breakpoints';
 import Arrow from '../images/svg-icons/arrow-icon.svg'
 
 const Wrapper = styled.div`
-  text-align: left;
-  margin-bottom: 20px;
+  padding: 60px 0;
   h2{
     color: var(--blue);
-    font-size: 32px;
-    margin-bottom: 10px;
+    font-size: 52px;
+    margin: 0;
+    text-align: center
   }
   span{
     font-weight: 300;
     font-family: 'Montserrat';
-    display: inline-block;
+    display: block;
     margin: 0 auto;
     margin-bottom: 20px;
     font-size: 16px;
+    text-align: center;
   }
 `
 const SubscribeForm = styled.div`
   position: relative;
   max-width: 470px;
-  padding-right: 30px;
+  margin: 0 auto;
   input{
-    width: 100%;
+    width: calc(100% - 20px);
     background-color: transparent;
     border: 1px solid var(--blue);
-    height: 42px;
+    height: 50px;
     padding-left: 15px;
     border-radius: 4px;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 14px;
     color: var(--blue);
   }
   button{
-    /* position: absolute;
+    position: absolute;
     right: 0;
-    top: 0; */
+    top: 0;
     box-shadow: 4px 6.9px 16px rgba(0, 0, 0, 0.2);
     border: none;
     background-color: var(--green);
@@ -50,7 +51,7 @@ const SubscribeForm = styled.div`
     display: inline-block;
     min-width: 150px;
     padding: 0 10px;
-    height: 42px;
+    height: 50px;
     line-height: 42px;
     border-radius: 42px;
     font-size: 10px;
@@ -66,31 +67,20 @@ const SubscribeForm = styled.div`
 export default function subscribe() {
   return (
     <Wrapper>
-      <h2>Suscribete</h2>
-      <span>Recibe noticias, proximos eventos e información relevante</span>
-      <form name="contact" netlify>
-        <SubscribeForm>
-          <p>
-            <label>Nombre <input type="text" name="name" /></label>
-          </p>
-          <p>
-            <label>Correo <input type="email" name="email" /></label>
-          </p>
-          <button type="submit">Suscribete</button>
-        </SubscribeForm>
-      </form>
+      <Container>
+        <h2>Suscribete</h2>
+        <span>Recibe noticias, proximos eventos e información relevante</span>
+        <form 
+          name="contact"
+          method="post" 
+          data-netlify="true"
+        >
+          <SubscribeForm>
+            <input type="email" name="email" placeholder="Ingresa tu correo"/>
+            <button type="submit">Suscribete</button>
+          </SubscribeForm>
+        </form>
+      </Container>
     </Wrapper>
   )
 }
-
-{/* <form name="contact" netlify>
-  <p>
-    <label>Name <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Email <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form> */}

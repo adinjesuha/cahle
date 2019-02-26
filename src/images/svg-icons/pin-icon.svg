@@ -1,14 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="14px" height="18px" viewBox="0 0 14 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-    <title>Pin Filled Icon</title>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="17px" viewBox="0 0 12 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>Icons/Pin Filled Icon</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="home" transform="translate(-713.000000, -3484.000000)" fill="#FFFFFF">
-            <g id="footer" transform="translate(0.000000, 3019.000000)">
-                <g id="how-to-find-us" transform="translate(668.000000, 457.000000)">
-                    <path d="M52,26.0245 C49.7680852,26.0245 45.2706088,18.7275968 45.2706088,14.7538912 C45.2706088,11.0373511 48.2834598,8.0245 52,8.0245 C55.7165402,8.0245 58.7293912,11.0373511 58.7293912,14.7538912 C58.7293912,18.7275968 54.2319148,26.0245 52,26.0245 L52,26.0245 L52,26.0245 Z M52,12.5971213 C50.7719064,12.6057788 49.7825364,13.6068335 49.7882979,14.834944 C49.7940594,16.0630546 50.7927783,17.0547824 52.020899,17.0519169 C53.2490198,17.0490514 54.2430999,16.0526739 54.2431304,14.8245498 C54.2410519,14.2317157 54.0035541,13.6639887 53.5828848,13.246264 C53.1622154,12.8285394 52.5928341,12.5950355 52,12.5971213 L52,12.5971213 L52,12.5971213 Z" id="Pin-Filled-Icon"></path>
+    <g id="Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="10.-Base-Elements" transform="translate(-937.000000, -1829.000000)" fill="#67D54B">
+            <g id="Icons" transform="translate(896.000000, 1430.000000)">
+                <g id="Icons/Pin-Filled-Icon" transform="translate(41.000000, 399.000000)">
+                    <path d="M6,17 C4.01,17 0,10.494 0,6.951 C0,3.6372915 2.6862915,0.951 6,0.951 C9.3137085,0.951 12,3.6372915 12,6.951 C12,10.494 7.99,17 6,17 L6,17 L6,17 Z M6,5.028 C4.90501813,5.0357191 4.02288484,5.92827056 4.02802186,7.02326758 C4.03315887,8.11826461 4.92362771,9.00250016 6.0186338,8.99994525 C7.1136399,8.99739033 7.99997279,8.10900907 8,7.014 C7.99814674,6.48542252 7.78639112,5.97923078 7.41131766,5.60678282 C7.03624419,5.23433487 6.52857745,5.02614022 6,5.028 L6,5.028 L6,5.028 Z" id="Pin-Filled-Icon"></path>
                 </g>
             </g>
         </g>

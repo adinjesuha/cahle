@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'gatsby';
 
 import Layout from '../components/layout'
 import Container from '../components/container'
@@ -50,35 +49,26 @@ const CoverContent = styled.div`
     letter-spacing: 0.02em;
     line-height: 1.2;
     margin: 0;
+    text-transform: uppercase;
   }
   p{
     margin-bottom: 40px;
     color: white;
     font-size: 14px;
   }
+  @media ${device.mobileL}{
+    h1{
+      font-size: 42px;
+    }
+  }
   @media ${device.tablet}{
       h1{
-        font-size: 64px; 
+        font-size: 72px; 
       }
       p{
         font-size: 22px;
       }
     }
-`
-const ButtonLink = styled(Link)`
-  background-color: none;
-  border-radius: 50px;
-  border: 1px solid var(--green);
-  padding: 15px 40px;
-  color: var(--green);
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 12px;
-  transition: background 0.3s ease, color 0.3s ease;
-  &:hover{
-    background-color: var(--green);
-    color: white;
-  }
 `
 
 const IndexPage = () => (
@@ -101,19 +91,20 @@ const IndexPage = () => (
         </video>
       </FullScreenBg>
       <CoverContent>
-        <p style={{marginBottom: '10px'}}>La cámara hondureña de la leche te invita al</p>
-        <h1>VII CONGRESO <br/> DE LA LECHE</h1>
-        <p>La Ceiba, Atlantida</p>
-        <ButtonLink to="/">Quieres saber más?</ButtonLink>
+        <h1>Cámara hondureña <br/> de la leche</h1>
       </CoverContent>
       <Container>
         <IndexPostListing />
-        <div style={{paddingTop: '50px', textAlign:'center', width: '100%'}}>
-          <ButtonLink to="/noticias-y-eventos">Ver todos</ButtonLink>
-        </div>
       </Container>
     </Layout>
   </React.Fragment>
 )
 
 export default IndexPage
+
+{/* <CoverContent>
+  <p style={{marginBottom: '10px'}}>La cámara hondureña de la leche te invita al</p>
+  <h1>VII CONGRESO <br/> DE LA LECHE</h1>
+  <p>La Ceiba, Atlantida</p>
+  <ButtonLink to="/">Quieres saber más?</ButtonLink>
+</CoverContent> */}
