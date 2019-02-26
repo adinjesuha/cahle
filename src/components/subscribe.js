@@ -38,9 +38,9 @@ const SubscribeForm = styled.div`
     color: var(--blue);
   }
   button{
-    position: absolute;
+    /* position: absolute;
     right: 0;
-    top: 0;
+    top: 0; */
     box-shadow: 4px 6.9px 16px rgba(0, 0, 0, 0.2);
     border: none;
     background-color: var(--green);
@@ -68,12 +68,29 @@ export default function subscribe() {
     <Wrapper>
       <h2>Suscribete</h2>
       <span>Recibe noticias, proximos eventos e información relevante</span>
-      <form>
+      <form name="contact" netlify>
         <SubscribeForm>
-          <input type="text" placeholder="Ingresa tu correo"/>
-          <button>Suscribete</button>
+          <p>
+            <label>Nombre <input type="text" name="name" /></label>
+          </p>
+          <p>
+            <label>Correo <input type="email" name="email" /></label>
+          </p>
+          <button type="submit">Suscribete</button>
         </SubscribeForm>
       </form>
     </Wrapper>
   )
 }
+
+{/* <form name="contact" netlify>
+  <p>
+    <label>Name <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Email <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form> */}

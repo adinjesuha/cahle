@@ -8,7 +8,7 @@ const iconLimits = {
 }
 
 const Hamburger = styled.div`
-	background: ${props => props.iconState ? 'rgba(256, 256, 256, 0)' : 'rgba(256, 256, 256, 1)'};
+	background: ${props => props.iconState ? 'rgba(103, 213, 75, 0)' : 'rgba(103, 213, 75, 1)'};
   position: relative;
 	transform: translateY(${iconLimits.barSpacing});
 	transition: all 0.3s ease;
@@ -25,7 +25,7 @@ const Hamburger = styled.div`
     position: absolute;
     left: 0;
     bottom: ${iconLimits.barSpacing};
-    background: white;
+    background: var(--green);
     transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   &::after{
@@ -33,7 +33,7 @@ const Hamburger = styled.div`
     position: absolute;
     left: 0;
     top: ${iconLimits.barSpacing};
-    background: white;
+    background: var(--green);
     transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   ${props => props.iconState && css`

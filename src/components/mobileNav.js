@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
 import { Link } from "gatsby"
 import styled, { css } from 'styled-components'
+
 import HamburgerIcon from './hamburgerIcon'
+import Accordion from './accordion'
+import { device } from '../styles/breakpoints'
+
 
 const iconLimits = {
   barWidth:   '35px',
@@ -11,8 +15,8 @@ const iconLimits = {
 
 const IconWrapper = styled.div`
 	position: fixed;
-  top: 20px;
-  right: 40px;
+  top: 30px;
+  right: 20px;
   margin: auto;
   width: ${iconLimits.barWidth};
 	height: calc(${iconLimits.barHeight} + ${iconLimits.barSpacing} * 2);
@@ -38,6 +42,7 @@ const PopUp = styled.div`
   transition-property: background;
   transition-property: background,-webkit-transform;
   transition-duration: .3s;
+  overflow-y: auto;
   ${props => props.isOpen && css`
     ${PopUpContainer}{
       opacity: 1;
@@ -47,10 +52,9 @@ const PopUp = styled.div`
 `
 
 const PopUpContainer = styled.nav`
-  background: #fff;
-  width: 70%;
-  max-width: 400px;
-  height: 100%;
+  background: var(--blue);
+  width: 100%;
+  min-height: 100%;
   position: absolute;
   right: 0;
   opacity:0;
@@ -60,17 +64,15 @@ const PopUpContainer = styled.nav`
   transition-property: transform,opacity;
   transition-property: transform,opacity,-webkit-transform;
   transition-duration: .3s;
+  @media ${device.tablet}{
+    max-width: 60%
+  }
 `
 
 const PopUpMenu = ({isOpen}) => (
   <PopUp isOpen={isOpen}>
     <PopUpContainer>
-      <ul>
-        <li><Link tp="/">Link 1</Link></li>
-        <li><Link tp="/">Link 2</Link></li>
-        <li><Link tp="/">Link 3</Link></li>
-        <li><Link tp="/">Link 4</Link></li>
-      </ul>
+      <Accordion />
     </PopUpContainer>
   </PopUp>
 )

@@ -3,8 +3,9 @@ import styled from 'styled-components'
 
 import Container from '../components/container'
 import Subscribe from './subscribe'
+import ContactForm from './contactForm'
 import { device } from '../styles/breakpoints'
-import Milk from '../images/milk.png'
+import Milk from '../images/milkdrop.jpg'
 import PhoneIcon from '../images/svg-icons/phone-icon.svg'
 import MailIcon from '../images/svg-icons/mail-icon.svg'
 
@@ -14,7 +15,8 @@ const Wrapper = styled.footer`
   background-size: contain;
   background-position: bottom right;
   position: relative;
-  padding: 100px 0 0;
+  margin-top: 70px;
+  padding-top: 50px;
   h2{
     color: var(--blue);
     font-size: 32px;
@@ -67,7 +69,7 @@ const Footer = () => (
             <a href="mailto:info@cahle.org">info@cahle.org</a>
           </div>
         </Direction>
-        <Subscribe />
+        <ContactForm />
       </FlexContainer>
       <FooterDescription>
         <p>© 2019 Camara Hondureña de la Leche</p>

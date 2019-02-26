@@ -33,7 +33,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Cámara hondureña de la leche',
+        name:'CAHLE | Cámara hondureña de la leche',
         short_name: 'CAHLE',
         start_url: '/',
         background_color: '#010855',

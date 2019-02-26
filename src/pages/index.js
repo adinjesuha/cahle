@@ -4,8 +4,9 @@ import { Link } from 'gatsby';
 
 import Layout from '../components/layout'
 import Container from '../components/container'
-import PostListing from '../components/postListing'
+import IndexPostListing from '../components/indexPostListing'
 import VideoBG from '../video/video-bg.mp4'
+import { device } from '../styles/breakpoints'
 
 const FullScreenBg = styled.div`
   left: 0;
@@ -44,22 +45,25 @@ const CoverContent = styled.div`
   }
   h1{
     font-weight: 700;
-    font-size: 64px;
+    font-size: 34px;
     color: white;
     letter-spacing: 0.02em;
     line-height: 1.2;
     margin: 0;
   }
-  h2{
-    color: white;
-    font-size: 22px;
-    letter-spacing: 0.02em;
-    margin-top: 0;
-  }
   p{
     margin-bottom: 40px;
     color: white;
+    font-size: 14px;
   }
+  @media ${device.tablet}{
+      h1{
+        font-size: 64px; 
+      }
+      p{
+        font-size: 22px;
+      }
+    }
 `
 const ButtonLink = styled(Link)`
   background-color: none;
@@ -103,7 +107,7 @@ const IndexPage = () => (
         <ButtonLink to="/">Quieres saber más?</ButtonLink>
       </CoverContent>
       <Container>
-        <PostListing />
+        <IndexPostListing />
         <div style={{paddingTop: '50px', textAlign:'center', width: '100%'}}>
           <ButtonLink to="/noticias-y-eventos">Ver todos</ButtonLink>
         </div>

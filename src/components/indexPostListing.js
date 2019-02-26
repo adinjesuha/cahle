@@ -1,5 +1,5 @@
 import React from 'react'
-import { StaticQuery, graphql, Link } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 import styled from 'styled-components'
 
 import CardPost from './cardPost'
@@ -19,7 +19,7 @@ const PostList = styled.ul`
 export default () => (
   <StaticQuery
     query={graphql`
-      query BlogQuery {
+      query indexPostListingQuery {
         allContentfulBlogPost(limit: 3, sort:{fields:[createdAt], order: DESC}) {
           edges {
             node {

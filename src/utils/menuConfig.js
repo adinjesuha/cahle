@@ -15,7 +15,7 @@ export const acercaDe = [
     name: 'Personal Administrativo',
     link: '/personal-administrativo'
   },
-] 
+]
 
 export const asociados = [
   {

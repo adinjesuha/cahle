@@ -16,12 +16,17 @@ const BlogSection = styled.div`
   line-height: 1.8;
   p {
     margin-bottom: 27px;
+    text-align: justify;
   }
   @media ${device.tablet} {
     padding: 0;
   }
 `
 const ContentfulDiv = styled.div`
+  img{
+    display: block;
+    margin: 0 auto;
+  }
   ul{
     list-style: none;
     margin: 0;

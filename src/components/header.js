@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 import DesktopNav from './desktopNav'
 import { device } from "../styles/breakpoints";
-import Logo from '../images/svg-icons/logo-2.svg'
+import Logo from '../images/svg-icons/logo.svg'
 
 const HeaderEl = styled.header`
   z-index: 999;
@@ -13,12 +13,17 @@ const HeaderEl = styled.header`
   left: 0;
   top: 0;
   background: var(--blue);
-  padding: 0 40px 5px;
+  padding: 0 20px 5px;
+  @media ${device.tablet}{
+    padding: 0 40px 5;
+  }
 `
 
 const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  max-width: 1340px;
+  margin: 0 auto;
 `
 
 const HeaderNav = styled.div`
