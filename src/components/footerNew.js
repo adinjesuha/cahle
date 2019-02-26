@@ -16,7 +16,6 @@ const Wrapper = styled.footer`
   background-size: contain;
   background-position: bottom right;
   position: relative;
-  margin-top: 70px;
   padding-top: 50px;
   h3{
     color: var(--blue);
