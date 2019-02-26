@@ -71,9 +71,10 @@ export default function subscribe() {
         <h2>Suscribete</h2>
         <span>Recibe noticias, proximos eventos e información relevante</span>
         <form 
-          name="contact"
+          name="email-collection"
           method="post" 
-          data-netlify="true"
+          netlify
+          netlify-honeypot="bot-field" 
         >
           <SubscribeForm>
             <input type="email" name="email" placeholder="Ingresa tu correo"/>
@@ -84,3 +85,10 @@ export default function subscribe() {
     </Wrapper>
   )
 }
+
+/*
+Old IP address - A record
+108.163.233.154
+CNAME
+cahle.org
+*/
