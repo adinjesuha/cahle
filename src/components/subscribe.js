@@ -72,9 +72,8 @@ export default function subscribe() {
         <span>Recibe noticias, proximos eventos e información relevante</span>
         <form 
           name="email-collection"
-          method="post" 
-          netlify
-          netlify-honeypot="bot-field" 
+          method="POST" 
+          data-netlify="true"
         >
           <SubscribeForm>
             <input type="email" name="email" placeholder="Ingresa tu correo"/>
