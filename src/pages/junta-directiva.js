@@ -53,7 +53,7 @@ export default () => {
             </FlexImage>
             <FlexContent>
               <h2>Héctor Alberto Ferreira</h2>
-              <p>Presitende CAHLE</p>
+              <p>Presidente CAHLE</p>
               <p style={{textAlign: 'justify'}}>Para iniciar es preciso agradecer el apoyo de la junta directiva, personal técnico y administrativo de la Cámara Hondureña de la Leche (CAHLE), gracias a todos por fortalecer esta Cámara y convertirla en una fuente inagotable de conocimiento, amistad y compañerismo. </p> 
             </FlexContent>
           </Flexcard>
