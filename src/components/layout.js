@@ -5,8 +5,7 @@ import styled from 'styled-components'
 import config from '../utils/siteConfig'
 import Header from './header'
 import MobileNav from './mobileNav'
-import Subscribe from './subscribe'
-import Footer from './footerNew'
+import Footer from './footer'
 import '../styles/layout.css'
 
 const LayoutWrapper = styled.div`
@@ -33,7 +32,6 @@ const Layout = ({ children }) => (
       <MobileNav />
       <Header />
       {children}
-      <Subscribe />
       <Footer />
     </LayoutWrapper>
   </SiteRoot>

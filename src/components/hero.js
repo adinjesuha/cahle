@@ -20,7 +20,7 @@ const HeroImage = styled(Img)`
     the viewport width
   */
   height: 60vh;
-  margin-top: 80px;
+  margin-top: 70px;
   &::before {
     content: '';
     background: rgba(0, 0, 0, 0.5);

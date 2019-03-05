@@ -3,9 +3,12 @@ import styled from 'styled-components'
 import { device } from '../styles/breakpoints'
 
 const Wrapper = styled.section`
-  margin: 0 auto;
-  padding: 0 40px;
-  max-width: 1024px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 1140px;  
 `
 
 const Container = props => {

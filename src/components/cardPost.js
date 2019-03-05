@@ -10,9 +10,10 @@ const Post = styled.li`
   width: 100%;
   margin-bottom: 40px;
   background: white;
-  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.06);
-  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+  border-radius: 5px;
   overflow: hidden;
+  transition: 0.3s;
   @media ${device.tablet}{
     flex: ${props => (props.featured ? '0 0 100%' : '0 0 49%')};
     margin: 0 0 2vw 0;
@@ -51,7 +52,7 @@ const Post = styled.li`
       padding: 5%;
     }
     ${Title} {
-
+      
     }
   `}
   &:hover{
@@ -65,13 +66,14 @@ const Data = styled.div`
 
 const Title = styled.h2`
   margin-bottom: 8px;
-  font-size: 32px;
   color: var(--blue);
   opacity: 1;
   transition: color 0.3s ease;
   line-height: 1.16;
+  font-weight: 500;
+  font-size: 32px;
   &:hover{
-    color: var(--text);
+    color: var(--green);
   }
 `
 
@@ -84,7 +86,7 @@ const Tag = styled.span`
 const Excerpt = styled.p`
   font-weight: 400;
   margin: 12px 0;
-  color: var(--text);
+  color: #555555;
 `
 
 const CardPost = ({slug, createdAt, heroImage, title, body, tags, ...props}) => (

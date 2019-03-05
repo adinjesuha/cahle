@@ -2,9 +2,10 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-import DesktopNav from './desktopNav'
+import DesktopNavAdvance from './desktopNavAdvance'
 import { device } from "../styles/breakpoints";
 import Logo from '../images/svg-icons/logo.svg'
+import Container from './container'
 
 const HeaderEl = styled.header`
   z-index: 999;
@@ -13,7 +14,6 @@ const HeaderEl = styled.header`
   left: 0;
   top: 0;
   background: var(--blue);
-  padding: 0 20px 5px;
   @media ${device.tablet}{
     padding: 0 40px 5;
   }
@@ -22,8 +22,8 @@ const HeaderEl = styled.header`
 const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  max-width: 1340px;
   margin: 0 auto;
+  width: 100%;
 `
 
 const HeaderNav = styled.div`
@@ -35,7 +35,6 @@ const HeaderNav = styled.div`
 const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
-  padding: 10px 0 0;
   flex: 0 0 20%;
   h1{
     margin: 0;
@@ -51,16 +50,18 @@ export default class Header extends React.Component{
   render(){
     return (
       <HeaderEl>
-        <HeaderWrapper>
-          <LogoWrapper>
-            <Link to="/">
-              <Logo />
-            </Link>
-          </LogoWrapper>
-          <HeaderNav>
-            <DesktopNav />
-          </HeaderNav>
-        </HeaderWrapper>
+        <Container>
+          <HeaderWrapper>
+            <LogoWrapper>
+              <Link to="/">
+                <Logo style={{verticalAlign:'top'}}/>
+              </Link>
+            </LogoWrapper>
+            <HeaderNav>
+              <DesktopNavAdvance />
+            </HeaderNav>
+          </HeaderWrapper>
+        </Container>
       </HeaderEl> 
     )
   }

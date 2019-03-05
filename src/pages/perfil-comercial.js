@@ -22,34 +22,6 @@ import { device } from '../styles/breakpoints'
 import Vision from '../images/vision.jpg'
 import HeroPage from '../components/heroPage'
 
-const Hero = styled.div`
-  position: relative;
-  background: #000;
-  color: #fff;
-  text-align: center;
-  background-image: url(${Vision});
-  background-position: center center;
-  background-size: cover;
-  padding: 300px 0 100px;
-  &::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
-  }
-`
-const Title = styled.h1`
-  font-size: 54px;
-  line-height: 54px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  position: relative;
-`
 const Wrapper = styled.div`
   padding: 70px 0;
   figcaption{
@@ -362,12 +334,12 @@ const blog = () => (
           <h3 style={{fontStyle: 'italic'}}>Bibliografía</h3>
           <ul>
             <li>Banco Mundial (2016). Doing Business. [en línea], Washington, D.C., World Bank.</li>
-            <li>Disponible en: <a style={{color: "var(--main-blue)"}} target="_blank" rel="noopener noreferrer" href="http://www.doingbusiness.org">http://www.doingbusiness.org</a></li>
-            <li>2016. World Development Indicators. [en línea], Washington, D.C., Disponible en: <a style={{color: "var(--main-blue)"}} target="_blank" rel="noopener noreferrer" href="http://data.worldbank.org/datacatalog/world-development-indicators">http://data.worldbank.org/datacatalog/world-development-indicators</a>.</li>
+            <li>Disponible en: <a style={{color: "var(--green)"}} target="_blank" rel="noopener noreferrer" href="http://www.doingbusiness.org">http://www.doingbusiness.org</a></li>
+            <li>2016. World Development Indicators. [en línea], Washington, D.C., Disponible en: <a style={{color: "var(--green)"}} target="_blank" rel="noopener noreferrer" href="http://data.worldbank.org/datacatalog/world-development-indicators">http://data.worldbank.org/datacatalog/world-development-indicators</a>.</li>
             <li>CEPAL. Comisión económica para América Latina y El Caribe. 2018. La cadena regional de valor de la industria de lácteos en Centroamérica. </li>
             <li>FECALAC. Federación centroamericana del sector lácteo. 2018. Situación del sector lácteo centroamericano. Taller regional Buenas prácticas pecuarias en ganado bovino de leche y calidad de leche cruda. CR</li>
             <li>FAO. Food and Agriculture Organization of the United Nations. 2016. El sector mundial: datos. </li>
-            <li>IFAD. International Fund for Agricultural Development. 2014. Gender and Rural Development Brief - Central America and Mexico. [en línea], Roma, Italia, Disponible en: <a style={{color: "var(--main-blue)"}} target="_blank" rel="noopener noreferrer" href="https://www.ifad.org/documents/10180/25dffac9-e28c-4c5c-b7f8-7332e62f09ff">https://www.ifad.org/documents/10180/25dffac9-e28c-4c5c-b7f8-7332e62f09ff</a></li>
+            <li>IFAD. International Fund for Agricultural Development. 2014. Gender and Rural Development Brief - Central America and Mexico. [en línea], Roma, Italia, Disponible en: <a style={{color: "var(--green)"}} target="_blank" rel="noopener noreferrer" href="https://www.ifad.org/documents/10180/25dffac9-e28c-4c5c-b7f8-7332e62f09ff">https://www.ifad.org/documents/10180/25dffac9-e28c-4c5c-b7f8-7332e62f09ff</a></li>
             <li>Omore A.; Mulindo C.; Islam F.; Khan I. 2011. Employment generation through small scale dairy marketing and processing. Experiences from Kenya, Bangladesh and Ghana. ILRI: Nairobi y FAO: Roma.</li>
           </ul>
         </Container>

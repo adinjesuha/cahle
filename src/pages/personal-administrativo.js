@@ -74,7 +74,7 @@ export default () => {
                 Directora Ejecutiva
                 </div>
                 <div className="cell" data-title="E-mail">
-                  <a href="mailto:tecnicodecampo@gmail.org">camaradelaleche@gmail.org</a>
+                  <a href="mailto:camaradelaleche@gmail.com">camaradelaleche@gmail.com</a>
                 </div>
               </div>
 
@@ -86,7 +86,7 @@ export default () => {
                   Dirección Técnica de Campo
                 </div>
                 <div className="cell" data-title="E-mail">
-                  <a href="mailto:tecnicodecampo@gmail.org">tecnicodecampo@gmail.org</a>
+                  <a href="mailto:tecnicodecampo@cahle.org">tecnicodecampo@cahle.org</a>
                 </div>
               </div>
 

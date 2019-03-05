@@ -6,9 +6,11 @@ import { acercaDe, asociados, documentacion } from '../utils/menuConfig'
 
 const subMenuFade = keyframes`
   0% {
+    transform: translateY(10px);
     opacity: 0;
   }
   100% {
+    transform: translateY(0)
     opacity: 1;
   }
 `
@@ -47,7 +49,7 @@ const MenuItem = styled.li`
   }
   &:nth-child(3), &:nth-child(4) {
     ul {
-      left: -25%;
+      /* left: -25%; */
     }
   }
 `
@@ -56,19 +58,18 @@ const NavSubMenu = styled.ul`
   padding: 0;
   margin-top: 15px;
   font-weight: 300;
-  border-radius: 4px;
   background: white;
   text-transform: uppercase;
   display: none;
   position: absolute;
-  left: -50%;
+  /* left: -50%; */
   min-width: 220px;
   box-shadow: 0 50px 100px -20px rgba(50,50,93,.25),0 30px 60px -30px rgba(0,0,0,.3);
-  animation: ${subMenuFade} 0.2s ease-in;
+  animation: ${subMenuFade} 0.5s ease;
   &:nth-child(3){
-    left: -20%;
+    /* left: -20%; */
   }
-  &::after{
+  /* &::after{
     content: '';
     width: 20px;
     height: 20px;
@@ -80,11 +81,12 @@ const NavSubMenu = styled.ul`
     transform: translateX(-50%);
     transform: rotate(45deg);
     z-index: -1;
-  }
+  } */
 `
 const SubMenuItem = styled.li`
   display: block;
   margin: 0;
+  transition: background 0.3s ease;
   a {
     padding: 20px 0 20px 20px;
     opacity: 1;
@@ -94,12 +96,12 @@ const SubMenuItem = styled.li`
     text-transform: uppercase;
     font-size: 12px;
     display: block;
-    transition: color 0.3s ease;
   }
   &:hover{
-    a{
-      color: var(--green);
-    }
+    background: var(--green);
+    /* a{
+      color: var(--blue);
+    } */
   }
 `
 
