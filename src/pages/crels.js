@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import Container from '../components/container'
 import Check from '../images/icons/check.svg'
 import { device } from '../styles/breakpoints'
-import Junta from '../images/junta-directiva.jpg' 
+import Crel from '../images/CREL.jpg' 
 import HeroPage from '../components/heroPage'
 
 const Wrapper = styled.div`
@@ -65,7 +65,7 @@ const FlexContent = styled.div`
 export default () => {
   return (
     <Layout>
-      <HeroPage title="CREL'S" tags="asociados" bgImage={Junta}/>
+      <HeroPage title="CREL'S" tags="asociados" bgImage={Crel}/>
       <Wrapper>
         <Container>
           
