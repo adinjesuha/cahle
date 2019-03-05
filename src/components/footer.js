@@ -10,6 +10,7 @@ import MailIcon from '../images/svg-icons/mail-icon.svg'
 import PinIcon from '../images/svg-icons/pin-icon.svg'
 
 const Wrapper = styled.footer`
+  /*comment test*/
   /* background-image: url(${Milk});
   background-repeat: no-repeat;
   background-size: contain;
