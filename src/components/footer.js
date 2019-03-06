@@ -166,7 +166,7 @@ const Footer = () => (
             <NewsLetterForm>
               <form name="contact" method="POST" data-netlify="true">
                 <div className="field-wrapper">
-                  <input className="relative-field" type="email" placeholder="Ingresa tu correo" name="email"/>
+                  <input className="relative-field" placeholder="Ingresa tu correo" type="email" name="email" />
                   <button type="submit" className="btn">Suscribirse</button>
                 </div>
               </form>
