@@ -101,10 +101,3 @@ const IndexPage = () => (
 )
 
 export default IndexPage
-
-{/* <CoverContent>
-  <p style={{marginBottom: '10px'}}>La cámara hondureña de la leche te invita al</p>
-  <h1>VII CONGRESO <br/> DE LA LECHE</h1>
-  <p>La Ceiba, Atlantida</p>
-  <ButtonLink to="/">Quieres saber más?</ButtonLink>
-</CoverContent> */}

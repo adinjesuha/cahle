@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import Layout from '../components/layout'
 import Container from '../components/container'
 import Check from '../images/icons/check.svg'
-import { device } from '../styles/breakpoints'
 import Crel from '../images/CREL.jpg' 
 import HeroPage from '../components/heroPage'
 
@@ -32,33 +31,6 @@ const Wrapper = styled.div`
         color: var(--base-medium);
       }
     }
-  }
-`
-
-const Flexcard = styled.div`
-  display: flex;
-  flex-direction: column;
-  @media ${device.tablet}{
-    flex-direction: row;
-  }
-`
-const FlexImage = styled.div`
-  flex: 0 0 100%;
-  @media ${device.tablet}{
-    flex: 0 0 40%;
-  }
-  @media ${device.laptop}{
-    flex: 0 0 30%;
-  }
-`
-
-const FlexContent = styled.div`
-  flex: 0 0 100%;
-  @media ${device.tablet}{
-    flex: 0 0 60%;
-  }
-  @media ${device.laptop}{
-    flex: 0 0 70%;
   }
 `
 

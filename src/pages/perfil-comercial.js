@@ -21,7 +21,6 @@ import Grafico12 from '../images/perfil-comercial/grafico-12.png'
 import { device } from '../styles/breakpoints'
 import Vision from '../images/vision.jpg'
 import HeroPage from '../components/heroPage'
-import { bold } from 'ansi-colors';
 
 const Wrapper = styled.div`
   padding: 70px 0;

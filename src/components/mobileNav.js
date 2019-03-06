@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from "gatsby"
 import styled, { css } from 'styled-components'
 
 import HamburgerIcon from './hamburgerIcon'

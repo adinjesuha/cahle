@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { device } from '../styles/breakpoints'
 
 const Wrapper = styled.section`
   padding-right: 15px;

@@ -88,10 +88,6 @@ const AccordionWrapper = styled.dl`
   }
 `
 
-const LinkOut = styled('Link')`
-  color: white
-`
-
 const AccordionSection = props => {
   const { title, expand, onClick, content } = props;
   return (

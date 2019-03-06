@@ -13,37 +13,6 @@ const Wrapper = styled.div`
     margin:0;
   }
 `
-const Hero = styled.div`
-  position: relative;
-  background: #000;
-  color: #fff;
-  text-align: center;
-  background-image: url(${Vision});
-  background-position: center center;
-  background-size: cover;
-  padding: 300px 0 100px;
-  margin-top: 80px;
-  min-height: 300px;
-  height: 60vh;
-  &::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-  }
-`
-const Title = styled.h1`
-  font-size: 54px;
-  line-height: 54px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  position: relative;
-`
 
 export default () => {
   return (
