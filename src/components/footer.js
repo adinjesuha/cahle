@@ -165,6 +165,7 @@ const Footer = () => (
             <p>Suscríbete para recibir las últimas noticias y actualizaciones.</p>
             <NewsLetterForm>
               <form 
+                action="/no-cache=1"
                 name="contact-footer" 
                 method="POST" 
                 data-netlify="true" 
