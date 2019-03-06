@@ -165,18 +165,13 @@ const Footer = () => (
             <p>Suscríbete para recibir las últimas noticias y actualizaciones.</p>
             <NewsLetterForm>
               <form 
-                name="contact" 
+                name="contact-footer" 
                 method="POST" 
                 data-netlify="true" 
                 data-netlify-honeypot="bot-field"
               >
                 <div className="field-wrapper">
-                  <input 
-                    className="relative-field" 
-                    placeholder="Ingresa tu correo" 
-                    type="email" 
-                    name="email"  
-                  />
+                  <input className="relative-field" placeholder="Ingresa tu correo"  type="email" id="email" name="email" required />
                   <input type="hidden" name="bot-field" />
                   <button type="submit" className="btn">Suscribirse</button>
                 </div>
