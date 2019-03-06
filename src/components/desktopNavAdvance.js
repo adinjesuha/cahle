@@ -136,6 +136,9 @@ export default class desktopNavAdvance extends Component {
             </div>
           </li>
           <li>
+            <Link to="/">CONGRESO</Link>
+          </li>
+          <li>
             <Link to="/perfil-comercial">PERFIL COMERCIAL</Link>
           </li>
           <li>

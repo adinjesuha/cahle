@@ -10,12 +10,10 @@ import MailIcon from '../images/svg-icons/mail-icon.svg'
 import PinIcon from '../images/svg-icons/pin-icon.svg'
 
 const Wrapper = styled.footer`
-  /*comment test*/
-  /* background-image: url(${Milk});
+  background-image: url(${Milk});
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: bottom right; */
-  background: #eff1f5;
+  background-position: bottom right;
   position: relative;
   h2{
     color: var(--blue);
@@ -23,9 +21,9 @@ const Wrapper = styled.footer`
     font-size: 32px;
   }
   p{
-    color: #737373;
     font-size: 14px;
   }
+
 `
 
 const FlexContainer = styled.div`
@@ -34,6 +32,7 @@ const FlexContainer = styled.div`
   margin: 20px auto;
   padding: 70px 0;
   flex-wrap: wrap;
+  border-top: 1px solid rgba(0,0,0, 0.1);
 `
 
 const Box = styled.aside`
@@ -47,7 +46,6 @@ const Box = styled.aside`
 `
 const InfoContact = styled.ul`
   margin-top: 16px;
-  color: #737373;
   li{
     margin-bottom: 12px;
     span{
@@ -106,13 +104,13 @@ const NewsLetterForm =  styled.div`
 
 
 const FooterDescription = styled.div`
-  background: #e2e5eb;
+  background: var(--blue);
   padding: 25px 0 ;
   p {
     text-align: center;
     margin: 0;
     font-size: 14px;
-    color: #5e6c7c;
+    color: white;
   }
 `
 
@@ -150,7 +148,7 @@ const Footer = () => (
             </li>
             <li>
               <span><PhoneIcon/></span>
-              <span className="info">(504) 2239-1303</span>
+              <span className="info">(504) 2231-1102</span>
             </li>
             <li>
               <span className="info" style={{paddingLeft: '25px'}}>(504) 9442-4710</span>

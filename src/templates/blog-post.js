@@ -8,6 +8,20 @@ import Container from '../components/container'
 import { device } from '../styles/breakpoints'
 import Check from '../images/icons/check.svg'
 
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  GooglePlusShareButton,
+  EmailShareButton,
+
+  FacebookIcon,
+  TwitterIcon,
+  GooglePlusIcon,
+  EmailIcon,
+
+} from 'react-share';
+
+
 const BlogSection = styled.div`
   position: relative;
   margin: 70px auto;
@@ -51,14 +65,74 @@ const ContentfulDiv = styled.div`
   }
 `
 
+const ShareButtonsContainer = styled.div`
+  max-width: 460px;
+  width: 100%;
+  font-weight: 400;
+  margin: 0 auto;
+  text-align: center;
+  h3{
+    display: inline-block;
+  }
+  ul li.social-share{
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+    &:last-child{
+      margin-right: 0;
+    }
+    > div{
+      cursor: pointer;
+    }
+  }
+`
+
 const PostPage = ({data}) => {
-  const { title, heroImage, body, tags } = data.contentfulBlogPost
+  const { title, heroImage, body, tags, slug } = data.contentfulBlogPost
   return (
     <Layout> 
       <Hero heroData={heroImage} title={title} tags={tags}/>
       <Container>
         <BlogSection>
           <ContentfulDiv dangerouslySetInnerHTML={{ __html: body.childMarkdownRemark.html }} />
+          <ShareButtonsContainer>
+            <h3>Compartelo en tus redes</h3>
+            <ul>
+              <li className="social-share">
+                <FacebookShareButton 
+                  url={`https://www.cahle.org/${slug}`}
+                  quote={title}
+                >
+                  <FacebookIcon size={40} round />
+                </FacebookShareButton>
+              </li>
+              <li className="social-share">
+                <TwitterShareButton
+                  url={`https://www.cahle.org/${slug}`}
+                  quote={title}
+                >
+                  <TwitterIcon size={40} round/>
+                </TwitterShareButton>
+              </li>
+              <li className="social-share">
+                <GooglePlusShareButton
+                  url={`https://www.cahle.org/${slug}`}
+                  quote={title}
+                >
+                  <GooglePlusIcon size={40} round/>
+                </GooglePlusShareButton>
+              </li>
+              <li className="social-share">
+                <EmailShareButton
+                  url={`https://www.cahle.org/${slug}`}
+                  quote={title}
+                >
+                  <EmailIcon size={40} round/>
+                </EmailShareButton>
+              </li>
+            </ul>
+          </ShareButtonsContainer>
         </BlogSection>
       </Container>
     </Layout>
@@ -70,6 +144,7 @@ export default PostPage
 export const query = graphql`
   query BlogPostQuery($slug: String!){
     contentfulBlogPost(slug: {eq: $slug}){
+      slug
       title
       createdAt(formatString: "MMMM DD, YYYY")
       heroImage{
