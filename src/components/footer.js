@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { navigateTo } from "gatsby-link";
 
 import Container from './container'
 import { device } from '../styles/breakpoints'
@@ -135,6 +136,67 @@ const Social = styled.div`
   
 `
 
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
+class ContactForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
+  handleSubmit = e => {
+    e.preventDefault();
+    const form = e.target;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...this.state
+      })
+    })
+      .then(() => navigateTo(form.getAttribute("action")))
+      .catch(error => alert(error));
+  };
+
+  render() {
+    return (
+      <NewsLetterForm>
+        <form
+          name="many-contact"
+          method="post"
+          action="/thanks/"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          onSubmit={this.handleSubmit}
+        >
+          <div className="field-wrapper">
+          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+          <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <label>
+              Don’t fill this out:{" "}
+              <input name="bot-field" onChange={this.handleChange} />
+            </label>
+          </p>
+            <input className="relative-field" placeholder="Ingresa tu correo" type="email" name="email" onChange={this.handleChange} />
+            <button type="submit" className="btn">Suscribete</button>
+          </div>
+        </form>
+      </NewsLetterForm>
+    );
+  }
+}
+
+
 const Footer = () => (
   <Wrapper> 
     <Container>
@@ -163,15 +225,7 @@ const Footer = () => (
           <div>
             <h2>Suscribete</h2>
             <p>Suscríbete para recibir las últimas noticias y actualizaciones.</p>
-            <NewsLetterForm>
-              <form method="POST" name="contact-footer" data-netlify="true" data-netlify-honeypot="bot-field">
-                <div className="field-wrapper">
-                  <input className="relative-field" name="contact-form" placeholder="Ingresa tu correo"  type="email" id="email" name="email" required />
-                  <input type="hidden" name="bot-field" />
-                  <button type="submit" className="btn">Suscribirse</button>
-                </div>
-              </form>
-            </NewsLetterForm>
+            <ContactForm />
             <Social>
               <ul>
                 <li>
@@ -210,3 +264,13 @@ const Footer = () => (
 export default Footer
 
 // CAHLEtester1234
+
+{/* <NewsLetterForm>
+  <form method="POST" name="contact-footer" data-netlify="true" data-netlify-honeypot="bot-field">
+    <div className="field-wrapper">
+      <input className="relative-field" name="contact-form" placeholder="Ingresa tu correo"  type="email" id="email" name="email" required />
+      <input type="hidden" name="bot-field" />
+      <button type="submit" className="btn">Suscribirse</button>
+    </div>
+  </form>
+</NewsLetterForm> */}
