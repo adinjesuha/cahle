@@ -83,7 +83,7 @@ export default class desktopNavAdvance extends Component {
         <ul className="navbar-nav">
           <li className="has_dropdown">
             <span>ACERCA DE</span>
-            <div class="dropdown">
+            <div className="dropdown">
               <ul>
                 <li>
                   <Link to="/vision-y-mision">Historia, Visión y Misión</Link>
@@ -100,9 +100,9 @@ export default class desktopNavAdvance extends Component {
               </ul>
             </div>
           </li>
-          <li class="has_dropdown">
+          <li className="has_dropdown">
             <span>ASOCIADOS</span>
-            <div class="dropdown">
+            <div className="dropdown">
               <ul>
                 <li>
                   <Link to="/beneficios">Beneficios</Link>
@@ -119,9 +119,9 @@ export default class desktopNavAdvance extends Component {
               </ul>
             </div>
           </li>
-          <li class="has_dropdown">
+          <li className="has_dropdown">
             <span>DOCUMENTACIÓN</span>
-            <div class="dropdown">
+            <div className="dropdown">
               <ul>
                 <li>
                   <Link to="/reglamentaciones">Reglamentaciones</Link>

@@ -21,6 +21,7 @@
     "gatsby-transformer-sharp": "^2.1.13",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-flickity-component": "^3.2.0",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.4.0",
     "react-share": "^2.4.0",

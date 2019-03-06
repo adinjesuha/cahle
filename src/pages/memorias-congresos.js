@@ -6,6 +6,41 @@ import Container from '../components/container'
 import Check from '../images/icons/check.svg'
 import Crel from '../images/CREL.jpg' 
 import HeroPage from '../components/heroPage'
+import Slider from '../components/Slider';
+import { device } from '../styles/breakpoints'
+
+import Abt from '../images/logos-olanchito/abt.png'
+import Alliansa from '../images/logos-olanchito/alliansa.jpg'
+import Aseal from '../images/logos-olanchito/aseal.jpg'
+import Atlantida from '../images/logos-olanchito/atlantida.png'
+import Bayer from '../images/logos-olanchito/bayer.png'
+import Cadelga from '../images/logos-olanchito/cadelga.png'
+import Cafogah from '../images/logos-olanchito/cafogah.jpg'
+import Camosa from '../images/logos-olanchito/camosa.jpg'
+import Catie from '../images/logos-olanchito/catie.jpg'
+import Colono from '../images/logos-olanchito/colono.png'
+import Confianza from '../images/logos-olanchito/confianza.png'
+import Coolbot from '../images/logos-olanchito/coolbot.png'
+import Disatyr from '../images/logos-olanchito/disatyr.jpg'
+import Fenagh from '../images/logos-olanchito/fenagh.png'
+import Finca from '../images/logos-olanchito/finca.png'
+import Fn from '../images/logos-olanchito/fn.png'
+import Induvet from '../images/logos-olanchito/induvet.jpg'
+import Lacthosa from '../images/logos-olanchito/lacthosa.png'
+import Leyde from '../images/logos-olanchito/leyde.png'
+import Moncatex from '../images/logos-olanchito/moncatex.png'
+import Moravia from '../images/logos-olanchito/moravia.jpg'
+import Nativet from '../images/logos-olanchito/nativet.png'
+import Pagro from '../images/logos-olanchito/pagro.jpg'
+import Sag from '../images/logos-olanchito/sag.png'
+import Sago from '../images/logos-olanchito/sago.png'
+import Semex from '../images/logos-olanchito/semex.jpg'
+import Solintsa from '../images/logos-olanchito/solintsa.jpg'
+import TecAgricola from '../images/logos-olanchito/tecnologia-agricola.png'
+import TecLechera from '../images/logos-olanchito/tecnologia-lechera.jpg'
+import Tecun from '../images/logos-olanchito/tecun.jpg'
+import UnahTec from '../images/logos-olanchito/unah-tec-agua.jpeg'
+import Zamorano from '../images/logos-olanchito/zamorano.png'
 
 const Wrapper = styled.div`
   padding: 70px 0;
@@ -34,6 +69,17 @@ const Wrapper = styled.div`
   }
 `
 
+const ConfigSliderContent = styled.div`
+  width: 33.33%;
+  height: 200px; 
+  margin: 0 0.5em; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  
+`
+
+const images = [Abt, Alliansa, Aseal, Atlantida, Bayer, Cadelga, Cafogah, Camosa, Catie, Colono, Confianza, Coolbot, Disatyr, Fenagh, Finca, Fn, Induvet, Lacthosa, Leyde, Moncatex, Moravia, Nativet, Pagro, Sag, Sago, Semex, Solintsa, TecAgricola, TecLechera, Tecun, UnahTec, Zamorano];
 
 export default () => {
   return (
@@ -84,6 +130,29 @@ export default () => {
               <a style={{color: "var(--blue)"}} target="_blank" rel="noopener noreferrer" href="https://downloads.ctfassets.net/zg4fwo9e8dmk/3wMswr72WtWxHhscZH6fVF/baadc8944624aedcce94c8d1a1139e47/Minerales_en_la_produccio__n_bovina_por_Ivan_Dario_Pino_Giraldo.pdf">Minerales en la producción bovina por Ivan Dario Pino Giraldo.</a>
             </li>
           </ul>
+
+          <Container>
+            <h2 style={{textAlign: 'center', color: 'var(--blue)'}}>PATROCINADORES</h2>
+            <div style={{margin: '60px 0'}}>
+              <div style={{ display: 'flex', justifyContent: 'space-between' }} />
+              <Slider
+                options={{
+                  autoPlay: 4000,
+                  pauseAutoPlayOnHover: true,
+                  fullscreen: true,
+                  adaptiveHeight: true,
+                  groupCells: true,
+                  pageDots: false
+                }}
+              >
+                {images.map((image, index) => (
+                  <ConfigSliderContent  key={index}>
+                    <img src={image} alt=""/>
+                  </ConfigSliderContent>
+                ))}
+              </Slider>
+            </div>
+          </Container>
 
           <h3>VI Congreso Nacional Lechero, Choluteca, Choluteca (2018)</h3>
 
