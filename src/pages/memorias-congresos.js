@@ -6,7 +6,7 @@ import Container from '../components/container'
 import Check from '../images/icons/check.svg'
 import Crel from '../images/CREL.jpg' 
 import HeroPage from '../components/heroPage'
-import Slider from '../components/Slider';
+import Slider from '../components/slider';
 
 import Abt from '../images/logos-olanchito/abt.png'
 import Alliansa from '../images/logos-olanchito/alliansa.jpg'
