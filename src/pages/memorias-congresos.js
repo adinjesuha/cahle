@@ -28,7 +28,7 @@ import Induvet from '../images/logos-olanchito/induvet.jpg'
 import Lacthosa from '../images/logos-olanchito/lacthosa.png'
 import Leyde from '../images/logos-olanchito/leyde.png'
 import Moncatex from '../images/logos-olanchito/moncatex.png'
-import Moravia from '../images/logos-olanchito/moravia.jpg'
+// import Moravia from '../images/logos-olanchito/moravia.jpg'
 import Nativet from '../images/logos-olanchito/nativet.png'
 import Pagro from '../images/logos-olanchito/pagro.jpg'
 import Sag from '../images/logos-olanchito/sag.png'
@@ -36,7 +36,7 @@ import Sago from '../images/logos-olanchito/sago.png'
 import Semex from '../images/logos-olanchito/semex.jpg'
 import Solintsa from '../images/logos-olanchito/solintsa.jpg'
 import TecAgricola from '../images/logos-olanchito/tecnologia-agricola.png'
-import TecLechera from '../images/logos-olanchito/tecnologia-lechera.jpg'
+// import TecLechera from '../images/logos-olanchito/tecnologia-lechera.jpg'
 import Tecun from '../images/logos-olanchito/tecun.jpg'
 import UnahTec from '../images/logos-olanchito/unah-tec-agua.jpeg'
 import Zamorano from '../images/logos-olanchito/zamorano.png'
@@ -78,7 +78,7 @@ const ConfigSliderContent = styled.div`
   
 `
 
-const images = [Abt, Alliansa, Aseal, Atlantida, Bayer, Cadelga, Cafogah, Camosa, Catie, Colono, Confianza, Coolbot, Disatyr, Fenagh, Finca, Fn, Induvet, Lacthosa, Leyde, Moncatex, Moravia, Nativet, Pagro, Sag, Sago, Semex, Solintsa, TecAgricola, TecLechera, Tecun, UnahTec, Zamorano];
+const images = [Abt, Alliansa, Aseal, Atlantida, Bayer, Cadelga, Cafogah, Camosa, Catie, Colono, Confianza, Coolbot, Disatyr, Fenagh, Finca, Fn, Induvet, Lacthosa, Leyde, Moncatex, Nativet, Pagro, Sag, Sago, Semex, Solintsa, TecAgricola, Tecun, UnahTec, Zamorano];
 
 export default () => {
   return (
