@@ -264,13 +264,3 @@ const Footer = () => (
 export default Footer
 
 // CAHLEtester1234
-
-{/* <NewsLetterForm>
-  <form method="POST" name="contact-footer" data-netlify="true" data-netlify-honeypot="bot-field">
-    <div className="field-wrapper">
-      <input className="relative-field" name="contact-form" placeholder="Ingresa tu correo"  type="email" id="email" name="email" required />
-      <input type="hidden" name="bot-field" />
-      <button type="submit" className="btn">Suscribirse</button>
-    </div>
-  </form>
-</NewsLetterForm> */}

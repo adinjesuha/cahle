@@ -7,7 +7,6 @@ import Check from '../images/icons/check.svg'
 import Crel from '../images/CREL.jpg' 
 import HeroPage from '../components/heroPage'
 import Slider from '../components/Slider';
-import { device } from '../styles/breakpoints'
 
 import Abt from '../images/logos-olanchito/abt.png'
 import Alliansa from '../images/logos-olanchito/alliansa.jpg'
