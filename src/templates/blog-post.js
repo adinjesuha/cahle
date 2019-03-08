@@ -97,7 +97,7 @@ const PostPage = ({data}) => {
         <BlogSection>
           <ContentfulDiv dangerouslySetInnerHTML={{ __html: body.childMarkdownRemark.html }} />
           <ShareButtonsContainer>
-            <h3>Compartelo en tus redes</h3>
+            <h3 style={{fontWeight: 400}}>Compartelo en tus redes</h3>
             <ul>
               <li className="social-share">
                 <FacebookShareButton 

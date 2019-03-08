@@ -99,6 +99,10 @@ const NewsLetterForm =  styled.div`
       cursor: pointer;
       text-align: center;
       transition: all 0.3s ease;
+      &:hover{
+        background: var(--green);
+        color: var(--blue);
+      }
     }
   }
 `
@@ -225,7 +229,9 @@ const Footer = () => (
           <div>
             <h2>Suscribete</h2>
             <p>Suscríbete para recibir las últimas noticias y actualizaciones.</p>
+
             <ContactForm />
+
             <Social>
               <ul>
                 <li>

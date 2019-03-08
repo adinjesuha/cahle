@@ -46,7 +46,7 @@ const LogoWrapper = styled.div`
   }
 `
 
-export default class Header extends React.Component{ 
+export default class Header extends React.Component{
   render(){
     return (
       <HeaderEl>
