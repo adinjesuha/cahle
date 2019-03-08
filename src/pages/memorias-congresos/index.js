@@ -44,7 +44,7 @@ const CardContainer = styled.ul`
       transition: opacity 0.3s ease;
     }
     &:hover::before{
-      opacity: 0.5;
+      opacity: 0.6;
     }
     @media ${device.tablet}{
       flex: 0 0 47%;
