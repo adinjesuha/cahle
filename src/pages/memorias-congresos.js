@@ -2,17 +2,17 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
-import Layout from '../../components/layout'
-import Container from '../../components/container'
-import Crel from '../../images/CREL.jpg' 
-import HeroPage from '../../components/heroPage'
-import { device } from '../../styles/breakpoints'
+import Layout from '../components/layout'
+import Container from '../components/container'
+import Crel from '../images/CREL.jpg' 
+import HeroPage from '../components/heroPage'
+import { device } from '../styles/breakpoints'
 
-import Congresos from '../../images/congresos-bg/congreso.jpg'
-import Olanchito from '../../images/congresos-bg/olanchito.jpg'
-import RibeteV from '../../images/congresos-bg/ribete-v.png'
-import RibeteVI from '../../images/congresos-bg/ribete-vi.png'
-import RibeteVII from '../../images/congresos-bg/ribete-vii.png'
+import Congresos from '../images/congresos-bg/congreso.jpg'
+import Olanchito from '../images/congresos-bg/olanchito.jpg'
+import RibeteV from '../images/congresos-bg/ribete-v.png'
+import RibeteVI from '../images/congresos-bg/ribete-vi.png'
+import RibeteVII from '../images/congresos-bg/ribete-vii.png'
 
 const CardContainer = styled.ul`
   display: flex;
@@ -99,14 +99,14 @@ export default () => {
       <Container>
         <CardContainer>
           <li className="card-item">
-            <Link to="/memorias-congresos/anteriores">
+            <Link to="/congresos-anteriores">
               <div className="card-item-content" style={{justifyContent: 'center'}}>
                 <h2>Congresos Anteriores</h2>
               </div>
             </Link>
           </li>
           <li className="card-item">
-            <Link to="/memorias-congresos/congreso-olanchito">
+            <Link to="/congreso-olanchito">
               <div className="card-item-content">
                 <figure>
                   <img src={RibeteV} alt="Congreso lechero CAHLE"/>
@@ -116,7 +116,7 @@ export default () => {
             </Link>
           </li>
           <li className="card-item">
-            <Link to="/memorias-congresos/congreso-choluteca">
+            <Link to="/congreso-choluteca">
               <div className="card-item-content">
                 <figure>
                   <img src={RibeteVI} alt="Congreso lechero CAHLE"/>
