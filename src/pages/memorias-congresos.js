@@ -60,6 +60,7 @@ const CardContainer = styled.ul`
       left: 30px;
     }
     a{
+      font-weight: 400;
       color: var(--blue);
       transition: color 0.3s ease;
       &:hover{
