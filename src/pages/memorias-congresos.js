@@ -20,73 +20,50 @@ const CardContainer = styled.ul`
   width: 100%;
   margin: 70px 0;
   .card-item{
-    background-repeat: no-repeat;
-    background-size: cover;
     flex: 0 0 100%;
     margin: 0 0 2vw 0;
-    height: 250px;
-    position: relative;
     border-radius: 5px;
-    > a {
-      width: 100%;
-      height: 100%;
-      display: inline-block;
-      color: white;
-    }
-    &::before{
-      content: '';
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      border-radius: 5px;
-      background: black;
-      opacity: 0.3;
-      transition: opacity 0.3s ease;
-    }
-    &:hover::before{
-      opacity: 0.6;
-    }
+    position: relative;
     @media ${device.tablet}{
       flex: 0 0 47%;
       margin: 0 2vw 2vw 0;
     }
-    &:first-child{
-      background-image: url(${Congresos});
-    }
-    &:nth-child(2){
-      background-image: url(${Olanchito});
-    }
-    &:nth-child(3){
-      background-image: url(${Olanchito});
-    }
-    &:nth-child(4){
-      background-image: url(${Olanchito});
-    }
-  }
-  .card-item-content{
-    height: 100%;
-    text-align: center;
-    position: relative;
-    h2{
-      font-weight: 500;
-      font-size: 22px;
-      position: absolute;
-      top: 50%;
-      right: 50%;
-      transform: translate(50%, -50%);
-      margin: 0;
+    .card-item-image{
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 250px;
+      border-radius: 5px;
+      position: relative;
+      padding-left: 20px;
+      &::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: black;
+        border-radius: 5px;
+        opacity: 0.3;
+        transition: opacity 0.3s ease;
+      }
+      &:hover:before{
+        opacity: 0.5;
+      }
     }
     figure{
-      display: inline-block;
+      width: 140px;
       margin: 0;
-      max-width: 110px;
       position: absolute;
-      top: 0;
-      left: 20px;
+      z-index: 1;
+      left: 30px;
     }
-    @media ${device.laptop}{
-      h2{
-        font-size: 28px;
+    a{
+      color: var(--blue);
+      transition: color 0.3s ease;
+      &:hover{
+        color: var(--green);
       }
     }
   }
@@ -100,38 +77,36 @@ export default () => {
         <CardContainer>
           <li className="card-item">
             <Link to="/congresos-anteriores">
-              <div className="card-item-content" style={{justifyContent: 'center'}}>
-                <h2>Congresos Anteriores</h2>
-              </div>
+              <div className="card-item-image" style={{backgroundImage: `url(${Congresos})`}}></div>
             </Link>
+            <Link to="/congresos-anteriores"><h2>Congresos Anteriores</h2></Link>
           </li>
           <li className="card-item">
             <Link to="/congreso-olanchito">
-              <div className="card-item-content">
-                <figure>
-                  <img src={RibeteV} alt="Congreso lechero CAHLE"/>
-                </figure>
-                <h2>Olanchito, <br/>Yoro 2017</h2>
-              </div>
+              <figure>
+                <img src={RibeteV} alt="Congreso lechero CAHLE"/>
+              </figure>
+              <div className="card-item-image" style={{backgroundImage: `url(${Olanchito})`}}></div>
             </Link>
+            <Link to="/congreso-olanchito"><h2>Olanchito, Yoro 2017</h2></Link>
           </li>
           <li className="card-item">
             <Link to="/congreso-choluteca">
-              <div className="card-item-content">
-                <figure>
-                  <img src={RibeteVI} alt="Congreso lechero CAHLE"/>
-                </figure>
-                <h2>Choluteca, <br/>Choluteca 2018</h2>
-              </div>
+              <figure>
+                <img src={RibeteVI} alt="Congreso lechero CAHLE"/>
+              </figure>
+              <div className="card-item-image" style={{backgroundImage: `url(${Olanchito})`}}></div>
             </Link>
+            <Link to="/congreso-choluteca"><h2>Choluteca, Choluteca 2018</h2></Link>
           </li>
           <li className="card-item">
-            <div className="card-item-content">
-                <figure>
-                  <img src={RibeteVII} alt="Congreso lechero CAHLE"/>
-                </figure>
-              <h2 style={{color: 'white'}}>La Ceiba, <br/>Atlantida 2019</h2>
-            </div>
+            <Link to="/congreso-olanchito">
+              <figure>
+                <img src={RibeteVII} alt="Congreso lechero CAHLE"/>
+              </figure>
+              <div className="card-item-image" style={{backgroundImage: `url(${Olanchito})`}}></div>
+            </Link>
+            <Link to="/congreso-olanchito"><h2>La Ceiba, Atlantida 2019</h2></Link>
           </li>
         </CardContainer>
       </Container>

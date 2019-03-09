@@ -4,9 +4,10 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import Container from '../components/container'
-import Check from '../images/icons/check.svg'
-import Crel from '../images/CREL.jpg' 
+import Check from '../images/icons/check.svg' 
+import Olanchito from '../images/olanchito.jpg'
 import HeroPage from '../components/heroPage'
+import { FaArrowLeft } from 'react-icons/fa';
 
 import Abt from '../images/logos-olanchito/abt.png'
 import Alliansa from '../images/logos-olanchito/alliansa.jpg'
@@ -72,11 +73,11 @@ const images = [Abt, Alliansa, Aseal, Atlantida, Bayer, Cadelga, Cafogah, Camosa
 export default () => {
   return (
     <Layout>
-      <HeroPage title="Congreso de Olanchito" tags="Memorias Congreso" bgImage={Crel}/>
+      <HeroPage title="Congreso de Olanchito" tags="Memorias Congreso" bgImage={Olanchito}/>
       <Wrapper>
         <Container>
          
-          <h3>V Congreso Nacional Lechero, Olanchito, Yoro 2017</h3>
+          <h3>Documentos para leer o descargar</h3>
         
           <ul>
             <li>
@@ -111,7 +112,7 @@ export default () => {
             </li>
           </ul>
 
-          <Link to="/memorias-congresos">Regresar</Link>    
+          <Link to="/memorias-congresos" style={{color: 'var(--green)'}}> <FaArrowLeft style={{verticalAlign: 'middle',marginRight: '5px'}}/> Regresar</Link>    
 
         </Container>
       </Wrapper>

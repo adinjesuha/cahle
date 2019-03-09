@@ -5,8 +5,9 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import Container from '../components/container'
 import Check from '../images/icons/check.svg'
-import Crel from '../images/CREL.jpg' 
+import Olanchito from '../images/olanchito.jpg'
 import HeroPage from '../components/heroPage'
+import { FaArrowLeft } from 'react-icons/fa';
 
 const Wrapper = styled.div`
   padding: 70px 0;
@@ -38,11 +39,11 @@ const Wrapper = styled.div`
 export default () => {
   return (
     <Layout>
-      <HeroPage title="Congreso de Choluteca" tags="Memorias Congreso" bgImage={Crel}/>
+      <HeroPage title="Congreso de Choluteca" tags="Memorias Congreso" bgImage={Olanchito}/>
       <Wrapper>
         <Container>
          
-        <h3>VI Congreso Nacional Lechero, Choluteca, Choluteca 2018</h3>
+        <h3>Documentos para leer o descargar</h3>
 
         <ul>
           <li>
@@ -68,7 +69,7 @@ export default () => {
           </li>
         </ul>
 
-          <Link to="/memorias-congresos">Regresar</Link>    
+        <Link to="/memorias-congresos" style={{color: 'var(--green)'}}> <FaArrowLeft style={{verticalAlign: 'middle',marginRight: '5px'}}/> Regresar</Link>     
 
         </Container>
       </Wrapper>
