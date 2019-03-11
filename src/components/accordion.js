@@ -153,6 +153,20 @@ class Accordion extends Component {
         }
       </AccordionWrapper>
       <Link 
+        to="/" 
+        style={{
+          textAlign: 'left',
+          color: 'white',
+          display: 'inline-block',
+          width: '100%',
+          padding: '20px 30px 20px 0', 
+          fontSize: '18px',
+          textTransform: 'uppercase',
+          fontWeight: 'bold'
+        }}>
+          VII Congreso
+        </Link>
+      <Link 
         to="/perfil-comercial" 
         style={{
           textAlign: 'left',
