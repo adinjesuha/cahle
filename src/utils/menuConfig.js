@@ -1,11 +1,11 @@
 export const acercaDe = [
   {
-    name: 'Historia, Visión y Misión',
-    link: '/vision-y-mision'
+    name: 'Historia, Visión, Misión y Objetivos',
+    link: '/historia-mision-vision-objetivos'
   },
   {
-    name: 'Objetivos',
-    link: '/objetivos'
+    name: 'Mensaje del Presidente',  
+    link: '/mensaje-presidente'
   },
   {
     name: 'Junta Directiva',  
@@ -27,8 +27,8 @@ export const asociados = [
     link: '/proyectos-ejecutados'
   },
   {
-    name: 'Crels',
-    link: '/crels'
+    name: 'CREL',
+    link: '/crel'
   },
   {
     name: 'Representaciones',

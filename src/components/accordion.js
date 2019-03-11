@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Link from 'gatsby-link'
 
 import { acercaDe, asociados, documentacion } from '../utils/menuConfig'
+
 import Logo from '../images/svg-icons/logo.svg'
 
 const Container = styled.div`

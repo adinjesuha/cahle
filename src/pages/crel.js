@@ -37,7 +37,7 @@ const Wrapper = styled.div`
 export default () => {
   return (
     <Layout>
-      <HeroPage title="CREL'S" tags="asociados" bgImage={Crel}/>
+      <HeroPage title="CREL" tags="asociados" bgImage={Crel}/>
       <Wrapper>
         <Container>
           

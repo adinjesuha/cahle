@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
+import { acercaDe, asociados, documentacion } from '../utils/menuConfig'
+
 const NavBar = styled.nav`
   position: relative;
   .navbar-nav{
@@ -85,18 +87,11 @@ export default class desktopNavAdvance extends Component {
             <span>ACERCA DE</span>
             <div className="dropdown">
               <ul>
-                <li>
-                  <Link to="/vision-y-mision">Historia, Visión y Misión</Link>
-                </li>
-                <li>
-                  <Link to="/objetivos">Objetivos</Link>
-                </li>
-                <li>
-                  <Link to="/junta-directiva">Junta Directiva</Link>
-                </li>
-                <li>
-                  <Link to="/personal-administrativo">Personal Administrativo</Link>
-                </li>
+                {acercaDe.map(item => (
+                  <li key={item.name}>
+                    <Link to={item.link}>{item.name}</Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </li>
@@ -104,18 +99,11 @@ export default class desktopNavAdvance extends Component {
             <span>ASOCIADOS</span>
             <div className="dropdown">
               <ul>
-                <li>
-                  <Link to="/beneficios">Beneficios</Link>
-                </li>
-                <li>
-                  <Link to="/proyectos-ejecutados">Proyectos Ejecutados</Link>
-                </li>
-                <li>
-                  <Link to="/crels">Crel's</Link>
-                </li>
-                <li>
-                  <Link to="/representaciones">Representaciones</Link>
-                </li>
+                {asociados.map(item => (
+                  <li key={item.name}>
+                    <Link to={item.link}>{item.name}</Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </li>
@@ -123,15 +111,11 @@ export default class desktopNavAdvance extends Component {
             <span>DOCUMENTACIÓN</span>
             <div className="dropdown">
               <ul>
-                <li>
-                  <Link to="/reglamentaciones">Reglamentaciones</Link>
-                </li>
-                <li>
-                  <Link to="/documentos-tecnicos">Documentos Técnicos</Link>
-                </li>
-                <li>
-                  <Link to="/memorias-congresos">Memorias Congresos</Link>
-                </li>
+                {documentacion.map(item => (
+                  <li key={item.name}>
+                    <Link to={item.link}>{item.name}</Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </li>

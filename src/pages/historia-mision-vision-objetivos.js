@@ -3,39 +3,12 @@ import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import Container from '../components/container'
-import Vision from '../images/vision.jpg'
+import Objetivos from '../images/objetivos.jpg'
 import Check from '../images/icons/check.svg'
+import HeroPage from '../components/heroPage' 
 
 const Wrapper = styled.div`
   padding: 70px 0;
-`
-const Hero = styled.div`
-  position: relative;
-  background: #000;
-  color: #fff;
-  text-align: center;
-  background-image: url(${Vision});
-  background-position: center center;
-  background-size: cover;
-  padding: 300px 0 100px;
-  &::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
-  }
-`
-const Title = styled.h1`
-  font-size: 54px;
-  line-height: 54px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  position: relative;
 `
 
 const StyleLi = styled.li`
@@ -57,13 +30,20 @@ const StyleLi = styled.li`
 export default () => {
   return (
     <Layout>
-      <Hero>
-        <Container>
-          <Title>Objetivos</Title>
-        </Container>
-      </Hero>
+      <HeroPage title="Historia, Misión, Visión y Objetivos" tags="acerca de" bgImage={Objetivos}/>
       <Container>
         <Wrapper>
+          <div>
+            <h2>Historia</h2>
+            <p>La Cámara Hondureña de la Leche (CAHLE) fue fundada por un grupo de productores nacionales en el año de 1999, en la ciudad de la Ceiba, Atlántida al norte de Honduras.</p>
+            <p>En el año 2012 fue reactivada adquiriendo su personería jurídica ante la Secretaría de Industria y Comercio.</p>
+          </div>
+          <div>
+            <h2>Visión</h2>
+            <p>Ser la entidad líder que fomenta el desarrollo de la producción nacional y el consumo de lácteos mediante la investigación y la proyección en alianza con otras instituciones cuyos objetivos enmarcan el desarrollo del sector. </p>
+            <h2>Misión</h2>
+            <p>Somos la organización que representa al productor y promueve el desarrollo y crecimiento sostenible de la producción proponiendo políticas que vayan en pro de los productores de leche y sus derivados.</p>
+          </div>
           <div>
             <h2>Objetivo General</h2>
             <p>Fomentar el desarrollo, la competitividad, la rentabilidad y la sostenibilidad del sector lechero, a través de la eficiencia en la producción, transformación y comercialización de productos lácteos. </p>
