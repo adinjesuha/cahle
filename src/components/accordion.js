@@ -42,7 +42,6 @@ const AccordionWrapper = styled.dl`
       transition: transform .5s ease-in-out;
       position: absolute;
       right: 15px;
-      font-family: monospace;
     }
 
     &.is-expanded {
@@ -147,7 +146,7 @@ class Accordion extends Component {
               content={item.content}
               onClick={this.toggle(index + 1)} 
               expand={this.state[`block${index+1}`]}
-              key={index}
+              key={item.title}
             />
           ))
         }

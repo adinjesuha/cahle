@@ -73,7 +73,6 @@ const FutureTitle = styled.div`
 `
 
 const HeroPage = props => {
-  console.log(props)
   return (
     <Wrapper>
       <HeroImage bgImage={props.bgImage}/>

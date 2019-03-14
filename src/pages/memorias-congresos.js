@@ -77,19 +77,13 @@ export default () => {
       <Container>
         <CardContainer>
           <li className="card-item">
-            <Link to="/congresos-anteriores">
-              <div className="card-item-image" style={{backgroundImage: `url(${Congresos})`}}></div>
-            </Link>
-            <Link to="/congresos-anteriores"><h2>Congresos Anteriores</h2></Link>
-          </li>
-          <li className="card-item">
-            <Link to="/congreso-olanchito">
+            <Link to="/memorias-congresos">
               <figure>
-                <img src={RibeteV} alt="Congreso lechero CAHLE"/>
+                <img src={RibeteVII} alt="Congreso lechero CAHLE"/>
               </figure>
               <div className="card-item-image" style={{backgroundImage: `url(${Olanchito})`}}></div>
             </Link>
-            <Link to="/congreso-olanchito"><h2>Olanchito, Yoro 2017</h2></Link>
+            <Link to="/memorias-congresos"><h2>La Ceiba, Atlantida 2019</h2></Link>
           </li>
           <li className="card-item">
             <Link to="/congreso-choluteca">
@@ -101,13 +95,19 @@ export default () => {
             <Link to="/congreso-choluteca"><h2>Choluteca, Choluteca 2018</h2></Link>
           </li>
           <li className="card-item">
-            <Link to="/memorias-congresos">
+            <Link to="/congreso-olanchito">
               <figure>
-                <img src={RibeteVII} alt="Congreso lechero CAHLE"/>
+                <img src={RibeteV} alt="Congreso lechero CAHLE"/>
               </figure>
               <div className="card-item-image" style={{backgroundImage: `url(${Olanchito})`}}></div>
             </Link>
-            <Link to="/memorias-congresos"><h2>La Ceiba, Atlantida 2019</h2></Link>
+            <Link to="/congreso-olanchito"><h2>Olanchito, Yoro 2017</h2></Link>
+          </li>
+          <li className="card-item">
+            <Link to="/congresos-anteriores">
+              <div className="card-item-image" style={{backgroundImage: `url(${Congresos})`}}></div>
+            </Link>
+            <Link to="/congresos-anteriores"><h2>Congresos Anteriores</h2></Link>
           </li>
         </CardContainer>
       </Container>
