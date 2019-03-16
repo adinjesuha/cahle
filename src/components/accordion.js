@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 
-import { acercaDe, asociados, documentacion } from '../utils/menuConfig'
+import { acercaDe, asociados, documentacion, congreso } from '../utils/menuConfig'
 
 import Logo from '../images/svg-icons/logo.svg'
 
@@ -133,7 +133,12 @@ class Accordion extends Component {
       { 
         title: 'Documentación',
         content: documentacion
-      }
+      },
+      { 
+        title: 'VII Congreso',
+        content: congreso
+      },
+
     ];
     
     return <Container>

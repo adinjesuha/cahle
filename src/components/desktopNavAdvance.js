@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-import { acercaDe, asociados, documentacion } from '../utils/menuConfig'
+import { acercaDe, asociados, documentacion, congreso } from '../utils/menuConfig'
 
 const NavBar = styled.nav`
   position: relative;
@@ -119,8 +119,17 @@ export default class desktopNavAdvance extends Component {
               </ul>
             </div>
           </li>
-          <li>
-            <Link to="/">VII CONGRESO</Link>
+          <li className="has_dropdown">
+            <span>VII CONGRESO</span>
+            <div className="dropdown">
+              <ul>
+                {congreso.map(item => (
+                  <li key={item.name}>
+                    <Link to={item.link}>{item.name}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </li>
           <li>
             <Link to="/perfil-comercial">PERFIL COMERCIAL</Link>

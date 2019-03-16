@@ -7,8 +7,6 @@ import HeroPage from '../components/heroPage'
 import { device } from '../styles/breakpoints'
 import { FaCaretDown } from 'react-icons/fa'
 
-
-
 import Beneficios from '../images/beneficios.jpg'
 
 const Wrapper = styled.section`

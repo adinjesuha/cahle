@@ -192,7 +192,7 @@ class ContactForm extends React.Component {
             </label>
           </p>
             <input className="relative-field" placeholder="Ingresa tu correo" type="email" name="email" onChange={this.handleChange} />
-            <button type="submit" className="btn">Suscribete</button>
+            <button type="submit" className="btn">Suscríbete</button>
           </div>
         </form>
       </NewsLetterForm>
@@ -227,8 +227,8 @@ const Footer = () => (
         </Box>
         <Box>
           <div>
-            <h2>Suscribete</h2>
-            <p>Suscríbete para recibir las últimas noticias y actualizaciones.</p>
+            <h2>suscríbete</h2>
+            <p>suscríbete para recibir las últimas noticias y actualizaciones.</p>
 
             <ContactForm />
 

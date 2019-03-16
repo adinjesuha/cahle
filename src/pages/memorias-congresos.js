@@ -10,6 +10,7 @@ import { device } from '../styles/breakpoints'
 
 import Congresos from '../images/congreso.jpg'
 import Olanchito from '../images/olanchito.jpg'
+import Choluteca from '../images/congreso-choluteca.jpg'
 import RibeteV from '../images/congresos-bg/ribete-v.png'
 import RibeteVI from '../images/congresos-bg/ribete-vi.png'
 import RibeteVII from '../images/congresos-bg/ribete-vii.png'
@@ -90,7 +91,7 @@ export default () => {
               <figure>
                 <img src={RibeteVI} alt="Congreso lechero CAHLE"/>
               </figure>
-              <div className="card-item-image" style={{backgroundImage: `url(${Olanchito})`}}></div>
+              <div className="card-item-image" style={{backgroundImage: `url(${Choluteca})`}}></div>
             </Link>
             <Link to="/congreso-choluteca"><h2>Choluteca, Choluteca 2018</h2></Link>
           </li>

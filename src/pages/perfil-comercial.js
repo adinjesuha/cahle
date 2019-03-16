@@ -334,12 +334,12 @@ const blog = () => (
           <h3 style={{fontStyle: 'italic'}}>Bibliografía</h3>
           <ul>
             <li>Banco Mundial (2016). Doing Business. [en línea], Washington, D.C., World Bank.</li>
-            <li>Disponible en: <a style={{color: "var(--green)"}} target="_blank" rel="noopener noreferrer" href="http://www.doingbusiness.org">http://www.doingbusiness.org</a></li>
-            <li>2016. World Development Indicators. [en línea], Washington, D.C., Disponible en: <a style={{color: "var(--green)"}} target="_blank" rel="noopener noreferrer" href="http://data.worldbank.org/datacatalog/world-development-indicators">http://data.worldbank.org/datacatalog/world-development-indicators</a>.</li>
+            <li>Disponible en: <a style={{color: "var(--blue)"}} target="_blank" rel="noopener noreferrer" href="http://www.doingbusiness.org">http://www.doingbusiness.org</a></li>
+            <li>2016. World Development Indicators. [en línea], Washington, D.C., Disponible en: <a style={{color: "var(--blue)"}} target="_blank" rel="noopener noreferrer" href="http://data.worldbank.org/datacatalog/world-development-indicators">http://data.worldbank.org/datacatalog/world-development-indicators</a>.</li>
             <li>CEPAL. Comisión económica para América Latina y El Caribe. 2018. La cadena regional de valor de la industria de lácteos en Centroamérica. </li>
             <li>FECALAC. Federación centroamericana del sector lácteo. 2018. Situación del sector lácteo centroamericano. Taller regional Buenas prácticas pecuarias en ganado bovino de leche y calidad de leche cruda. CR</li>
             <li>FAO. Food and Agriculture Organization of the United Nations. 2016. El sector mundial: datos. </li>
-            <li>IFAD. International Fund for Agricultural Development. 2014. Gender and Rural Development Brief - Central America and Mexico. [en línea], Roma, Italia, Disponible en: <a style={{color: "var(--green)"}} target="_blank" rel="noopener noreferrer" href="https://www.ifad.org/documents/10180/25dffac9-e28c-4c5c-b7f8-7332e62f09ff">https://www.ifad.org/documents/10180/25dffac9-e28c-4c5c-b7f8-7332e62f09ff</a></li>
+            <li>IFAD. International Fund for Agricultural Development. 2014. Gender and Rural Development Brief - Central America and Mexico. [en línea], Roma, Italia, Disponible en: <a style={{color: "var(--blue)"}} target="_blank" rel="noopener noreferrer" href="https://www.ifad.org/documents/10180/25dffac9-e28c-4c5c-b7f8-7332e62f09ff">https://www.ifad.org/documents/10180/25dffac9-e28c-4c5c-b7f8-7332e62f09ff</a></li>
             <li>Omore A.; Mulindo C.; Islam F.; Khan I. 2011. Employment generation through small scale dairy marketing and processing. Experiences from Kenya, Bangladesh and Ghana. ILRI: Nairobi y FAO: Roma.</li>
           </ul>
         </Container>

@@ -49,4 +49,27 @@ export const documentacion = [
     name: 'Memorias Congresos',
     link: '/memorias-congresos'
   },
+]
+
+export const congreso = [
+  {
+    name: 'Acerca del Congreso',
+    link: '/'
+  },
+  {
+    name: 'Información Práctica',
+    link: '/'
+  },
+  {
+    name: 'Trabajos',
+    link: '/'
+  },
+  {
+    name: 'Patrocinadores',
+    link: '/'
+  },
+  {
+    name: 'Inscripciones',
+    link: '/'
+  },
 ] 

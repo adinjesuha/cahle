@@ -35,8 +35,9 @@ export default () => {
         <Wrapper>
           <div>
             <h2>Historia</h2>
-            <p>La Cámara Hondureña de la Leche (CAHLE) fue fundada por un grupo de productores nacionales en el año de 1999, en la ciudad de la Ceiba, Atlántida al norte de Honduras.</p>
-            <p>En el año 2012 fue reactivada adquiriendo su personería jurídica ante la Secretaría de Industria y Comercio.</p>
+            <p>La Cámara Hondureña de la Leche (CAHLE) fue fundada por un grupo de productores nacionales en el año de 1999, en la ciudad de la Ceiba, Atlántida al norte de Honduras, siendo el Presidente electo en ese momento el Ing. Roberto Gallardo.</p>
+            <p>Con el objetivo de unir criterios como fuerza importante en el país los productores, procesadores y comercializadores de leche a nivel nacional, conformaron la Cámara Hondureña de la Leche. Según los estatutos de la Cámara, el propósito fundamental de la organización es promover la producción y el consumo de la leche y sus derivados, así como mejorar los canales de comercialización y mejoramiento de las condiciones industriales.</p>
+            <p>El 04 de septiembre del año de 2012 en la ciudad de Tegucigalpa, capital de Honduras se reactivó la Cámara Hondureña de la Leche, bajo la iniciativa de un grupo de productores de diferentes regiones del país, siendo la Junta Directiva integrada por: Presidente Ing. Anabel Gallardo, Vicepresidente Ing. Luis Arturo Donaire, Secretario Miguel Ángel Arévalo, Vocal I Vicente Murillo Cabrera, Vocal II Leopoldo Duran, Vocal III Jose Luis Gallardo, Vocal IV Mario Sánchez; y la Junta Fiscalizadora  Paolo Santalena, Dionisio Acosta, Carlos Estrada.</p>
           </div>
           <div>
             <h2>Visión</h2>

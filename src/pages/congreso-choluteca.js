@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import Container from '../components/container'
-import Olanchito from '../images/olanchito.jpg'
+import Choluteca from '../images/congreso-choluteca.jpg'
 import HeroPage from '../components/heroPage'
 import { FaArrowLeft, FaFilePdf } from 'react-icons/fa';
 import { device } from '../styles/breakpoints'
@@ -56,7 +56,7 @@ const ListBlockWrapper = styled.ul`
 export default () => {
   return (
     <Layout>
-      <HeroPage title="Congreso de Choluteca" tags="Memorias Congreso" bgImage={Olanchito}/>
+      <HeroPage title="Congreso de Choluteca" tags="Memorias Congreso" bgImage={Choluteca}/>
       <Wrapper>
         <Container>
          
