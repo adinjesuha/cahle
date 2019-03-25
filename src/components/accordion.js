@@ -134,10 +134,10 @@ class Accordion extends Component {
         title: 'Documentación',
         content: documentacion
       },
-      { 
-        title: 'VII Congreso',
-        content: congreso
-      },
+      // { 
+      //   title: 'VII Congreso',
+      //   content: congreso
+      // },
 
     ];
     
@@ -156,20 +156,6 @@ class Accordion extends Component {
           ))
         }
       </AccordionWrapper>
-      <Link 
-        to="/" 
-        style={{
-          textAlign: 'left',
-          color: 'white',
-          display: 'inline-block',
-          width: '100%',
-          padding: '20px 30px 20px 0', 
-          fontSize: '18px',
-          textTransform: 'uppercase',
-          fontWeight: 'bold'
-        }}>
-          VII Congreso
-        </Link>
       <Link 
         to="/perfil-comercial" 
         style={{

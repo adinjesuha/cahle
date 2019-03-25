@@ -26,7 +26,7 @@ const CardContainer = styled.ul`
     border-radius: 5px;
     position: relative;
     @media ${device.tablet}{
-      flex: 0 0 47%;
+      flex: 0 0 46%;
       margin: 0 2vw 2vw 0;
     }
     .card-item-image{
@@ -60,14 +60,6 @@ const CardContainer = styled.ul`
       z-index: 1;
       left: 30px;
     }
-    a{
-      font-weight: 400;
-      color: var(--blue);
-      transition: color 0.3s ease;
-      &:hover{
-        color: var(--green);
-      }
-    }
   }
 `
 
@@ -84,7 +76,7 @@ export default () => {
               </figure>
               <div className="card-item-image" style={{backgroundImage: `url(${Olanchito})`}}></div>
             </Link>
-            <Link to="/memorias-congresos"><h2>La Ceiba, Atlantida 2019</h2></Link>
+            <Link to="/memorias-congresos"><h2 className="sub-title">La Ceiba, Atlantida 2019</h2></Link>
           </li>
           <li className="card-item">
             <Link to="/congreso-choluteca">
@@ -93,7 +85,7 @@ export default () => {
               </figure>
               <div className="card-item-image" style={{backgroundImage: `url(${Choluteca})`}}></div>
             </Link>
-            <Link to="/congreso-choluteca"><h2>Choluteca, Choluteca 2018</h2></Link>
+            <Link to="/congreso-choluteca"><h2 className="sub-title">Choluteca, Choluteca 2018</h2></Link>
           </li>
           <li className="card-item">
             <Link to="/congreso-olanchito">
@@ -102,13 +94,13 @@ export default () => {
               </figure>
               <div className="card-item-image" style={{backgroundImage: `url(${Olanchito})`}}></div>
             </Link>
-            <Link to="/congreso-olanchito"><h2>Olanchito, Yoro 2017</h2></Link>
+            <Link to="/congreso-olanchito"><h2 className="sub-title">Olanchito, Yoro 2017</h2></Link>
           </li>
           <li className="card-item">
             <Link to="/congresos-anteriores">
               <div className="card-item-image" style={{backgroundImage: `url(${Congresos})`}}></div>
             </Link>
-            <Link to="/congresos-anteriores"><h2>Congresos Anteriores</h2></Link>
+            <Link to="/congresos-anteriores"><h2 className="sub-title">Congresos Anteriores</h2></Link>
           </li>
         </CardContainer>
       </Container>

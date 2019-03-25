@@ -17,7 +17,7 @@ const NavBar = styled.nav`
       padding: 20px 0;
       margin-right: 30px;
       > a, span {
-        font-weight: 500;
+        font-weight: 600;
         padding: 0;
         font-size: 13px;
         line-height: 42px;
@@ -119,7 +119,7 @@ export default class desktopNavAdvance extends Component {
               </ul>
             </div>
           </li>
-          <li className="has_dropdown">
+          {/*<li className="has_dropdown">
             <span>VII CONGRESO</span>
             <div className="dropdown">
               <ul>
@@ -130,7 +130,7 @@ export default class desktopNavAdvance extends Component {
                 ))}
               </ul>
             </div>
-          </li>
+          </li>*/}
           <li>
             <Link to="/perfil-comercial">PERFIL COMERCIAL</Link>
           </li>

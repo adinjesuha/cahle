@@ -12,20 +12,22 @@
 	--sky-blue: #1b8bf9; /*<-- brand color */
   --blue: #060c46; /*<-- brand color */
   --light-blue: #a0c8dc;
-  --green: #67d54b; /*<-- brand color */
+  --green: #67d54b; /*<-- brand color */ 
   --bg: #333a35;
-  --bg-light: #A1A6BB;
 
-	--heading: #0D1726; /*<-- texto de encabezados */
-  --text: #A1A6BB; /*<-- texto de cuerpo */
-  
-	--base-light: #A1A6BB; /*<-- texto de cuerpo claro */
+  --bg-light: #EAEDF3; /*<-- en uso */
+  --active: #1665D8;
+
+  --title: #3E3F42; /*<-- en uso */
+  --dark-text: #3E3F42; /*<-- en uso */
+  --light-text: #6B6C6F; /*<-- en uso */
+  --secondary-text: #9EA0A5; /*<-- en uso */
 }
 
  html {
   line-height: 1.6; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -59,6 +61,14 @@ main {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Grouping content
@@ -447,3 +457,60 @@ template {
 /***************************************
 	END RESPONSIVE TABLES
 *****************************************/
+
+/***************************************
+ START FONT STYLES
+*****************************************/
+
+.main-title{
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--title);
+}
+
+.sub-title{
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--title);
+}
+
+.sub-title__small{
+  font-size: 18px;
+}
+
+.main-text{
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.main-text__dark{
+  color: var(--dark-text);
+}
+
+.main-text__light{
+  color: var(--light-text);
+}
+
+.bold-text{
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dark-text);
+}
+
+.tags{
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--secondary-text);
+}
+
+.list{
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--light-text);
+}
+
+/***************************************
+ END FONT STYLES
+*****************************************/
+

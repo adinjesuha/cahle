@@ -63,6 +63,10 @@ const ContentfulDiv = styled.div`
       }
     }
   }
+  p{
+    font-size: 16px;
+    font-weight: 300;
+  }
 `
 
 const ShareButtonsContainer = styled.div`
@@ -146,7 +150,6 @@ export const query = graphql`
     contentfulBlogPost(slug: {eq: $slug}){
       slug
       title
-      createdAt(formatString: "MMMM DD, YYYY")
       heroImage{
         fluid(maxWidth: 2000){
           ...GatsbyContentfulFluid

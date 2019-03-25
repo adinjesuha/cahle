@@ -26,7 +26,7 @@ const Layout = ({ children }) => (
       <title>{config.siteTitle}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />  
-      <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700|Montserrat:400,500,500i,700" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600|Roboto:300,400,500" rel="stylesheet" /> 
     </Helmet>
     <LayoutWrapper> 
       <MobileNav />

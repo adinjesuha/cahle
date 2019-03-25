@@ -78,28 +78,28 @@ const Title = styled.h2`
 `
 
 const Tag = styled.span`
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--blue);
 `
-const Excerpt = styled.p`
-  font-weight: 400;
-  margin: 12px 0;
-  color: #555555;
+const CustomDate = styled.p`
+  background: red;
 `
 
-const CardPost = ({slug, createdAt, heroImage, title, body, tags, ...props}) => (
+const Excerpt = styled.p`
+  margin: 12px 0;
+`
+
+const CardPost = ({slug, heroImage, title, body, tags, customDate, ...props}) => (
   <Post featured={props.featured}>
     <Link to={slug}>
       <Img fluid={heroImage.fluid}/>
     </Link>
     <Data>
-      <Tag>{tags}</Tag>
+      <CustomDate>{customDate}</CustomDate>
+      <Tag className="tags">{tags}</Tag>
       <Link to={slug}>
-        <Title>{title}</Title>
+        <Title className="sub-title">{title}</Title>
       </Link>
-      <Excerpt
+      <Excerpt 
+        className="main-text main-text__light"
         dangerouslySetInnerHTML={{
           __html: body.childMarkdownRemark.excerpt
         }}

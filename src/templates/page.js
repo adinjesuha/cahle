@@ -51,7 +51,7 @@ const Page = ({data}) => {
         </Container>
       </Wrapper>
     </Layout>
-  )
+  ) 
 }
 export default Page
 

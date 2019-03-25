@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 export default () => {
   return (
     <Layout>
-      <HeroPage title="Junta Directiva" tags="acerca de" bgImage={Junta}/>
+      <HeroPage title="Junta Directiva Actual" tags="acerca de" bgImage={Junta}/>
       <Wrapper>
         <Container>
 
@@ -40,7 +40,7 @@ export default () => {
               
               <div className="row">
                 <div className="cell" data-title="Nombre">
-                Vicente Murillo Cabrera
+                Jorge Antonio Handal
                 </div>
                 <div className="cell" data-title="Cargo">
                 Vice-presidente
@@ -49,7 +49,7 @@ export default () => {
 
               <div className="row">
                 <div className="cell" data-title="Nombre">
-                Mario Sánchez
+                Vicente Murillo Cabrera
                 </div>
                 <div className="cell" data-title="Cargo">
                 Secretario
@@ -58,16 +58,16 @@ export default () => {
               
               <div className="row">
                 <div className="cell" data-title="Nombre">
-                Anabel Gallardo Ponce
+                José Manuel España Herrera
                 </div>
                 <div className="cell" data-title="Cargo">
-                Tesorera
+                Tesorerao
                 </div>
               </div>
               
               <div className="row">
                 <div className="cell" data-title="Nombre">
-                Jorge Antonio Handal
+                Leopoldo Durán Puerto
                 </div>
                 <div className="cell" data-title="Cargo">
                 Vocal I
@@ -76,7 +76,7 @@ export default () => {
 
               <div className="row">
                 <div className="cell" data-title="Nombre">
-                Leopoldo Durán Puerto
+                Gilberto Moreno
                 </div>
                 <div className="cell" data-title="Cargo">
                 Vocal II
@@ -85,7 +85,7 @@ export default () => {
 
               <div className="row">
                 <div className="cell" data-title="Nombre">
-                Pablo Santalena
+                Juan Sauceda
                 </div>
                 <div className="cell" data-title="Cargo">
                 Vocal III
@@ -94,7 +94,16 @@ export default () => {
 
               <div className="row">
                 <div className="cell" data-title="Nombre">
-                José Manuel España
+                Edgar Oliva
+                </div>
+                <div className="cell" data-title="Cargo">
+                Vocal IV
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="cell" data-title="Nombre">
+                Anabel Gallardo
                 </div>
                 <div className="cell" data-title="Cargo">
                 Comisión Fiscalizadora
@@ -103,7 +112,7 @@ export default () => {
 
               <div className="row">
                 <div className="cell" data-title="Nombre" datatype>
-                Edgar Alfredo Oliva
+                Adalberto García
                 </div>
                 <div className="cell" data-title="Cargo">
                 Comisión Fiscalizadora
@@ -112,7 +121,7 @@ export default () => {
 
               <div className="row">
                 <div className="cell" data-title="Nombre">
-                José Luis Gallardo
+                Medardo Guevara
                 </div>
                 <div className="cell" data-title="Cargo">
                 Comisión Fiscalizadora

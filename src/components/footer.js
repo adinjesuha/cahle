@@ -16,15 +16,6 @@ const Wrapper = styled.footer`
   background-size: contain;
   background-position: bottom right;
   position: relative;
-  h2{
-    color: var(--blue);
-    font-weight: 500;
-    font-size: 32px;
-  }
-  p{
-    font-size: 14px;
-  }
-
 `
 
 const FlexContainer = styled.div`
@@ -49,14 +40,14 @@ const InfoContact = styled.ul`
   margin-top: 16px;
   li{
     margin-bottom: 12px;
-    span{
+    p{
+      margin: 0;
+    }
+    .contact-info{
       display: inline-block;
       vertical-align: middle;
-    }
-    .info{
       width: calc(100% - 30px);
       padding-left: 8px;
-      font-size: 14px;
     }
   }
 `
@@ -69,11 +60,9 @@ const NewsLetterForm =  styled.div`
       line-height: 50px;
       height: 50px;
       border-radius: 200px;
-      background-color: white;
       border: 1px solid #ececec;
       width: 100%;
       padding: 0 20px;
-      font-size: 14px;
     } 
     .btn{
       position: absolute;
@@ -191,7 +180,7 @@ class ContactForm extends React.Component {
               <input name="bot-field" onChange={this.handleChange} />
             </label>
           </p>
-            <input className="relative-field" placeholder="Ingresa tu correo" type="email" name="email" onChange={this.handleChange} />
+            <input className="relative-field tags" placeholder="Ingresa tu correo" type="email" name="email" onChange={this.handleChange} />
             <button type="submit" className="btn">Suscríbete</button>
           </div>
         </form>
@@ -206,29 +195,29 @@ const Footer = () => (
     <Container>
       <FlexContainer>
         <Box>
-          <h2>Contactanos</h2>
+          <h2 className="main-title">Contactanos</h2>
           <InfoContact>
             <li>
               <span><PinIcon/></span>
-              <span className="info">Edificio FENAGH, Blvd. Suyapa, Col. Florencia Sector Sur, Casa #3802, contiguo a la SUZUKI, frente a Banrural, Tegucigalpa, Honduras, C.A.</span>
+              <p className="contact-info main-text">Edificio FENAGH, Blvd. Suyapa, Col. Florencia Sector Sur, Casa #3802, contiguo a la SUZUKI, frente a Banrural, Tegucigalpa, Honduras, C.A.</p>
             </li>
             <li>
               <span><PhoneIcon/></span>
-              <span className="info">(504) 2231-1102</span>
+              <p className="contact-info main-text">(504) 2231-1102</p>
             </li>
             <li>
-              <span className="info" style={{paddingLeft: '25px'}}>(504) 9442-4710</span>
+              <p className="contact-info main-text" style={{paddingLeft: '25px'}}>(504) 9442-4710</p>
             </li>
             <li>
               <span><MailIcon/></span>
-              <span className="info"><a href="mailto:info@cahle.org">info@cahle.org</a></span>
+              <p className="contact-info main-text"><a href="mailto:info@cahle.org">info@cahle.org</a></p>
             </li>
           </InfoContact>
         </Box>
         <Box>
           <div>
-            <h2>suscríbete</h2>
-            <p>suscríbete para recibir las últimas noticias y actualizaciones.</p>
+            <h2 className="main-title">suscríbete</h2>
+            <p className="main-text">suscríbete para recibir las últimas noticias y actualizaciones.</p>
 
             <ContactForm />
 

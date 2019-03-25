@@ -34,7 +34,7 @@ export default () => {
       <HeroPage title="Representaciones" tags="asociados" bgImage={Representaciones}/>
       <Container>
         <Wrapper>
-          <h2>Formamos parte de</h2>
+          <h2 className="main-title">Formamos parte de</h2>
           <FlexContainer> 
             <figure>
               <img src={Fenagh} alt="Logo FENAGH"/>
@@ -46,7 +46,7 @@ export default () => {
               <img src={Fecalac} alt="Logo FECALAC"/>
             </figure>
           </FlexContainer> 
-          <p>“Con nuestra participación en cada una de estas organizaciones se promueve el desarrollo del sector lácteo en toda la región y actúa como foro de vinculación en los diferentes segmentos de la cadena”.</p>
+          <p className="main-text main-text__dark">“Con nuestra participación en cada una de estas organizaciones se promueve el desarrollo del sector lácteo en toda la región y actúa como foro de vinculación en los diferentes segmentos de la cadena”.</p>
         </Wrapper> 
       </Container>
     </Layout>

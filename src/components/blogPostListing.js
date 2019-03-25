@@ -31,7 +31,6 @@ export default () => (
                   excerpt(pruneLength: 100)
                 }
               }
-              createdAt(formatString: "MMMM DD, YYYY")
               slug
               heroImage{
                 title

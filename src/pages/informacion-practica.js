@@ -11,7 +11,7 @@ export default () => {
     <Layout>
       <HeroPage title="Historia, Misión, Visión y Objetivos" tags="acerca de" bgImage={Objetivos}/>
       <Container>
-
+        
       </Container>
     </Layout>
   )

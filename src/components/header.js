@@ -5,11 +5,11 @@ import styled from "styled-components"
 import DesktopNavAdvance from './desktopNavAdvance'
 import { device } from "../styles/breakpoints";
 import Logo from '../images/svg-icons/logo.svg'
-import Container from './container'
 
 const HeaderEl = styled.header`
   z-index: 999;
   width: 100%;
+  padding: 0 40px;
   position: fixed;
   left: 0;
   top: 0;
@@ -50,18 +50,16 @@ export default class Header extends React.Component{
   render(){
     return (
       <HeaderEl>
-        <Container>
-          <HeaderWrapper>
-            <LogoWrapper>
-              <Link to="/">
-                <Logo style={{verticalAlign:'top'}}/>
-              </Link>
-            </LogoWrapper>
-            <HeaderNav>
-              <DesktopNavAdvance />
-            </HeaderNav>
-          </HeaderWrapper>
-        </Container>
+        <HeaderWrapper>
+          <LogoWrapper>
+            <Link to="/">
+              <Logo style={{verticalAlign:'top'}}/>
+            </Link>
+          </LogoWrapper>
+          <HeaderNav>
+            <DesktopNavAdvance />
+          </HeaderNav>
+        </HeaderWrapper>
       </HeaderEl> 
     )
   }
