@@ -64,8 +64,6 @@ const Data = styled.div`
 const Title = styled.h2`
   margin-bottom: 8px;
   line-height: 1.16;
-  font-weight: 500;
-  font-size: 32px;
 `
 
 const Meta = styled.p`
@@ -78,9 +76,6 @@ const Meta = styled.p`
   z-index: 20;
   position: relative;
   color: var(--secondary-text);
-  strong{
-    
-  }
 `
 
 const Tag = styled.span`
@@ -88,9 +83,6 @@ const Tag = styled.span`
   padding-right: 10px;
   margin-right: 10px;
   font-weight: 500;
-`
-const CustomDate = styled.span`
-  
 `
 
 const ButtonPost = styled.a`
@@ -115,7 +107,7 @@ const CardPost = ({slug, heroImage, title, body, tags, customDate, intro, ...pro
     <Data>  
       <Meta>
         <Tag>{tags}</Tag>
-        <CustomDate>{customDate}</CustomDate>
+        <span>{customDate}</span>
       </Meta>
       <a href={slug}>
         <Title className="sub-title">{title}</Title>
