@@ -183,7 +183,7 @@ const blog = () => (
           </figure>
           <div className="wrapper">
             <div className="table">
-              <div className="row header">
+              <div className="c-row header">
                 <div className="cell">
                   País
                 </div>
@@ -195,7 +195,7 @@ const blog = () => (
                 </div>
               </div>
               
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="País">
                 El Salvador
                 </div>
@@ -207,7 +207,7 @@ const blog = () => (
                 </div>
               </div>
 
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="País">
                 Guatemala
                 </div>
@@ -219,7 +219,7 @@ const blog = () => (
                 </div>
               </div>
 
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="País">
                 Estados Unidos
                 </div>
@@ -231,7 +231,7 @@ const blog = () => (
                 </div>
               </div>
 
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="País">
                 República Dominicana
                 </div>
@@ -243,7 +243,7 @@ const blog = () => (
                 </div>
               </div>
 
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="País">
                 Nicaragua
                 </div>
@@ -255,7 +255,7 @@ const blog = () => (
                 </div>
               </div>
 
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="País">
                 Costa Rica
                 </div>

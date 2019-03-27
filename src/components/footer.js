@@ -16,6 +16,7 @@ const Wrapper = styled.footer`
   background-size: contain;
   background-position: bottom right;
   position: relative;
+  border-top: 1px solid var(--light);
 `
 
 const FlexContainer = styled.div`
@@ -24,7 +25,6 @@ const FlexContainer = styled.div`
   margin: 20px auto;
   padding: 70px 0;
   flex-wrap: wrap;
-  border-top: 1px solid rgba(0,0,0, 0.1);
 `
 
 const Box = styled.aside`

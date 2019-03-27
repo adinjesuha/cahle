@@ -151,7 +151,7 @@ class Accordion extends Component {
               content={item.content}
               onClick={this.toggle(index + 1)} 
               expand={this.state[`block${index+1}`]}
-              key={item.title}
+              key={item.index}
             />
           ))
         }

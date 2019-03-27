@@ -7,6 +7,7 @@ import Header from './header'
 import MobileNav from './mobileNav'
 import Footer from './footer'
 import '../styles/layout.css'
+import '../styles/bootstrap-grid.css'
 
 const LayoutWrapper = styled.div`
   display: flex;

@@ -49,7 +49,7 @@ const FlexContent = styled.div`
 const RadiusImage = styled.figure`
   margin: 20px 20px 0 0;
   img{
-    background-color: var(--bg-light);
+    background-color: var(--light);
     border-radius: 50%;
   }
 `

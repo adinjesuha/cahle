@@ -20,7 +20,7 @@ export default () => {
           <div className="wrapper">
             <div className="table">
             
-              <div className="row header">
+              <div className="c-row header">
                 <div className="cell">
                   Nombre
                 </div>
@@ -29,7 +29,7 @@ export default () => {
                 </div>
               </div>
 
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="Nombre">
                 Héctor Alberto Ferreira
                 </div>
@@ -38,7 +38,7 @@ export default () => {
                 </div>
               </div>
               
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="Nombre">
                 Jorge Antonio Handal
                 </div>
@@ -47,7 +47,7 @@ export default () => {
                 </div>
               </div>
 
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="Nombre">
                 Vicente Murillo Cabrera
                 </div>
@@ -56,7 +56,7 @@ export default () => {
                 </div>
               </div>
               
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="Nombre">
                 José Manuel España Herrera
                 </div>
@@ -65,7 +65,7 @@ export default () => {
                 </div>
               </div>
               
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="Nombre">
                 Leopoldo Durán Puerto
                 </div>
@@ -74,7 +74,7 @@ export default () => {
                 </div>
               </div>
 
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="Nombre">
                 Gilberto Moreno
                 </div>
@@ -83,7 +83,7 @@ export default () => {
                 </div>
               </div>
 
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="Nombre">
                 Juan Sauceda
                 </div>
@@ -92,7 +92,7 @@ export default () => {
                 </div>
               </div>
 
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="Nombre">
                 Edgar Oliva
                 </div>
@@ -101,7 +101,7 @@ export default () => {
                 </div>
               </div>
 
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="Nombre">
                 Anabel Gallardo
                 </div>
@@ -110,7 +110,7 @@ export default () => {
                 </div>
               </div>
 
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="Nombre" datatype>
                 Adalberto García
                 </div>
@@ -119,7 +119,7 @@ export default () => {
                 </div>
               </div>
 
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="Nombre">
                 Medardo Guevara
                 </div>

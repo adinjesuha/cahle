@@ -48,7 +48,7 @@ const AccordionWrapper = styled.div`
   width: 100%;
   max-width: 720px;
   margin: 0 auto;
-  border: 1px solid var(--bg-light);
+  border: 1px solid var(--light);
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
   .accordion-title{
@@ -66,7 +66,7 @@ const AccordionWrapper = styled.div`
       align-items: center;
       transition: background 0.3s ease;
       color: var(--green);
-      background: var(--bg-light);
+      background: var(--light);
       &.is-expanded {
         background: #eff1f5;
         transition: background 0.3s ease;

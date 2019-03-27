@@ -1,29 +1,22 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 import styled, { css } from 'styled-components'
 
 import { device } from '../styles/breakpoints'
 
-const Post = styled.li`
+const Post = styled.article`
   position: relative;
   width: 100%;
   margin-bottom: 40px;
   background: white;
-  box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   overflow: hidden;
+  transform: translateZ(0);
+  transform:translateY(0);
   transition: 0.3s;
-  @media ${device.tablet}{
-    flex: ${props => (props.featured ? '0 0 100%' : '0 0 49%')};
-    margin: 0 0 2vw 0;
-  }
-  @media ${device.laptop}{
-    flex: ${props => (props.featured ? '0 0 100%' : '0 0 49%')};
-    margin: 0 0 2vw 0;
-  }
   .gatsby-image-wrapper {
-    max-height: 250px;
+    max-height: 200px;
     position: relative;
     &:before{
       content: '';
@@ -41,70 +34,95 @@ const Post = styled.li`
       opacity: 0.5;
     }
   }
-  a{
-    text-decoration: none;
-  }
   ${props => props.featured && css`
     .gatsby-image-wrapper{
-      max-height: 410px;
+      max-height: 200px;
     }
     ${Data} {
-      padding: 5%;
+      
     }
     ${Title} {
       
     }
   `}
   &:hover{
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.08);
+    transform: translateZ(0);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   }
 `
 
 const Data = styled.div`
-  padding: 5% 7.5% 8%;
+  padding: 20px 24px;
+  height: 100%;
+  min-height: 220px;
+  @media ${device.tablet}{
+    min-height: 330px;
+  }
 `
 
 const Title = styled.h2`
   margin-bottom: 8px;
-  color: var(--blue);
-  opacity: 1;
-  transition: color 0.3s ease;
   line-height: 1.16;
   font-weight: 500;
   font-size: 32px;
-  &:hover{
-    color: var(--green);
+`
+
+const Meta = styled.p`
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  z-index: 20;
+  position: relative;
+  color: var(--secondary-text);
+  strong{
+    
   }
 `
 
 const Tag = styled.span`
+  border-right: 1px solid rgba(125,125,125,0.2);
+  padding-right: 10px;
+  margin-right: 10px;
+  font-weight: 500;
 `
-const CustomDate = styled.p`
-  background: red;
+const CustomDate = styled.span`
+  
 `
 
-const Excerpt = styled.p`
-  margin: 12px 0;
+const ButtonPost = styled.a`
+  padding: 15px 0;
+  display: inline-block;
+  border-top: 1px solid var(--light);
+  width: 100%;
+  text-align: center;
+  color: var(--active);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  &:hover{
+    background-color: var(--active);
+    color: white;
+  }
 `
 
-const CardPost = ({slug, heroImage, title, body, tags, customDate, ...props}) => (
+const CardPost = ({slug, heroImage, title, body, tags, customDate, intro, ...props}) => (
   <Post featured={props.featured}>
-    <Link to={slug}>
+    <a href={slug}>
       <Img fluid={heroImage.fluid}/>
-    </Link>
-    <Data>
-      <CustomDate>{customDate}</CustomDate>
-      <Tag className="tags">{tags}</Tag>
-      <Link to={slug}>
+    </a>
+    <Data>  
+      <Meta>
+        <Tag>{tags}</Tag>
+        <CustomDate>{customDate}</CustomDate>
+      </Meta>
+      <a href={slug}>
         <Title className="sub-title">{title}</Title>
-      </Link>
-      <Excerpt 
-        className="main-text main-text__light"
-        dangerouslySetInnerHTML={{
-          __html: body.childMarkdownRemark.excerpt
-        }}
-      />
-    </Data> 
+      </a>
+      <p className="main-text main-text__light">{intro}</p>
+    </Data>
+    <ButtonPost href={slug}>Leer más</ButtonPost>
   </Post>
 )
 

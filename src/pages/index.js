@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
+import Link from 'gatsby-link';
 
 import Layout from '../components/layout'
-import Container from '../components/container'
 import IndexPostListing from '../components/indexPostListing'
 import VideoBG from '../video/video-bg.mp4'
 import { device } from '../styles/breakpoints'
+import Container from '../components/container'
 
 const FullScreenBg = styled.div`
   left: 0;
@@ -70,6 +71,24 @@ const CoverContent = styled.div`
       }
     }
 `
+const Wrapper = styled.section`
+  background-color: var(--background);
+  width: 100%;
+  padding: 70px 0;
+`
+
+const ButtonLink = styled(Link)`
+  background-color: var(--active);
+  color: white;
+  padding: 12px 35px;
+  display: inline-block;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  &:hover{
+    background-color: #0f53b6;
+  }
+`
+
 
 const IndexPage = () => (
   <React.Fragment>
@@ -93,9 +112,14 @@ const IndexPage = () => (
       <CoverContent>
         <h1>Cámara hondureña <br/> de la leche</h1>
       </CoverContent>
-      <Container>
-        <IndexPostListing />
-      </Container>
+      <Wrapper>
+        <Container>
+          <IndexPostListing />
+          <div style={{textAlign: 'center', marginTop: '20px'}}>
+            <ButtonLink to="/noticias-y-eventos">Ver todos</ButtonLink>
+          </div>
+        </Container>
+      </Wrapper>
     </Layout>
   </React.Fragment>
 )

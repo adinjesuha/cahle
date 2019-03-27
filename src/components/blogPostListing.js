@@ -1,20 +1,8 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
-import styled from "styled-components";
 
+import Row from './row'
 import CardPost from './cardPost'
-
-const PostList = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 70px auto;
-  list-style: none;
-  &::after {
-    content: '';
-    flex: 0 0 32%;
-  }
-`
 
 export default () => (
   <StaticQuery
@@ -26,11 +14,8 @@ export default () => (
               id
               title
               tags
-              body {
-                childMarkdownRemark{
-                  excerpt(pruneLength: 100)
-                }
-              }
+              customDate
+              intro
               slug
               heroImage{
                 title
@@ -47,13 +32,16 @@ export default () => (
       const posts = data.allContentfulBlogPost.edges
       const featuredPost = posts[0].node
       return(
-        <PostList>
-          <CardPost {...featuredPost} featured />
+        <Row>
+          <div className="col-lg-8 col-md-12">
+            <CardPost {...featuredPost} featured />  
+          </div>
           {posts.slice(1).map(({ node: post }) => (
-            <CardPost key={post.id} {...post} />
+            <div className="col-lg-4 col-md-6">
+              <CardPost key={post.id} {...post} />
+            </div>
           ))}
-          
-        </PostList> 
+        </Row>
       )
     }}
   />

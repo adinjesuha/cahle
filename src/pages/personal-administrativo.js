@@ -23,7 +23,7 @@ export default () => {
         <div className="wrapper">
             <div className="table">
             
-              <div className="row header">
+              <div className="c-row header">
                 <div className="cell">
                   Nombre
                 </div>
@@ -35,7 +35,7 @@ export default () => {
                 </div>
               </div>
               
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="Nombre">
                 Carmen A. García
                 </div>
@@ -47,7 +47,7 @@ export default () => {
                 </div>
               </div>
 
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="Nombre">
                   Luis Figueroa
                 </div>
@@ -59,7 +59,7 @@ export default () => {
                 </div>
               </div>
 
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="Nombre" datatype>
                   Carmen Chávez
                 </div>
