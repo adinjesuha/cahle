@@ -77,19 +77,6 @@ const Wrapper = styled.section`
   padding: 70px 0;
 `
 
-const ButtonLink = styled(Link)`
-  background-color: var(--active);
-  color: white;
-  padding: 12px 35px;
-  display: inline-block;
-  border-radius: 4px;
-  transition: background-color 0.2s ease;
-  &:hover{
-    background-color: #0f53b6;
-  }
-`
-
-
 const IndexPage = () => (
   <React.Fragment>
     <Layout>
@@ -116,7 +103,7 @@ const IndexPage = () => (
         <Container>
           <IndexPostListing />
           <div style={{textAlign: 'center', marginTop: '20px'}}>
-            <ButtonLink to="/noticias-y-eventos">Ver todos</ButtonLink>
+            <Link className="button-link" to="/noticias-y-eventos">Ver todos</Link>
           </div>
         </Container>
       </Wrapper>
