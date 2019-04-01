@@ -74,6 +74,7 @@ export default ({heroData, title, tags}) => (
     <HeroImage 
       fluid={heroData.fluid}
     />
+    {console.log(heroData)}
     <FutureTitle>
       <span>{tags}</span>
       <h1>{title}</h1>

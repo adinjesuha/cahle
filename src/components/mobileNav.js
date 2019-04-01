@@ -14,7 +14,7 @@ const iconLimits = {
 
 const IconWrapper = styled.div`
 	position: fixed;
-  top: 20px;
+  top: 15px;
   right: 20px;
   margin: auto;
   width: ${iconLimits.barWidth};
@@ -51,7 +51,7 @@ const PopUp = styled.div`
 `
 
 const PopUpContainer = styled.nav`
-  background: var(--blue);
+  background: var(--oxford-blue);
   width: 100%;
   min-height: 100%;
   position: absolute;

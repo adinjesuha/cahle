@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 
-import { acercaDe, asociados, documentacion, congreso } from '../utils/menuConfig'
+import { NuestraGente, asociados, documentacion } from '../utils/menuConfig'
 
 import Logo from '../images/svg-icons/logo.svg'
 
@@ -20,25 +20,24 @@ const Container = styled.div`
 
 const AccordionWrapper = styled.dl`
   margin: 0 auto;
-  margin-top: 40px;
   width: 100%;
   .title {
-    padding: 20px 30px 20px 0;
+    padding: 20px 0 10px;
     cursor: pointer;
     transform: translate3d(0, 0, 0);
     transition: color 0.3s ease;
     color: white;
     position: relative;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
     margin-bottom: -1px;
-    /* border-bottom: 1px solid red; */
     text-align: left;
-    text-transform: uppercase;
-    font-weight: bold;
+    text-transform: capitalize;
     &::after {
       content: "+";
       font-weight: bold;
-      color: var(--green);
+      color: var(--active);
       transition: transform .5s ease-in-out;
       position: absolute;
       right: 15px;
@@ -46,7 +45,7 @@ const AccordionWrapper = styled.dl`
 
     &.is-expanded {
       transition: color 0.3s ease;
-      color: var(--green);
+      color: rgba(255,255,255,0.5);
       &::after {
         content: "-";
         transform: rotate(-360deg);
@@ -58,7 +57,7 @@ const AccordionWrapper = styled.dl`
     max-height: 0;
     transition: max-height .5s;
     margin: 0;
-    padding: 0 30px;
+    padding: 0 20px;
     /* border: solid 1px #eeeeee; */
     background: white;
     border-radius: 4px;
@@ -81,11 +80,22 @@ const AccordionWrapper = styled.dl`
       a{
         color: var(--blue);
         font-size: 14px;
-        text-transform: uppercase;
-        font-weight: bold;
+        text-transform: capitalize;
       }
     }
   }
+`
+
+const CustomLink = styled(Link)`
+  text-align: left;
+  color: white;
+  display: inline-block;
+  width: 100%;
+  padding: 20px 0 10px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
 `
 
 const AccordionSection = props => {
@@ -123,8 +133,8 @@ class Accordion extends Component {
   render() {
     const accordionList = [
       { 
-        title: 'Acerca de CAHLE', 
-        content: acercaDe
+        title: 'Nuestra Gente', 
+        content: NuestraGente
       }, 
       { 
         title: 'Asociados',
@@ -133,16 +143,12 @@ class Accordion extends Component {
       { 
         title: 'Documentación',
         content: documentacion
-      },
-      // { 
-      //   title: 'VII Congreso',
-      //   content: congreso
-      // },
-
+      }
     ];
     
     return <Container>
       <h1><Logo /></h1>
+      <CustomLink to="/acerca-de-cahle">Acerca de CAHLE</CustomLink>
       <AccordionWrapper>
         {
           accordionList.map((item, index) => (
@@ -156,34 +162,8 @@ class Accordion extends Component {
           ))
         }
       </AccordionWrapper>
-      <Link 
-        to="/perfil-comercial" 
-        style={{
-          textAlign: 'left',
-          color: 'white',
-          display: 'inline-block',
-          width: '100%',
-          padding: '20px 30px 20px 0', 
-          fontSize: '18px',
-          textTransform: 'uppercase',
-          fontWeight: 'bold'
-        }}>
-          Perfil Comercial
-        </Link>
-        <Link 
-        to="/noticias-y-eventos" 
-        style={{
-          textAlign: 'left',
-          color: 'white',
-          display: 'inline-block',
-          width: '100%',
-          padding: '20px 30px 20px 0',
-          fontSize: '18px',
-          textTransform: 'uppercase',
-          fontWeight: 'bold'
-        }}>
-          Noticias y Eventos
-        </Link>
+      <CustomLink to="/perfil-comercial">Perfil Comercial</CustomLink>
+      <CustomLink to="/noticias-y-eventos">Noticias y Eventos</CustomLink>
     </Container>;
   }
 }

@@ -9,7 +9,7 @@ const Post = styled.article`
   width: 100%;
   margin-bottom: 40px;
   background: white;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
   border-radius: 5px;
   overflow: hidden;
   transform: translateZ(0);
@@ -75,7 +75,7 @@ const Meta = styled.p`
   letter-spacing: 0.04em;
   z-index: 20;
   position: relative;
-  color: var(--secondary-text);
+  color: var(--ceil);
 `
 
 const Tag = styled.span`
@@ -88,7 +88,7 @@ const Tag = styled.span`
 const ButtonPost = styled.a`
   padding: 15px 0;
   display: inline-block;
-  border-top: 1px solid var(--light);
+  border-top: 1px solid var(--borders);
   width: 100%;
   text-align: center;
   color: var(--active);

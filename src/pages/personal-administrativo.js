@@ -3,74 +3,69 @@ import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import Container from '../components/container'
-import Vision from '../images/vision.jpg'
 import HeroPage from '../components/heroPage'
 
 const Wrapper = styled.div`
   padding: 70px 0;
-  ul{
-    list-style: none;
-    margin:0;
-  }
+  background-color: var(--background);
+  width: 100%;
+  padding: 70px 0;
 `
 
 export default () => {
   return (
     <Layout>
-      <HeroPage title="Personal Administrativo" tags="acerca de" bgImage={Vision}/>
+      <HeroPage title="Personal Administrativo" tags="Nuestra Gente" bgImage={"junta-directiva"}/>
       <Wrapper>
         <Container>
-        <div className="wrapper">
-            <div className="table">
-            
-              <div className="c-row header">
-                <div className="cell">
-                  Nombre
+          <div className="row justify-content-center">
+            <div className="col-lg-10">
+              <div className="table">
+                <div className="c-row header">
+                  <div className="cell">
+                    Nombre
+                  </div>
+                  <div className="cell">
+                    Cargo
+                  </div>
+                  <div className="cell">
+                    E-mail
+                  </div>
                 </div>
-                <div className="cell">
-                  Cargo
+                <div className="c-row">
+                  <div className="cell" data-title="Nombre">
+                  Carmen A. García
+                  </div>
+                  <div className="cell" data-title="Cargo">
+                  Directora Ejecutiva
+                  </div>
+                  <div className="cell" data-title="E-mail">
+                    <a href="mailto:camaradelaleche@gmail.com">camaradelaleche@gmail.com</a>
+                  </div>
                 </div>
-                <div className="cell">
-                  E-mail
+                <div className="c-row">
+                  <div className="cell" data-title="Nombre">
+                    Luis Figueroa
+                  </div>
+                  <div className="cell" data-title="Cargo">
+                    Dirección Técnica de Campo
+                  </div>
+                  <div className="cell" data-title="E-mail">
+                    <a href="mailto:tecnicodecampo@cahle.org">tecnicodecampo@cahle.org</a>
+                  </div>
                 </div>
+                <div className="c-row">
+                  <div className="cell" data-title="Nombre" datatype>
+                    Carmen Chávez
+                  </div>
+                  <div className="cell" data-title="Cargo">
+                    Ingeniera de Negocios
+                  </div>
+                  <div className="cell" data-title="E-mail">
+                    <a href="mailto:administracion@cahle.org">administracion@cahle.org</a>
+                  </div>
+                </div>            
               </div>
-              
-              <div className="c-row">
-                <div className="cell" data-title="Nombre">
-                Carmen A. García
-                </div>
-                <div className="cell" data-title="Cargo">
-                Directora Ejecutiva
-                </div>
-                <div className="cell" data-title="E-mail">
-                  <a href="mailto:camaradelaleche@gmail.com">camaradelaleche@gmail.com</a>
-                </div>
-              </div>
-
-              <div className="c-row">
-                <div className="cell" data-title="Nombre">
-                  Luis Figueroa
-                </div>
-                <div className="cell" data-title="Cargo">
-                  Dirección Técnica de Campo
-                </div>
-                <div className="cell" data-title="E-mail">
-                  <a href="mailto:tecnicodecampo@cahle.org">tecnicodecampo@cahle.org</a>
-                </div>
-              </div>
-
-              <div className="c-row">
-                <div className="cell" data-title="Nombre" datatype>
-                  Carmen Chávez
-                </div>
-                <div className="cell" data-title="Cargo">
-                  Ingeniera de Negocios
-                </div>
-                <div className="cell" data-title="E-mail">
-                  <a href="mailto:administracion@cahle.org">administracion@cahle.org</a>
-                </div>
-              </div>
-            
             </div>
           </div>
         </Container>

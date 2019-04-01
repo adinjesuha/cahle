@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
+
 import DesktopNav from './desktopNav'
 import { device } from "../styles/breakpoints";
 import Logo from '../images/svg-icons/logo.svg'
@@ -9,13 +10,15 @@ import Logo from '../images/svg-icons/logo.svg'
 const HeaderEl = styled.header`
   z-index: 999;
   width: 100%;
-  padding: 0 40px;
+  padding: 0 20px;
   position: fixed;
+  /* transform: translateY(${props => props.visible ? 0 : `-100px`}); */
   left: 0;
   top: 0;
-  background: var(--blue);
+  background: var(--oxford-blue);
+  transition: transform 0.3s ease;
   @media ${device.tablet}{
-    padding: 0 40px 5;
+    padding: 0 40px;
   }
 `
 
@@ -35,18 +38,39 @@ const HeaderNav = styled.div`
 const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
-  flex: 0 0 20%;
-  h1{
-    margin: 0;
-    margin-left: 20px;
-    color: var(--blue);
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 1.4;
+  svg {
+    width: 50px;
+    @media ${device.laptop}{
+      width: 70px;
+    }
   }
 `
 
 export default class Header extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      prevScroll: window.pageYOffset,
+      visible: true
+    }
+  }
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+  handleScroll = () => {
+    const { prevScrollpos } = this.state;
+    const currentScrollPos = window.pageYOffset;
+    const visible = prevScrollpos > currentScrollPos;
+
+    this.setState({
+      prevScrollpos: currentScrollPos,
+      visible
+    });
+  };
+
   render(){
     return (
       <HeaderEl>
@@ -59,7 +83,7 @@ export default class Header extends React.Component{
           <HeaderNav>
             <DesktopNav />
           </HeaderNav>
-        </HeaderWrapper>
+        </HeaderWrapper>  
       </HeaderEl> 
     )
   }

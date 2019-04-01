@@ -28,6 +28,7 @@ const Layout = ({ children }) => (
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />  
       <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600|Roboto:300,400,500" rel="stylesheet" /> 
+      <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700" rel="stylesheet" />
     </Helmet>
     <LayoutWrapper> 
       <MobileNav />

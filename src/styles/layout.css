@@ -9,21 +9,22 @@
  */
 
  :root{
-	--sky-blue: #1b8bf9; /*<-- brand color */
-  --blue: #060c46; /*<-- brand color */
-  --light-blue: #a0c8dc;
-  --green: #67d54b; /*<-- brand color */ 
-  --bg: #333a35;
+  --oxford-blue: #060c46;
+  --mantis: #67d54b;
+  --navy-blue: #1665D8;
+  --slate-grey: #627792;
+  --ceil: #92A1BF;
+  --anti-flash-white: #EAEDF3;
+  --ghost-white: #F6F8FA;
 
-  --background: #FBFBFD;
+  --background: var(--ghost-white);
+  --borders: var(--anti-flash-white);
 
-  --light: #EAEDF3; /*<-- en uso */
-  --active: #1665D8;
+  --active: var(--navy-blue);
 
-  --title: #3E3F42; /*<-- en uso */
-  --dark-text: #3E3F42; /*<-- en uso */
-  --light-text: #6B6C6F; /*<-- en uso */
-  --secondary-text: #9EA0A5; /*<-- en uso */
+  --title: var(--oxford-blue); /*<-- en uso */
+  --text: var(--slate-grey); /*<-- en uso */
+  --light-text: var(--ceil);
 }
 
  html {
@@ -396,8 +397,11 @@ template {
 .table {
   margin: 0 0 40px 0;
   width: 100%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   display: table;
+  background: white;
+  border-radius: 4px;
+  border: 1pt solid var(--borders);
+  border-collapse: collapse;
 }
 @media screen and (max-width: 580px) {
   .table {
@@ -407,15 +411,16 @@ template {
 
 .c-row {
   display: table-row;
-  background: #f6f6f6;
+  border-bottom: 1pt solid var(--borders);
 }
-.c-row:nth-of-type(odd) {
-  background: #e9e9e9;
-}
+/* .c-row:nth-of-type(odd) {
+
+} */
+
 .c-row.header {
   font-weight: 900;
-  color: #ffffff;
-  background: var(--blue);
+  color: var(--active);
+  background: var(--anti-flash-white);
 }
 
 
@@ -442,7 +447,7 @@ template {
     line-height: 10px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #969696;
+    color: var(--active);
     display: block;
   }
 }
@@ -450,6 +455,7 @@ template {
   padding: 20px;
   display: table-cell;
 }
+
 @media screen and (max-width: 580px) {
   .cell {
     padding: 2px 16px;
@@ -476,40 +482,11 @@ template {
   color: var(--title);
 }
 
-.sub-title__small{
-  font-size: 18px;
-}
-
 .main-text{
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
-}
-
-.main-text__dark{
-  color: var(--dark-text);
-}
-
-.main-text__light{
-  color: var(--light-text);
-}
-
-.bold-text{
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--dark-text);
-}
-
-.tags{
-  font-size: 12px;
-  font-weight: 400;
-  color: var(--secondary-text);
-}
-
-.list{
-  font-family: 'Roboto';
-  font-size: 14px;
-  font-weight: 300;
-  color: var(--light-text);
+  line-height: 150%;
+  color: var(--text);
 }
 
 /***************************************
@@ -546,8 +523,6 @@ template {
   background-color: #0f53b6;
 }
 
-
 /***************************************
  END BUTTON STYLES
 *****************************************/
-

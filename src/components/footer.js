@@ -27,7 +27,7 @@ const FooterInner = styled.div`
   }
 `
 const FooterSecondary = styled.div`
-  background: var(--blue);
+  background: var(--oxford-blue);
   padding: 25px 0;
   p {
     text-align: center;

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-import { acercaDe, asociados, documentacion } from '../utils/menuConfig'
+import { NuestraGente, asociados, documentacion } from '../utils/menuConfig'
 
 const NavBar = styled.nav`
   position: relative;
@@ -14,57 +14,51 @@ const NavBar = styled.nav`
     list-style: none;
     > li {
       display: inline-block;
-      padding: 20px 20px;
-      transition: all 0.3 ease;
+      padding:0;
+      margin-right: 25px;
       > a, span {
         font-weight: 500;
         letter-spacing: 0.5px;
-        padding: 0;
-        font-size: 14px;
+        display: inline-block;
+        padding: 20px 0;
+        font-size: 13px;
         line-height: 42px;
         color: white;
         transition: 0.3s;
       }
+      &:hover a, &:hover span{
+        color: rgba(255,255,255,0.5);
+      }
       span{
         cursor: default;
       }
-      
       &:last-child{
         margin-right: 0;
-      }
-      &:hover{
-        background: var(--active);
       }
     }
     > li.has_dropdown{
       position: relative;
-      &:after{
-        content: '+';
-        color: white;
-        margin-left: 5px;
-      }
       .dropdown {
-        position: absolute;
-        min-width: 271px;
         background: #fff;
+        position: absolute;
+        min-width: 210px;
         z-index: 3;
         visibility: hidden;
         opacity: 0;
         transition: 0.3s;
-        border-top: 1px solid var(--active);
+        border-top: 2px solid var(--active);
         border-radius: 0 0 4px 4px;
         box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
         top: calc(100% + 20px);
-        transform: translateX(-20px);
       }
       &:hover .dropdown{
         opacity: 1;
         visibility: visible;
-        transform: translate(-20px, -20px);
+        transform: translateY(-20px);
       }
       ul li a {
-        padding: 0 10px;
-        text-transform: uppercase;
+        padding: 0 15px;
+        text-transform: capitalize;
         font-weight: 600;
         color: var(--blue);
         line-height: 60px;
@@ -72,7 +66,7 @@ const NavBar = styled.nav`
         background-color: transparent;
         display: block;
         font-size: 13px;
-        letter-spacing: 0.5px;
+
         &:hover{
           color: white;
           background: var(--active);
@@ -91,13 +85,13 @@ export default class desktopNav extends Component {
       <NavBar>
         <ul className="navbar-nav">
           <li>
-            <Link to="/perfil-comercial">Acerca de CAHLE</Link>
+            <Link to="/acerca-de-cahle">Acerca de CAHLE</Link>
           </li>
           <li className="has_dropdown">
             <span>Nuestra Gente</span>
             <div className="dropdown">
               <ul>
-                {acercaDe.map(item => (
+                {NuestraGente.map(item => (
                   <li key={item.name}>
                     <Link to={item.link}>{item.name}</Link>
                   </li>

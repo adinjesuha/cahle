@@ -9,11 +9,11 @@ const NewsLetterForm =  styled.div`
     margin-bottom: 40px;
     .relative-field{
       border-radius: 4px;
-      border: 1px solid var(--light);
+      border: 1px solid var(--borders);
       width: 100%;
       padding: 0 0 0 20px;
       font-size: 12px;
-      color: var(--secondary-text);
+      color: var(--main-text);
       margin-right: 0;
       margin-bottom: 10px;
       height: 46px;

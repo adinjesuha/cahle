@@ -7,38 +7,45 @@ import HeroPage from '../components/heroPage'
 import { FaAngleDown } from 'react-icons/fa'
 
 import Beneficios from '../images/beneficios.jpg'
+import { device } from '../styles/breakpoints'
 
 const Wrapper = styled.section`
-  margin: 70px 0;
-  .content-list{
-    width: 100%;
-    margin-bottom: 20px;
-    display: flex;
-    .content-number {
-      margin-right: 20px;
-      .circle{
-        width: 40px;
-        height: 40px;
-        border: 1px solid var(--green);
-        border-radius: 50%;
-        position: relative;
-        background: var(--green);
-        span{
-          margin: 0;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          font-size: 14px;
-          color: white;
-          font-weight: 600;
-        }
-      }
+  background-color: var(--background);
+  width: 100%;
+  padding: 70px 0;
+  .force-margin{
+    margin-bottom: 30px;
+  }
+  .number{
+    font-size: 14px;
+    color: var(--mantis);
+    margin-right: 5px;
+    display: block;
+  }
+  .content-block{
+    background-color: white;
+    height: 100%;
+    padding: 25px 20px;
+    border-radius: 4px;
+    >h3{
+      margin-top: 0;
     }
-    .content-data {
-      h2{
-        margin: 0;
-      }
+    > p{
+      margin-bottom: 0;
+    }
+    @media ${device.laptop}{
+      min-height: 300px;
+    }
+  }
+`
+
+const CTASection = styled.section`
+  background-color: var(--anti-flash-white);
+  .accordion-title{
+    padding: 30px;
+    text-align: center;
+    > h2{
+      color: var(--oxford-blue);
     }
   }
 `
@@ -50,10 +57,6 @@ const AccordionWrapper = styled.div`
   border: 1px solid var(--light);
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
-  .accordion-title{
-    padding: 30px;
-    border-bottom: 1px solid #ececec;
-  }
   .accordion-panel{
     padding: 30px 30px 40px;
     .accordion-item{
@@ -122,9 +125,6 @@ class AccordionSection extends React.Component{
     return(
       <AccordionWrapper>
         <div>
-          <div className="accordion-title">
-            <h2 className="sub-title">¿Quieres afiliarte?...</h2>
-          </div>
           <div className="accordion-panel">
             <div 
               onClick={this.toggle} 
@@ -159,88 +159,60 @@ export default () => {
   return (
     <Layout>
       <HeroPage title="Beneficios de los Asociados" tags="asociados" bgImage={Beneficios}/>
-      <Container>
-        <Wrapper>
-          <div className="content-list">
-            <div className="content-number">
-              <div className="circle">
-                <span>1</span>
+      <Wrapper>
+        <Container>
+          <div className="row">
+            <div className="col-lg-4 force-margin">
+              <div className="content-block">
+                <h3 className="sub-title"><span className="number">01</span>Ferias y exposiciones</h3>
+                <p className="main-text main-text__dark">Realizamos actos de presencia en los eventos que nuestros socios desarrollan y publicamos notas informativas de los mismos.</p>
               </div>
             </div>
-            <div className="content-data">
-              <h2 className="sub-title">Ferias y exposiciones: </h2>
-              <p className="main-text main-text__dark">Realizamos actos de presencia en los eventos que nuestros socios desarrollan y publicamos notas informativas de los mismos.</p>
+            <div className="col-lg-4 force-margin">   
+              <div className="content-block">
+                <h3 className="sub-title"><span className="number">02</span>Soporte técnico</h3>
+                <p className="main-text">Brindamos capacitaciones y asistencia técnica en formato abierto a productores individuales o grupos de organizaciones asociadas en temas de actualidad relacionados con el rubro. </p>
+              </div> 
             </div>
-          </div>
-          <div className="content-list">
-            <div className="content-number">
-              <div className="circle">
-                <span>2</span>
+            <div className="col-lg-4 force-margin">
+              <div className="content-block">
+                <h3 className="sub-title"><span className="number">03</span>Tarifas preferenciales</h3>
+                <p className="main-text">Aplicables a todos nuestros eventos y/o servicios.</p>
               </div>
             </div>
-            <div className="content-data">
-              <h2 className="sub-title">Soporte técnico: </h2>
-              <p className="main-text main-text__dark">Brindamos capacitaciones y asistencia técnica en formato abierto a productores individuales o grupos de organizaciones asociadas en temas de actualidad relacionados con el rubro. </p>
-            </div>
-          </div>
-          <div className="content-list">
-            <div className="content-number">
-              <div className="circle">
-                <span>3</span>
+            <div className="col-lg-4 force-margin">
+              <div className="content-block">
+                <h3 className="sub-title"><span className="number">04</span>Representación</h3>
+                <p className="main-text">Defendemos los intereses de nuestros agremiados, emitimos las posiciones de nuestros socios y buscamos espacios políticos para hacerlos valer. </p>
               </div>
             </div>
-            <div className="content-data">
-              <h2 className="sub-title">Tarifas preferenciales: </h2>
-              <p className="main-text main-text__dark">Aplicables a todos nuestros eventos y/o servicios.</p>
-            </div>
-          </div>
-          <div className="content-list">
-            <div className="content-number">
-              <div className="circle">
-                <span>4</span>
+            <div className="col-lg-4 force-margin">
+              <div className="content-block">
+                <h3 className="sub-title"><span className="number">05</span>Alianzas y convenios</h3>
+                <p className="main-text">Gestionamos convenios con otras instituciones para facilitar que los proyectos de capacitación y asesoría tengan mayor cobertura y éxito. </p>
               </div>
             </div>
-            <div className="content-data">
-              <h2 className="sub-title">Representación: </h2>
-              <p className="main-text main-text__dark">Defendemos los intereses de nuestros agremiados, emitimos las posiciones de nuestros socios y buscamos espacios políticos para hacerlos valer. </p>
-            </div>
-          </div>
-          <div className="content-list">
-            <div className="content-number">
-              <div className="circle">
-                <span>5</span>
+            <div className="col-lg-4 force-margin">
+              <div className="content-block">
+                <h3 className="sub-title"><span className="number">06</span>Encuentros</h3>
+                <p className="main-text">Realizamos encuentros entre productores con el objetivo de intercambiar experiencias y desarrollar el crecimiento del rubro.</p>
               </div>
             </div>
-            <div className="content-data">
-              <h2 className="sub-title">Alianzas y convenios: </h2>
-              <p className="main-text main-text__dark">Gestionamos convenios con otras instituciones para facilitar que los proyectos de capacitación y asesoría tengan mayor cobertura y éxito. </p>
-            </div>
-          </div>
-          <div className="content-list">
-            <div className="content-number">
-              <div className="circle">
-                <span>6</span>
+            <div className="col-lg-4">
+              <div className="content-block">
+                <h3 className="sub-title"><span className="number">07</span>Competitividad</h3>
+                <p className="main-text">Financiamos la investigación científica con el objetivo de usar los hallazgos adquiridos para resolver los problemas y poder guiar al sector hacia una mejora en la productividad de las fincas.</p>
               </div>
             </div>
-            <div className="content-data">
-              <h2 className="sub-title">Encuentros: </h2>
-              <p className="main-text main-text__dark">Realizamos encuentros entre productores con el objetivo de intercambiar experiencias y desarrollar el crecimiento del rubro.</p>
-            </div>
           </div>
-          <div className="content-list">
-            <div className="content-number">
-              <div className="circle">
-                <span>7</span>
-              </div>
-            </div>
-            <div className="content-data">
-              <h2 className="sub-title">Competitividad: </h2>
-              <p className="main-text main-text__dark">Financiamos la investigación científica con el objetivo de usar los hallazgos adquiridos para resolver los problemas y poder guiar al sector hacia una mejora en la productividad de las fincas.</p>
-            </div>
-          </div>
-          <AccordionSection />
-        </Wrapper>
-      </Container>
+        </Container>
+      </Wrapper>
+      <CTASection>
+        <div className="accordion-title">
+          <h2 className="main-title">¿Quieres afiliarte?</h2>
+        </div>
+        <AccordionSection />
+      </CTASection>
     </Layout>
   )
 }

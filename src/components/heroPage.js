@@ -2,16 +2,15 @@ import React from 'react'
 import styled from "styled-components"
 
 import { device } from '../styles/breakpoints'
+import Image from './image'
 
 const Wrapper =styled.div`
   position: relative;
 `
 
-const HeroImage = styled.div`
+const ImageWrapper = styled.div`
+  background-color: var(--oxford-blue);
   position: relative;
-  background-image: url(${props => props.bgImage});
-  background-position: center center;
-  background-size: cover;
   top: 0;
   left: 0;
   width: 100%;
@@ -22,7 +21,7 @@ const HeroImage = styled.div`
     the viewport width
   */
   height: 60vh;
-  margin-top: 70px;
+  overflow: hidden;
   &::before {
     content: '';
     background: rgba(0, 0, 0, 0.5);
@@ -75,7 +74,9 @@ const FutureTitle = styled.div`
 const HeroPage = props => {
   return (
     <Wrapper>
-      <HeroImage bgImage={props.bgImage}/>
+      <ImageWrapper>
+        <Image filename={props.bgImage}/>
+      </ImageWrapper>
       <FutureTitle>
         <span>{props.tags}</span>
         <h1>{props.title}</h1>

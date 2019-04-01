@@ -25,7 +25,7 @@ const Hamburger = styled.div`
     position: absolute;
     left: 0;
     bottom: ${iconLimits.barSpacing};
-    background: var(--green);
+    background: var(--mantis);
     transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   &::after{
@@ -33,7 +33,7 @@ const Hamburger = styled.div`
     position: absolute;
     left: 0;
     top: ${iconLimits.barSpacing};
-    background: var(--green);
+    background: var(--mantis);
     transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   ${props => props.iconState && css`

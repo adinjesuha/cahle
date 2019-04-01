@@ -79,7 +79,7 @@ const blog = () => (
           </figure>
           <div className="wrapper">
             <div className="table">
-              <div className="row header">
+              <div className="c-row header">
                 <div className="cell">
                   Codigo
                 </div>
@@ -91,7 +91,7 @@ const blog = () => (
                 </div>
               </div>
               
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="Codigo">
                 040610
                 </div>
@@ -103,7 +103,7 @@ const blog = () => (
                 </div>
               </div>
 
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="Codigo">
                 040630
                 </div>
@@ -115,7 +115,7 @@ const blog = () => (
                 </div>
               </div>
 
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="Codigo">
                 040510
                 </div>
@@ -127,7 +127,7 @@ const blog = () => (
                 </div>
               </div>
 
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="Codigo">
                 040690
                 </div>
@@ -139,7 +139,7 @@ const blog = () => (
                 </div>
               </div>
 
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="Codigo">
                 040310
                 </div>
@@ -151,7 +151,7 @@ const blog = () => (
                 </div>
               </div>
 
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="Codigo">
                 040620
                 </div>
@@ -163,7 +163,7 @@ const blog = () => (
                 </div>
               </div>
 
-              <div className="row">
+              <div className="c-row">
                 <div className="cell" data-title="Codigo">
                 040410
                 </div>

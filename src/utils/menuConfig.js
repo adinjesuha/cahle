@@ -1,8 +1,4 @@
-export const acercaDe = [
-  {
-    name: 'Historia, Visión, Misión y Objetivos',
-    link: '/historia-mision-vision-objetivos'
-  },
+export const NuestraGente = [
   {
     name: 'Mensaje del Presidente',  
     link: '/mensaje-presidente'

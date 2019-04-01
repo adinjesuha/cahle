@@ -3,134 +3,125 @@ import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import Container from '../components/container'
-import Junta from '../images/junta-directiva.jpg' 
 import HeroPage from '../components/heroPage'
 
 const Wrapper = styled.div`
+  padding: 70px 0;
+  background-color: var(--background);
+  width: 100%;
   padding: 70px 0;
 `
 
 export default () => {
   return (
     <Layout>
-      <HeroPage title="Junta Directiva Actual" tags="acerca de" bgImage={Junta}/>
+      <HeroPage title="Junta Directiva Actual" tags="Nuestra Gente" bgImage={"junta-directiva"}/>
       <Wrapper>
         <Container>
-
           <div className="wrapper">
-            <div className="table">
-            
-              <div className="c-row header">
-                <div className="cell">
-                  Nombre
+            <div className="row justify-content-center">
+              <div className="col-lg-10">
+                <div className="table">
+                <div className="c-row header">
+                  <div className="cell">
+                    Nombre
+                  </div>
+                  <div className="cell">
+                    Cargo
+                  </div>
                 </div>
-                <div className="cell">
-                  Cargo
+                <div className="c-row">
+                  <div className="cell" data-title="Nombre">
+                  Héctor Alberto Ferreira
+                  </div>
+                  <div className="cell" data-title="Cargo">
+                  Presidente
+                  </div>
                 </div>
-              </div>
-
-              <div className="c-row">
-                <div className="cell" data-title="Nombre">
-                Héctor Alberto Ferreira
+                <div className="c-row">
+                  <div className="cell" data-title="Nombre">
+                  Jorge Antonio Handal
+                  </div>
+                  <div className="cell" data-title="Cargo">
+                  Vice-presidente
+                  </div>
                 </div>
-                <div className="cell" data-title="Cargo">
-                Presidente
+                <div className="c-row">
+                  <div className="cell" data-title="Nombre">
+                  Vicente Murillo Cabrera
+                  </div>
+                  <div className="cell" data-title="Cargo">
+                  Secretario
+                  </div>
                 </div>
-              </div>
-              
-              <div className="c-row">
-                <div className="cell" data-title="Nombre">
-                Jorge Antonio Handal
+                <div className="c-row">
+                  <div className="cell" data-title="Nombre">
+                  José Manuel España Herrera
+                  </div>
+                  <div className="cell" data-title="Cargo">
+                  Tesorerao
+                  </div>
                 </div>
-                <div className="cell" data-title="Cargo">
-                Vice-presidente
+                <div className="c-row">
+                  <div className="cell" data-title="Nombre">
+                  Leopoldo Durán Puerto
+                  </div>
+                  <div className="cell" data-title="Cargo">
+                  Vocal I
+                  </div>
                 </div>
-              </div>
-
-              <div className="c-row">
-                <div className="cell" data-title="Nombre">
-                Vicente Murillo Cabrera
+                <div className="c-row">
+                  <div className="cell" data-title="Nombre">
+                  Gilberto Moreno
+                  </div>
+                  <div className="cell" data-title="Cargo">
+                  Vocal II
+                  </div>
                 </div>
-                <div className="cell" data-title="Cargo">
-                Secretario
+                <div className="c-row">
+                  <div className="cell" data-title="Nombre">
+                  Juan Sauceda
+                  </div>
+                  <div className="cell" data-title="Cargo">
+                  Vocal III
+                  </div>
                 </div>
-              </div>
-              
-              <div className="c-row">
-                <div className="cell" data-title="Nombre">
-                José Manuel España Herrera
+                <div className="c-row">
+                  <div className="cell" data-title="Nombre">
+                  Edgar Oliva
+                  </div>
+                  <div className="cell" data-title="Cargo">
+                  Vocal IV
+                  </div>
                 </div>
-                <div className="cell" data-title="Cargo">
-                Tesorerao
+                <div className="c-row">
+                  <div className="cell" data-title="Nombre">
+                  Anabel Gallardo
+                  </div>
+                  <div className="cell" data-title="Cargo">
+                  Comisión Fiscalizadora
+                  </div>
                 </div>
-              </div>
-              
-              <div className="c-row">
-                <div className="cell" data-title="Nombre">
-                Leopoldo Durán Puerto
+                <div className="c-row">
+                  <div className="cell" data-title="Nombre" datatype>
+                  Adalberto García
+                  </div>
+                  <div className="cell" data-title="Cargo">
+                  Comisión Fiscalizadora
+                  </div>
                 </div>
-                <div className="cell" data-title="Cargo">
-                Vocal I
-                </div>
-              </div>
-
-              <div className="c-row">
-                <div className="cell" data-title="Nombre">
-                Gilberto Moreno
-                </div>
-                <div className="cell" data-title="Cargo">
-                Vocal II
-                </div>
-              </div>
-
-              <div className="c-row">
-                <div className="cell" data-title="Nombre">
-                Juan Sauceda
-                </div>
-                <div className="cell" data-title="Cargo">
-                Vocal III
-                </div>
-              </div>
-
-              <div className="c-row">
-                <div className="cell" data-title="Nombre">
-                Edgar Oliva
-                </div>
-                <div className="cell" data-title="Cargo">
-                Vocal IV
-                </div>
-              </div>
-
-              <div className="c-row">
-                <div className="cell" data-title="Nombre">
-                Anabel Gallardo
-                </div>
-                <div className="cell" data-title="Cargo">
-                Comisión Fiscalizadora
-                </div>
-              </div>
-
-              <div className="c-row">
-                <div className="cell" data-title="Nombre" datatype>
-                Adalberto García
-                </div>
-                <div className="cell" data-title="Cargo">
-                Comisión Fiscalizadora
-                </div>
-              </div>
-
-              <div className="c-row">
-                <div className="cell" data-title="Nombre">
-                Medardo Guevara
-                </div>
-                <div className="cell" data-title="Cargo">
-                Comisión Fiscalizadora
+                <div className="c-row">
+                  <div className="cell" data-title="Nombre">
+                  Medardo Guevara
+                  </div>
+                  <div className="cell" data-title="Cargo">
+                  Comisión Fiscalizadora
+                  </div>
                 </div>
               </div>
-            
+              </div>
             </div>
           </div>
-
         </Container>
       </Wrapper>
     </Layout>
