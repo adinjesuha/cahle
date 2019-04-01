@@ -47,29 +47,6 @@ const LogoWrapper = styled.div`
 `
 
 export default class Header extends React.Component{
-  constructor(props){
-    super(props);
-    this.state = {
-      prevScroll: window.pageYOffset,
-      visible: true
-    }
-  }
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
-  handleScroll = () => {
-    const { prevScrollpos } = this.state;
-    const currentScrollPos = window.pageYOffset;
-    const visible = prevScrollpos > currentScrollPos;
-
-    this.setState({
-      prevScrollpos: currentScrollPos,
-      visible
-    });
-  };
 
   render(){
     return (
