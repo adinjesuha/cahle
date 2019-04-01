@@ -6,7 +6,7 @@ import { device } from '../../styles/breakpoints'
 
 const TabsWrapper = styled.div`
   .tab-list {
-    padding-left: 0;
+    padding: 0;
     text-align: center;
     background: var(--anti-flash-white);
     border-top-left-radius: 4px;
