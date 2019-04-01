@@ -8,7 +8,7 @@ export const acercaDe = [
     link: '/mensaje-presidente'
   },
   {
-    name: 'Junta Directiva',  
+    name: 'Junta Directiva Actual',  
     link: '/junta-directiva'
   },
   {

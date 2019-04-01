@@ -4,8 +4,7 @@ import styled from 'styled-components'
 import Layout from '../components/layout'
 import Container from '../components/container'
 import HeroPage from '../components/heroPage'
-import { device } from '../styles/breakpoints'
-import { FaCaretDown } from 'react-icons/fa'
+import { FaAngleDown } from 'react-icons/fa'
 
 import Beneficios from '../images/beneficios.jpg'
 
@@ -132,7 +131,7 @@ class AccordionSection extends React.Component{
               className={this.state.blockContent ? 'accordion-item is-expanded' : 'accordion-item'}
             >
               <h2 className="sub-title sub-title__small">Conoce los requisitos</h2>
-              <FaCaretDown />
+              <FaAngleDown />
             </div>
             <div className={this.state.blockContent ? 'accordion-content is-expanded' : 'accordion-content'}>
               <div>

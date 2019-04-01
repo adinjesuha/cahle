@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-import DesktopNavAdvance from './desktopNavAdvance'
+import DesktopNav from './desktopNav'
 import { device } from "../styles/breakpoints";
 import Logo from '../images/svg-icons/logo.svg'
 
@@ -57,7 +57,7 @@ export default class Header extends React.Component{
             </Link>
           </LogoWrapper>
           <HeaderNav>
-            <DesktopNavAdvance />
+            <DesktopNav />
           </HeaderNav>
         </HeaderWrapper>
       </HeaderEl> 

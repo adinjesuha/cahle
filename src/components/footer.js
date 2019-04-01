@@ -97,7 +97,7 @@ const Footer = () => (
 
           <div className="col-lg-6 col-md-12">
             <h2 className="main-title">Suscríbete</h2>
-            <p className="main-text">suscríbete para recibir las últimas noticias y actualizaciones.</p>
+            <p className="main-text">Recibe las últimas noticias y eventos relacionados.</p>
             <ContactForm />
             <Social>
               <ul>
