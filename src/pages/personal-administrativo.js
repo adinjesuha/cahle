@@ -10,6 +10,14 @@ const Wrapper = styled.div`
   background-color: var(--background);
   width: 100%;
   padding: 70px 0;
+  .cell{
+    color: var(--text);
+    font-family: roboto;
+  }
+  .header > .cell{
+    color: white !important;
+    font-family: Montserrat;
+  }
 `
 
 export default () => {
@@ -19,7 +27,7 @@ export default () => {
       <Wrapper>
         <Container>
           <div className="row justify-content-center">
-            <div className="col-lg-10">
+            <div className="col-lg-9">
               <div className="table">
                 <div className="c-row header">
                   <div className="cell">

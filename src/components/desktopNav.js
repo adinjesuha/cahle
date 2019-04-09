@@ -17,17 +17,17 @@ const NavBar = styled.nav`
       padding:0;
       margin-right: 25px;
       > a, span {
-        font-weight: 500;
+        font-weight: 400;
         letter-spacing: 0.5px;
         display: inline-block;
         padding: 20px 0;
         font-size: 13px;
         line-height: 42px;
-        color: white;
+        color: var(--oxford-blue);
         transition: 0.3s;
       }
       &:hover a, &:hover span{
-        color: rgba(255,255,255,0.5);
+        color: var(--active);
       }
       span{
         cursor: default;
@@ -59,8 +59,8 @@ const NavBar = styled.nav`
       ul li a {
         padding: 0 15px;
         text-transform: capitalize;
-        font-weight: 600;
-        color: var(--blue);
+        font-weight: 400;
+        color: var(--oxford-blue);
         line-height: 60px;
         transition: 0.2s;
         background-color: transparent;

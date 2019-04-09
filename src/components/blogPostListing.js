@@ -33,7 +33,7 @@ export default () => (
       const featuredPost = posts[0].node
       return(
         <Row>
-          <div className="col-lg-8 col-md-12">
+          <div className="col-lg-12">
             <CardPost {...featuredPost} featured />  
           </div>
           {posts.slice(1).map(({ node: post }) => (

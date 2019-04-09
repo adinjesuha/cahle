@@ -13,11 +13,13 @@ import {
   TwitterShareButton,
   GooglePlusShareButton,
   EmailShareButton,
+  WhatsappShareButton,
 
   FacebookIcon,
   TwitterIcon,
   GooglePlusIcon,
   EmailIcon,
+  WhatsappIcon,
 
 } from 'react-share';
 
@@ -134,6 +136,14 @@ const PostPage = ({data}) => {
                 >
                   <EmailIcon size={40} round/>
                 </EmailShareButton>
+              </li>
+              <li className="social-share">
+                <WhatsappShareButton
+                  url={`https://www.cahle.org/${slug}`}
+                  quote={title}
+                >
+                  <WhatsappIcon size={40} round/>
+                </WhatsappShareButton>
               </li>
             </ul>
           </ShareButtonsContainer>

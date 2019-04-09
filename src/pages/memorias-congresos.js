@@ -4,12 +4,11 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import Container from '../components/container'
-import Crel from '../images/CREL.jpg' 
 import HeroPage from '../components/heroPage'
 import { device } from '../styles/breakpoints'
 
 import Congresos from '../images/congreso.jpg'
-import Olanchito from '../images/olanchito.jpg'
+import Olanchito from '../images/congreso-olanchito.jpg'
 import Choluteca from '../images/congreso-choluteca.jpg'
 import RibeteV from '../images/congresos-bg/ribete-v.png'
 import RibeteVI from '../images/congresos-bg/ribete-vi.png'
@@ -66,7 +65,7 @@ const CardContainer = styled.ul`
 export default () => {
   return (
     <Layout>
-      <HeroPage title="Memorias Congreso" tags="documentación" bgImage={Crel}/>
+      <HeroPage title="Memorias Congreso" tags="Documentación" bgImage={"congreso"}/>
       <Container>
         <CardContainer>
           <li className="card-item">

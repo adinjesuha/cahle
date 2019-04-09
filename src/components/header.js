@@ -15,7 +15,7 @@ const HeaderEl = styled.header`
   /* transform: translateY(${props => props.visible ? 0 : `-100px`}); */
   left: 0;
   top: 0;
-  background: var(--oxford-blue);
+  background: white;
   transition: transform 0.3s ease;
   @media ${device.tablet}{
     padding: 0 40px;
@@ -39,15 +39,14 @@ const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
   svg {
-    width: 50px;
-    @media ${device.laptop}{
-      width: 70px;
-    }
+    width: 180px;
+    /* @media ${device.laptop}{
+      width: 150px;
+    } */
   }
 `
 
 export default class Header extends React.Component{
-
   render(){
     return (
       <HeaderEl>

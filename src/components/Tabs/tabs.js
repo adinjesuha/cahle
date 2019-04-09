@@ -8,37 +8,51 @@ const TabsWrapper = styled.div`
   .tab-list {
     padding: 0;
     text-align: center;
-    background: var(--anti-flash-white);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
     .tab-list-item {
       display: inline-block;
       list-style: none;
-      padding: 20px 40px;
+      padding: 12px 35px;
       cursor: pointer;
-      color: var(--ceil);
+      color: var(--oxford-blue);
       transition: color 0.3s ease;
+      transition: background 0.3s ease;
+      border: 1px solid var(--oxford-blue);
       width: 100%;
+      margin-right: 2px;
       &:hover{
-        color: var(--active);
+        color: white;
+        background-color: var(--oxford-blue);
+      }
+      &:first-child{
+        margin-bottom: -1px;
+      }
+      &:last-child{
+        margin-top: -1px;
       }
       @media ${device.tablet}{
         width: auto;
+        &:first-child{
+          margin-bottom: -1px;
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+        }
+        &:last-child{
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+          margin-right: 0;
+        }
       }
     }
     .tab-list-active {
-      color: var(--active);
-      border-bottom: 2px solid var(--active);
+      color: white;
+      background-color: var(--oxford-blue);
       &:hover{
-        color: var(--active);
+        color: white;
       }
     }
   }
   .tab-content{
-    padding: 40px 20px 60px;
-    background: white;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    padding: 50px 0;
   }
 `
 

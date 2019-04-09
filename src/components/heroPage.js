@@ -48,7 +48,7 @@ const FutureTitle = styled.div`
   text-transform: uppercase;
   padding: 0 1rem;
   h1{
-    font-size: 34px;
+    font-size: 25px;
     line-height: 54px;
     font-weight: bold;
     margin-bottom: 5px;
@@ -60,13 +60,16 @@ const FutureTitle = styled.div`
     letter-spacing: 1px;
     font-family: 'Montserrat';
   }
-  @media ${device.tablet}{
+  @media ${device.mobileS}{
     padding: 0;
     h1{
+      font-size: 34px;
+    }
+  }
+  @media ${device.tablet}{
+    
+    h1{
       font-size: 54px;
-      line-height: 54px;
-      font-weight: bold;
-      margin-bottom: 5px;
     }
   }
 `

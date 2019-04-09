@@ -9,10 +9,10 @@
  */
 
  :root{
-  --oxford-blue: #060c46;
   --mantis: #67d54b;
-  --navy-blue: #1665D8;
-  --slate-grey: #627792;
+  --oxford-blue: #1f2b7b;
+  --navy-blue: #3340ff;
+  --slate-grey: #4c586b;
   --ceil: #92A1BF;
   --anti-flash-white: #EAEDF3;
   --ghost-white: #F6F8FA;
@@ -419,8 +419,8 @@ template {
 
 .c-row.header {
   font-weight: 900;
-  color: var(--active);
-  background: var(--anti-flash-white);
+  color: white;
+  background: var(--oxford-blue);
 }
 
 
@@ -471,15 +471,42 @@ template {
 *****************************************/
 
 .main-title{
-  font-size: 32px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--title);
+  margin: 0 auto;
+  max-width: 620px;
+}
+@media screen and (min-width: 540px) {
+  .main-title {
+    font-size: 32px;
+  }
+  .sub-title{
+    font-size: 22px;
+  }
+}
+
+.sub-title{
+  font-size: 18px;
   font-weight: 600;
   color: var(--title);
 }
 
-.sub-title{
-  font-size: 22px;
-  font-weight: 600;
-  color: var(--title);
+.variant-title{
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.variant-title:after{
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: var(--active);
+  bottom: -10px;
+  right: calc(50% - 20px);
 }
 
 .main-text{
@@ -487,6 +514,42 @@ template {
   font-weight: 300;
   line-height: 150%;
   color: var(--text);
+}
+
+.bibliography{
+  list-style: disc;
+  margin: 0;
+  margin-left: 15px;
+  font-size: 14px;
+  color: var(--text);
+}
+.bibliography li{
+  margin-bottom: 10px;
+}
+.bibliography li:last-child{
+  margin-bottom: 0;
+}
+
+.animate-link{
+  color: var(--active);
+  display: inline-block;
+  position: relative;
+}
+
+.animate-link:before, .animate-link:after{
+  content: '';
+  border-bottom: solid 1px var(--active);
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  transition: all 0.2s ease;
+}
+
+.animate-link:before { left: 0; }
+.animate-link:after { right: 0; }
+
+.animate-link:hover:before, .animate-link:hover:after {
+  width: 50%;
 }
 
 /***************************************

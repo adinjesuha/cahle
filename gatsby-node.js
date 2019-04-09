@@ -38,37 +38,7 @@ exports.createPages = ({graphql, actions }) => {
       })
       )
     }) 
-
-    const loadPages = new Promise((resolve, reject) => {
-      const pageTemplate = path.resolve(`src/templates/page.js`)
-      resolve(
-        graphql(`
-          {
-            allContentfulPage{
-              edges{
-                node{
-                  slug
-                }
-              }
-            }
-          }
-        `).then(result => {
-          if(result.errors){
-            reject(result.errors)
-          }
-          result.data.allContentfulPage.edges.forEach(({node})=>{
-            createPage({
-              path: node.slug,
-              component: pageTemplate, 
-              context: {
-                slug: node.slug
-              }
-            })
-          })
-        })
-      )
-    })
-  return Promise.all([loadPosts, loadPages])
+  return Promise.all([loadPosts])
 }
 
 // exports.createPages = ({ graphql, actions }) => {

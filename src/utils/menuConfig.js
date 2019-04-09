@@ -4,7 +4,7 @@ export const NuestraGente = [
     link: '/mensaje-presidente'
   },
   {
-    name: 'Junta Directiva Actual',  
+    name: 'Junta Directiva',  
     link: '/junta-directiva'
   },
   {

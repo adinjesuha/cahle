@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 
+
 import ContactForm from './form'
 import Container from './container'
 import Row from './row'
@@ -17,7 +18,7 @@ const FooterInner = styled.div`
   background-size: contain;
   background-position: bottom right;
   position: relative;
-  border-top: 1px solid var(--light);
+  border-top: 1px solid var(--borders);
   padding: 40px 0;
   @media ${device.tablet}{
     padding: 80px 0;
@@ -77,7 +78,7 @@ const Footer = () => (
       <Container>
         <Row>
           <div className="col-lg-6 col-md-12">
-            <h2 className="main-title">Contactanos</h2>
+            <h2 className="main-title">Contáctanos</h2>
             <InfoContact>
               <li>
                 <span><PinIcon style={{verticalAlign: 'middle'}}/></span>
@@ -85,7 +86,7 @@ const Footer = () => (
               </li>
               <li>
                 <span><PhoneIcon style={{verticalAlign: 'middle'}}/></span>
-                <p className="contact-info main-text">(504) 2231-1102 </p>
+                <p className="contact-info main-text">(504) 2231-1102 </p>  
                 <p className="contact-info main-text" style={{paddingLeft: '25px'}}>(504) 9442-4710</p>
               </li>
               <li>

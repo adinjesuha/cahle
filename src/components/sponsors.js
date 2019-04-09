@@ -2,13 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 
 import sponsorImages from '../utils/imageConfig'
+import Image from '../components/image'
 
 const Wrapper = styled.ul`
   display: flex;
   width: 100%;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0 auto;
   li{
     figure{

@@ -7,114 +7,113 @@ import { device } from '../styles/breakpoints'
 const Post = styled.article`
   position: relative;
   width: 100%;
-  margin-bottom: 40px;
-  background: white;
-  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
-  border-radius: 5px;
-  overflow: hidden;
-  transform: translateZ(0);
-  transform:translateY(0);
-  transition: 0.3s;
-  .gatsby-image-wrapper {
-    max-height: 200px;
-    position: relative;
-    &:before{
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background: black;
-      opacity: 0.3;
-      z-index: 1;
-      transition: opacity 0.3s ease;
+  margin-bottom: 60px;
+  a{
+    .gatsby-image-wrapper {
+      min-height: 200px;
+      max-height: 200px;
+      position: relative;
+      border-radius: 4px;
+      transform: translateZ(0);
+      transform:translateY(0);
+      transition: 0.3s;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: black;
+        opacity: 0.1;
+        z-index: 1;
+        transition: opacity 0.3s ease;
+      }
     }
-    &:hover::before{
-      opacity: 0.5;
+    .title{
+      margin-bottom: 8px;
+      line-height: 1.16;
+      color: var(--oxford-blue);
+      transition: color 0.3s ease;
+      font-size: 22px;
+    }
+    .data{
+      padding: 20px 0 0;
+      height: 100%;
+      @media ${device.tablet}{
+        /* min-height: 330px; */
+      }
+      .meta{
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 0.04em;
+        z-index: 20;
+        position: relative;
+        color: var(--text);
+        .tag{
+          border-right: 1px solid rgba(125,125,125,0.2);
+          padding-right: 10px;
+          margin-right: 10px;
+          font-weight: 500;
+        }
+      }
     }
   }
-  ${props => props.featured && css`
-    .gatsby-image-wrapper{
-      max-height: 200px;
-    }
-    ${Data} {
-      
-    }
-    ${Title} {
-      
-    }
-  `}
-  &:hover{
+  &:hover .gatsby-image-wrapper{
     transform: translateZ(0);
-    transform: translateY(-3px);
+    transform: translateY(-5px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   }
-`
-
-const Data = styled.div`
-  padding: 20px 24px;
-  height: 100%;
-  min-height: 220px;
-  @media ${device.tablet}{
-    min-height: 330px;
+  &:hover .title{
+    color: var(--active);
   }
-`
-
-const Title = styled.h2`
-  margin-bottom: 8px;
-  line-height: 1.16;
-`
-
-const Meta = styled.p`
-  font-size: 12px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  z-index: 20;
-  position: relative;
-  color: var(--ceil);
-`
-
-const Tag = styled.span`
-  border-right: 1px solid rgba(125,125,125,0.2);
-  padding-right: 10px;
-  margin-right: 10px;
-  font-weight: 500;
-`
-
-const ButtonPost = styled.a`
-  padding: 15px 0;
-  display: inline-block;
-  border-top: 1px solid var(--borders);
-  width: 100%;
-  text-align: center;
-  color: var(--active);
-  transition: background-color 0.3s ease, color 0.3s ease;
-  &:hover{
-    background-color: var(--active);
-    color: white;
-  }
+  ${props => props.featured && css`
+    a{
+      display: flex;
+      flex-wrap: wrap;
+      .gatsby-image-wrapper{
+        width: 100%;
+      }
+    }
+    @media ${device.tablet}{
+      a{
+        flex-wrap: nowrap;
+        .gatsby-image-wrapper{
+          width: 50%;
+          min-height: 380px;
+        }
+        .data {
+          width: 50%;
+          margin-left: 40px;
+        }
+      }
+    }
+    @media ${device.laptop}{
+      a {
+        .data .title{
+          font-size: 32px;
+        }
+      }
+    }
+  `}
 `
 
 const CardPost = ({slug, heroImage, title, body, tags, customDate, intro, ...props}) => (
   <Post featured={props.featured}>
     <a href={slug}>
       <Img fluid={heroImage.fluid}/>
+      <div className="data">  
+        <p className="meta">
+          <span className="tag">{tags}</span>
+          <span>{customDate}</span>
+        </p>
+        <h2 className="title">{title}</h2>
+        <p className="main-text">{intro}</p>
+      </div>
     </a>
-    <Data>  
-      <Meta>
-        <Tag>{tags}</Tag>
-        <span>{customDate}</span>
-      </Meta>
-      <a href={slug}>
-        <Title className="sub-title">{title}</Title>
-      </a>
-      <p className="main-text main-text__light">{intro}</p>
-    </Data>
-    <ButtonPost href={slug}>Leer más</ButtonPost>
   </Post>
 )
 

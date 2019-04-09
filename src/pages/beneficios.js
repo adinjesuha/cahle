@@ -39,39 +39,37 @@ const Wrapper = styled.section`
   }
 `
 
-const CTASection = styled.section`
-  background-color: var(--anti-flash-white);
-  .accordion-title{
-    padding: 30px;
-    text-align: center;
-    > h2{
-      color: var(--oxford-blue);
-    }
+const SubWrapper = styled.div`
+  background:var(--oxford-blue);
+  padding: 50px 0;
+  h2{
+    color: white !important;
   }
 `
 
 const AccordionWrapper = styled.div`
   width: 100%;
-  max-width: 720px;
-  margin: 0 auto;
-  border: 1px solid var(--light);
-  border-radius: 6px;
-  box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
   .accordion-panel{
-    padding: 30px 30px 40px;
     .accordion-item{
-      border-radius: 0;
-      padding: 15px 30px;
+      color: white;
+      background: var(--active);
+      border-radius: 4px;
+      padding: 0 30px;
       cursor: pointer;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      transition: background 0.3s ease;
-      color: var(--green);
-      background: var(--light);
+      span{
+        padding-top: 10px;
+        transform: rotate(0deg);
+        transition: transform 0.3s ease;
+      }
       &.is-expanded {
-        background: #eff1f5;
-        transition: background 0.3s ease;
+        span{
+          padding-top: 10px;
+          transform: rotate(180deg);
+          transition: transform 0.3s ease;
+        }
       }
     }
     .accordion-content{
@@ -81,20 +79,25 @@ const AccordionWrapper = styled.div`
       margin: 0;
       padding: 0 30px;
       border-radius: 4px;
+      background: white;
       div {
         padding: 30px 0;
         margin: 0;
         opacity: 0;
         transition: .5s;
-        > ol{
+        > ul{
           padding-left: 20px;
+          list-style: disc;
+          margin: 0;
           li{
-            margin-bottom: 15px;
+            font-size: 14px;
+            font-family: Roboto;
+            color: var(--text);
           }
         } 
       }
       &.is-expanded {
-        max-height: 500px;
+        max-height: 520px;
         overflow: hidden;
         div {
           opacity: 1;
@@ -102,11 +105,6 @@ const AccordionWrapper = styled.div`
       }
     }
   }
-  h3{
-    margin: 0;
-    font-weight: 400;
-  }
-
 `
 
 class AccordionSection extends React.Component{
@@ -130,12 +128,14 @@ class AccordionSection extends React.Component{
               onClick={this.toggle} 
               className={this.state.blockContent ? 'accordion-item is-expanded' : 'accordion-item'}
             >
-              <h2 className="sub-title sub-title__small">Conoce los requisitos</h2>
-              <FaAngleDown />
+              <h2>Conoce los requisitos</h2>
+              <span>
+                <FaAngleDown />
+              </span>
             </div>
             <div className={this.state.blockContent ? 'accordion-content is-expanded' : 'accordion-content'}>
               <div>
-                <ol>
+                <ul>
                   <li className="list">Ser productor, procesador, o comercializador de la leche.</li>
                   <li className="list">Presentar solicitud de ingreso (original) por escrito a la Junta Directiva de la CAHLE, la que decidirá en sesión ordinaria su afiliación</li>
                   <li className="list">Contar con el reconocimiento de al menos dos miembros de la Junta Directiva (firmantes de la solicitud de ingreso)</li>
@@ -145,7 +145,7 @@ class AccordionSection extends React.Component{
                   <li className="list">Copia del fierro</li>
                   <li className="list">Pagar una cuota única de afiliación de L. 1,000.00 y una membresía mensual de L. 100.00 lo cual le da al asociado el derecho de participar en toda actividad económica educativa o social de la CAHLE</li>
                   <li className="list">Presentar cualquier otra información requerida por la Junta Directiva</li>
-                </ol>
+                </ul>
               </div>
             </div>
           </div>
@@ -161,58 +161,66 @@ export default () => {
       <HeroPage title="Beneficios de los Asociados" tags="asociados" bgImage={Beneficios}/>
       <Wrapper>
         <Container>
-          <div className="row">
-            <div className="col-lg-4 force-margin">
-              <div className="content-block">
-                <h3 className="sub-title"><span className="number">01</span>Ferias y exposiciones</h3>
-                <p className="main-text main-text__dark">Realizamos actos de presencia en los eventos que nuestros socios desarrollan y publicamos notas informativas de los mismos.</p>
-              </div>
-            </div>
-            <div className="col-lg-4 force-margin">   
-              <div className="content-block">
-                <h3 className="sub-title"><span className="number">02</span>Soporte técnico</h3>
-                <p className="main-text">Brindamos capacitaciones y asistencia técnica en formato abierto a productores individuales o grupos de organizaciones asociadas en temas de actualidad relacionados con el rubro. </p>
-              </div> 
-            </div>
-            <div className="col-lg-4 force-margin">
-              <div className="content-block">
-                <h3 className="sub-title"><span className="number">03</span>Tarifas preferenciales</h3>
-                <p className="main-text">Aplicables a todos nuestros eventos y/o servicios.</p>
-              </div>
-            </div>
-            <div className="col-lg-4 force-margin">
-              <div className="content-block">
-                <h3 className="sub-title"><span className="number">04</span>Representación</h3>
-                <p className="main-text">Defendemos los intereses de nuestros agremiados, emitimos las posiciones de nuestros socios y buscamos espacios políticos para hacerlos valer. </p>
-              </div>
-            </div>
-            <div className="col-lg-4 force-margin">
-              <div className="content-block">
-                <h3 className="sub-title"><span className="number">05</span>Alianzas y convenios</h3>
-                <p className="main-text">Gestionamos convenios con otras instituciones para facilitar que los proyectos de capacitación y asesoría tengan mayor cobertura y éxito. </p>
-              </div>
-            </div>
-            <div className="col-lg-4 force-margin">
-              <div className="content-block">
-                <h3 className="sub-title"><span className="number">06</span>Encuentros</h3>
-                <p className="main-text">Realizamos encuentros entre productores con el objetivo de intercambiar experiencias y desarrollar el crecimiento del rubro.</p>
-              </div>
-            </div>
-            <div className="col-lg-4">
-              <div className="content-block">
-                <h3 className="sub-title"><span className="number">07</span>Competitividad</h3>
-                <p className="main-text">Financiamos la investigación científica con el objetivo de usar los hallazgos adquiridos para resolver los problemas y poder guiar al sector hacia una mejora en la productividad de las fincas.</p>
+          <div className="row justify-content-center">
+            <div className="col-lg-9">
+              <div className="row">
+                <div className="col-lg-6 force-margin">
+                  <div className="content-block">
+                    <h3 className="sub-title"><span className="number">01</span>Ferias y exposiciones</h3>
+                    <p className="main-text main-text__dark">Realizamos actos de presencia en los eventos que nuestros socios desarrollan y publicamos notas informativas de los mismos.</p>
+                  </div>
+                </div>
+                <div className="col-lg-6 force-margin">   
+                  <div className="content-block">
+                    <h3 className="sub-title"><span className="number">02</span>Soporte técnico</h3>
+                    <p className="main-text">Brindamos capacitaciones y asistencia técnica en formato abierto a productores individuales o grupos de organizaciones asociadas en temas de actualidad relacionados con el rubro. </p>
+                  </div> 
+                </div>
+                <div className="col-lg-6 force-margin">
+                  <div className="content-block">
+                    <h3 className="sub-title"><span className="number">03</span>Tarifas preferenciales</h3>
+                    <p className="main-text">Aplicables a todos nuestros eventos y/o servicios.</p>
+                  </div>
+                </div>
+                <div className="col-lg-6 force-margin">
+                  <div className="content-block">
+                    <h3 className="sub-title"><span className="number">04</span>Representación</h3>
+                    <p className="main-text">Defendemos los intereses de nuestros agremiados, emitimos las posiciones de nuestros socios y buscamos espacios políticos para hacerlos valer. </p>
+                  </div>
+                </div>
+                <div className="col-lg-6 force-margin">
+                  <div className="content-block">
+                    <h3 className="sub-title"><span className="number">05</span>Alianzas y convenios</h3>
+                    <p className="main-text">Gestionamos convenios con otras instituciones para facilitar que los proyectos de capacitación y asesoría tengan mayor cobertura y éxito. </p>
+                  </div>
+                </div>
+                <div className="col-lg-6 force-margin">
+                  <div className="content-block">
+                    <h3 className="sub-title"><span className="number">06</span>Encuentros</h3>
+                    <p className="main-text">Realizamos encuentros entre productores con el objetivo de intercambiar experiencias y desarrollar el crecimiento del rubro.</p>
+                  </div>
+                </div>
+                <div className="col-lg-6">
+                  <div className="content-block">
+                    <h3 className="sub-title"><span className="number">07</span>Competitividad</h3>
+                    <p className="main-text">Financiamos la investigación científica con el objetivo de usar los hallazgos adquiridos para resolver los problemas y poder guiar al sector hacia una mejora en la productividad de las fincas.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </Container>
       </Wrapper>
-      <CTASection>
-        <div className="accordion-title">
-          <h2 className="main-title">¿Quieres afiliarte?</h2>
-        </div>
-        <AccordionSection />
-      </CTASection>
+      <SubWrapper>
+        <Container>
+          <div className="row justify-content-center">
+            <div className="col-lg-6"> 
+              <h2 className="main-title variant-title">¿Quieres afiliarte?</h2>
+              <AccordionSection />
+            </div>
+          </div>
+        </Container>
+      </SubWrapper>
     </Layout>
   )
 }
