@@ -69,7 +69,7 @@ export default () => {
       <Container>
         <CardContainer>
           <li className="card-item">
-            <Link to="/memorias-congresos">
+            <Link to="/congreso-de-la-leche">
               <figure>
                 <img src={RibeteVII} alt="Congreso lechero CAHLE"/>
               </figure>
