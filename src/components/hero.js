@@ -6,6 +6,7 @@ import { device } from '../styles/breakpoints'
 
 const Wrapper =styled.div`
   position: relative;
+  z-index: 100;
 `
 
 const HeroImage = styled(Img)`
@@ -19,11 +20,10 @@ const HeroImage = styled(Img)`
     Ensure golden ratio for the hero size while limiting it to some extend to
     the viewport width
   */
-  height: 60vh;
-  margin-top: 70px;
+  height: 50vh;
   &::before {
     content: '';
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
     position: absolute;
     top: 0;
     left: 0;
@@ -32,6 +32,9 @@ const HeroImage = styled(Img)`
     height: 100%;
     width: 100%;
     z-index: 1;
+  }
+  @media ${device.tablet}{
+    height: 70vh;
   }
 `
 const FutureTitle = styled.div`

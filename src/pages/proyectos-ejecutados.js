@@ -6,8 +6,6 @@ import Layout from '../components/layout'
 import Container from '../components/container'
 import HeroPage from '../components/heroPage'
 
-import ProyectosEjecutados from '../images/proyectos-ejecutados.jpg'
-
 const Wrapper = styled.section`
   background-color: var(--background);
   width: 100%;
@@ -23,7 +21,7 @@ const Wrapper = styled.section`
 export default () => {
   return (
     <Layout>
-      <HeroPage title="Proyectos Ejecutados" tags="asociados" bgImage={ProyectosEjecutados}/>
+      <HeroPage title="Proyectos Ejecutados" tags="asociados" bgImage={"proyectos-ejecutados"}/>
       <Wrapper>
         <Container>
           <div className="row justify-content-center">
@@ -52,6 +50,7 @@ export default () => {
                 <li>
                   <p className="main-text"><strong>Incentivo económico para la obtención de animales y desarrollar el mejoramiento genético de los hatos</strong></p>
                   <p className="main-text">Subasta ganadera organizada por CAFOGAH, 26 productores beneficiados. </p>
+                  <Link className="animate-link" to="/cahle-financia-genetica-bovina">Leer noticia</Link>
                 </li>
                 <li>
                   <p className="main-text"><strong>Asistencia técnica en alianza con Zamorano, SAGO y AGAA</strong></p>
@@ -78,7 +77,6 @@ export default () => {
                 <li>
                   <p className="main-text"><strong>Inseminación Artificial. Donación de un termo de inseminación al CREL</strong></p>
                   <p className="main-text main-text__dark">Sociedad Medina Fernández ubicado en San Antonio, Cortés, 20 productores beneficiados.</p>
-                  <Link className="animate-link" to="/cahle-financia-genetica-bovina">Leer noticia</Link>
                 </li>
               </ul>
             </div>

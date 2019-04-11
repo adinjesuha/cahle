@@ -4,8 +4,12 @@ export const NuestraGente = [
     link: '/mensaje-presidente'
   },
   {
-    name: 'Junta Directiva',  
+    name: 'Junta Directiva Actual',  
     link: '/junta-directiva'
+  },
+  {
+    name: 'Junta Directiva Anterior',  
+    link: '/junta-directiva-anterior'
   },
   {
     name: 'Personal Administrativo',

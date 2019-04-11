@@ -149,6 +149,7 @@ class Accordion extends Component {
     return <Container>
       <h1><Logo /></h1>
       <CustomLink to="/acerca-de-cahle">Acerca de CAHLE</CustomLink>
+      <CustomLink to="/congreso-de-la-leche">VII Congreso</CustomLink>
       <AccordionWrapper>
         {
           accordionList.map((item, index) => (

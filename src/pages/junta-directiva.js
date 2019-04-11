@@ -25,8 +25,7 @@ export default () => {
       <HeroPage title="Junta Directiva Actual" tags="Nuestra Gente" bgImage={"junta-directiva"}/>
       <Wrapper>
         <Container>
-          <div className="wrapper">
-            <div className="row justify-content-center">
+          <div className="row justify-content-center">
               <div className="col-lg-9">
                 <div className="table">
                 <div className="c-row header">
@@ -125,7 +124,6 @@ export default () => {
                   Comisión Fiscalizadora
                   </div>
                 </div>
-              </div>
               </div>
             </div>
           </div>
