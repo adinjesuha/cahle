@@ -118,7 +118,11 @@ class SubscribeForm extends React.Component {
             <p className="select-group">
               <label>Genero:</label>   
               <br/>
-              <select className="select">
+              <select 
+                className="select"
+                name="pais" 
+                onChange={this.handleChange}  
+              >
                 <option value="default">Seleccionar</option>
                 <option value="hombre">Hombre</option>
                 <option value="mujer">Mujer</option>
@@ -171,7 +175,11 @@ class SubscribeForm extends React.Component {
             </p>
             <p className="select-group">
               <label>Ocupación:</label>   
-              <select className="select">
+              <select 
+                className="select"
+                name="pais" 
+                onChange={this.handleChange}  
+              >
                 <option value="default">Seleccionar</option>
                 <option value="hombre">Estudiante nacional</option>
                 <option value="mujer">Estudiante extranjero</option>
@@ -182,7 +190,11 @@ class SubscribeForm extends React.Component {
                 <option value="mujer">Otro</option>
               </select>
             </p>
-            <p className="select-group">
+            <p 
+              className="select-group"
+              name="pais" 
+              onChange={this.handleChange}  
+            >
               <label>Tipo de participación:</label>   
               <select className="select">
                 <option value="default">Seleccionar</option>

@@ -39,10 +39,11 @@ const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
   svg {
-    width: 180px;
-    /* @media ${device.laptop}{
+    width: 120px;
+    margin: 5px 0;
+    @media ${device.laptop}{
       width: 150px;
-    } */
+    }
   }
 `
 

@@ -51,7 +51,7 @@ const PopUp = styled.div`
 `
 
 const PopUpContainer = styled.nav`
-  background: var(--oxford-blue);
+  background: white;
   width: 100%;
   min-height: 100%;
   position: absolute;

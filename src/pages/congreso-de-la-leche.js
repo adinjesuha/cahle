@@ -8,9 +8,9 @@ import Tabs from '../components/Tabs/tabs'
 import Image from '../components/image'
 import SmallCard from '../components/smallCard'
 import DownloadCard from '../components/downloadCard'
-import { FaAngleRight } from 'react-icons/fa';
+// import { FaAngleRight } from 'react-icons/fa';
 import { device } from '../styles/breakpoints'
-import SubscribeForm from '../components/subscribeForm'
+// import SubscribeForm from '../components/subscribeForm'
 
 const Wrapper = styled.div`
   background-color: var(--background);

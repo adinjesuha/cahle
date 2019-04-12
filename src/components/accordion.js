@@ -4,18 +4,11 @@ import Link from 'gatsby-link'
 
 import { NuestraGente, asociados, documentacion } from '../utils/menuConfig'
 
-import Logo from '../images/svg-icons/logo.svg'
 
 const Container = styled.div`
   min-height: 100%;
-  padding:  0 20px;
+  padding:  50px 20px;
   text-align: center;
-  h1 {
-    text-align: left;
-    color: white;
-    margin-top: 16px;
-  }
-  
 `
 
 const AccordionWrapper = styled.dl`
@@ -26,7 +19,7 @@ const AccordionWrapper = styled.dl`
     cursor: pointer;
     transform: translate3d(0, 0, 0);
     transition: color 0.3s ease;
-    color: white;
+    color: var(--oxford-blue);
     position: relative;
     font-size: 14px;
     font-weight: 500;
@@ -45,7 +38,7 @@ const AccordionWrapper = styled.dl`
 
     &.is-expanded {
       transition: color 0.3s ease;
-      color: rgba(255,255,255,0.5);
+      color: var(--active);
       &::after {
         content: "-";
         transform: rotate(-360deg);
@@ -59,7 +52,7 @@ const AccordionWrapper = styled.dl`
     margin: 0;
     padding: 0 20px;
     /* border: solid 1px #eeeeee; */
-    background: white;
+    background: var(--oxford-blue);
     border-radius: 4px;
     div {
       padding: 30px 0;
@@ -78,7 +71,7 @@ const AccordionWrapper = styled.dl`
       text-align: left;
       padding: 15px 0;
       a{
-        color: var(--blue);
+        color: white;
         font-size: 14px;
         text-transform: capitalize;
       }
@@ -88,7 +81,7 @@ const AccordionWrapper = styled.dl`
 
 const CustomLink = styled(Link)`
   text-align: left;
-  color: white;
+  color: var(--oxford-blue);
   display: inline-block;
   width: 100%;
   padding: 20px 0 10px;
@@ -147,7 +140,6 @@ class Accordion extends Component {
     ];
     
     return <Container>
-      <h1><Logo /></h1>
       <CustomLink to="/acerca-de-cahle">Acerca de CAHLE</CustomLink>
       <CustomLink to="/congreso-de-la-leche">VII Congreso</CustomLink>
       <AccordionWrapper>
