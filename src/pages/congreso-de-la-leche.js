@@ -173,7 +173,7 @@ export default () => {
                 </div>
               </div>
             </div>
-            <div label="Inscripción">
+            {/* <div label="Inscripción">
               <div className="row justify-content-center">
                 <div className="col-lg-10">
                   <h2 className="main-title variant-title">Inscripciones del Congreso</h2>
@@ -222,7 +222,7 @@ export default () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </Tabs>
         </Container>
         {/* <div className="sub-section">
