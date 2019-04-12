@@ -20,7 +20,6 @@ const ImageWrapper = styled.div`
     Ensure golden ratio for the hero size while limiting it to some extend to
     the viewport width
   */
-  height: 70vh;
   overflow: hidden;
   &::before {
     content: '';
@@ -33,6 +32,9 @@ const ImageWrapper = styled.div`
     height: 100%;
     width: 100%;
     z-index: 1;
+  }
+  @media ${device.mobileL}{
+    height: 70vh;
   }
 `
 
