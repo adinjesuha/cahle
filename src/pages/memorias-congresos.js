@@ -8,6 +8,7 @@ import HeroPage from '../components/heroPage'
 import { device } from '../styles/breakpoints'
 
 import Congresos from '../images/congreso.jpg'
+import Ceiba from '../images/congreso-ceiba.jpg'
 import Olanchito from '../images/congreso-olanchito.jpg'
 import Choluteca from '../images/congreso-choluteca.jpg'
 import RibeteV from '../images/congresos-bg/ribete-v.png'
@@ -73,7 +74,7 @@ export default () => {
               <figure>
                 <img src={RibeteVII} alt="Congreso lechero CAHLE"/>
               </figure>
-              <div className="card-item-image" style={{backgroundImage: `url(${Olanchito})`}}></div>
+              <div className="card-item-image" style={{backgroundImage: `url(${Ceiba})`}}></div>
             </Link>
             <Link to="/memorias-congresos"><h2 className="sub-title">La Ceiba, Atlantida 2019</h2></Link>
           </li>

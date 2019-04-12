@@ -6,7 +6,7 @@ import { device } from '../styles/breakpoints'
 const NewsLetterForm =  styled.div`
   .field-wrapper{
     font-family: Roboto;
-    .relative-field{
+    .relative-field {
       border-radius: 4px;
       border: 1px solid var(--borders);
       width: 100%;
