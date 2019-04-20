@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import Container from '../components/container'
@@ -8,9 +9,8 @@ import Tabs from '../components/Tabs/tabs'
 import Image from '../components/image'
 import SmallCard from '../components/smallCard'
 import DownloadCard from '../components/downloadCard'
-// import { FaAngleRight } from 'react-icons/fa';
+import { FaAngleRight } from 'react-icons/fa';
 import { device } from '../styles/breakpoints'
-// import SubscribeForm from '../components/subscribeForm'
 
 const Wrapper = styled.div`
   background-color: var(--background);
@@ -225,11 +225,11 @@ export default () => {
             </div> */}
           </Tabs>
         </Container>
-        {/* <div className="sub-section">
+        <div className="sub-section">
           <Container>
-            <a className="sub-title" target="_blank" rel="noopener noreferrer" href="http://www.xplorhonduras.com/lugares-que-visitar-en-la-ceiba/">¿Deseas Inscribirte? <FaAngleRight /></a>
+            <Link className="sub-title" to="/congreso-inscripcion">¿Deseas Inscribirte? <FaAngleRight /></Link>
           </Container>
-        </div> */}
+        </div>
       </Wrapper>
     </Layout>
   )

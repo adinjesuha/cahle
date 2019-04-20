@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { navigateTo } from "gatsby-link"
+import { navigate } from "gatsby-link"
 import { device } from '../styles/breakpoints'
 
 const NewsLetterForm =  styled.div`
@@ -61,7 +61,7 @@ class ContactForm extends React.Component {
         ...this.state
       })
     })
-      .then(() => navigateTo(form.getAttribute("action")))
+      .then(() => navigate(form.getAttribute("action")))
       .catch(error => alert(error));
   };
 

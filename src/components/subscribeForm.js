@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { navigateTo } from "gatsby-link"
+import { navigate } from "gatsby-link"
 import { device } from '../styles/breakpoints'
 
 const NewsLetterForm =  styled.div`
@@ -82,7 +82,7 @@ class SubscribeForm extends React.Component {
         ...this.state
       })
     })
-      .then(() => navigateTo(form.getAttribute("action")))
+      .then(() => navigate(form.getAttribute("action")))
       .catch(error => alert(error));
   };
   render() {
@@ -111,16 +111,16 @@ class SubscribeForm extends React.Component {
               <input 
                 className="relative-field" 
                 type="text" 
-                name="nombre" 
+                name="Nombre" 
                 onChange={this.handleChange}   
               />
-            </p>
+            </p>  
             <p className="select-group">
               <label>Genero:</label>   
               <br/>
               <select 
                 className="select"
-                name="pais" 
+                name="Género" 
                 onChange={this.handleChange}  
               >
                 <option value="default">Seleccionar</option>
@@ -133,7 +133,7 @@ class SubscribeForm extends React.Component {
               <input 
                 className="relative-field" 
                 type="email" 
-                name="correo" 
+                name="Correo" 
                 onChange={this.handleChange}   
               />
             </p>
@@ -142,7 +142,7 @@ class SubscribeForm extends React.Component {
               <input 
                 className="relative-field" 
                 type="text" 
-                name="pais" 
+                name="País" 
                 onChange={this.handleChange}   
               />
             </p>
@@ -151,7 +151,7 @@ class SubscribeForm extends React.Component {
               <input 
                 className="relative-field" 
                 type="text" 
-                name="cuidad" 
+                name="Ciudad" 
                 onChange={this.handleChange}   
               />
             </p>
@@ -160,7 +160,7 @@ class SubscribeForm extends React.Component {
               <input 
                 className="relative-field" 
                 type="tel" 
-                name="telefono" 
+                name="Teléfono" 
                 onChange={this.handleChange}   
               />
             </p>
@@ -169,7 +169,7 @@ class SubscribeForm extends React.Component {
               <input 
                 className="relative-field" 
                 type="text" 
-                name="afiliado" 
+                name="Afiliado" 
                 onChange={this.handleChange}   
               />
             </p>
@@ -177,30 +177,31 @@ class SubscribeForm extends React.Component {
               <label>Ocupación:</label>   
               <select 
                 className="select"
-                name="pais" 
+                name="Ocupación" 
                 onChange={this.handleChange}  
               >
                 <option value="default">Seleccionar</option>
-                <option value="hombre">Estudiante nacional</option>
-                <option value="mujer">Estudiante extranjero</option>
-                <option value="mujer">Ganadero</option>
-                <option value="mujer">Profesional nacional</option>
-                <option value="mujer">Profesional extranjero</option>
-                <option value="mujer">Investigador</option>
-                <option value="mujer">Otro</option>
+                <option value="Estudiane nacional">Estudiante nacional</option>
+                <option value="Estudiante extranjero">Estudiante extranjero</option>
+                <option value="Ganadero">Ganadero</option>
+                <option value="Profesional nacional">Profesional nacional</option>
+                <option value="Profesional extranjero">Profesional extranjero</option>
+                <option value="Investigador">Investigador</option>
+                <option value="Otro">Otro</option>
               </select>
             </p>
             <p 
-              className="select-group"
-              name="pais" 
-              onChange={this.handleChange}  
-            >
+              className="select-group">
               <label>Tipo de participación:</label>   
-              <select className="select">
+              <select 
+                className="select"
+                name="Participación" 
+                onChange={this.handleChange}  
+              >
                 <option value="default">Seleccionar</option>
-                <option value="hombre">Asistente</option>
-                <option value="mujer">Ponente (oral o póster)</option>
-                <option value="mujer">Conferencista magistral</option>
+                <option value="Asistente">Asistente</option>
+                <option value="Ponente">Ponente (oral o póster)</option>
+                <option value="Conferencista magistral">Conferencista magistral</option>
               </select>
             </p>
           </div>

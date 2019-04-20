@@ -4,11 +4,8 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import Container from '../components/container'
-import Olanchito from '../images/congreso-olanchito.jpg'
 import HeroPage from '../components/heroPage'
-import { FaArrowLeft, FaFilePdf } from 'react-icons/fa'
 import { FaFileDownload } from 'react-icons/fa';
-import { device } from '../styles/breakpoints'
 import Sponsors from '../components/sponsors'
 
 const Wrapper = styled.section`
@@ -149,9 +146,6 @@ export default () => {
             </div>
 
           </div>
-
-
-
 
         </Container>
       </Wrapper>

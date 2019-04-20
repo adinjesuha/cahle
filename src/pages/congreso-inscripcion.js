@@ -44,29 +44,29 @@ export default () => {
                     <div>
                       <p><strong>Asociados CAHLE (L.)</strong></p>
                       <p className="main-text">
-                        <span className="divider-block">Hasta el 01 de julio: 350.00</span>
-                        <span>Del 02 al 01 de agosto: 400.00</span>
+                        <span className="divider-block">Hasta el 01 de julio: <strong>350.00</strong></span>
+                        <span>Del 02 al 01 de agosto: <strong>400.00</strong></span>
                       </p>
                     </div>
                     <div>
                       <p><strong>Estudiantes * (L.)</strong></p>
                       <p className="main-text">
-                        <span className="divider-block">Hasta el 01 de julio: 250.00</span>
-                        <span>Del 02 al 01 de agosto: 300.00</span>
+                        <span className="divider-block">Hasta el 01 de julio: <strong>250.00</strong></span>
+                        <span>Del 02 al 01 de agosto: <strong>300.00</strong></span>
                       </p>
                     </div>
                     <div>
                       <p><strong>Cuota general nacionales (L.)</strong></p>
                       <p className="main-text">
-                        <span className="divider-block">Hasta el 01 de julio: 500.00</span>
-                        <span>Del 02 al 01 de agosto: 600.00</span>
+                        <span className="divider-block">Hasta el 01 de julio: <strong>500.00</strong></span>
+                        <span>Del 02 al 01 de agosto: <strong>600.00</strong></span>
                       </p>
                     </div>
                     <div>
                       <p><strong>Cuota general extranjeros (L.)</strong></p>
                       <p className="main-text"> 
-                        <span className="divider-block">Hasta el 01 de julio: 25.00</span>
-                        <span>Del 02 al 01 de agosto: 30.00</span>
+                        <span className="divider-block">Hasta el 01 de julio: <strong>25.00</strong></span>
+                        <span>Del 02 al 01 de agosto: <strong>30.00</strong></span>
                       </p>
                     </div>
                     <p className="main-text">* Estudiantes con carnet de grado de carreras en ciencias agroalimentarias (agronomía, agro negocios, economía agrícola, zootecnia, medicina veterinaria, tecnología de alimentos, ingeniería de alimentos, etc.)</p>
