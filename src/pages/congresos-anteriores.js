@@ -7,8 +7,6 @@ import Container from '../components/container'
 import Congresos from '../images/congreso.jpg'
 import HeroPage from '../components/heroPage'
 
-import { FaArrowLeft } from 'react-icons/fa';
-
 const Wrapper = styled.div`
   background-color: var(--background);
   width: 100%;

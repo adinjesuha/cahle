@@ -15,6 +15,7 @@ const ImageWrapper = styled.div`
   left: 0;
   width: 100%;
   z-index: -1;
+  height: 20vh;
   min-height: 300px;
   /*
     Ensure golden ratio for the hero size while limiting it to some extend to
@@ -33,7 +34,7 @@ const ImageWrapper = styled.div`
     width: 100%;
     z-index: 1;
   }
-  @media ${device.mobileL}{
+  @media ${device.tablet}{
     height: 70vh;
   }
 `

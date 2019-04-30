@@ -568,9 +568,10 @@ template {
   display: inline-block;
   transition: background-color 0.2s ease;
 }
-.button-link:hover, .button-link:focus{
+
+/* .button-link:hover, .button-link:focus{
   background-color: #0f53b6;
-}
+} */
 
 .button-btn{
   border: none;
@@ -582,9 +583,9 @@ template {
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
-.button-btn:hover{
-  background-color: #0f53b6;
-}
+/* .button-btn:hover{
+  background-color: rgba(51, 64, 255, 0.8);
+} */
 
 /***************************************
  END BUTTON STYLES

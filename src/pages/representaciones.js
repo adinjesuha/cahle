@@ -14,6 +14,12 @@ const Wrapper = styled.div`
   p{
     text-align: center;
   }
+  .image-container{
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    min-height: 250px;
+  }
 `
 
 

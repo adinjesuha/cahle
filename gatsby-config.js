@@ -6,6 +6,13 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-react-helmet',
     {
+      resolve: `gatsby-plugin-portal`,
+      options: {
+        key: 'portal',
+        id: 'portal',        
+      },
+    },
+    {
 		  resolve: 'gatsby-plugin-react-svg',
 		  options: {
 			  rule: {

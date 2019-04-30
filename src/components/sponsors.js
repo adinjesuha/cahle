@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 import sponsorImages from '../utils/imageConfig'
-import Image from '../components/image'
 
 const Wrapper = styled.ul`
   display: flex;
