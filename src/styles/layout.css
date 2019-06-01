@@ -8,7 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- :root{
+:root {
   --mantis: #67d54b;
   --oxford-blue: #1f2b7b;
   --navy-blue: #3340ff;
@@ -20,20 +20,27 @@
   --background: var(--ghost-white);
   --borders: var(--anti-flash-white);
 
-  --active: var(--navy-blue);
+  --active: var(--oxford-blue);
 
-  --title: var(--oxford-blue); /*<-- en uso */
-  --text: var(--slate-grey); /*<-- en uso */
+  --title: var(--oxford-blue);
+  /*<-- en uso */
+  --text: var(--slate-grey);
+  /*<-- en uso */
   --light-text: var(--ceil);
 }
 
- html {
-  line-height: 1.6; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+html {
+  line-height: 1.6;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -66,11 +73,13 @@ h1 {
   margin: 0.67em 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
-p{
+p {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -83,9 +92,12 @@ p{
  */
 
 hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
 }
 
 /**
@@ -94,11 +106,13 @@ hr {
  */
 
 pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
-ul{
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -122,9 +136,12 @@ a {
  */
 
 abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
 }
 
 /**
@@ -144,8 +161,10 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /**
@@ -203,10 +222,14 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
 }
 
 /**
@@ -215,7 +238,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -225,7 +249,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -279,12 +304,18 @@ fieldset {
  */
 
 legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
 }
 
 /**
@@ -310,8 +341,10 @@ textarea {
 
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
 }
 
 /**
@@ -329,8 +362,10 @@ textarea {
  */
 
 [type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
 }
 
 /**
@@ -347,8 +382,10 @@ textarea {
  */
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
 }
 
 /* Interactive
@@ -403,6 +440,7 @@ template {
   border: 1pt solid var(--borders);
   border-collapse: collapse;
 }
+
 @media screen and (max-width: 580px) {
   .table {
     display: block;
@@ -413,6 +451,7 @@ template {
   display: table-row;
   border-bottom: 1pt solid var(--borders);
 }
+
 /* .c-row:nth-of-type(odd) {
 
 } */
@@ -429,16 +468,20 @@ template {
     padding: 14px 0 7px;
     display: block;
   }
+
   .c-row.header {
     padding: 0;
     height: 6px;
   }
+
   .c-row.header .cell {
     display: none;
   }
+
   .c-row .cell {
     margin: 20px 0;
   }
+
   .c-row .cell:before {
     margin-bottom: 3px;
     content: attr(data-title);
@@ -451,6 +494,7 @@ template {
     display: block;
   }
 }
+
 .cell {
   padding: 20px;
   display: table-cell;
@@ -462,6 +506,7 @@ template {
     display: block;
   }
 }
+
 /***************************************
 	END RESPONSIVE TABLES
 *****************************************/
@@ -470,36 +515,39 @@ template {
  START FONT STYLES
 *****************************************/
 
-.main-title{
+.main-title {
   font-size: 22px;
   font-weight: 600;
   color: var(--title);
   margin: 0 auto;
   max-width: 620px;
 }
+
 @media screen and (min-width: 540px) {
   .main-title {
     font-size: 32px;
   }
-  .sub-title{
+
+  .sub-title {
     font-size: 22px;
   }
 }
 
-.sub-title{
+.sub-title {
   font-size: 18px;
   font-weight: 600;
   color: var(--title);
 }
 
-.variant-title{
+.variant-title {
   text-transform: uppercase;
   text-align: center;
   position: relative;
   margin: 0 auto;
   margin-bottom: 40px;
 }
-.variant-title:after{
+
+.variant-title:after {
   content: '';
   position: absolute;
   width: 40px;
@@ -509,34 +557,37 @@ template {
   right: calc(50% - 20px);
 }
 
-.main-text{
+.main-text {
   font-size: 18px;
   font-weight: 300;
   line-height: 150%;
   color: var(--text);
 }
 
-.bibliography{
+.bibliography {
   list-style: disc;
   margin: 0;
   margin-left: 15px;
   font-size: 14px;
   color: var(--text);
 }
-.bibliography li{
+
+.bibliography li {
   margin-bottom: 10px;
 }
-.bibliography li:last-child{
+
+.bibliography li:last-child {
   margin-bottom: 0;
 }
 
-.animate-link{
+.animate-link {
   color: var(--active);
   display: inline-block;
   position: relative;
 }
 
-.animate-link:before, .animate-link:after{
+.animate-link:before,
+.animate-link:after {
   content: '';
   border-bottom: solid 1px var(--active);
   position: absolute;
@@ -545,10 +596,16 @@ template {
   transition: all 0.2s ease;
 }
 
-.animate-link:before { left: 0; }
-.animate-link:after { right: 0; }
+.animate-link:before {
+  left: 0;
+}
 
-.animate-link:hover:before, .animate-link:hover:after {
+.animate-link:after {
+  right: 0;
+}
+
+.animate-link:hover:before,
+.animate-link:hover:after {
   width: 50%;
 }
 
@@ -573,7 +630,7 @@ template {
   background-color: #0f53b6;
 } */
 
-.button-btn{
+.button-btn {
   border: none;
   background-color: var(--active);
   color: white;
@@ -583,6 +640,7 @@ template {
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
+
 /* .button-btn:hover{
   background-color: rgba(51, 64, 255, 0.8);
 } */
