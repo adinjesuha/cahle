@@ -223,7 +223,7 @@ export default () => {
             <div label="Programa">
               <div className="row justify-content-center">
                 <div className="col-lg-9">
-                  <h3 className="sub-title">Proximamente...</h3>
+                  <h3 className="sub-title">Proximamente</h3>
                 </div>
               </div>
             </div>
