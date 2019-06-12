@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import Link from 'gatsby-link';
+import Link from 'gatsby-link'
 
 import Layout from '../components/layout'
 import IndexPostListing from '../components/indexPostListing'
@@ -22,18 +22,18 @@ const FullScreenBg = styled.div`
   backface-visibility: hidden;
   position: relative;
   overflow: hidden;
-  &::before{
+  &::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
   }
 `
 
-const CoverContent = styled.div` 
+const CoverContent = styled.div`
   position: absolute;
   top: 50%;
   left: 15px;
@@ -41,12 +41,12 @@ const CoverContent = styled.div`
   margin: auto;
   transform: translateY(-50%);
   text-align: center;
-  span{                
+  span {
     font-weight: 400;
     display: block;
     color: white;
   }
-  h1{
+  h1 {
     font-weight: 700;
     font-size: 34px;
     color: white;
@@ -55,24 +55,24 @@ const CoverContent = styled.div`
     margin: 0;
     text-transform: uppercase;
   }
-  p{
+  p {
     margin-bottom: 40px;
     color: white;
     font-size: 14px;
   }
-  @media ${device.mobileL}{
-    h1{
+  @media ${device.mobileL} {
+    h1 {
       font-size: 42px;
     }
   }
-  @media ${device.tablet}{
-      h1{
-        font-size: 72px; 
-      }
-      p{
-        font-size: 22px;
-      }
+  @media ${device.tablet} {
+    h1 {
+      font-size: 72px;
     }
+    p {
+      font-size: 22px;
+    }
+  }
 `
 const Wrapper = styled.section`
   background-color: var(--background);
@@ -88,13 +88,13 @@ const ModalWrapper = styled.div`
   height: 100%;
   z-index: 99999;
   transform: translateZ(0);
-  background-color: rgba(0,0,0, 0.80);
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
-  .modal-body{
+  .modal-body {
     position: relative;
-    .btn{
+    .btn {
       position: absolute;
       top: 5px;
       right: 5px;
@@ -105,7 +105,7 @@ const ModalWrapper = styled.div`
       border-radius: 100%;
       width: 40px;
       height: 40px;
-      .line{
+      .line {
         width: 20px;
         height: 2px;
         background: white;
@@ -113,10 +113,10 @@ const ModalWrapper = styled.div`
         position: absolute;
         left: 10px;
         top: 19px;
-        &:first-child{
+        &:first-child {
           transform: rotate(45deg);
         }
-        &:last-child{
+        &:last-child {
           transform: rotate(-45deg);
         }
       }
@@ -126,73 +126,77 @@ const ModalWrapper = styled.div`
 
 class IndexPage extends Component {
   constructor() {
-    super();
+    super()
     this.state = {
-        showModal: true
+      showModal: true,
     }
   }
 
-  // openModalHandler = () => {
-  //   this.setState({showModal: true});
-  // }
-
   closeModalHandler = () => {
-    this.setState({showModal: false});
+    this.setState({ showModal: false })
   }
-  render(){
-    return(
+  render() {
+    return (
       <React.Fragment>
         <Layout>
           <FullScreenBg>
-            <video autoPlay muted loop style={{
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              minWidth: '100%',
-              minHeight: '100%',
-              width: 'auto',
-              height: 'auto',
-              zIndex: '-100',
-              transform: 'translateX(-50%) translateY(-50%)',
-              backgroundSize: 'cover'
-            }}>
+            <video
+              autoPlay
+              muted
+              loop
+              style={{
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                minWidth: '100%',
+                minHeight: '100%',
+                width: 'auto',
+                height: 'auto',
+                zIndex: '-100',
+                transform: 'translateX(-50%) translateY(-50%)',
+                backgroundSize: 'cover',
+              }}
+            >
               <source src={VideoBG} type="video/mp4" />
             </video>
           </FullScreenBg>
           <CoverContent>
-            <h1>Cámara hondureña <br/> de la leche</h1>
+            <h1>
+              Cámara hondureña <br /> de la leche
+            </h1>
           </CoverContent>
           <Wrapper>
             <Container>
               <IndexPostListing />
-              <div style={{textAlign: 'center', marginTop: '20px'}}>
-                <Link className="button-link" to="/noticias-y-eventos">Ver todos</Link>
+              <div style={{ textAlign: 'center', marginTop: '20px' }}>
+                <Link className="button-link" to="/noticias-y-eventos">
+                  Ver todos
+                </Link>
               </div>
             </Container>
           </Wrapper>
         </Layout>
-        {this.state.showModal && <Portal>
-          <ModalWrapper>
-            <div className="modal-body">
-              <Link to="congreso-de-la-leche">
-                <img 
-                  src={Afiche} 
-                  alt="Congreso de la leche"
-                  style={{
-                    height: '80vh'
-                  }}  
-                />
-              </Link>
-              <button 
-                onClick={this.closeModalHandler}
-                className="btn"
-              >
-                <span className="line"></span>
-                <span className="line"></span>
-              </button>
-            </div>
-          </ModalWrapper>
-        </Portal>}
+        {this.state.showModal && (
+          <Portal>
+            <ModalWrapper>
+              <div className="modal-body">
+                <Link to="congreso-de-la-leche">
+                  <img
+                    src={Afiche}
+                    alt="Congreso de la leche"
+                    style={{
+                      height: '80vh',
+                    }}
+                  />
+                </Link>
+                <button onClick={this.closeModalHandler} className="btn">
+                  <span className="line" />
+                  <span className="line" />
+                </button>
+              </div>
+            </ModalWrapper>
+          </Portal>
+        )}
       </React.Fragment>
     )
   }
