@@ -63,7 +63,8 @@ export default () => {
                           Hasta el 01 de julio: <strong>350.00</strong>
                         </span>
                         <span>
-                          Del 02 al 01 de agosto: <strong>400.00</strong>
+                          Del 02 de julio hasta el 01 de agosto:{' '}
+                          <strong>400.00</strong>
                         </span>
                       </p>
                     </div>
@@ -76,7 +77,8 @@ export default () => {
                           Hasta el 01 de julio: <strong>250.00</strong>
                         </span>
                         <span>
-                          Del 02 al 01 de agosto: <strong>300.00</strong>
+                          Del 02 de julio hasta el 01 de agosto:{' '}
+                          <strong>300.00</strong>
                         </span>
                       </p>
                     </div>
@@ -89,20 +91,22 @@ export default () => {
                           Hasta el 01 de julio: <strong>500.00</strong>
                         </span>
                         <span>
-                          Del 02 al 01 de agosto: <strong>600.00</strong>
+                          Del 02 de julio hasta el 01 de agosto:{' '}
+                          <strong>600.00</strong>
                         </span>
                       </p>
                     </div>
                     <div>
                       <p>
-                        <strong>Cuota general extranjeros (L.)</strong>
+                        <strong>Cuota general extranjeros ($)</strong>
                       </p>
                       <p className="main-text">
                         <span className="divider-block">
                           Hasta el 01 de julio: <strong>25.00</strong>
                         </span>
                         <span>
-                          Del 02 al 01 de agosto: <strong>30.00</strong>
+                          Del 02 de julio hasta el 01 de agosto:{' '}
+                          <strong>30.00</strong>
                         </span>
                       </p>
                     </div>
@@ -115,7 +119,7 @@ export default () => {
                     <h3 className="sub-title">Pago de la inscripción:</h3>
                     <p className="main-text">
                       Cuenta en Lempiras. Banco de Occidente:{' '}
-                      <strong>21401173406-2</strong> a nombre de{' '}
+                      <strong>21401159911-4</strong> a nombre de{' '}
                       <strong>Cámara Hondureña de la Leche.</strong>
                     </p>
                   </div>

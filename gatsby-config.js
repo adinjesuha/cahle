@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter'
+    title: 'Gatsby Default Starter',
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -9,23 +9,23 @@ module.exports = {
       resolve: `gatsby-plugin-portal`,
       options: {
         key: 'portal',
-        id: 'portal',        
+        id: 'portal',
       },
     },
     {
-		  resolve: 'gatsby-plugin-react-svg',
-		  options: {
-			  rule: {
-				  include: /svg-icons/,
-			  },
-		  },
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /svg-icons/,
+        },
+      },
     },
     {
       resolve: 'gatsby-source-contentful',
       options: {
         spaceId: `zg4fwo9e8dmk`,
-        accessToken: 'cd66543f9796767c06f65979c27b7a0ef34cd495602442bec6f9fe75212d40b8',
-      }
+        accessToken: `cd66543f9796767c06f65979c27b7a0ef34cd495602442bec6f9fe75212d40b8`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -40,7 +40,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name:'CAHLE | Cámara hondureña de la leche',
+        name: 'CAHLE | Cámara hondureña de la leche',
         short_name: 'CAHLE',
         start_url: '/',
         background_color: '#010855',
