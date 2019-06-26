@@ -223,7 +223,12 @@ export default () => {
             <div label="Programa">
               <div className="row justify-content-center">
                 <div className="col-lg-9">
-                  <h3 className="sub-title">Proximamente</h3>
+                  <h2 className="main-title variant-title">Programa</h2>
+                  <DownloadCard
+                    columns="col-lg-6"
+                    link="https://assets.ctfassets.net/zg4fwo9e8dmk/5Q3YoBMdeNm0ncK5S6XUpr/3d602ca78644ee15bd562f62eeaac84d/Agenda_del_evento_completa_para_patrocinadores-1.pdf"
+                    title="Programa del VII Congreso de a leche"
+                  />
                 </div>
               </div>
             </div>

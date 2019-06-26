@@ -1,10 +1,9 @@
-import React from "react"
-import { Link } from "gatsby"
-import styled from "styled-components"
-
+import React from 'react'
+import { Link } from 'gatsby'
+import styled from 'styled-components'
 
 import DesktopNav from './desktopNav'
-import { device } from "../styles/breakpoints";
+import { device } from '../styles/breakpoints'
 import Logo from '../images/svg-icons/logo.svg'
 
 const HeaderEl = styled.header`
@@ -12,7 +11,7 @@ const HeaderEl = styled.header`
   width: 100%;
   padding: 0 20px;
   position: fixed;
-  /* transform: translateY(${props => props.visible ? 0 : `-100px`}); */
+  /* transform: translateY(${props => (props.visible ? 0 : `-100px`)}); */
   left: 0;
   top: 0;
   background: white;
@@ -31,7 +30,7 @@ const HeaderWrapper = styled.div`
 
 const HeaderNav = styled.div`
   display: none;
-  @media ${device.laptop}{
+  @media ${device.laptop} {
     display: block;
   }
 `
@@ -41,27 +40,27 @@ const LogoWrapper = styled.div`
   svg {
     width: 120px;
     margin: 5px 0;
-    @media ${device.laptop}{
+    @media ${device.laptop} {
       width: 150px;
     }
   }
 `
 
-export default class Header extends React.Component{
-  render(){
+export default class Header extends React.Component {
+  render() {
     return (
       <HeaderEl>
         <HeaderWrapper>
           <LogoWrapper>
             <Link to="/">
-              <Logo style={{verticalAlign:'top'}}/>
+              <Logo style={{ verticalAlign: 'top' }} />
             </Link>
           </LogoWrapper>
           <HeaderNav>
             <DesktopNav />
           </HeaderNav>
-        </HeaderWrapper>  
-      </HeaderEl> 
+        </HeaderWrapper>
+      </HeaderEl>
     )
   }
 }
