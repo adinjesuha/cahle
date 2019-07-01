@@ -119,7 +119,7 @@ export default () => {
                     <h3 className="sub-title">Pago de la inscripción:</h3>
                     <p className="main-text">
                       Cuenta en Lempiras. Banco de Occidente:{' '}
-                      <strong>21401159911-4</strong> a nombre de{' '}
+                      <strong>21401173406-2</strong> a nombre de{' '}
                       <strong>Cámara Hondureña de la Leche.</strong>
                     </p>
                   </div>

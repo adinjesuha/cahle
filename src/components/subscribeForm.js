@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import { navigate } from "gatsby-link"
+import { navigate } from 'gatsby-link'
 import { device } from '../styles/breakpoints'
 
-const NewsLetterForm =  styled.div`
-  .field-wrapper{
+const NewsLetterForm = styled.div`
+  .field-wrapper {
     font-family: Roboto;
     .relative-field {
       border-radius: 4px;
@@ -14,14 +14,14 @@ const NewsLetterForm =  styled.div`
       color: var(--main-text);
       margin-right: 0;
       margin-bottom: 10px;
-    } 
-    .select-group{
+    }
+    .select-group {
       position: relative;
       &:after {
         position: absolute;
         top: 70%;
         right: 20px;
-        content: "";
+        content: '';
         display: block;
         z-index: 2;
         width: 10px;
@@ -32,7 +32,7 @@ const NewsLetterForm =  styled.div`
         border-bottom: 2px solid var(--active);
       }
     }
-    .select{
+    .select {
       outline: none;
       background-color: #fff;
       border: 1px solid var(--borders);
@@ -42,49 +42,49 @@ const NewsLetterForm =  styled.div`
       appearance: none;
       position: relative;
     }
-    .button-position{
+    .button-position {
       width: 100%;
-      @media ${device.tablet}{
+      @media ${device.tablet} {
         width: auto;
         position: absolute;
       }
     }
-    label{
+    label {
       color: var(--text);
     }
-  }  
+  }
 `
 
 function encode(data) {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
 }
 
 class SubscribeForm extends React.Component {
   constructor(props) {
-    super(props);
-    this.state = {};
+    super(props)
+    this.state = {}
   }
 
   handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value });
-  };
+    this.setState({ [e.target.name]: e.target.value })
+  }
 
   handleSubmit = e => {
-    e.preventDefault();
-    const form = e.target;
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    e.preventDefault()
+    const form = e.target
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
-        "form-name": form.getAttribute("name"),
-        ...this.state
-      })
+        'form-name': form.getAttribute('name'),
+        ...this.state,
+      }),
     })
-      .then(() => navigate(form.getAttribute("action")))
-      .catch(error => alert(error));
-  };
+      .then(() => navigate(form.getAttribute('action')))
+      .catch(error => alert(error))
+  }
   render() {
     return (
       <NewsLetterForm>
@@ -101,27 +101,27 @@ class SubscribeForm extends React.Component {
             <input type="hidden" name="form-name" value="congreso" />
             <p hidden>
               <label>
-                Don’t fill this out:{" "}
+                Don’t fill this out:{' '}
                 <input name="bot-field" onChange={this.handleChange} />
               </label>
             </p>
             <p>
-              <label>Nombre Completo:</label>   
-              <br/>
-              <input 
-                className="relative-field" 
-                type="text" 
-                name="Nombre" 
-                onChange={this.handleChange}   
+              <label>Nombre Completo:</label>
+              <br />
+              <input
+                className="relative-field"
+                type="text"
+                name="Nombre"
+                onChange={this.handleChange}
               />
-            </p>  
+            </p>
             <p className="select-group">
-              <label>Genero:</label>   
-              <br/>
-              <select 
+              <label>Genero:</label>
+              <br />
+              <select
                 className="select"
-                name="Género" 
-                onChange={this.handleChange}  
+                name="Género"
+                onChange={this.handleChange}
               >
                 <option value="default">Seleccionar</option>
                 <option value="hombre">Hombre</option>
@@ -129,87 +129,96 @@ class SubscribeForm extends React.Component {
               </select>
             </p>
             <p>
-              <label>Correo electrónico:</label>   
-              <input 
-                className="relative-field" 
-                type="email" 
-                name="Correo" 
-                onChange={this.handleChange}   
+              <label>Correo electrónico:</label>
+              <input
+                className="relative-field"
+                type="email"
+                name="Correo"
+                onChange={this.handleChange}
               />
             </p>
             <p>
-              <label>País de residencia:</label>   
-              <input 
-                className="relative-field" 
-                type="text" 
-                name="País" 
-                onChange={this.handleChange}   
+              <label>País de residencia:</label>
+              <input
+                className="relative-field"
+                type="text"
+                name="País"
+                onChange={this.handleChange}
               />
             </p>
             <p>
-              <label>Ciudad de residencia:</label>   
-              <input 
-                className="relative-field" 
-                type="text" 
-                name="Ciudad" 
-                onChange={this.handleChange}   
+              <label>Ciudad de residencia:</label>
+              <input
+                className="relative-field"
+                type="text"
+                name="Ciudad"
+                onChange={this.handleChange}
               />
             </p>
             <p>
-              <label>Teléfono:</label>   
-              <input 
-                className="relative-field" 
-                type="tel" 
-                name="Teléfono" 
-                onChange={this.handleChange}   
+              <label>Teléfono:</label>
+              <input
+                className="relative-field"
+                type="tel"
+                name="Teléfono"
+                onChange={this.handleChange}
               />
             </p>
             <p>
-              <label>Institución u organización afiliado:</label>   
-              <input 
-                className="relative-field" 
-                type="text" 
-                name="Afiliado" 
-                onChange={this.handleChange}   
+              <label>Institución u organización afiliado:</label>
+              <input
+                className="relative-field"
+                type="text"
+                name="Afiliado"
+                onChange={this.handleChange}
               />
             </p>
             <p className="select-group">
-              <label>Ocupación:</label>   
-              <select 
+              <label>Ocupación:</label>
+              <select
                 className="select"
-                name="Ocupación" 
-                onChange={this.handleChange}  
+                name="Ocupación"
+                onChange={this.handleChange}
               >
                 <option value="default">Seleccionar</option>
                 <option value="Estudiane nacional">Estudiante nacional</option>
-                <option value="Estudiante extranjero">Estudiante extranjero</option>
+                <option value="Estudiante extranjero">
+                  Estudiante extranjero
+                </option>
                 <option value="Ganadero">Ganadero</option>
-                <option value="Profesional nacional">Profesional nacional</option>
-                <option value="Profesional extranjero">Profesional extranjero</option>
+                <option value="Profesional nacional">
+                  Profesional nacional
+                </option>
+                <option value="Profesional extranjero">
+                  Profesional extranjero
+                </option>
                 <option value="Investigador">Investigador</option>
                 <option value="Otro">Otro</option>
               </select>
             </p>
-            <p 
-              className="select-group">
-              <label>Tipo de participación:</label>   
-              <select 
+            <p className="select-group">
+              <label>Tipo de participación:</label>
+              <select
                 className="select"
-                name="Participación" 
-                onChange={this.handleChange}  
+                name="Participación"
+                onChange={this.handleChange}
               >
                 <option value="default">Seleccionar</option>
                 <option value="Asistente">Asistente</option>
                 <option value="Ponente">Ponente (oral o póster)</option>
-                <option value="Conferencista magistral">Conferencista magistral</option>
+                <option value="Conferencista magistral">
+                  Conferencista magistral
+                </option>
               </select>
             </p>
           </div>
-          <button type="submit" className="button-btn button-position">Enviar</button>
+          <button type="submit" className="button-btn button-position">
+            Enviar
+          </button>
         </form>
       </NewsLetterForm>
-    );
+    )
   }
 }
 
-export default SubscribeForm;
+export default SubscribeForm
