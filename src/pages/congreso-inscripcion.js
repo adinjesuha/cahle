@@ -56,58 +56,22 @@ export default () => {
                     <h3 className="sub-title">Valores de la inscripción:</h3>
                     <div>
                       <p>
-                        <strong>Asociados CAHLE (L.)</strong>
-                      </p>
-                      <p className="main-text">
-                        <span className="divider-block">
-                          Hasta el 01 de julio: <strong>350.00</strong>
-                        </span>
-                        <span>
-                          Del 02 de julio hasta el 01 de agosto:{' '}
-                          <strong>400.00</strong>
-                        </span>
+                        <strong>Asociados CAHLE L. 400.00</strong>
                       </p>
                     </div>
                     <div>
                       <p>
-                        <strong>Estudiantes * (L.)</strong>
-                      </p>
-                      <p className="main-text">
-                        <span className="divider-block">
-                          Hasta el 01 de julio: <strong>250.00</strong>
-                        </span>
-                        <span>
-                          Del 02 de julio hasta el 01 de agosto:{' '}
-                          <strong>300.00</strong>
-                        </span>
+                        <strong>Estudiantes * L. 300.00</strong>
                       </p>
                     </div>
                     <div>
                       <p>
-                        <strong>Cuota general nacionales (L.)</strong>
-                      </p>
-                      <p className="main-text">
-                        <span className="divider-block">
-                          Hasta el 01 de julio: <strong>500.00</strong>
-                        </span>
-                        <span>
-                          Del 02 de julio hasta el 01 de agosto:{' '}
-                          <strong>600.00</strong>
-                        </span>
+                        <strong>Cuota general nacionales L. 600.00</strong>
                       </p>
                     </div>
                     <div>
                       <p>
-                        <strong>Cuota general extranjeros ($)</strong>
-                      </p>
-                      <p className="main-text">
-                        <span className="divider-block">
-                          Hasta el 01 de julio: <strong>25.00</strong>
-                        </span>
-                        <span>
-                          Del 02 de julio hasta el 01 de agosto:{' '}
-                          <strong>30.00</strong>
-                        </span>
+                        <strong>Cuota general extranjeros $ 30.00</strong>
                       </p>
                     </div>
                     <p className="main-text">
@@ -130,6 +94,7 @@ export default () => {
               </div>
             </div>
           </div>
+          {console.log(process.env.GATSBY_SPACE_ID)}
         </Container>
       </Wrapper>
     </Layout>
