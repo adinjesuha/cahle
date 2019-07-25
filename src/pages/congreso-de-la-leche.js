@@ -253,6 +253,12 @@ export default () => {
             <Link className="sub-title" to="/congreso-inscripcion">
               ¿Deseas Inscribirte? <FaAngleRight />
             </Link>
+            <div
+              style={{
+                marginTop: '2rem',
+              }}
+            />
+            <Image filename={'patrocinadores-congreso-cahle'} />
           </Container>
         </div>
       </Wrapper>
