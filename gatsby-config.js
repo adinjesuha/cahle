@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
@@ -24,8 +28,7 @@ module.exports = {
       resolve: 'gatsby-source-contentful',
       options: {
         spaceId: 'zg4fwo9e8dmk',
-        accessToken:
-          'cd66543f9796767c06f65979c27b7a0ef34cd495602442bec6f9fe75212d40b8',
+        accessToken: process.env.GATSBY_CONTENTFUL_API_KEY,
       },
     },
     {
