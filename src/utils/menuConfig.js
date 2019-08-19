@@ -1,75 +1,52 @@
 export const NuestraGente = [
   {
-    name: 'Mensaje del Presidente',  
-    link: '/mensaje-presidente'
+    name: 'Mensaje del Presidente',
+    link: '/mensaje-presidente',
   },
   {
-    name: 'Junta Directiva Actual',  
-    link: '/junta-directiva'
+    name: 'Junta Directiva Actual',
+    link: '/junta-directiva',
   },
   {
-    name: 'Junta Directiva Anterior',  
-    link: '/junta-directiva-anterior'
+    name: 'Junta Directiva Anterior',
+    link: '/junta-directiva-anterior',
   },
   {
     name: 'Personal Administrativo',
-    link: '/personal-administrativo'
+    link: '/personal-administrativo',
   },
 ]
 
 export const asociados = [
   {
     name: 'Beneficios',
-    link: '/beneficios'
+    link: '/beneficios',
   },
   {
     name: 'Proyectos Ejecutados',
-    link: '/proyectos-ejecutados'
+    link: '/proyectos-ejecutados',
   },
   {
     name: 'CREL',
-    link: '/crel'
+    link: '/crel',
   },
   {
     name: 'Representaciones',
-    link: '/representaciones'
+    link: '/representaciones',
   },
 ]
 
 export const documentacion = [
   {
     name: 'Reglamentaciones',
-    link: '/reglamentaciones'
+    link: '/reglamentaciones',
   },
   {
     name: 'Documentos Técnicos',
-    link: '/documentos-tecnicos'
+    link: '/documentos-tecnicos',
   },
   {
     name: 'Memorias Congresos',
-    link: '/memorias-congresos'
+    link: '/memorias-congresos',
   },
 ]
-
-export const congreso = [
-  {
-    name: 'Acerca del Congreso',
-    link: '/'
-  },
-  {
-    name: 'Información Práctica',
-    link: '/'
-  },
-  {
-    name: 'Trabajos',
-    link: '/'
-  },
-  {
-    name: 'Patrocinadores',
-    link: '/'
-  },
-  {
-    name: 'Inscripciones',
-    link: '/'
-  },
-] 

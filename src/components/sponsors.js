@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import sponsorImages from '../utils/imageConfig'
-
 const Wrapper = styled.ul`
   display: flex;
   width: 100%;
@@ -10,27 +8,27 @@ const Wrapper = styled.ul`
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  li{
-    figure{
+  li {
+    figure {
       margin: 10px;
-      img{
+      img {
         filter: grayscale(1);
         transition: filter 0.3s ease;
       }
     }
-    &:hover figure img{
+    &:hover figure img {
       filter: grayscale(0);
     }
   }
 `
 
-const sponsors = () => {
+const sponsors = ({ sponsors }) => {
   return (
     <Wrapper>
-      {sponsorImages.map( sponsor => (
+      {sponsors.map(sponsor => (
         <li>
           <a href={sponsor.link} target="_blank" rel="noopener noreferrer">
-            <figure style={{width: '120px'}}>
+            <figure style={{ width: '120px' }}>
               <img src={sponsor.path} alt={sponsor.name} />
             </figure>
           </a>

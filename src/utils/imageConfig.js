@@ -28,159 +28,242 @@ import TecAgricola from '../images/logos-olanchito/tecnologia-agricola.png'
 import Tecun from '../images/logos-olanchito/tecun.jpg'
 import UnahTec from '../images/logos-olanchito/unah-tec-agua.jpeg'
 import Zamorano from '../images/logos-olanchito/zamorano.png'
+import Ciat from '../images/logos-olanchito/ciat.png'
+import Cargill from '../images/logos-olanchito/cargill.png'
+import Alcon from '../images/logos-olanchito/alcon.png'
 
-const logoImages = [
+export const sponsorCholuteca = [
   {
     name: 'Agrobiotek',
     path: Agrobiotek,
-    link: 'http://agrobiotek.com/'
+    link: 'http://agrobiotek.com/',
   },
   {
     name: 'Aliansa',
     path: Aliansa,
-    link: 'http://concentradosaliansa.com/'
+    link: 'http://concentradosaliansa.com/',
   },
   {
     name: 'Aseal',
     path: Aseal,
-    link: 'http://www.grupoaseal.com/'
+    link: 'http://www.grupoaseal.com/',
   },
   {
     name: 'Atlantida',
     path: Atlantida,
-    link: 'https://www.bancatlan.hn/'
+    link: 'https://www.bancatlan.hn/',
   },
   {
     name: 'Bayer',
     path: Bayer,
-    link: 'https://centroamerica.bayer.com/'
+    link: 'https://centroamerica.bayer.com/',
   },
   {
     name: 'Cadelga',
     path: Cadelga,
-    link: 'https://www.facebook.com/grupocadelga/'
+    link: 'https://www.facebook.com/grupocadelga/',
   },
   {
     name: 'Cafogah',
     path: Cafogah,
-    link: 'https://www.facebook.com/camarafomentoganaderodehonduras/'
+    link: 'https://www.facebook.com/camarafomentoganaderodehonduras/',
   },
   {
     name: 'Camosa',
     path: Camosa,
-    link: 'https://www.camosa.com/'
+    link: 'https://www.camosa.com/',
   },
   {
     name: 'Catie',
     path: Catie,
-    link: 'https://www.catie.ac.cr/'
+    link: 'https://www.catie.ac.cr/',
   },
   {
     name: 'Colono',
     path: Colono,
-    link: 'http://www.colonoagropecuario.com/site/index.php'
+    link: 'http://www.colonoagropecuario.com/site/index.php',
   },
   {
     name: 'Confianza',
     path: Confianza,
-    link: 'http://www.confianza.hn/'
+    link: 'http://www.confianza.hn/',
   },
   {
     name: 'Coolbot',
     path: Coolbot,
-    link: 'https://www.facebook.com/CoolBotLA/'
+    link: 'https://www.facebook.com/CoolBotLA/',
   },
   {
     name: 'Disatyr',
     path: Disatyr,
-    link: 'http://grupodisatyr.com/'
+    link: 'http://grupodisatyr.com/',
   },
   {
     name: 'Fenagh',
     path: Fenagh,
-    link: 'http://www.fenagh.net'
+    link: 'http://www.fenagh.net',
   },
   {
     name: 'Finca',
     path: Finca,
-    link: 'https://www.fincahn.com/'
+    link: 'https://www.fincahn.com/',
   },
   {
     name: 'Fn',
     path: Fn,
-    link: 'https://fundidoradelnorte.com/'
+    link: 'https://fundidoradelnorte.com/',
   },
   {
     name: 'Induvet',
     path: Induvet,
-    link: 'https://www.facebook.com/InduvetHonduras/'
+    link: 'https://www.facebook.com/InduvetHonduras/',
   },
   {
     name: 'Lacthosa',
     path: Lacthosa,
-    link: 'https://www.lacthosa.com/'
+    link: 'https://www.lacthosa.com/',
   },
   {
     name: 'Leyde',
     path: Leyde,
-    link: 'http://leyde.hn/'
+    link: 'http://leyde.hn/',
   },
   {
     name: 'Moncatex',
     path: Moncatex,
-    link: 'https://www.moncatex.com/'
+    link: 'https://www.moncatex.com/',
   },
   {
     name: 'Nativet',
     path: Nativet,
-    link: 'http://nativethn.com/contacto.php'
+    link: 'http://nativethn.com/contacto.php',
   },
   {
     name: 'Pagro',
     path: Pagro,
-    link: 'http://www.pagrohn.com/'
+    link: 'http://www.pagrohn.com/',
   },
   {
     name: 'Sag',
     path: Sag,
-    link: 'http://www.sag.gob.hn/'
+    link: 'http://www.sag.gob.hn/',
   },
   {
     name: 'Sago',
     path: Sago,
-    link: 'https://www.facebook.com/SAGOOLANCHITO1807/'
+    link: 'https://www.facebook.com/SAGOOLANCHITO1807/',
   },
   {
     name: 'Semex',
     path: Semex,
-    link: 'https://www.semex.com/i?lang=en&contactid=1119364122'
+    link: 'https://www.semex.com/i?lang=en&contactid=1119364122',
   },
   {
     name: 'Solintsa',
     path: Solintsa,
-    link: 'http://www.solintsahn.com/empresa.html'
+    link: 'http://www.solintsahn.com/empresa.html',
   },
   {
     name: 'Tecnologia agricola',
     path: TecAgricola,
-    link: 'https://tecnologiaagricolahn.com/'
+    link: 'https://tecnologiaagricolahn.com/',
   },
   {
     name: 'Tecun',
     path: Tecun,
-    link: 'http://www.grupotecun.com/honduras'
+    link: 'http://www.grupotecun.com/honduras',
   },
   {
     name: 'UNAH Tec',
     path: UnahTec,
-    link: 'https://www.facebook.com/curva.unah.edu.hn/'
+    link: 'https://www.facebook.com/curva.unah.edu.hn/',
   },
   {
     name: 'Universidad Zamorano',
     path: Zamorano,
-    link: 'https://www.zamorano.edu/'
+    link: 'https://www.zamorano.edu/',
   },
-
 ]
 
-export default logoImages;
+export const sponsorCeiba = [
+  {
+    name: 'Agrobiotek',
+    path: Agrobiotek,
+    link: 'http://agrobiotek.com/',
+  },
+  {
+    name: 'Cadelga',
+    path: Cadelga,
+    link: 'https://www.facebook.com/grupocadelga/',
+  },
+  {
+    name: 'Finca',
+    path: Finca,
+    link: 'https://www.fincahn.com/',
+  },
+  {
+    name: 'Lacthosa',
+    path: Lacthosa,
+    link: 'https://www.lacthosa.com/',
+  },
+  {
+    name: 'Aliansa',
+    path: Aliansa,
+    link: 'http://concentradosaliansa.com/',
+  },
+  {
+    name: 'Universidad Zamorano',
+    path: Zamorano,
+    link: 'https://www.zamorano.edu/',
+  },
+  {
+    name: 'Fenagh',
+    path: Fenagh,
+    link: 'http://www.fenagh.net',
+  },
+  {
+    name: 'Ciat',
+    path: Ciat,
+    link: 'https://ciat.cgiar.org/',
+  },
+  {
+    name: 'Cargill',
+    path: Cargill,
+    link: 'https://www.cargill.com.hn/es/inicio',
+  },
+  {
+    name: 'Alcon',
+    path: Alcon,
+    link: 'https://www.cargill.com.hn/es/marcas-en-honduras',
+  },
+  {
+    name: 'Leyde',
+    path: Leyde,
+    link: 'http://leyde.hn/',
+  },
+  {
+    name: 'Cafogah',
+    path: Cafogah,
+    link: 'https://www.facebook.com/camarafomentoganaderodehonduras/',
+  },
+  {
+    name: 'Fn',
+    path: Fn,
+    link: 'https://fundidoradelnorte.com/',
+  },
+  {
+    name: 'Aseal',
+    path: Aseal,
+    link: 'http://www.grupoaseal.com/',
+  },
+  {
+    name: 'Catie',
+    path: Catie,
+    link: 'https://www.catie.ac.cr/',
+  },
+  {
+    name: 'Tecnologia agricola',
+    path: TecAgricola,
+    link: 'https://tecnologiaagricolahn.com/',
+  },
+]

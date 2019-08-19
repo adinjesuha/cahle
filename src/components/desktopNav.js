@@ -6,7 +6,7 @@ import { NuestraGente, asociados, documentacion } from '../utils/menuConfig'
 
 const NavBar = styled.nav`
   position: relative;
-  .navbar-nav{
+  .navbar-nav {
     display: flex;
     flex-direction: row;
     padding-left: 0;
@@ -14,9 +14,10 @@ const NavBar = styled.nav`
     list-style: none;
     > li {
       display: inline-block;
-      padding:0;
+      padding: 0;
       margin-right: 25px;
-      > a, span {
+      > a,
+      span {
         font-weight: 400;
         letter-spacing: 0.5px;
         display: inline-block;
@@ -26,17 +27,18 @@ const NavBar = styled.nav`
         color: var(--oxford-blue);
         transition: 0.3s;
       }
-      &:hover a, &:hover span{
+      &:hover a,
+      &:hover span {
         color: var(--active);
       }
-      span{
+      span {
         cursor: default;
       }
-      &:last-child{
+      &:last-child {
         margin-right: 0;
       }
     }
-    > li.has_dropdown{
+    > li.has_dropdown {
       position: relative;
       .dropdown {
         background: #fff;
@@ -51,7 +53,7 @@ const NavBar = styled.nav`
         box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
         top: calc(100% + 20px);
       }
-      &:hover .dropdown{
+      &:hover .dropdown {
         opacity: 1;
         visibility: visible;
         transform: translateY(-20px);
@@ -67,7 +69,7 @@ const NavBar = styled.nav`
         display: block;
         font-size: 13px;
 
-        &:hover{
+        &:hover {
           color: white;
           background: var(--active);
         }
@@ -86,9 +88,6 @@ export default class desktopNav extends Component {
         <ul className="navbar-nav">
           <li>
             <Link to="/acerca-de-cahle">Acerca de CAHLE</Link>
-          </li>
-          <li>
-            <Link to="/congreso-de-la-leche">VII Congreso</Link>
           </li>
           <li className="has_dropdown">
             <span>Nuestra Gente</span>
