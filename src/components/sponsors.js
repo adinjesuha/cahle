@@ -22,7 +22,7 @@ const Wrapper = styled.ul`
   }
 `
 
-const sponsors = ({ sponsors }) => {
+const SponsorsComponent = ({ sponsors }) => {
   return (
     <Wrapper>
       {sponsors.map(sponsor => (
@@ -38,4 +38,4 @@ const sponsors = ({ sponsors }) => {
   )
 }
 
-export default sponsors
+export default SponsorsComponent
