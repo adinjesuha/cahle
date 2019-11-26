@@ -91,7 +91,7 @@ const Footer = () => (
               </li>
               <li>
                 <span><MailIcon style={{verticalAlign: 'middle'}}/></span>
-                <p className="contact-info main-text"><a href="mailto:info@cahle.org">info@cahle.org</a></p>
+                <p className="contact-info main-text"><a href="mailto:admoncahle@gmail.com">admoncahle@gmail.com</a></p>
               </li>
             </InfoContact>
           </div>

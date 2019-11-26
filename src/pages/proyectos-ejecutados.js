@@ -49,8 +49,16 @@ export default () => {
                 </li>
                 <li>
                   <p className="main-text"><strong>Incentivo económico para la obtención de animales y desarrollar el mejoramiento genético de los hatos</strong></p>
-                  <p className="main-text">Subasta ganadera organizada por CAFOGAH, 26 productores beneficiados. </p>
-                  <Link className="animate-link" to="/cahle-financia-genetica-bovina">Leer noticia</Link>
+                  <p className="main-text">Subasta ganadera organizada por CAFOGAH, 26 productores beneficiados.{" "}
+                    <Link className="animate-link" to="/cahle-financia-genetica-bovina">
+                      <strong>Leer noticia</strong>
+                    </Link>
+                  </p>
+                  <p className="main-text">Segunda Gran Subasta de Genética Bovina.{" "}
+                    <Link className="animate-link" to="/segunda-gran-subasta-de-genetica-bovina">
+                      <strong>Leer noticia</strong>
+                    </Link>
+                  </p>
                 </li>
                 <li>
                   <p className="main-text"><strong>Asistencia técnica en alianza con Zamorano, SAGO y AGAA</strong></p>
