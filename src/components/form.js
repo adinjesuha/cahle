@@ -92,6 +92,7 @@ class ContactForm extends React.Component {
                 type="email" 
                 name="email" 
                 onChange={this.handleChange}   
+                required
               />
               <button type="submit" className="button-btn button-position">Suscríbete</button>
             </div>
