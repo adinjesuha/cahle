@@ -49,7 +49,6 @@ class ContactForm extends React.Component {
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
-
   handleSubmit = e => {
     e.preventDefault();
     const form = e.target;
@@ -74,6 +73,7 @@ class ContactForm extends React.Component {
           action="/thanks/"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
+          data-netlify-recaptcha="true"
           onSubmit={this.handleSubmit}
         >
           <div className="field-wrapper">
@@ -98,6 +98,7 @@ class ContactForm extends React.Component {
             </div>
           </div>
         </form>
+        <div data-netlify-recaptcha="true" />
       </NewsLetterForm>
     );
   }
