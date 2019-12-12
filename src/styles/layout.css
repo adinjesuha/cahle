@@ -564,6 +564,15 @@ template {
   color: var(--text);
 }
 
+.flex-text{
+  display: flex;
+  align-items: flex-start;
+}
+.flex-text p {
+  margin-top: 0;
+  margin-left: 5px;
+}
+
 .bibliography {
   list-style: disc;
   margin: 0;
