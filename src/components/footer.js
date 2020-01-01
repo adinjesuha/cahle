@@ -130,7 +130,7 @@ const Footer = () => (
       </Container>
     </FooterInner>
     <FooterSecondary>
-      <p>© 2019 Camara Hondureña de la Leche</p>
+      <p>© {new Date().getFullYear()} Camara Hondureña de la Leche</p>
     </FooterSecondary>
   </footer>
 )
