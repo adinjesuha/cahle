@@ -2,8 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 
-
-import ContactForm from './form'
 import Container from './container'
 import Row from './row'
 import { device } from '../styles/breakpoints'
@@ -94,12 +92,6 @@ const Footer = () => (
                 <p className="contact-info main-text"><a href="mailto:admoncahle@gmail.com">admoncahle@gmail.com</a></p>
               </li>
             </InfoContact>
-          </div>
-
-          <div className="col-lg-6 col-md-12">
-            <h2 className="main-title">Suscríbete</h2>
-            <p className="main-text">Recibe las últimas noticias y eventos relacionados.</p>
-            <ContactForm />
             <Social>
               <ul>
                 <li>
@@ -136,5 +128,3 @@ const Footer = () => (
 )
 
 export default Footer
-
-// CAHLEtester1234

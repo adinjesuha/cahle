@@ -50,3 +50,14 @@ export const documentacion = [
     link: '/memorias-congresos',
   },
 ]
+
+export const congreso = [
+  {
+    name: 'Información General',
+    link: '/informacion-general-congreso-2020',
+  },
+  {
+    name: 'Inscripciones',
+    link: '/inscripciones-congreso-2020',
+  },
+]

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-import { NuestraGente, asociados, documentacion } from '../utils/menuConfig'
+import { NuestraGente, asociados, documentacion, congreso } from '../utils/menuConfig'
 
 const NavBar = styled.nav`
   position: relative;
@@ -20,7 +20,7 @@ const NavBar = styled.nav`
       span {
         font-weight: 400;
         letter-spacing: 0.5px;
-        display: inline-block;
+        display: inline-block; 
         padding: 20px 0;
         font-size: 13px;
         line-height: 42px;
@@ -78,6 +78,26 @@ const NavBar = styled.nav`
         border-radius: 0 0 3px 3px;
       }
     }
+    > li.has_tag{
+      position: relative;
+      &:before{
+        content: "NUEVO";
+        color: var(--mantis);
+        font-size: 9px;
+        letter-spacing: 1px;
+        position: absolute;
+        right: -20px;
+        top: 12px;
+        border: 1px solid var(--mantis);
+        border-radius: 4px;
+        padding: 1px 6px;
+        transition: 0.3s color ease, 0.3s background-color ease;
+      }
+      &:hover:before{
+        background-color: var(--mantis);
+        color: white;
+      }
+    }
   }
 `
 
@@ -88,6 +108,18 @@ export default class desktopNav extends Component {
         <ul className="navbar-nav">
           <li>
             <Link to="/acerca-de-cahle">Acerca de CAHLE</Link>
+          </li>
+          <li className="has_dropdown has_tag">
+            <span>Congreso 2020</span>
+            <div className="dropdown">
+              <ul>
+                {congreso.map(item => (
+                  <li key={item.name}>
+                    <Link to={item.link}>{item.name}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </li>
           <li className="has_dropdown">
             <span>Nuestra Gente</span>

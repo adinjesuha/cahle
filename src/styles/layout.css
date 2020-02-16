@@ -83,6 +83,12 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
+a,
+a:hover {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
 /* Grouping content
    ========================================================================== */
 
@@ -564,10 +570,11 @@ template {
   color: var(--text);
 }
 
-.flex-text{
+.flex-text {
   display: flex;
   align-items: flex-start;
 }
+
 .flex-text p {
   margin-top: 0;
   margin-left: 5px;

@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import { navigate } from "gatsby-link"
 import { device } from '../styles/breakpoints'
 
+import { encode } from '../utils/encode'
+
 const NewsLetterForm =  styled.div`
   .field-wrapper{
     margin-top: 32px;
@@ -33,12 +35,6 @@ const NewsLetterForm =  styled.div`
   }
   
 `
-
-function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-}
 
 class ContactForm extends React.Component {
   constructor(props) {
