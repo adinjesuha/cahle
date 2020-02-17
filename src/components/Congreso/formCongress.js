@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { navigate } from 'gatsby-link'
 
 import { encode } from '../../utils/encode'
@@ -17,12 +17,48 @@ const StyledInputWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 48%;
+  position: relative;
   &.full-width{
     width: 100% !important;
   }
   label{
+    font-size: 14px;
     margin-bottom: 10px;
   }
+  .select-arrow{
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    margin-bottom: .1em;
+    margin-top: .3em;
+    margin-left: .3em;
+    border-width: .43em .3em 0;
+    border-style: solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    color: var(--oxford-blue);
+    transition: color .1s;
+    opacity: 0.8;
+    z-index: 1;
+    position: absolute;
+    bottom: 35px;
+    right: 10px;
+  }
+`
+
+const StyledInput = styled.input``
+
+const StyledSelect = styled.select`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  cursor: pointer;
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  appearance:none;
 `
 
 const StyledButton = styled.button`
@@ -37,7 +73,7 @@ const StyledButton = styled.button`
 
 const Input = ({handleChange, ...restProps}) => {
   return (
-    <input
+    <StyledInput
       onChange={handleChange}
       {...restProps}
     />
@@ -45,7 +81,7 @@ const Input = ({handleChange, ...restProps}) => {
 }
 
 const Select = ({handleChange, ...restProps}) => (
-  <select 
+  <StyledSelect 
     onChange={handleChange} 
     {...restProps}
   >
@@ -55,7 +91,7 @@ const Select = ({handleChange, ...restProps}) => (
         <option key={index} value={option}>{option}</option>
       )
     })}
-  </select>
+  </StyledSelect>
 )
 
 const InputBlock = ({label, handleChange, classNames, isSelect, ...restProps}) => (
@@ -66,56 +102,63 @@ const InputBlock = ({label, handleChange, classNames, isSelect, ...restProps}) =
         handleChange={handleChange}
         {...restProps}
       /> :
-      <Select 
-        handleChange={handleChange} 
-        {...restProps}
-      />
+      <>
+        <Select 
+          handleChange={handleChange} 
+          {...restProps}
+        />
+        <div className="select-arrow" />
+      </>
     }
   </StyledInputWrapper>
 )
 
 
-class SubscribeForm extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {}
+const SubscribeForm = () => {
+  const [user, setUser] = useState({})
+  const [displayErrors, setDisplayErrors] = useState(false)
+
+  const handleChange = e => {
+    setUser({ 
+      [e.target.name]: e.target.value,
+      ...user
+    })
   }
 
-  handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value })
-  }
-
-  handleSubmit = e => {
+  const handleSubmit = e => {
     e.preventDefault()
+    if (!e.target.checkValidity()) {
+      setDisplayErrors(true);
+      return;
+    }
+    setDisplayErrors(false);
     const form = e.target
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': form.getAttribute('name'),
-        ...this.state,
+        ...user,
       }),
     })
     .then(() => navigate(form.getAttribute('action')))
     .catch(error => alert(error))
   }
-
-  render() {
-    return (
-      <Form
-        name="congreso-2020"
-        method="post"
-        action="/thanks/"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        data-netlify-recaptcha="true"
-        onSubmit={this.handleSubmit}
-      >
+  return (
+    <Form
+      name="congreso-2020"
+      method="post"
+      action="/thanks/"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      data-netlify-recaptcha="true"
+      onSubmit={handleSubmit}
+    >
       <div className="field-wrapper">
         <input type="hidden" name="form-name" value="congreso-2020" />
         <p hidden>
           <label>
-            Don’t fill this out: <input name="bot-field" onChange={this.handleChange} />
+            Don’t fill this out: <input name="bot-field" onChange={handleChange} />
           </label>
         </p>
         <InputRow>
@@ -123,14 +166,14 @@ class SubscribeForm extends React.Component {
             type="text"
             name="nombre"
             label="Nombre *"
-            handleChange={this.handleChange}
+            handleChange={handleChange}
             required
           />
           <InputBlock 
             type="text"
             name="apellido"
             label="Apellido *"
-            handleChange={this.handleChange}
+            handleChange={handleChange}
             required
           />
         </InputRow>
@@ -141,13 +184,13 @@ class SubscribeForm extends React.Component {
             label="Genero"
             isSelect={true}
             options={["hombre", "mujer"]}
-            handleChange={this.handleChange}
+            handleChange={handleChange}
           />
           <InputBlock 
             type="text"
             name="identificacion"
             label="Identificacion *"
-            handleChange={this.handleChange}
+            handleChange={handleChange}
             required
           />
         </InputRow>
@@ -155,7 +198,7 @@ class SubscribeForm extends React.Component {
           type="email"
           name="correo"
           label="Correo *"
-          handleChange={this.handleChange}
+          handleChange={handleChange}
           classNames="full-width"
           required
         />
@@ -164,13 +207,13 @@ class SubscribeForm extends React.Component {
             type="text"
             name="pais"
             label="País de residencia"
-            handleChange={this.handleChange}
+            handleChange={handleChange}
           />
           <InputBlock 
             type="text"
             name="cuidad"
             label="Ciudad de residencia"
-            handleChange={this.handleChange}
+            handleChange={handleChange}
           />
         </InputRow>
         <InputRow>
@@ -178,7 +221,7 @@ class SubscribeForm extends React.Component {
             type="tel"
             name="telefono"
             label="Teléfono"
-            handleChange={this.handleChange}
+            handleChange={handleChange}
           />
           <InputBlock 
             type="text"
@@ -186,14 +229,14 @@ class SubscribeForm extends React.Component {
             label="Ocupación"
             isSelect={true}
             options={["Estudiante extranjero", "Estudiante nacional", "Ganadero (productor de leche)", "Ganadero (procesador)", "Profesional nacional", "Profesional extranjero", "Investigador", "Otro" ]}
-            handleChange={this.handleChange}
+            handleChange={handleChange}
           />
         </InputRow>
       </div>
       <StyledButton type="submit" className="button-btn">Enviar</StyledButton>
       <p><strong>Importante: </strong>Sólo se aprueban las inscripciones de las personas que envíen el comprobante de pago escaneado al correo electrónico: <a href="mailto:admoncahle@gmail.com">admoncahle@gmail.com</a></p>
     </Form>
-  )}
+  )
 }
 
 export default SubscribeForm
