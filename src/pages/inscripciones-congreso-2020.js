@@ -43,7 +43,6 @@ const CongresoInscripciones = () => {
           <HeroSection>
             <h2>Inscripciones del Congreso</h2>
           </HeroSection>
-          <p className="main-text navy">Utilice el formulario adjunto para solicitar su registro al VIII Congreso Nacional de la Leche</p>
           <SubscribeForm />
         </Wrapper>
       </Container>

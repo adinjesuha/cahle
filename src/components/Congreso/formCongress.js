@@ -103,20 +103,19 @@ class SubscribeForm extends React.Component {
   render() {
     return (
       <Form
-        name="congreso"
+        name="congreso-2020"
         method="post"
         action="/thanks/"
         data-netlify="true"
-        ata-netlify-honeypot="bot-field"
+        data-netlify-honeypot="bot-field"
         data-netlify-recaptcha="true"
         onSubmit={this.handleSubmit}
       >
       <div className="field-wrapper">
-        <input type="hidden" name="form-name" value="congreso" />
+        <input type="hidden" name="form-name" value="congreso-2020" />
         <p hidden>
           <label>
-            Don’t fill this out:{' '}
-            <input name="bot-field" onChange={this.handleChange} />
+            Don’t fill this out: <input name="bot-field" onChange={this.handleChange} />
           </label>
         </p>
         <InputRow>
