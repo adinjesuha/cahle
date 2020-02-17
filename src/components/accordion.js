@@ -101,8 +101,8 @@ const AccordionSection = props => {
         className={expand ? 'content is-expanded' : 'content'}
         onClick={onClick}
       >
-        {content.map(nav => (
-          <div className="linkItem" key={nav.title}>
+        {content.map((nav, index) => (
+          <div className="linkItem" key={index}>
             <Link to={nav.link}>{nav.name}</Link>
           </div>
         ))}

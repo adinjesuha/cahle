@@ -119,14 +119,11 @@ const SubscribeForm = () => {
   const [displayErrors, setDisplayErrors] = useState(false)
 
   const handleChange = e => {
-    if(e.target.getAttribute('name') === 'ocupación'){
-      console.log('hi')
-    }else {
-      setUser({ 
-        [e.target.name]: e.target.value,
-        ...user
-      })
-    }
+    const { value, name } = e.target
+    setUser({
+      ...user,
+      [name]: value
+    })
   }
 
   const handleSubmit = e => {
@@ -186,10 +183,12 @@ const SubscribeForm = () => {
           <InputBlock 
             type="text"
             name="genero"
-            label="Genero"
+            label="Genero *"
             isSelect={true}
             options={["hombre", "mujer"]}
             handleChange={handleChange}
+            required
+
           />
           <InputBlock 
             type="text"
@@ -211,14 +210,18 @@ const SubscribeForm = () => {
           <InputBlock 
             type="text"
             name="pais"
-            label="País de residencia"
+            label="País de residencia *"
             handleChange={handleChange}
+            required
+
           />
           <InputBlock 
             type="text"
             name="cuidad"
-            label="Ciudad de residencia"
+            label="Ciudad de residencia *"
             handleChange={handleChange}
+            required
+
           />
         </InputRow>
         <InputRow>
@@ -232,7 +235,7 @@ const SubscribeForm = () => {
           <InputBlock 
             type="text"
             name="ocupación"
-            label="Ocupación"
+            label="Ocupación *"
             isSelect={true}
             options={["Estudiante extranjero", "Estudiante nacional", "Ganadero (productor de leche)", "Ganadero (procesador)", "Profesional nacional", "Profesional extranjero", "Investigador", "Otro" ]}
             handleChange={handleChange}
@@ -242,6 +245,7 @@ const SubscribeForm = () => {
       </div>
       <StyledButton type="submit" className="button-btn">Enviar</StyledButton>
       <p><strong>Importante: </strong>Sólo se aprueban las inscripciones de las personas que envíen el comprobante de pago escaneado al correo electrónico: <a href="mailto:admoncahle@gmail.com">admoncahle@gmail.com</a></p>
+      <p><strong>* Campo requerido</strong></p>
     </Form>
   )
 }
