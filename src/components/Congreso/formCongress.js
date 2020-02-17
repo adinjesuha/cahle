@@ -144,6 +144,7 @@ const SubscribeForm = () => {
     .then(() => navigate(form.getAttribute('action')))
     .catch(error => alert(error))
   }
+  
   return (
     <Form
       name="congreso-2020"
@@ -222,6 +223,7 @@ const SubscribeForm = () => {
             name="telefono"
             label="Teléfono"
             handleChange={handleChange}
+            required
           />
           <InputBlock 
             type="text"
@@ -230,6 +232,7 @@ const SubscribeForm = () => {
             isSelect={true}
             options={["Estudiante extranjero", "Estudiante nacional", "Ganadero (productor de leche)", "Ganadero (procesador)", "Profesional nacional", "Profesional extranjero", "Investigador", "Otro" ]}
             handleChange={handleChange}
+            required
           />
         </InputRow>
       </div>
