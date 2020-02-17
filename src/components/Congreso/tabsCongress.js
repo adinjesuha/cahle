@@ -4,6 +4,7 @@ import Tabs from '../Tabs/tabs'
 import AboutCongress from './aboutCongress'
 import Practicalinfo from './practicalinfo'
 import Hotels from './hotels'
+import Agenda from './agenda'
 
 const TabsCongress = () => (
   <Tabs>
@@ -15,6 +16,9 @@ const TabsCongress = () => (
     </div>
     <div label="Hotelería">
       <Hotels />
+    </div>
+    <div label="Agenda">
+      <Agenda />
     </div>
   </Tabs>
 )

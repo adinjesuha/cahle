@@ -119,10 +119,14 @@ const SubscribeForm = () => {
   const [displayErrors, setDisplayErrors] = useState(false)
 
   const handleChange = e => {
-    setUser({ 
-      [e.target.name]: e.target.value,
-      ...user
-    })
+    if(e.target.getAttribute('name') === 'ocupación'){
+      console.log('hi')
+    }else {
+      setUser({ 
+        [e.target.name]: e.target.value,
+        ...user
+      })
+    }
   }
 
   const handleSubmit = e => {
@@ -144,7 +148,7 @@ const SubscribeForm = () => {
     .then(() => navigate(form.getAttribute('action')))
     .catch(error => alert(error))
   }
-  
+
   return (
     <Form
       name="congreso-2020"
@@ -190,7 +194,7 @@ const SubscribeForm = () => {
           <InputBlock 
             type="text"
             name="identificacion"
-            label="Identificacion *"
+            label="ID o pasaporte *"
             handleChange={handleChange}
             required
           />
@@ -221,7 +225,7 @@ const SubscribeForm = () => {
           <InputBlock 
             type="tel"
             name="telefono"
-            label="Teléfono"
+            label="Teléfono *"
             handleChange={handleChange}
             required
           />
