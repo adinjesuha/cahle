@@ -662,5 +662,33 @@ template {
 } */
 
 /***************************************
- END BUTTON STYLES
+ INPUT STYLES
 *****************************************/
+
+input,
+textarea,
+select {
+  border: 1px solid var(--ceil);
+  border-radius: 4px;
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+}
+
+input,
+textarea,
+select:focus {
+  outline: 0;
+}
+
+@media (min-width: 720px) {
+
+  input,
+  textarea,
+  select {
+    margin-bottom: 20px;
+  }
+
+}
