@@ -1,8 +1,6 @@
 import { Component } from 'react'
 import ReactDOM from 'react-dom'
 
-
-
 // Use a ternary operator to make sure that the document object is defined
 const portalRoot = typeof document !== `undefined` ? document.getElementById('portal') : null
 

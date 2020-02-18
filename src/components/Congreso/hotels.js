@@ -138,7 +138,6 @@ const Hotels = () => (
 
     </Wrapper>
 
-    <SubscriptionLink />
   </div>
 )
 

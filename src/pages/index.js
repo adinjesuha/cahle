@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 
@@ -7,6 +7,10 @@ import IndexPostListing from '../components/indexPostListing'
 import VideoBG from '../video/video-bg.mp4'
 import { device } from '../styles/breakpoints'
 import Container from '../components/container'
+
+import Portal from '../components/portal'
+import Modal from '../components/modal'
+import { IoMdClose } from 'react-icons/io'
 
 const FullScreenBg = styled.div`
   left: 0;
@@ -77,9 +81,44 @@ const Wrapper = styled.section`
   padding: 70px 0;
 `
 
+const ModalButton = styled.button`
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: calc((50% - 230px) + 10px);
+  right: 30px;
+  z-index: 2000;
+  cursor: pointer;
+  border-radius: 50%;
+  background: var(--oxford-blue);
+  border: 1px solid var(--oxford-blue);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media ${device.mobileL}{
+    left: calc((50% + 187px) - 40px); 
+  }
+  @media ${device.tablet}{
+    top: calc((50% - 230px) + 10px);
+    left: calc((50% + 350px) - 40px); 
+  }
+`
+
 const IndexPage = () => {
+  const [toggle, setToggle] = useState(true)
   return (
     <React.Fragment>
+      <Portal>
+      {toggle && (
+        <React.Fragment>
+          <ModalButton onClick={() => setToggle(!toggle)}>
+            <IoMdClose />
+          </ModalButton>
+          <Modal />
+        </React.Fragment>
+      )}
+      </Portal>
       <Layout>
         <FullScreenBg>
           <video
