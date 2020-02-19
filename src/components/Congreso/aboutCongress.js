@@ -12,6 +12,7 @@ const AboutCongress = () => (
       <p className="main-text navy">Por el tipo de público al que está dirigido el evento, se convierte en un espacio idóneo para fortalecer la cooperación entre la comunidad técnica y el mundo empresarial, las relaciones interpersonales y promover la transferencia de conocimientos, experiencias, retos y oportunidades, así como la competitividad del sector lácteo de Honduras orientando hacia mejorar la producción, industrialización, comercialización, y consumo de la leche y sus derivados.</p>
       <p className="main-text navy">La organización del VIII Congreso espera recibir a más de 500 invitados entre nacionales y extranjeros y contará con una feria industrial y comercial en la que diferentes empresas presentarán equipos y suministros novedosos para el sector.</p>
     </Wrapper>
+    <SubscriptionLink />
   </div>
 )
 

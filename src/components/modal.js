@@ -117,6 +117,7 @@ const Modal = () => {
                 <h2>VII Congreso de la Leche</h2>
                 <div className="buttons-group">
                   <ButtonLink to="/informacion-general-congreso-2020">Descubre más</ButtonLink>
+                  <ButtonLink to="/inscripciones-congreso-2020" className="primary">Inscribete ya!</ButtonLink>
                 </div>
               </div>
             </div>
@@ -127,5 +128,3 @@ const Modal = () => {
 }
 
 export default Modal
-
-// <ButtonLink to="/inscripciones-congreso-2020" className="primary">Inscribete ya!</ButtonLink>

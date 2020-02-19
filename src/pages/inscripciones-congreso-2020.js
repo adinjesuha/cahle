@@ -7,9 +7,32 @@ import SubscribeForm from '../components/Congreso/formCongress'
 import { device } from '../styles/breakpoints'
 
 const Wrapper = styled.div`
-  max-width: 680px;
-  padding: 30px 0;
-  margin: 0 auto;
+  background-color: var(--background);
+  width: 100%;
+  padding: 70px 0;
+  .price{
+    h2, h3{
+      color: var(--oxford-blue) !important;
+    }
+    h3{
+      margin-bottom: 15px;
+    }
+    p{
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    &__category{
+      border-bottom: 1px solid var(--anti-flash-white);
+      padding-bottom: 20px;
+      &--note{
+        font-size: 12px;
+        font-weight: bold;
+      }
+      &:last-child{
+        border-bottom: 0px;
+      }
+    }
+  }
 `
 
 const HeroSection = styled.div`
@@ -38,14 +61,44 @@ const HeroSection = styled.div`
 const CongresoInscripciones = () => {
   return (
     <Layout>
-      <Container>
-        <Wrapper>
+      <Wrapper>
+        <Container>
           <HeroSection>
             <h2>Inscripciones del Congreso</h2>
           </HeroSection>
-          <SubscribeForm />
-        </Wrapper>
-      </Container>
+          <div className="row justify-content-center">
+            <div className="col-lg-6">
+              <div className="price">
+                <h2>Precios del congreso</h2>
+                <div className="price__category">
+                  <h3>Estudiantes</h3>
+                  <p className="main-text navy">Hasta el 30 de abril: <strong> Lps. 300.00</strong></p>
+                  <p className="main-text navy">Del 01 de mayo al 16 de mayo: <strong> Lps. 400.00</strong></p>
+                  <span className="price__category--note">Estudiantes con carnet de grado de carreras en ciencias agroalimentarias (agronomía, agro negocios, economía agrícola, zootecnia, medicina veterinaria, tecnología de alimentos, ingeniería de alimentos, etc.)</span>
+                </div>
+                <div className="price__category">
+                  <h3>Asociados CAHLE</h3>
+                  <p className="main-text navy">Hasta el 30 de abril: <strong> Lps. 400.00</strong></p>
+                  <p className="main-text navy">Del 01 de mayo al 16 de mayo: <strong> Lps. 500.00</strong></p>
+                </div>
+                <div className="price__category">
+                  <h3>Cuota general nacionales</h3>
+                  <p className="main-text navy">Hasta el 30 de abril: <strong> Lps. 500.00</strong></p>
+                  <p className="main-text navy">Del 01 de mayo al 16 de mayo: <strong> Lps. 600.00</strong></p>
+                </div>
+                <div className="price__category">
+                  <h3>Cuota general extranjeros</h3>
+                  <p className="main-text navy">Hasta el 30 de abril: <strong> US$ 30.00</strong></p>
+                  <p className="main-text navy">Del 01 de mayo al 16 de mayo: <strong> US$ 40.00</strong></p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <SubscribeForm />
+            </div>
+          </div>
+        </Container>
+      </Wrapper>
     </Layout>
   )
 }

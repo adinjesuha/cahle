@@ -8,6 +8,7 @@ const Agenda = () => (
     <Wrapper>
       <h2>Próximamente</h2>
     </Wrapper>
+    <SubscriptionLink />
   </div>
 )
 

@@ -17,6 +17,7 @@ const Practicalinfo = () => (
       </a>
       <p className="main-text navy">Es el principal predio ferial de la ciudad para la realización de exposiciones, ferias y demás eventos, con una ubicación privilegiada en el centro del país.</p>
     </Wrapper>
+    <SubscriptionLink />
   </div>
 )
 

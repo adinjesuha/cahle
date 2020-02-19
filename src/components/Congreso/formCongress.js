@@ -115,7 +115,6 @@ const InputBlock = ({label, handleChange, classNames, isSelect, ...restProps}) =
 
 const SubscribeForm = () => {
   const [data, setData] = useState({})
-  const [displayErrors, setDisplayErrors] = useState(false)
 
   const handleChange = e => {
     const { value, name } = e.target
@@ -167,13 +166,8 @@ const SubscribeForm = () => {
 
   return (
     <Form onSubmit={handleSubmit}>
+      <p className="main-text navy">Utilice el formulario adjunto para solicitar su registro al VIII Congreso Nacional de la Leche</p>
       <div className="field-wrapper">
-        <input type="hidden" name="form-name" value="congreso-2020" />
-        <p hidden>
-          <label>
-            Don’t fill this out: <input name="bot-field" onChange={handleChange} />
-          </label>
-        </p>
         <InputRow>
           <InputBlock 
             type="text"
@@ -255,36 +249,9 @@ const SubscribeForm = () => {
       </div>
       <StyledButton type="submit" className="button-btn">Enviar</StyledButton>
       <p><strong>Importante: </strong>Sólo se aprueban las inscripciones de las personas que envíen el comprobante de pago escaneado al correo electrónico: <a href="mailto:admoncahle@gmail.com">admoncahle@gmail.com</a></p>
-      <p><strong>* Campo requerido</strong></p>
+      <p><strong>Todos los campos son requeridos</strong></p>
     </Form>
   )
 }
 
 export default SubscribeForm
-
-// const handleSubmit = e => {
-//   e.preventDefault()
-//   if (!e.target.checkValidity()) {
-//     setDisplayErrors(true);
-//     return;
-//   }
-//   setDisplayErrors(false);
-//   const form = e.target
-//   fetch('/', {
-//     method: 'POST',
-//     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-//     body: encode({
-//       'form-name': form.getAttribute('name'),
-//       ...user,
-//     }),
-//   })
-//   .then(() => navigate(form.getAttribute('action')))
-//   .catch(error => alert(error))
-// }
-
-// name="congreso-2020"
-// method="post"
-// action="/thanks/"
-// data-netlify="true"
-// data-netlify-honeypot="bot-field"
-// data-netlify-recaptcha="true"

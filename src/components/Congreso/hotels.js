@@ -135,9 +135,8 @@ const Hotels = () => (
         <li>Todos los precios de las habitaciones incluyen ISV.</li>
         <li>Hotel Minister y La Quinta cobran un recargo de <strong>$11.90</strong> por persona extra en habitación.</li>
       </ul>
-
     </Wrapper>
-
+    <SubscriptionLink />
   </div>
 )
 
