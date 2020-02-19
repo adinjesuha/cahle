@@ -9,7 +9,7 @@ exports.handler = async (event, context, callback) => {
   }
 
   try {
-    let response = await fetch("https://api.airtable.com/v0/appcFDmT5NqriAOMJ/Table%201", {
+    let response = await fetch("https://api.airtable.com/v0/appcFDmT5NqriAOMJ/Row%20Data", {
       method: event.httpMethod,
       headers: {
         "Authorization": `Bearer ${process.env.GATSBY_AIRTABLE_API}`, 
