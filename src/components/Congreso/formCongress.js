@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { navigate } from 'gatsby-link'
 
-import { encode } from '../../utils/encode'
 import styled from 'styled-components'
 
 const Form = styled.form`
@@ -115,47 +114,59 @@ const InputBlock = ({label, handleChange, classNames, isSelect, ...restProps}) =
 
 
 const SubscribeForm = () => {
-  const [user, setUser] = useState({})
+  const [data, setData] = useState({})
   const [displayErrors, setDisplayErrors] = useState(false)
 
   const handleChange = e => {
     const { value, name } = e.target
-    setUser({
-      ...user,
+    setData({
+      ...data,
       [name]: value
     })
   }
 
   const handleSubmit = e => {
-    e.preventDefault()
-    if (!e.target.checkValidity()) {
-      setDisplayErrors(true);
-      return;
+
+    e.preventDefault();
+
+    const { 
+      nombre, 
+      apellido, 
+      genero, 
+      identificacion, 
+      correo, 
+      pais, 
+      cuidad, 
+      telefono, 
+      ocupacion  
+    } = data
+
+    const fields = {
+      "fields": {
+        "Nombre": nombre, 
+        "Apellido": apellido,
+        "Genero": genero,
+        "Identificación": identificacion,
+        "Correo": correo,
+        "País": pais,
+        "Ciudad": cuidad,
+        "Teléfono": telefono,
+        "Ocupación": ocupacion,
+      }
     }
-    setDisplayErrors(false);
-    const form = e.target
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...user,
-      }),
+
+    fetch("../../.netlify/functions/airtable", {
+      method: "POST",
+      body: JSON.stringify(fields)
     })
-    .then(() => navigate(form.getAttribute('action')))
+    .then(() => setData({}))
+    .then(() => navigate('/thanks/'))
     .catch(error => alert(error))
+
   }
 
   return (
-    <Form
-      name="congreso-2020"
-      method="post"
-      action="/thanks/"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-      data-netlify-recaptcha="true"
-      onSubmit={handleSubmit}
-    >
+    <Form onSubmit={handleSubmit}>
       <div className="field-wrapper">
         <input type="hidden" name="form-name" value="congreso-2020" />
         <p hidden>
@@ -221,7 +232,6 @@ const SubscribeForm = () => {
             label="Ciudad de residencia *"
             handleChange={handleChange}
             required
-
           />
         </InputRow>
         <InputRow>
@@ -234,7 +244,7 @@ const SubscribeForm = () => {
           />
           <InputBlock 
             type="text"
-            name="ocupación"
+            name="ocupacion"
             label="Ocupación *"
             isSelect={true}
             options={["Estudiante extranjero", "Estudiante nacional", "Ganadero (productor de leche)", "Ganadero (procesador)", "Profesional nacional", "Profesional extranjero", "Investigador", "Otro" ]}
@@ -251,3 +261,30 @@ const SubscribeForm = () => {
 }
 
 export default SubscribeForm
+
+// const handleSubmit = e => {
+//   e.preventDefault()
+//   if (!e.target.checkValidity()) {
+//     setDisplayErrors(true);
+//     return;
+//   }
+//   setDisplayErrors(false);
+//   const form = e.target
+//   fetch('/', {
+//     method: 'POST',
+//     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+//     body: encode({
+//       'form-name': form.getAttribute('name'),
+//       ...user,
+//     }),
+//   })
+//   .then(() => navigate(form.getAttribute('action')))
+//   .catch(error => alert(error))
+// }
+
+// name="congreso-2020"
+// method="post"
+// action="/thanks/"
+// data-netlify="true"
+// data-netlify-honeypot="bot-field"
+// data-netlify-recaptcha="true"
