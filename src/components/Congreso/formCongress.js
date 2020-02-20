@@ -5,6 +5,10 @@ import styled from 'styled-components'
 
 const Form = styled.form`
   padding: 40px 0;
+  button[type="submit"].disabled {
+    background-color: var(--ceil);
+    cursor: not-allowed;
+  }
 `
 
 const InputRow = styled.div`
@@ -115,6 +119,7 @@ const InputBlock = ({label, handleChange, classNames, isSelect, ...restProps}) =
 
 const SubscribeForm = () => {
   const [data, setData] = useState({})
+  const [disabled, setDisabled] = useState(false)
 
   const handleChange = e => {
     const { value, name } = e.target
@@ -158,7 +163,7 @@ const SubscribeForm = () => {
       method: "POST",
       body: JSON.stringify(fields)
     })
-    .then(() => setData({}))
+    .then(() => setDisabled(true))
     .then(() => navigate('/thanks/'))
     .catch(error => alert(error))
 
@@ -247,7 +252,7 @@ const SubscribeForm = () => {
           />
           </InputRow>
       </div>
-      <StyledButton type="submit" className="button-btn">Enviar</StyledButton>
+      <StyledButton type="submit" className={`${disabled ? 'disabled' : ''} button-btn`} disabled={disabled}>Enviar</StyledButton>
       <p><strong>Importante: </strong>Sólo se aprueban las inscripciones de las personas que envíen el comprobante de pago escaneado al correo electrónico: <a href="mailto:admoncahle@gmail.com">admoncahle@gmail.com</a></p>
       <p><strong>Todos los campos son requeridos</strong></p>
     </Form>
