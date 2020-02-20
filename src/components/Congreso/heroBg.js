@@ -23,7 +23,10 @@ const ContentBackground = styled.div`
 const HeroBg = () => (
   <StyledBackgroundSection>
     <ContentBackground>
-      <img src={LogoCongreso} alt="Congreso de la leche 2020"/>
+      <img 
+        src={LogoCongreso} 
+        alt="Congreso de la leche 2020"
+      />
     </ContentBackground>
   </StyledBackgroundSection>
 )
