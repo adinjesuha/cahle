@@ -109,7 +109,7 @@ export default class desktopNav extends Component {
           <li>
             <Link to="/acerca-de-cahle">Acerca de CAHLE</Link>
           </li>
-          <li className="has_dropdown has_tag">
+         {/* <li className="has_dropdown has_tag">
             <span>Congreso 2020</span>
             <div className="dropdown">
               <ul>
@@ -120,7 +120,7 @@ export default class desktopNav extends Component {
                 ))}
               </ul>
             </div>
-          </li>
+          </li> */}
           <li className="has_dropdown">
             <span>Nuestra Gente</span>
             <div className="dropdown">

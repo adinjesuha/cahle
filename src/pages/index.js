@@ -106,10 +106,10 @@ const ModalButton = styled.button`
 `
 
 const IndexPage = () => {
-  const [toggle, setToggle] = useState(true)
+  // const [toggle, setToggle] = useState(true)
   return (
     <React.Fragment>
-      <Portal>
+      {/*<Portal>
       {toggle && (
         <React.Fragment>
           <ModalButton onClick={() => setToggle(!toggle)}>
@@ -118,7 +118,7 @@ const IndexPage = () => {
           <Modal />
         </React.Fragment>
       )}
-      </Portal>
+      </Portal>*/}
       <Layout>
         <FullScreenBg>
           <video

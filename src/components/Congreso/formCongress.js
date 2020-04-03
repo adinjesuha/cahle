@@ -252,7 +252,7 @@ const SubscribeForm = () => {
           />
           </InputRow>
       </div>
-      <StyledButton type="submit" className={`${disabled ? 'disabled' : ''} button-btn`} disabled={disabled}>Enviar</StyledButton>
+      <StyledButton type="submit" className={`${disabled ? 'disabled' : ''} button-btn`} disabled={disabled}>{disabled ? 'Enviando...' : 'Enviar'}</StyledButton>
       <p><strong>Importante: </strong>Sólo se aprueban las inscripciones de las personas que envíen el comprobante de pago escaneado al correo electrónico: <a href="mailto:admoncahle@gmail.com">admoncahle@gmail.com</a></p>
       <p><strong>Todos los campos son requeridos</strong></p>
     </Form>
