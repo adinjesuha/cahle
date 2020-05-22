@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 import styled, { css } from 'styled-components'
 
@@ -101,9 +102,11 @@ const Post = styled.article`
   `}
 `
 
-const CardPost = ({slug, heroImage, title, body, tags, customDate, intro, ...props}) => (
+const CardPost = ({slug, heroImage, title, body, tags, customDate, intro, ...props}) => {
+  console.log(slug);
+  return(
   <Post featured={props.featured}>
-    <a href={slug}>
+    <Link to={`/noticias-y-eventos/${slug}`}>
       <Img fluid={heroImage.fluid}/>
       <div className="data">  
         <p className="meta">
@@ -113,8 +116,8 @@ const CardPost = ({slug, heroImage, title, body, tags, customDate, intro, ...pro
         <h2 className="title">{title}</h2>
         <p className="main-text">{intro}</p>
       </div>
-    </a>
+    </Link>
   </Post>
-)
+)}
 
 export default CardPost

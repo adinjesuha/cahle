@@ -159,7 +159,7 @@ class Accordion extends Component {
           ))}
         </AccordionWrapper>
         <CustomLink to="/perfil-comercial">Perfil Comercial</CustomLink>
-        <CustomLink to="/noticias-y-eventos">Noticias y Eventos</CustomLink>
+        <CustomLink to="/noticias-y-eventos/">Noticias y Eventos</CustomLink>
       </Container>
     )
   }

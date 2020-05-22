@@ -161,7 +161,7 @@ export default class desktopNav extends Component {
             <Link to="/perfil-comercial">Perfil Comercial</Link>
           </li>
           <li>
-            <Link to="/noticias-y-eventos">Noticias & Eventos</Link>
+            <Link to="/noticias-y-eventos/">Noticias & Eventos</Link>
           </li>
         </ul>
       </NavBar>
