@@ -53,7 +53,7 @@ export default () => {
                 </div>
                 <div className="c-row">
                   <div className="cell" data-title="Nombre">
-                    Luis Figueroa
+                    Edward Ordóñez
                   </div>
                   <div className="cell" data-title="Cargo">
                     Dirección Técnica de Campo

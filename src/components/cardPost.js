@@ -102,9 +102,7 @@ const Post = styled.article`
   `}
 `
 
-const CardPost = ({slug, heroImage, title, body, tags, customDate, intro, ...props}) => {
-  console.log(slug);
-  return(
+const CardPost = ({slug, heroImage, title, body, tags, customDate, intro, ...props}) => (
   <Post featured={props.featured}>
     <Link to={`/noticias-y-eventos/${slug}`}>
       <Img fluid={heroImage.fluid}/>
@@ -118,6 +116,6 @@ const CardPost = ({slug, heroImage, title, body, tags, customDate, intro, ...pro
       </div>
     </Link>
   </Post>
-)}
+)
 
 export default CardPost

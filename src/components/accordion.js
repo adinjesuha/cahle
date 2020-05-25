@@ -139,7 +139,7 @@ class Accordion extends Component {
         content: asociados,
       },
       {
-        title: 'Documentación',
+        title: 'Legislación',
         content: documentacion,
       },
     ]

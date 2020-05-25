@@ -146,7 +146,7 @@ export default class desktopNav extends Component {
             </div>
           </li>
           <li className="has_dropdown">
-            <span>Documentación</span>
+            <span>Legislación</span>
             <div className="dropdown">
               <ul>
                 {documentacion.map(item => (

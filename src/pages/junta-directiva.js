@@ -65,7 +65,7 @@ export default () => {
                   José Manuel España Herrera
                   </div>
                   <div className="cell" data-title="Cargo">
-                  Tesorerao
+                  Tesorero
                   </div>
                 </div>
                 <div className="c-row">
