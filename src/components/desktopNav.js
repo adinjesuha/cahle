@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-import { NuestraGente, asociados, documentacion, congreso } from '../utils/menuConfig'
+import { NuestraGente, asociados, legislacion, documentacion } from '../utils/menuConfig'
 
 const NavBar = styled.nav`
   position: relative;
@@ -59,11 +59,10 @@ const NavBar = styled.nav`
         transform: translateY(-20px);
       }
       ul li a {
-        padding: 0 15px;
+        padding: 20px 15px;
         text-transform: capitalize;
         font-weight: 400;
         color: var(--oxford-blue);
-        line-height: 60px;
         transition: 0.2s;
         background-color: transparent;
         display: block;
@@ -109,18 +108,6 @@ export default class desktopNav extends Component {
           <li>
             <Link to="/acerca-de-cahle">Acerca de CAHLE</Link>
           </li>
-         {/* <li className="has_dropdown has_tag">
-            <span>Congreso 2020</span>
-            <div className="dropdown">
-              <ul>
-                {congreso.map(item => (
-                  <li key={item.name}>
-                    <Link to={item.link}>{item.name}</Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </li> */}
           <li className="has_dropdown">
             <span>Nuestra Gente</span>
             <div className="dropdown">
@@ -147,6 +134,18 @@ export default class desktopNav extends Component {
           </li>
           <li className="has_dropdown">
             <span>Legislación</span>
+            <div className="dropdown">
+              <ul>
+                {legislacion.map(item => (
+                  <li key={item.name}>
+                    <Link to={item.link}>{item.name}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </li>
+          <li className="has_dropdown">
+            <span>Documentación</span>
             <div className="dropdown">
               <ul>
                 {documentacion.map(item => (
