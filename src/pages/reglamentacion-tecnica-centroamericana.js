@@ -17,7 +17,6 @@ const Wrapper = styled.section`
 `
 
 export default ({data}) => {
-  console.log(data)
   const newData = data.allContentfulDownloadList.edges[2].node
   return (
     <Layout>
