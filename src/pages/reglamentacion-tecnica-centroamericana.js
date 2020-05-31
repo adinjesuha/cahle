@@ -17,7 +17,8 @@ const Wrapper = styled.section`
 `
 
 export default ({data}) => {
-  const newData = data.allContentfulDownloadList.edges[1].node
+  console.log(data)
+  const newData = data.allContentfulDownloadList.edges[2].node
   return (
     <Layout>
       <HeroPage title={newData.titleDocument} tags="Legislación" bgImage={"documentos"}/>
