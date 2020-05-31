@@ -22,7 +22,7 @@ const Wrapper = styled.div`
 export default () => {
   return (
     <Layout>
-      <HeroPage title="CREL" tags="Asociados" bgImage={"documentos"}/>
+      <HeroPage title="CREL" tags="Asociados" bgImage={"crel-image"}/>
       <Wrapper>
         <Container>
           <div className="row justify-content-center">

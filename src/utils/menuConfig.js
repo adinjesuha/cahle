@@ -69,8 +69,8 @@ export const documentacion = [
     link: '/informes-anuales',
   },
   {
-    name: 'Varios 2018',
-    link: '/',
+    name: 'Varios',
+    link: '/varios',
   },
 ]
 
