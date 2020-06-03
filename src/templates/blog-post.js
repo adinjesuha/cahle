@@ -126,7 +126,7 @@ const PostPage = ({data}) => {
                   <ul>
                     <li className="social-share">
                       <FacebookShareButton 
-                        url={`https://www.cahle.org/${slug}`}
+                        url={`https://www.cahle.org/noticias-y-eventos/${slug}`}
                         quote={title}
                       >
                         <FacebookIcon size={40} round />
@@ -134,7 +134,7 @@ const PostPage = ({data}) => {
                     </li>
                     <li className="social-share">
                       <TwitterShareButton
-                        url={`https://www.cahle.org/${slug}`}
+                        url={`https://www.cahle.org/noticias-y-eventos/${slug}`}
                         quote={title}
                       >
                         <TwitterIcon size={40} round/>
@@ -142,7 +142,7 @@ const PostPage = ({data}) => {
                     </li>
                     <li className="social-share">
                       <GooglePlusShareButton
-                        url={`https://www.cahle.org/${slug}`}
+                        url={`https://www.cahle.org/noticias-y-eventos/${slug}`}
                         quote={title}
                       >
                         <GooglePlusIcon size={40} round/>
@@ -150,7 +150,7 @@ const PostPage = ({data}) => {
                     </li>
                     <li className="social-share">
                       <EmailShareButton
-                        url={`https://www.cahle.org/${slug}`}
+                        url={`https://www.cahle.org/noticias-y-eventos/${slug}`}
                         quote={title}
                       >
                         <EmailIcon size={40} round/>
@@ -158,7 +158,7 @@ const PostPage = ({data}) => {
                     </li>
                     <li className="social-share">
                       <WhatsappShareButton
-                        url={`https://www.cahle.org/${slug}`}
+                        url={`https://www.cahle.org/noticias-y-eventos/${slug}`}
                         quote={title}
                       >
                         <WhatsappIcon size={40} round/>
