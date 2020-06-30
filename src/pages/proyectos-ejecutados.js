@@ -50,12 +50,12 @@ export default () => {
                 <li>
                   <p className="main-text"><strong>Incentivo económico para la obtención de animales y desarrollar el mejoramiento genético de los hatos</strong></p>
                   <p className="main-text">Subasta ganadera organizada por CAFOGAH, 26 productores beneficiados.{" "}
-                    <Link className="animate-link" to="/cahle-financia-genetica-bovina">
+                    <Link className="animate-link" to="/noticias-y-eventos/cahle-financia-genetica-bovina">
                       <strong>Leer noticia</strong>
                     </Link>
                   </p>
                   <p className="main-text">Segunda Gran Subasta de Genética Bovina.{" "}
-                    <Link className="animate-link" to="/segunda-gran-subasta-de-genetica-bovina">
+                    <Link className="animate-link" to="/noticias-y-eventos/segunda-gran-subasta-de-genetica-bovina">
                       <strong>Leer noticia</strong>
                     </Link>
                   </p>
@@ -80,7 +80,9 @@ export default () => {
                   <p className="main-text">Publicidad (vallas publicitarias, espacios pagados en internet, radio y televisión).</p>
                   <p className="main-text">Concursos (2 familias ganadoras).</p>
                   <p className="main-text">Donación de libros (8,000 niños beneficiados).</p>
-                  <Link className="animate-link" to="/fomentando-el-consumo-de-leche-en-los-infantes">Leer noticia</Link>
+                  <Link className="animate-link" to="/noticias-y-eventos/fomentando-el-consumo-de-leche-en-los-infantes">Leer noticia</Link>
+                  <p className="main-text">Donación de 100,000 litros de leche <strong>=</strong> a 100,000 sonrisas.</p>
+                  <Link className="animate-link" to="/noticias-y-eventos/100-mil-vasos-de-leche-100-mil-sonrisas">Leer noticia</Link>
                 </li>
                 <li>
                   <p className="main-text"><strong>Inseminación Artificial. Donación de un termo de inseminación al CREL</strong></p>
