@@ -17,16 +17,15 @@ const Wrapper = styled.section`
 `
 
 export default ({data}) => {
-  const newData = data.allContentfulDownloadList.edges[2].node
   return (
     <Layout>
-      <HeroPage title={newData.titleDocument} tags="Legislación" bgImage={"documentos"}/>
+      <HeroPage title={data.contentfulDownloadList.titleDocument} tags="Legislación" bgImage={"documentos"}/>
       <Wrapper>
         <Container>
           <div className="row justify-content-center">
             <div className="col-lg-9">
               <div className="row">
-                {newData.link.map(list => (
+                {data.contentfulDownloadList.link.map(list => (
                   <DownloadCard 
                     columns="col-lg-6 col-md-6"
                     link={`https:${list.file.url}`}
@@ -43,17 +42,15 @@ export default ({data}) => {
 }
 
 export const query = graphql`
-  query allDownLoadList {
-    allContentfulDownloadList{
-      edges{
-        node{
-          titleDocument
-          link{
-            title
-            file{
-              url
-            }
-          }
+  query DownLoadListReglamentacionTecnica {
+    contentfulDownloadList(titleDocument: {eq: "Reglamentación técnica centroamericana"}){
+      id
+      titleDocument
+      link {
+        id
+        title
+        file{
+          url
         }
       }
     }
