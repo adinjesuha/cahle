@@ -157,7 +157,7 @@ export default class desktopNav extends Component {
             </div>
           </li>
           <li>
-            <Link to="/perfil-comercial">Perfil Comercial</Link>
+            <a href="http://assets.ctfassets.net/zg4fwo9e8dmk/4BMt0BcRRRmgqhOSv2Pxp3/12fe22e0792f0d1d5531101f4dbb8faf/Leche_en_cifras.pdf" target="_blank" rel="noopener noreferrer">Leche en Cifras</a>
           </li>
           <li>
             <Link to="/noticias-y-eventos/">Noticias & Eventos</Link>

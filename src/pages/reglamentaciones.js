@@ -41,7 +41,6 @@ export default () => (
     `}
     render = { data => {
       const reglamentaciones = data.allContentfulDownloadGroup.edges[0].node
-      console.log(data)
       return(
         <Layout>
         <HeroPage title={reglamentaciones.title} tags="Documentación" bgImage={"documentos"}/>

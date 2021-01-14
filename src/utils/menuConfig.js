@@ -8,10 +8,6 @@ export const NuestraGente = [
     link: '/junta-directiva',
   },
   {
-    name: 'Junta Directiva Anterior',
-    link: '/junta-directiva-anterior',
-  },
-  {
     name: 'Personal Administrativo',
     link: '/personal-administrativo',
   },

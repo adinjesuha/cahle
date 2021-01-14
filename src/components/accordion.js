@@ -158,7 +158,8 @@ class Accordion extends Component {
             />
           ))}
         </AccordionWrapper>
-        <CustomLink to="/perfil-comercial">Perfil Comercial</CustomLink>
+        <a 
+          href="http://assets.ctfassets.net/zg4fwo9e8dmk/4BMt0BcRRRmgqhOSv2Pxp3/12fe22e0792f0d1d5531101f4dbb8faf/Leche_en_cifras.pdf" target="_blank" rel="noopener noreferrer">Leche en Cifras</a>
         <CustomLink to="/noticias-y-eventos/">Noticias y Eventos</CustomLink>
       </Container>
     )
