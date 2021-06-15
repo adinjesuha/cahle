@@ -52,12 +52,8 @@ export default () => {
                   </div>
                 </div>
                 <div className="c-row">
-                  <div className="cell" data-title="Nombre">
-                    Edward Ordóñez
-                  </div>
-                  <div className="cell" data-title="Cargo">
-                    Dirección Técnica de Campo
-                  </div>
+                  <div className="cell" data-title="Nombre">José Rigoberto Vásquez</div>
+                  <div className="cell" data-title="Cargo">Dirección Técnica de Campo</div>
                   <div className="cell" data-title="E-mail">
                     <a href="mailto:tecnicodecampocahle@gmail.com">tecnicodecampocahle@gmail.com</a>
                   </div>
