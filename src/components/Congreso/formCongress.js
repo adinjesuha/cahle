@@ -142,7 +142,8 @@ const SubscribeForm = () => {
       pais, 
       cuidad, 
       telefono, 
-      ocupacion  
+      ocupacion,
+      otro
     } = data
 
     const fields = {
@@ -156,6 +157,7 @@ const SubscribeForm = () => {
         "Ciudad": cuidad,
         "Teléfono": telefono,
         "Ocupación": ocupacion,
+        "Otro": otro ? otro : null
       }
     }
 
