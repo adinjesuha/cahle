@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { navigate } from 'gatsby-link'
-
 import styled from 'styled-components'
 
 const Form = styled.form`
@@ -53,7 +52,7 @@ const StyledInputWrapper = styled.div`
 const StyledInput = styled.input``
 
 const StyledSelect = styled.select`
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   left: 0;
   width: 100%;
@@ -121,6 +120,7 @@ const SubscribeForm = () => {
   const [data, setData] = useState({})
   const [disabled, setDisabled] = useState(false)
 
+
   const handleChange = e => {
     const { value, name } = e.target
     setData({
@@ -172,6 +172,8 @@ const SubscribeForm = () => {
   return (
     <Form onSubmit={handleSubmit}>
       <p className="main-text navy">Utilice el formulario adjunto para solicitar su registro al VIII Congreso Nacional de la Leche</p>
+      <p><strong>Importante: </strong>Sólo se aprueban las inscripciones de las personas que envíen el comprobante de pago escaneado al correo electrónico: <a href="mailto:congresocahle@gmail.com">congresocahle@gmail.com</a></p>
+      <p><strong>Todos los campos son requeridos</strong></p>
       <div className="field-wrapper">
         <InputRow>
           <InputBlock 
@@ -246,15 +248,37 @@ const SubscribeForm = () => {
             name="ocupacion"
             label="Ocupación *"
             isSelect={true}
-            options={["Estudiante extranjero", "Estudiante nacional", "Ganadero (productor de leche)", "Ganadero (procesador)", "Profesional nacional", "Profesional extranjero", "Investigador", "Otro" ]}
+            options={["Estudiante extranjero", "Estudiante nacional", "Ganadero", "Procesador", "Profesional nacional", "Profesional extranjero", "Otro" ]}
             handleChange={handleChange}
             required
           />
+        </InputRow>
+        { data.ocupacion === 'Otro' ? (
+          <InputRow>
+            <InputBlock 
+              type="text"
+              name="otro"
+              label="Detallar ocupación *"
+              handleChange={handleChange}
+              classNames="full-width"
+              required
+            />
           </InputRow>
+        ) : null }
+        <InputRow>
+          <InputBlock 
+            type="text"
+            name="participacion"
+            label="Tipo de Participación *"
+            isSelect={true}
+            options={["Conferencista", "Patrocinador", "Audiencia" ]}
+            handleChange={handleChange}
+            classNames="full-width"
+            required
+          />
+        </InputRow>
       </div>
       <StyledButton type="submit" className={`${disabled ? 'disabled' : ''} button-btn`} disabled={disabled}>{disabled ? 'Enviando...' : 'Enviar'}</StyledButton>
-      <p><strong>Importante: </strong>Sólo se aprueban las inscripciones de las personas que envíen el comprobante de pago escaneado al correo electrónico: <a href="mailto:admoncahle@gmail.com">admoncahle@gmail.com</a></p>
-      <p><strong>Todos los campos son requeridos</strong></p>
     </Form>
   )
 }

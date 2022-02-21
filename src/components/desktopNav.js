@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-import { NuestraGente, asociados, legislacion, documentacion } from '../utils/menuConfig'
+import { NuestraGente, asociados, legislacion, documentacion, congreso } from '../utils/menuConfig'
 
 const NavBar = styled.nav`
   position: relative;
@@ -105,6 +105,18 @@ export default class desktopNav extends Component {
     return (
       <NavBar>
         <ul className="navbar-nav">
+          <li className="has_dropdown">
+            <span>Congreso 2022</span>
+            <div className="dropdown">
+              <ul>
+                {congreso.map(item => (
+                  <li key={item.name}>
+                    <Link to={item.link}>{item.name}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </li>
           <li>
             <Link to="/acerca-de-cahle">Acerca de CAHLE</Link>
           </li>

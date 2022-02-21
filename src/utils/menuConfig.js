@@ -73,11 +73,11 @@ export const documentacion = [
 export const congreso = [
   {
     name: 'Información General',
-    link: '/informacion-general-congreso-2020',
+    link: '/informacion-general-congreso-2022',
   },
   {
     name: 'Inscripciones',
-    link: '/inscripciones-congreso-2020',
+    link: '/inscripciones-congreso-2022',
   },
   
 ]

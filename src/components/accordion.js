@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 
-import { NuestraGente, asociados, legislacion, documentacion } from '../utils/menuConfig'
+import { NuestraGente, asociados, legislacion, documentacion, congreso } from '../utils/menuConfig'
 
 const Container = styled.div`
   min-height: 100%;
@@ -127,6 +127,10 @@ class Accordion extends Component {
   render() {
     const accordionList = [
       {
+        title: 'Congreso 2022',
+        content: congreso,
+      },
+      {
         title: 'Nuestra Gente',
         content: NuestraGente,
       },
@@ -158,8 +162,7 @@ class Accordion extends Component {
             />
           ))}
         </AccordionWrapper>
-        <a 
-          href="http://assets.ctfassets.net/zg4fwo9e8dmk/4BMt0BcRRRmgqhOSv2Pxp3/12fe22e0792f0d1d5531101f4dbb8faf/Leche_en_cifras.pdf" target="_blank" rel="noopener noreferrer">Leche en Cifras</a>
+        <CustomLink href="http://assets.ctfassets.net/zg4fwo9e8dmk/4BMt0BcRRRmgqhOSv2Pxp3/12fe22e0792f0d1d5531101f4dbb8faf/Leche_en_cifras.pdf" target="_blank" rel="noopener noreferrer">Leche en Cifras</CustomLink>
         <CustomLink to="/noticias-y-eventos/">Noticias y Eventos</CustomLink>
       </Container>
     )

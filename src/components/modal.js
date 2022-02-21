@@ -114,10 +114,10 @@ const Modal = () => {
               <img src={CahelAgafam} alt="Cahel Agafam"/>
               <div className="content__text">
                 <h4>Te invitan al:</h4>
-                <h2>VII Congreso de la Leche</h2>
+                <h2>VIII Congreso de la Leche</h2>
                 <div className="buttons-group">
-                  <ButtonLink to="/informacion-general-congreso-2020">Descubre más</ButtonLink>
-                  <ButtonLink to="/inscripciones-congreso-2020" className="primary">Inscribete ya!</ButtonLink>
+                  <ButtonLink to="/informacion-general-congreso-2022">Descubre más</ButtonLink>
+                  <ButtonLink to="/inscripciones-congreso-2022" className="primary">Inscribete ya!</ButtonLink>
                 </div>
               </div>
             </div>
