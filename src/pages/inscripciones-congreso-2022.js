@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import Container from '../components/container'
 import SubscribeForm from '../components/Congreso/formCongress'
 import { device } from '../styles/breakpoints'
+import Steps from '../images/steps.jpg'
 
 const Wrapper = styled.div`
   background-color: var(--background);
@@ -67,39 +68,8 @@ const CongresoInscripciones = () => {
             <h2>Inscripciones del Congreso</h2>
           </HeroSection>
           <div className="row justify-content-center">
-            <div className="col-lg-6">
-              <div className="price">
-                <h2>Valores de la Inscripción</h2>
-                <div className="price__category">
-                  <h3>Estudiantes</h3>
-                  <p className="main-text navy">Hasta el 30 de marzo: <strong> Lps.400.00</strong></p>
-                  <p className="main-text navy">Del 01 al 29 de abril: <strong> Lps. 500.00</strong></p>
-                  <span className="price__category--note">Estudiantes con carnet de grado de carreras en ciencias agroalimentarias (agronomía, agro negocios, economía agrícola, zootecnia, medicina veterinaria, tecnología de alimentos, ingeniería de alimentos, etc.)</span>
-                </div>
-                <div className="price__category">
-                  <h3>Asociados CAHLE</h3>
-                  <p className="main-text navy">Hasta el 30 de marzo: <strong> Lps. 500.00</strong></p>
-                  <p className="main-text navy">Del 01 al 29 de abril: <strong> Lps. 600.00</strong></p>
-                </div>
-                <div className="price__category">
-                  <h3>Cuota general nacionales</h3>
-                  <p className="main-text navy">Hasta el 30 de marzo: <strong> Lps. 600.00</strong></p>
-                  <p className="main-text navy">Del 01 al 29 de abril: <strong> Lps. 700.00</strong></p>
-                </div>
-                <div className="price__category">
-                  <h3>Cuota general extranjeros</h3>
-                  <p className="main-text navy">Hasta el 30 de marzo: <strong> US$ 40.00</strong></p>
-                  <p className="main-text navy">Del 01 al 29 de abril: <strong> US$ 50.00</strong></p>
-                </div>
-                <div className="price__category">
-                  <h3>Pagos de la inscripción:</h3>
-                  <p className="main-text navy">Cuenta de ahorro en Lempiras: <strong> Banco de Occidente: 21401173406-2</strong></p>
-                  <p className="main-text navy">Cuenta en Dólares: <strong>Banco de Occidente: 124010129573</strong></p>
-                  <p className="main-text navy"><strong>*Cuentas a nombre de Cámara Hondureña de la Leche.</strong></p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6">
+            <img src={Steps} alt="Agafam Congreso de la leche 2020"/>
+            <div className="col-lg-8">
               <SubscribeForm />
             </div>
           </div>

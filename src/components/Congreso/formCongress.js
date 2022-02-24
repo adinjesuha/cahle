@@ -175,8 +175,6 @@ const SubscribeForm = () => {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <p className="main-text navy">Utilice el formulario adjunto para solicitar su registro al VIII Congreso Nacional de la Leche</p>
-      <p><strong>Importante: </strong>Sólo se aprueban las inscripciones de las personas que envíen el comprobante de pago escaneado al correo electrónico: <a href="mailto:congresocahle@gmail.com">congresocahle@gmail.com</a></p>
       <p><strong>Todos los campos son requeridos</strong></p>
       <div className="field-wrapper">
         <InputRow>
@@ -283,6 +281,7 @@ const SubscribeForm = () => {
         </InputRow>
       </div>
       <StyledButton type="submit" className={`${disabled ? 'disabled' : ''} button-btn`} disabled={disabled}>{disabled ? 'Enviando...' : 'Enviar'}</StyledButton>
+      <p className="main-text navy">Utilice el formulario adjunto para solicitar su registro al VIII Congreso Nacional de la Leche</p>
     </Form>
   )
 }
