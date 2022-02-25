@@ -281,7 +281,6 @@ const SubscribeForm = () => {
         </InputRow>
       </div>
       <StyledButton type="submit" className={`${disabled ? 'disabled' : ''} button-btn`} disabled={disabled}>{disabled ? 'Enviando...' : 'Enviar'}</StyledButton>
-      <p className="main-text navy">Utilice el formulario adjunto para solicitar su registro al VIII Congreso Nacional de la Leche</p>
     </Form>
   )
 }
