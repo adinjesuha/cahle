@@ -69,6 +69,7 @@ const CongresoInscripciones = () => {
           </HeroSection>
           <div className="row justify-content-center">
             <img src={Steps} alt="Agafam Congreso de la leche 2020"/>
+            <p className="main-text navy">Utilice el formulario adjunto para solicitar su registro al VIII Congreso Nacional de la Leche</p>
             <div className="col-lg-8">
               <SubscribeForm />
             </div>
