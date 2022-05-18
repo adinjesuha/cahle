@@ -105,58 +105,45 @@ const ModalButton = styled.button`
 `
 
 const IndexPage = () => {
-  const [toggle, setToggle] = useState(true)
   return (
-    <React.Fragment>
-      <Portal>
-      {toggle && (
-        <React.Fragment>
-          <ModalButton onClick={() => setToggle(!toggle)}>
-            <IoMdClose />
-          </ModalButton>
-          <Modal />
-        </React.Fragment>
-      )}
-      </Portal>
-      <Layout>
-        <FullScreenBg>
-          <video
-            autoPlay
-            muted
-            loop
-            style={{
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              minWidth: '100%',
-              minHeight: '100%',
-              width: 'auto',
-              height: 'auto',
-              zIndex: '-100',
-              transform: 'translateX(-50%) translateY(-50%)',
-              backgroundSize: 'cover',
-            }}
-          >
-            <source src={VideoBG} type="video/mp4" />
-          </video>
-        </FullScreenBg>
-        <CoverContent>
-          <h1>
-            Cámara hondureña <br /> de la leche
-          </h1>
-        </CoverContent>
-        <Wrapper>
-          <Container>
-            <IndexPostListing />
-            <div style={{ textAlign: 'center', marginTop: '20px' }}>
-              <Link className="button-link" to="/noticias-y-eventos">
-                Ver todos
-              </Link>
-            </div>
-          </Container>
-        </Wrapper>
-      </Layout>
-    </React.Fragment>
+    <Layout>
+      <FullScreenBg>
+        <video
+          autoPlay
+          muted
+          loop
+          style={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            minWidth: '100%',
+            minHeight: '100%',
+            width: 'auto',
+            height: 'auto',
+            zIndex: '-100',
+            transform: 'translateX(-50%) translateY(-50%)',
+            backgroundSize: 'cover',
+          }}
+        >
+          <source src={VideoBG} type="video/mp4" />
+        </video>
+      </FullScreenBg>
+      <CoverContent>
+        <h1>
+          Cámara hondureña <br /> de la leche
+        </h1>
+      </CoverContent>
+      <Wrapper>
+        <Container>
+          <IndexPostListing />
+          <div style={{ textAlign: 'center', marginTop: '20px' }}>
+            <Link className="button-link" to="/noticias-y-eventos">
+              Ver todos
+            </Link>
+          </div>
+        </Container>
+      </Wrapper>
+    </Layout>
   )
 }
 
