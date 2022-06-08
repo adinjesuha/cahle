@@ -74,9 +74,23 @@ export default () => {
       <Container>
         <CardContainer>
           <li className="card-item">
+            <Link to="/congreso-tegucigalpa">
+              <figure>
+                <img src={RibeteVII} alt="Congreso lechero CAHLE Tegucigalpa 2022" />
+              </figure>
+              <div
+                className="card-item-image"
+                style={{ backgroundImage: `url(${Ceiba})` }}
+              ></div>
+            </Link>
+            <Link to="/congreso-tegucigalpa">
+              <h2 className="sub-title">Tegucigalpa, Francisco Morazán, 2022</h2>
+            </Link>
+          </li>
+          <li className="card-item">
             <Link to="/congreso-ceiba">
               <figure>
-                <img src={RibeteVII} alt="Congreso lechero CAHLE" />
+                <img src={RibeteVII} alt="Congreso lechero CAHLE la Ceiba 2019" />
               </figure>
               <div
                 className="card-item-image"
@@ -90,7 +104,7 @@ export default () => {
           <li className="card-item">
             <Link to="/congreso-choluteca">
               <figure>
-                <img src={RibeteVI} alt="Congreso lechero CAHLE" />
+                <img src={RibeteVI} alt="Congreso lechero CAHLE Choluteca 2018" />
               </figure>
               <div
                 className="card-item-image"
@@ -104,7 +118,7 @@ export default () => {
           <li className="card-item">
             <Link to="/congreso-olanchito">
               <figure>
-                <img src={RibeteV} alt="Congreso lechero CAHLE" />
+                <img src={RibeteV} alt="Congreso lechero CAHLE Olanchito 2017" />
               </figure>
               <div
                 className="card-item-image"
