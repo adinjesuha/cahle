@@ -11,6 +11,7 @@ import Congresos from '../images/congreso.jpg'
 import Ceiba from '../images/congreso-ceiba.jpg'
 import Olanchito from '../images/congreso-olanchito.jpg'
 import Choluteca from '../images/congreso-choluteca.jpg'
+import Tgu from '../images/congreso-tgu.jpg'
 import RibeteV from '../images/congresos-bg/ribete-v.png'
 import RibeteVI from '../images/congresos-bg/ribete-vi.png'
 import RibeteVII from '../images/congresos-bg/ribete-vii.png'
@@ -69,7 +70,7 @@ export default () => {
       <HeroPage
         title="Memorias Congreso"
         tags="Documentación"
-        bgImage={'congreso'}
+        bgImage={'memorias-congreso'}
       />
       <Container>
         <CardContainer>
@@ -80,7 +81,7 @@ export default () => {
               </figure>
               <div
                 className="card-item-image"
-                style={{ backgroundImage: `url(${Ceiba})` }}
+                style={{ backgroundImage: `url(${Tgu})` }}
               ></div>
             </Link>
             <Link to="/congreso-tegucigalpa">

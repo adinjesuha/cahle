@@ -8,7 +8,7 @@ import HeroPage from '../components/heroPage'
 import Sponsors from '../components/sponsors'
 import { FaFileDownload } from 'react-icons/fa'
 
-import { sponsorCeiba } from '../utils/imageConfig'
+import { sponsorTgu } from '../utils/imageConfig'
 
 const Wrapper = styled.section`
   background-color: var(--background);
@@ -57,7 +57,7 @@ export default () => {
       <HeroPage
         title="Tegucigalpa, Francisco Morazán"
         tags="Memorias Congreso"
-        bgImage={'congreso-ceiba'}
+        bgImage={'congreso-tgu'}
       />
       <Wrapper>
         <Container>
@@ -249,7 +249,7 @@ export default () => {
               </div>
 
               <h2 className="main-title variant-title">Patrocinadores</h2>
-              {/* <Sponsors sponsors={sponsorCeiba} /> */}
+              <Sponsors sponsors={sponsorTgu} tgu/>
               <Link to="/memorias-congresos" className="animate-link">
                 Regresar
               </Link>
