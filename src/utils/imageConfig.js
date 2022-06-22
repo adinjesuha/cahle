@@ -336,7 +336,7 @@ export const sponsorTgu = [
     path: Emisoras,
     link: 'https://www.emisorasunidas.net/',
     desc: {
-      dir: 'Bulevar Suyapa, Tegucigalpa Honduras.',
+      dir: 'Boulevard Suyapa, Tegucigalpa Honduras.',
       tel: '2232-5100'
     }
   },
@@ -354,7 +354,7 @@ export const sponsorTgu = [
     path: TVC,
     link: 'https://www.televicentro.com/',
     desc: {
-      dir: 'Bulevard Suyapa, Tegucigalpa, Honduras.',
+      dir: 'Boulevard Suyapa, Tegucigalpa, Honduras.',
       tel: '2280-5514'
     }
   },
@@ -363,7 +363,7 @@ export const sponsorTgu = [
     path: Cafogah,
     link: 'https://facebook.com/camarafomentoganaderodehonduras/',
     desc: {
-      dir: 'Bulevar Suyapa, Colonia Florencia Sur, casa 3802',
+      dir: 'Boulevard Suyapa, Colonia Florencia Sur, casa 3802',
       tel: '2231-1102 ext 107'
     }
   },
@@ -390,7 +390,7 @@ export const sponsorTgu = [
     path: TecAgricola,
     link: 'https://tecnologiaagricolahn.com/',
     desc: {
-      dir: 'San Pedro Sula, km 4 Bulevar del sur, frente a Tabacalera Hondureña.',
+      dir: 'San Pedro Sula, km 4 Boulevard del sur, frente a Tabacalera Hondureña.',
       tel: '2556-6679'
     }
   },
@@ -565,7 +565,7 @@ export const sponsorTgu = [
     path: Fenagh,
     link: 'https://www.facebook.com/fenaghonduras',
     desc: {
-      dir: 'Bulevar Suyapa, Colonia Florencia Sur, casa 3802',
+      dir: 'Boulevard Suyapa, Colonia Florencia Sur, casa 3802',
       tel: '(504) 2231-1102',
       small: true
     }
@@ -575,7 +575,7 @@ export const sponsorTgu = [
     path: Confianza,
     link: 'https://www.confianza.hn/',
     desc: {
-      dir: 'Bulevar Morazán, Centro comercial, El Dorado, 3 nivel.',
+      dir: 'Boulevard Morazán, Centro comercial, El Dorado, 3 nivel.',
       tel: '(504) 2280-3470',
       small: true
     }
