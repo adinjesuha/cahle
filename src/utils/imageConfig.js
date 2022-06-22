@@ -1,3 +1,4 @@
+import Stihl from '../images/logos-olanchito/stihl.png'
 import Swisscontact from '../images/logos-olanchito/swisscontact.png'
 import Fao from '../images/logos-olanchito/fao.png'
 import IICA from '../images/logos-olanchito/IICA.png'
@@ -315,7 +316,7 @@ export const sponsorTgu = [
   {
     name: 'Embriocen',
     path: Embriocen,
-    link: 'https://es-la.facebook.com/Embriocen',
+    link: 'https://www.facebook.com/Embriocen-2480500108627737/',
     desc: {
       dir: 'Danlí El Paraíso, colonia el Quiquisque, Calle principal.',
       tel: '9323-4990'
@@ -414,7 +415,7 @@ export const sponsorTgu = [
   {
     name: 'Fundidora del Norte',
     path: Fn,
-    link: 'https://tecnologiaagricolahn.com/',
+    link: 'https://www.fundidoradelnorte.com/',
     desc: {
       dir: 'Avenida José Martí, entre Blv Morazán y Blv Los Próceres. Tegucigalpa.',
       tel: '2221-0142',
@@ -443,7 +444,7 @@ export const sponsorTgu = [
   {
     name: 'Servicios Maya Quice S. de R.L. de C.V.',
     path: ServiciosMaya,
-    link: '/',
+    link: '#',
     desc: {
       dir: 'Residenciales Villas del Campo 12 y 13 calle, 13ave, San Pedro Sula.',
       tel: '4495-4070',
@@ -481,6 +482,16 @@ export const sponsorTgu = [
     }
   },
   {
+    name: 'Stihl',
+    path: Stihl,
+    link: 'https://www.facebook.com/cemcolstihlhonduras',
+    desc: {
+      dir: 'Boulevard Kuwait, Col. Miraflores Sur.',
+      tel: '(504) 9949-0631 / 97024618',
+      small: true
+    }
+  },
+  {
     name: 'Scanco',
     path: Scanco,
     link: 'http://www.scancotec.com/',
@@ -493,7 +504,7 @@ export const sponsorTgu = [
   {
     name: 'Tecnologia Inormatica',
     path: TecnologiaInormatica,
-    link: '/',
+    link: '#',
     desc: {
       dir: 'Tegucigalpa, Honduras',
       tel: '(504) 3315-8224/9555-0784',
@@ -532,7 +543,7 @@ export const sponsorTgu = [
   {
     name: 'IICA',
     path: IICA,
-    link: 'https://www.unag.edu.hn/',
+    link: 'https://www.iica.int/es/countries/honduras',
     desc: {
       dir: 'Colonia San Carlos, Tegucigalpa, Honduras.',
       tel: '(504) 2280-4360',
@@ -542,7 +553,7 @@ export const sponsorTgu = [
   {
     name: 'Swiss Contact',
     path: Swisscontact,
-    link: 'https://www.unag.edu.hn/',
+    link: '#',
     desc: {
       dir: 'Res. Lomas Del Guijarro Tegucigalpa, Honduras',
       tel: '(504) 9452-5856',
