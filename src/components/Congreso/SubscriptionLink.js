@@ -13,6 +13,6 @@ const StyledButtonCTA = styled(Link)`
   color: white;
 `
 
-const SubscriptionLink = () => <StyledButtonCTA to="/inscripciones-congreso-2022">Inscribete Ya!</StyledButtonCTA>
+const SubscriptionLink = () => <StyledButtonCTA to="/inscripciones-congreso-2023">Inscribete Ya!</StyledButtonCTA>
 
 export default SubscriptionLink

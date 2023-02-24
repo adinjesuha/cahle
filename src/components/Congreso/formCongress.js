@@ -3,7 +3,7 @@ import { navigate } from 'gatsby-link'
 import styled from 'styled-components'
 
 const Form = styled.form`
-  padding: 40px 0;
+  padding: 0 0 40px;
   button[type="submit"].disabled {
     background-color: var(--ceil);
     cursor: not-allowed;
@@ -142,9 +142,7 @@ const SubscribeForm = () => {
       pais, 
       cuidad, 
       telefono, 
-      ocupacion,
-      otro,
-      participacion
+      audiencia,
     } = data
 
     const fields = {
@@ -157,9 +155,7 @@ const SubscribeForm = () => {
         "País": pais,
         "Ciudad": cuidad,
         "Teléfono": telefono,
-        "Ocupación": ocupacion,
-        "Otro": otro ? otro : null,
-        "Participación": participacion
+        "audiencia": audiencia,
       }
     }
 
@@ -181,14 +177,14 @@ const SubscribeForm = () => {
           <InputBlock 
             type="text"
             name="nombre"
-            label="Nombre *"
+            label="* Nombre"
             handleChange={handleChange}
             required
           />
           <InputBlock 
             type="text"
             name="apellido"
-            label="Apellido *"
+            label="* Apellido"
             handleChange={handleChange}
             required
           />
@@ -197,7 +193,7 @@ const SubscribeForm = () => {
           <InputBlock 
             type="text"
             name="genero"
-            label="Genero *"
+            label="* Genero"
             isSelect={true}
             options={["hombre", "mujer"]}
             handleChange={handleChange}
@@ -207,7 +203,7 @@ const SubscribeForm = () => {
           <InputBlock 
             type="text"
             name="identificacion"
-            label="ID o pasaporte *"
+            label="* ID o pasaporte"
             handleChange={handleChange}
             required
           />
@@ -215,7 +211,7 @@ const SubscribeForm = () => {
         <InputBlock 
           type="email"
           name="correo"
-          label="Correo *"
+          label="* Correo"
           handleChange={handleChange}
           classNames="full-width"
           required
@@ -224,7 +220,7 @@ const SubscribeForm = () => {
           <InputBlock 
             type="text"
             name="pais"
-            label="País de residencia *"
+            label="* País de residencia"
             handleChange={handleChange}
             required
 
@@ -232,7 +228,7 @@ const SubscribeForm = () => {
           <InputBlock 
             type="text"
             name="cuidad"
-            label="Ciudad de residencia *"
+            label="* Ciudad de residencia"
             handleChange={handleChange}
             required
           />
@@ -241,21 +237,29 @@ const SubscribeForm = () => {
           <InputBlock 
             type="tel"
             name="telefono"
-            label="Teléfono *"
+            label="* Teléfono"
             handleChange={handleChange}
             required
           />
           <InputBlock 
             type="text"
-            name="ocupacion"
-            label="Ocupación *"
+            name="audiencia"
+            label="* Tipo de audiencia: "
             isSelect={true}
-            options={["Estudiante extranjero", "Estudiante nacional", "Ganadero", "Procesador", "Profesional nacional", "Profesional extranjero", "Otro" ]}
+            options={[
+              "Estudiante", 
+              "Ganadero", 
+              "Procesador de lácteos",
+              "Conferencista", 
+              "Equipo patrocinador", 
+              "Público en general" 
+            ]}
             handleChange={handleChange}
             required
           />
         </InputRow>
-        { data.ocupacion === 'Otro' ? (
+        <p><strong>*Adjuntar el recibo de pago, transferencia o depósito escaneado en formato jpg clara y legible. (Recuerde llevar su comprobante en físico el día de ingreso)</strong></p>
+        {/* { data.ocupacion === 'Otro' ? (
           <InputRow>
             <InputBlock 
               type="text"
@@ -278,7 +282,7 @@ const SubscribeForm = () => {
             classNames="full-width"
             required
           />
-        </InputRow>
+        </InputRow> */}
       </div>
       <StyledButton type="submit" className={`${disabled ? 'disabled' : ''} button-btn`} disabled={disabled}>{disabled ? 'Enviando...' : 'Enviar'}</StyledButton>
     </Form>

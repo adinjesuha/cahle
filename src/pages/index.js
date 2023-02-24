@@ -105,7 +105,24 @@ const ModalButton = styled.button`
 `
 
 const IndexPage = () => {
+  const [toggle, setToggle] = useState(false)
+  useEffect(() => {
+    setTimeout(()=>{
+      setToggle(true)
+    }, 1000)
+  }, [])
   return (
+    <>
+    <Portal>
+    {toggle && (
+      <React.Fragment>
+        <ModalButton onClick={() => setToggle(false)}>
+          <IoMdClose />
+        </ModalButton>
+        <Modal />
+      </React.Fragment>
+    )}
+    </Portal>
     <Layout>
       <FullScreenBg>
         <video
@@ -144,6 +161,7 @@ const IndexPage = () => {
         </Container>
       </Wrapper>
     </Layout>
+    </>
   )
 }
 

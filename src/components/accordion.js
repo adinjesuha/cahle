@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 
-import { NuestraGente, asociados, legislacion, documentacion } from '../utils/menuConfig'
+import { NuestraGente, asociados, legislacion, documentacion, congreso } from '../utils/menuConfig'
 
 const Container = styled.div`
   min-height: 100%;
@@ -126,6 +126,10 @@ class Accordion extends Component {
 
   render() {
     const accordionList = [
+      {
+        title: 'Congreso 2023',
+        content: congreso,
+      },
       {
         title: 'Nuestra Gente',
         content: NuestraGente,

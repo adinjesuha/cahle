@@ -19,66 +19,52 @@ const Hotels = () => (
 
         <div className="c-row">
           <div className="cell" data-title="Hotel">
-            <p>Hotel Florencia (Hotel Sede)</p>
+            <p>Hotel Beverly Center (Hotel sede)</p>
           </div>
           <div className="cell" data-title="Teléfono">
-            <p>2229-6900</p>
+            <p>9786-7811</p>
           </div>
-          <div className="cell" data-title="Web">
+          {/* <div className="cell" data-title="Web">
             <a 
               href="https://www.florenciaplazahotel.com/" 
               target="_blank" 
               rel="noopener noreferrer"
             >Ir al sitio web</a>
-          </div>
+          </div> */}
         </div> 
 
         <div className="c-row">
           <div className="cell" data-title="Hotel">
-            <p>Hotel Minister</p>
+            <p>Hotel Moslae</p>
+            <p style={{marginTop: 0, fontSize: '12px'}}>(No acepta pagos con tarjeta, solo transferencia o efectivo)</p>
           </div>
           <div className="cell" data-title="Teléfono">
-            <p>2263-6464</p>
+            <p>9451-8767</p>
           </div>
-          <div className="cell" data-title="Web">
+          {/* <div className="cell" data-title="Web">
             <a 
               href="http://www.ministerbusiness.com" 
               target="_blank" 
               rel="noopener noreferrer"
             >Ir al sitio web</a>
-          </div>
+          </div> */}
         </div>
 
         <div className="c-row">
           <div className="cell" data-title="Hotel">
-            <p>Hotel Alameda</p>
+            <p>Hotel Posada del Valle</p>
           </div>
           <div className="cell" data-title="Teléfono">
-            <p>9803-3532</p>
+            <p>9852-9325</p>
+            <p style={{marginTop: 0}}>2446-2183</p>
           </div>
-          <div className="cell" data-title="Web">
+          {/* <div className="cell" data-title="Web">
             <a 
               href="https://www.facebook.com/HotelAlamedaHonduras/" 
               target="_blank" 
               rel="noopener noreferrer"
             >Ir al sitio web</a>
-          </div>
-        </div> 
-
-        <div className="c-row">
-          <div className="cell" data-title="Hotel">
-            <p>Dolphin Hotel</p>
-          </div>
-          <div className="cell" data-title="Teléfono">
-            <p>2225-2625</p>
-          </div>
-          <div className="cell" data-title="Web">
-            <a 
-              href="http://www.dolphin-hotels.com/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >Ir al sitio web</a>
-          </div>
+          </div> */}
         </div> 
       </div>
     </Wrapper>
