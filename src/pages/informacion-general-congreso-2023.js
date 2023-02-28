@@ -18,7 +18,7 @@ const CongresoPage = () => (
     <HeroBg/>
     <Wrapper>
       <Container>
-        <TabsCongress/>
+        <TabsCongress />
       </Container>
     </Wrapper>
   </Layout>
