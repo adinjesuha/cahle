@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import StyledBackgroundSection from '../styledBackground'
-import LogoCongreso from '../../images/logo-congreso.png'
+import LogoCongreso from '../../images/logo-congreso-ix.png'
 
 const ContentBackground = styled.div`
   max-width: 320px;
