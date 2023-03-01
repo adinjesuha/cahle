@@ -80,11 +80,10 @@ const Footer = () => (
             <InfoContact>
               <li>
                 <span><PinIcon style={{verticalAlign: 'middle'}}/></span>
-                <p className="contact-info main-text">Edificio FENAGH, Blvd. Suyapa, Col. Florencia Sector Sur, Casa #3802, contiguo a la SUZUKI, frente a Banrural, Tegucigalpa, Honduras, C.A.</p>
+                <p className="contact-info main-text">Colonia Ruben Dario, Calle Real de Minas, Frente a Edificio El Faro, Casa 701, Tegucigalpa, Honduras</p>
               </li>
               <li>
                 <span><PhoneIcon style={{verticalAlign: 'middle'}}/></span>
-                <p className="contact-info main-text">(504) 2231-1102 </p>  
                 <p className="contact-info main-text" style={{paddingLeft: '25px'}}>(504) 9442-4710</p>
               </li>
               <li>
