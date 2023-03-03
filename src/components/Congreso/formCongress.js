@@ -155,7 +155,7 @@ const SubscribeForm = () => {
         "País": pais,
         "Ciudad": cuidad,
         "Teléfono": telefono,
-        "audiencia": audiencia,
+        "Audiencia": audiencia,
       }
     }
 
