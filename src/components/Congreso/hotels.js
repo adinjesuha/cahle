@@ -14,7 +14,6 @@ const Hotels = () => (
         <div className="c-row header">
           <div className="cell">Hotel</div>
           <div className="cell">Teléfono</div>
-          <div className="cell">Web</div>
         </div>
 
         <div className="c-row">
@@ -22,7 +21,7 @@ const Hotels = () => (
             <p>Hotel Beverly Center (Hotel sede)</p>
           </div>
           <div className="cell" data-title="Teléfono">
-            <p>9786-7811</p>
+            <p>+504 9786-7811</p>
           </div>
           {/* <div className="cell" data-title="Web">
             <a 
@@ -39,7 +38,7 @@ const Hotels = () => (
             <p style={{marginTop: 0, fontSize: '12px'}}>(No acepta pagos con tarjeta, solo transferencia o efectivo)</p>
           </div>
           <div className="cell" data-title="Teléfono">
-            <p>9451-8767</p>
+            <p>+504 9451-8767</p>
           </div>
           {/* <div className="cell" data-title="Web">
             <a 
@@ -55,7 +54,7 @@ const Hotels = () => (
             <p>Hotel Posada del Valle</p>
           </div>
           <div className="cell" data-title="Teléfono">
-            <p>9852-9325</p>
+            <p>+504   9852-9325</p>
             <p style={{marginTop: 0}}>2446-2183</p>
           </div>
           {/* <div className="cell" data-title="Web">
