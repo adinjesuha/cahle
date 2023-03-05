@@ -15,13 +15,13 @@ const Practicalinfo = () => (
       <a href="https://goo.gl/maps/cPySNWrY8C6SacBf7" target="_blank" rel="noopener noreferrer">
         <img src={SagoMap} alt="Agafam Congreso de la leche 2020"/>
       </a>
-      <p className="main-text navy">Es el principal predio ferial de la ciudad para la realización de exposiciones, ferias y demás eventos, con una ubicación privilegiada en el centro del país.</p>
+      {/* <p className="main-text navy">Es el principal predio ferial de la ciudad para la realización de exposiciones, ferias y demás eventos, con una ubicación privilegiada en el centro del país.</p>
       <h3>Atracciones</h3>
       <a 
         href="https://www.xplorhonduras.com/tegucigalpa-honduras/"
         target="_blank" 
         rel="noopener noreferrer"
-      >Ver más</a>
+      >Ver más</a> */}
     </Wrapper>
     <SubscriptionLink />
   </div>
