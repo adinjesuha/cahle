@@ -54,8 +54,8 @@ const Hotels = () => (
             <p>Hotel Posada del Valle</p>
           </div>
           <div className="cell" data-title="Teléfono">
-            <p>+504   9852-9325</p>
-            <p style={{marginTop: 0}}>2446-2183</p>
+            <p>+504 9852-9325</p>
+            <p style={{marginTop: 0}}>+504 2446-2183</p>
           </div>
           {/* <div className="cell" data-title="Web">
             <a 
