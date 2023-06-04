@@ -105,7 +105,7 @@ export default class desktopNav extends Component {
     return (
       <NavBar>
         <ul className="navbar-nav">
-          <li className="has_dropdown">
+          {/* <li className="has_dropdown">
             <span>Congreso 2023</span>
             <div className="dropdown">
               <ul>
@@ -116,7 +116,7 @@ export default class desktopNav extends Component {
                 ))}
               </ul>
             </div>
-          </li>
+          </li> */}
           <li>
             <Link to="/acerca-de-cahle">Acerca de CAHLE</Link>
           </li>
