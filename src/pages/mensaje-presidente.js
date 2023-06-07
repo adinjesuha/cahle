@@ -23,10 +23,10 @@ export default () => {
             <div className="col-lg-9">
               <div className="row">
                 <div className="col-lg-4">
-                  <Image filename={"Ferreira"}/>
+                  <Image filename={"Gilberto"}/>
                 </div>
                 <div className="col-lg-8">
-                  <h2 className="sub-title">Héctor Alberto Ferreira</h2>
+                  <h2 className="sub-title">Lic. Gilberto Moreno</h2>
                   <span>Presidente de CAHLE</span>
                   <p className="main-text">Para iniciar es preciso agradecer el apoyo de la junta directiva, personal técnico y administrativo de la Cámara Hondureña de la Leche (CAHLE), gracias a todos por fortalecer esta Cámara y convertirla en una fuente inagotable de conocimiento, amistad y compañerismo. </p> 
                 </div>
