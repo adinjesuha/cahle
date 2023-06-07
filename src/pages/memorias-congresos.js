@@ -12,6 +12,7 @@ import Ceiba from '../images/congreso-ceiba.jpg'
 import Olanchito from '../images/congreso-olanchito.jpg'
 import Choluteca from '../images/congreso-choluteca.jpg'
 import Tgu from '../images/congreso-tgu.jpg'
+import OlanchitoIX from '../images/olanchito-congreso-ix.jpg'
 import RibeteV from '../images/congresos-bg/ribete-v.png'
 import RibeteVI from '../images/congresos-bg/ribete-vi.png'
 import RibeteVII from '../images/congresos-bg/ribete-vii.png'
@@ -76,16 +77,30 @@ export default () => {
         <CardContainer>
           <li className="card-item">
             <Link to="/congreso-tegucigalpa">
-              <figure>
+              {/* <figure>
                 <img src={RibeteVII} alt="Congreso lechero CAHLE Tegucigalpa 2022" />
-              </figure>
+              </figure> */}
+              <div
+                className="card-item-image"
+                style={{ backgroundImage: `url(${OlanchitoIX})` }}
+              ></div>
+            </Link>
+            <Link to="/congreso-tegucigalpa">
+              <h2 className="sub-title">IX Congreso - Olanchito, Yoro, 2023</h2>
+            </Link>
+          </li>
+          <li className="card-item">
+            <Link to="/congreso-tegucigalpa">
+              {/* <figure>
+                <img src={RibeteVII} alt="Congreso lechero CAHLE Tegucigalpa 2022" />
+              </figure> */}
               <div
                 className="card-item-image"
                 style={{ backgroundImage: `url(${Tgu})` }}
               ></div>
             </Link>
             <Link to="/congreso-tegucigalpa">
-              <h2 className="sub-title">Tegucigalpa, Francisco Morazán, 2022</h2>
+              <h2 className="sub-title">VIII Congrso - Tegucigalpa, Francisco Morazán, 2022</h2>
             </Link>
           </li>
           <li className="card-item">
