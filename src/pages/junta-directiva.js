@@ -38,7 +38,7 @@ export default () => {
                 </div>
                 <div className="c-row">
                   <div className="cell" data-title="Nombre">
-                  Héctor Alberto Ferreira Sabillón
+                  Gilberto Moreno Alvarado
                   </div>
                   <div className="cell" data-title="Cargo">
                   Presidente
@@ -46,7 +46,7 @@ export default () => {
                 </div>
                 <div className="c-row">
                   <div className="cell" data-title="Nombre">
-                  Jorge Antonio Handal Ayala
+                  Héctor Alejandro Castro Alvarado
                   </div>
                   <div className="cell" data-title="Cargo">
                   Vice-presidente
@@ -54,7 +54,7 @@ export default () => {
                 </div>
                 <div className="c-row">
                   <div className="cell" data-title="Nombre">
-                  Gilberto Moreno Alvarado
+                  Medardo Guevara
                   </div>
                   <div className="cell" data-title="Cargo">
                   Secretario
@@ -62,7 +62,7 @@ export default () => {
                 </div>
                 <div className="c-row">
                   <div className="cell" data-title="Nombre">
-                  Anabel Gallardo Ponce
+                  José Manuel España Herrera
                   </div>
                   <div className="cell" data-title="Cargo">
                   Tesorero
@@ -70,7 +70,7 @@ export default () => {
                 </div>
                 <div className="c-row">
                   <div className="cell" data-title="Nombre">
-                  Vicente Murillo Cabrera
+                  Cesar Mauricio Artica Cordova
                   </div>
                   <div className="cell" data-title="Cargo">
                   Vocal I
@@ -78,7 +78,7 @@ export default () => {
                 </div>
                 <div className="c-row">
                   <div className="cell" data-title="Nombre">
-                  Héctor Castro Cabus
+                  Vicente Murillo Cabrera
                   </div>
                   <div className="cell" data-title="Cargo">
                   Vocal II
@@ -86,7 +86,7 @@ export default () => {
                 </div>
                 <div className="c-row">
                   <div className="cell" data-title="Nombre">
-                  Leopoldo Durán Puerto
+                  Oscar Adolfo Fernández Perdomo
                   </div>
                   <div className="cell" data-title="Cargo">
                   Vocal III
@@ -94,7 +94,7 @@ export default () => {
                 </div>
                 <div className="c-row">
                   <div className="cell" data-title="Nombre">
-                  José Manuel España Herrera
+                  Hugo Henry Vásquez Carranza
                   </div>
                   <div className="cell" data-title="Cargo">
                   Vocal IV
@@ -102,7 +102,7 @@ export default () => {
                 </div>
                 <div className="c-row">
                   <div className="cell" data-title="Nombre">
-                  Edgar Alfredo Oliva Lobo
+                  Roger Edgardo Padilla Puentes
                   </div>
                   <div className="cell" data-title="Cargo">
                   Comisión Fiscalizadora
@@ -110,7 +110,7 @@ export default () => {
                 </div>
                 <div className="c-row">
                   <div className="cell" data-title="Nombre" datatype>
-                  Oscar Adolfo Fernández
+                  Víctor Manuel Ponce Orellana
                   </div>
                   <div className="cell" data-title="Cargo">
                   Comisión Fiscalizadora
@@ -118,7 +118,7 @@ export default () => {
                 </div>
                 <div className="c-row">
                   <div className="cell" data-title="Nombre">
-                  Medardo Guevara
+                  Clemente Cardona García
                   </div>
                   <div className="cell" data-title="Cargo">
                   Comisión Fiscalizadora
@@ -126,38 +126,34 @@ export default () => {
                 </div>
                 <div className="c-row">
                   <div className="cell" data-title="Nombre">
-                  Tomas Adalberto García Banegas
+                  Leopoldo Durán
                   </div>
                   <div className="cell" data-title="Cargo">
                   Asesor
                   </div>
                 </div>
                 <div className="c-row">
-                  <div className="cell" data-title="Nombre">Clemente Cardona</div>
+                  <div className="cell" data-title="Nombre">Anabel Gallardo</div>
                   <div className="cell" data-title="Cargo">Asesor</div>
                 </div>
                 <div className="c-row">
-                  <div className="cell" data-title="Nombre">Mauricio Artica</div>
+                  <div className="cell" data-title="Nombre">Héctor Ferreira</div>
                   <div className="cell" data-title="Cargo">Asesor</div>
                 </div>
                 <div className="c-row">
-                  <div className="cell" data-title="Nombre">Francisco Argeñal</div>
+                  <div className="cell" data-title="Nombre">Jorge Handal</div>
                   <div className="cell" data-title="Cargo">Asesor</div>
                 </div>
                 <div className="c-row">
-                  <div className="cell" data-title="Nombre">Oscar Pinel</div>
+                  <div className="cell" data-title="Nombre">Juan Sauceda</div>
                   <div className="cell" data-title="Cargo">Asesor</div>
                 </div>
                 <div className="c-row">
-                  <div className="cell" data-title="Nombre">Héctor Geovanny Rueda</div>
+                  <div className="cell" data-title="Nombre">Francisco Sandoval</div>
                   <div className="cell" data-title="Cargo">Asesor</div>
                 </div>
                 <div className="c-row">
-                  <div className="cell" data-title="Nombre">Juan Alberto Sauceda Cardona</div>
-                  <div className="cell" data-title="Cargo">Asesor</div>
-                </div>
-                <div className="c-row">
-                  <div className="cell" data-title="Nombre">Hugo Vásquez </div>
+                  <div className="cell" data-title="Nombre">Tomás Adalberto García Banegas</div>
                   <div className="cell" data-title="Cargo">Asesor</div>
                 </div>
               </div>
