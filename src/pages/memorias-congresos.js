@@ -76,7 +76,7 @@ export default () => {
       <Container>
         <CardContainer>
           <li className="card-item">
-            <Link to="/congreso-tegucigalpa">
+            <Link to="/congreso-olanchito-ix">
               {/* <figure>
                 <img src={RibeteVII} alt="Congreso lechero CAHLE Tegucigalpa 2022" />
               </figure> */}
@@ -100,7 +100,7 @@ export default () => {
               ></div>
             </Link>
             <Link to="/congreso-tegucigalpa">
-              <h2 className="sub-title">VIII Congrso - Tegucigalpa, Francisco Morazán, 2022</h2>
+              <h2 className="sub-title">VIII Congreso - Tegucigalpa, Francisco Morazán, 2022</h2>
             </Link>
           </li>
           <li className="card-item">
