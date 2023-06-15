@@ -50,6 +50,15 @@ import Cargill from '../images/logos-olanchito/cargill.png'
 import Alcon from '../images/logos-olanchito/alcon.png'
 import Koldtek from '../images/logos-olanchito/koldtek.png'
 
+import Mallo from '../images/logos-olanchito/mallo.png'
+import Elanco from '../images/logos-olanchito/elanco.png'
+import Rainbow from '../images/logos-olanchito/rainbow.png'
+import EnlacesAgro from '../images/logos-olanchito/enlaces-agro.png'
+import SMQ from '../images/logos-olanchito/smq.png'
+import Toyota from '../images/logos-olanchito/toyota.png'
+import BancoOccidente from '../images/logos-olanchito/banco-occidente.png'
+import Landini from '../images/logos-olanchito/landini.png'
+
 export const sponsorCholuteca = [
   {
     name: 'Agrobiotek',
@@ -579,5 +588,138 @@ export const sponsorTgu = [
       tel: '(504) 2280-3470',
       small: true
     }
+  },
+]
+
+export const sponsorOlanchitoIX = [
+  {
+    name: 'Aliansa',
+    path: Aliansa,
+    link: 'http://concentradosaliansa.com/',
+  },
+  {
+    name: 'Alcon',
+    path: Alcon,
+    link: 'https://www.cargill.com.hn/es/marcas-en-honduras',
+  },
+  {
+    name: 'Fn',
+    path: Fn,
+    link: 'https://fundidoradelnorte.com/',
+  },
+  {
+    name: 'Heifer',
+    path: Heifer,
+    link: 'https://es-la.facebook.com/HeiferHonduras/',
+  },
+  {
+    name: 'Tecnologia agricola',
+    path: TecAgricola,
+    link: 'https://tecnologiaagricolahn.com/',
+  },
+  {
+    name: 'Tecnología Lechera',
+    path: TecLechera,
+    link: 'https://tecnologialechera.com/',
+  },
+  {
+    name: 'Tecun',
+    path: Tecun,
+    link: 'http://www.grupotecun.com/honduras',
+  },
+  {
+    name: 'Solintsa',
+    path: Solintsa,
+    link: 'http://www.solintsahn.com/empresa.html',
+  },
+  {
+    name: 'Mallo',
+    path: Mallo,
+    link: 'https://www.facebook.com/mallohonduras/',
+  },
+  {
+    name: 'Emisoras Unidas',
+    path: Emisoras,
+    link: 'https://www.emisorasunidas.net/',
+  },
+  {
+    name: 'Televicentro',
+    path: TVC,
+    link: 'https://www.televicentro.com/',
+  },
+  {
+    name: 'Finca',
+    path: Finca,
+    link: 'https://www.fincahn.com/',
+  },
+  {
+    name: 'Elanco',
+    path: Elanco,
+    link: 'https://www.elanco.com/',
+  },
+  {
+    name: 'Koldtek',
+    path: Koldtek,
+    link: 'https://www.facebook.com/KoldtekHN/',
+  },
+  {
+    name: 'Rainbow',
+    path: Rainbow,
+    link: 'https://www.rainbowagro.com/',
+  },
+  {
+    name: 'EnlacesAgro',
+    path: EnlacesAgro,
+    link: '/',
+  },
+  {
+    name: 'John Dere Comasa',
+    path: JohnDeere,
+    link: 'https://facebook.com/camosahn',
+  },
+  {
+    name: 'SMQ',
+    path: SMQ,
+    link: '/',
+  },
+  {
+    name: 'Stihl',
+    path: Stihl,
+    link: 'https://www.facebook.com/cemcolstihlhonduras',
+  },
+  {
+    name: 'Toyota',
+    path: Toyota,
+    link: 'https://toyotahonduras.com/',
+  },
+  {
+    name: 'Aseal',
+    path: Aseal,
+    link: 'http://www.grupoaseal.com/',
+  },
+  {
+    name: 'Cadelga',
+    path: Cadelga,
+    link: 'https://www.facebook.com/grupocadelga/',
+  },
+  {
+    name: 'Cafogah',
+    path: Cafogah,
+    link: 'https://www.facebook.com/camarafomentoganaderodehonduras/',
+  },
+  {
+    name: 'Disatyr',
+    path: Disatyr,
+    link: 'http://grupodisatyr.com/',
+  },
+  {
+    name: 'BancoOccidente',
+    path: BancoOccidente,
+    link: 'https://www.bancodeoccidente.hn/',
+  },
+  {
+    name: 'Landini',
+    path: Landini,
+    link: 'https://www.landini.it/es-ar/',
   },
 ]

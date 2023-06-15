@@ -204,8 +204,8 @@ export default () => {
                 </div>
               </div>
 
-              {/* <h2 className="main-title variant-title">Patrocinadores</h2>
-              <Sponsors sponsors={sponsorTgu} tgu/> */}
+              <h2 className="main-title variant-title">Patrocinadores</h2>
+              <Sponsors sponsors={sponsorOlanchitoIX} />
 
               <Link to="/memorias-congresos" className="animate-link">
                 Regresar
