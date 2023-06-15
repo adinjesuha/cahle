@@ -8,7 +8,7 @@ import HeroPage from '../components/heroPage'
 import Sponsors from '../components/sponsors'
 import { FaFileDownload } from 'react-icons/fa'
 
-import { sponsorTgu } from '../utils/imageConfig'
+import { sponsorOlanchitoIX } from '../utils/imageConfig'
 
 const Wrapper = styled.section`
   background-color: var(--background);
