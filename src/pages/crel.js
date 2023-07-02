@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Layout from '../components/layout'
 import Container from '../components/container'
 import HeroPage from '../components/heroPage'
+import Creles from '../images/creles.png'
 
 const Wrapper = styled.div`
   background-color: var(--background);
@@ -26,26 +27,26 @@ export default () => {
       <Wrapper>
         <Container>
           <div className="row justify-content-center">
-            <div className="col-lg-9">
+            <div className="col-lg-10">
               <h3 className="sub-title">¿Qué es un centro de recolección y enfriamiento de leche (CREL)?</h3>
               <p className="main-text">Un CREL es una estructura productiva y organizativa de propiedad colectiva creada por una organización de ganaderos con la finalidad de tener un espacio dónde recolectar y acopiar la leche de sus fincas para la comercialización en frío a otra empresa procesadora de lácteos y así obtener un mejor precio de venta. La organización favorece la reducción de costos fijos de producción, ya que el transporte del producto primario se realiza en conjunto y los insumos se adquieren en grandes volúmenes a un menor precio. Esto permite mejorar la rentabilidad y la sostenibilidad de las empresas ganaderas que contribuyen al bienestar de las comunidades rurales (Guerra et al. 2011).</p>
             </div>
-            <div className="col-lg-9">
+            <div className="col-lg-10">
               <h3 className="sub-title">¿Cómo surge la idea de los centros de acopio?</h3>
               <p className="main-text main-text__dark">El sector lácteo en los países en desarrollo a menudo fue dirigido en el pasado por una industria lechera central estatal o controlada por el estado de grandes proporciones. Una creciente tendencia hacia la privatización ha resultado en la desregulación de aquellas industrias ineficientes y mal administradas, ofreciendo una ventana de oportunidad para la entrada de la industria privada en el sector lechero. Esta singular combinación de circunstancias ha representado tanto desafíos como oportunidades para los productores y procesadores de pequeña escala en los países en desarrollo (Bennett et al. 2001 citado por Guerra et al. 2011).</p>
               <p className="main-text">Diferentes investigadores expresan que existe un mercado siempre creciente en los centros urbanos. El crecimiento de las poblaciones urbanas, los mejores niveles de educación y el aumento del ingreso, desembocaron en un masivo incremento de la demanda de productos lácteos. El desafío es organizar el acopio de leche segura y de buena calidad y proveer una oferta constante de leche y productos lácteos de calidad que satisfaga las demandas del mercado, lo que se logra en parte con los CREL. A la vez, deberá satisfacerse la demanda del mercado con productos con valor agregado destinados a consumidores con diversos niveles de ingreso. Los gobiernos por su parte, buscan modos de reducir las importaciones de alimentos que pesan sobremanera en los presupuestos nacionales y, especialmente, en las escasas divisas extranjeras (Guerra et al. 2011).</p>
             </div>
-            <div className="col-lg-9">
+            <div className="col-lg-10">
               <h3 className="sub-title">Antecedentes</h3>
               <p className="main-text">En el año 2008 el precio de la leche alcanzó niveles exorbitantes, no obstante, estos cayeron a fin de año por la demanda en países como India y China. Finalizando el 2009 el precio repuntó nuevamente por varias razones: 1) la recuperación de la confianza entre los consumidores chinos después de la crisis provocada por la contaminación con melamina1 de las fórmulas lácteas para infantes, a fines del 2008; 2) la contracción de los suministros procedentes de Oceanía y 3) las compras sostenidas por parte de varios países asiáticos y de algunos países exportadores de petróleo (FAO 2010). Estos precios auspiciaron el interés de grandes empresas procesadoras de lácteos en Centroamérica, por establecer relaciones contractuales con grupos de productores organizados para comprarles el volumen total de leche o parte de esta. Estas alianzas dieron origen a los centros de recolección y enfriamiento de leche (CREL) en Guatemala, Honduras, Nicaragua y Costa Rica (Barrios 2008, Prins et ál. 2008, López Soriano 2009).</p>
               <p className="main-text">En Honduras se crearon por iniciativa de las organizaciones de productores con apoyo de la industria láctea y financiado por el gobierno de los Estados Unidos. El proyecto, inició en el 2001 siendo ejecutado por la cooperativa Land O'Lakes. Los objetivos de esta iniciativa básicamente radicaron en: aumentar los ingresos y empleo, mejorar el acceso a los mercados y la competitividad del sector, involucrar a la industria láctea de EE.UU. en la prestación de asistencia técnica y comercial en actividades del país y / o región de acogida, mejorar la nutrición de los niños y las mujeres embarazadas y fortalecer las organizaciones regionales del sector lácteo.</p>
 
-              <p className="main-text">En la actualidad el país cuenta con 126 centros de recolección y enfriamiento de leche distribuidos en 11 departamentos del territorio nacional (Colón, Yoro, Atlántida, Olancho, Cortés, Copán, Francisco Morazán, Choluteca, Comayagua, El Paraíso y Santa Bárbara), algunos de estos se impulsaron con la ayuda de <b>FENAGH, LACTHOSA y SAG</b>, y a partir del 2014 con el apoyo de la Cámara Hondureña de la Leche (CAHLE) con proyectos de inseminación artificial y asistencia técnica. </p>
+              <p className="main-text">En la actualidad el país cuenta con 135 centros de recolección y enfriamiento de leche distribuidos en 11 departamentos del territorio nacional: Colón (43), Yoro (40), Atlántida (23), Olancho (10), Cortés (6), Copán (5), Choluteca (3), Francisco Morazán (2), Comayagua (1), Santa Bárbara (1), El Paraíso (1). Algunos de estos CREL en un principio se impulsaron con la ayuda de FENAGH, LACTHOSA y SAG, a partir del 2014 hasta la fecha con el apoyo de la Cámara Hondureña de la Leche (CAHLE) con proyectos de inseminación artificial y asistencia técnica y en la actualidad se han sumado otras instituciones de apoyo al rubro como HEIFER Internacional.</p>
             </div>
-            <div className="col-lg-9">
+            <div className="col-lg-10">
               <p className="main-text"><strong>Cuadro 1.</strong> Centros de recolección y enfriamiento de leche distribuidos por departamento y municipio en Honduras. <em>Fuente:</em> Cámara hondureña de la leche (2019).</p>
             </div>
-            <div className="col-lg-9">
+            <div className="col-lg-10">
               <div className="wrapper">
                 <div className="table">
                 
@@ -231,7 +232,12 @@ export default () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-9">
+
+            <div className="col-lg-12">
+              <img src={Creles} alt="Agafam Congreso de la leche 2020"/>
+            </div>
+
+            <div className="col-lg-10">
               <p className="main-text">La industria de la leche en Honduras generalmente acopia el producto a través de estos centros de recolección y enfriamiento de leche quienes fungen como intermediarios entre el productor y las plantas industriales. La industria fija precios de compra por cada litro de leche dependiendo del mercado, de la distancia de donde se encuentren los centros de acopio, del volumen de entrega y calidad de la misma (PYMERURAL y PRONAGRO 2010).</p>
 
               <p className="main-text">En su mayoría, los CREL se encuentran en zonas rurales, los productores llevan la leche cruda utilizando la tracción animal o vehículo y es almacenada en tanques de refrigeración. Dado que la leche es un producto altamente perecedero (Castillo 2015), las fincas de los productores asociados se encuentran relativamente cerca a cada centro de acopio. El tamaño, así como el tipo de infraestructura varía de acuerdo con las condiciones de producción. Por ejemplo, sitios donde existe un gran número de productores organizados permiten que puedan ofrecer otros servicios como la venta de productos agropecuarios y heno a bajos costos en comparación con precios de mercado (García 2018). </p>
@@ -240,7 +246,7 @@ export default () => {
 
               <p className="main-text">La conformación de los CREL ha traído múltiples beneficios al sector lechero del país. Por ejemplo, los productores socios participan en programas de asistencia técnica y son capacitados sobre buenas prácticas ganaderas enfocadas a mejorar la producción, la calidad e higiene de la leche. Una buena calidad les asegura mejores ingresos, debido a que la industria establece una diferenciación de precios entre la leche tipo “A”, que básicamente es de excelente calidad y se destina a productos con una mayor vida de anaquel y la leche tipo “B”, con menor vida de anaquel y por ende menor precio. Aunado a lo anterior, existe un mecanismo de asociatividad que ha logrado un impulso en el desarrollo de pequeños productores, tienen un mercado asegurado bajo contratos previamente establecidos lo cual representa una situación ventajosa ya que por lo general las procesadoras artesanales no garantizan estabilidad en cuanto a compras o precios a lo largo del año y especialmente en la época de invierno (o mayor producción de leche).</p>
             </div>
-            <div className="col-lg-9">
+            <div className="col-lg-10">
               <h3 className="sub-title sub-title__small">Bibliografía</h3>
               <ul className="bibliography">
                 <li>Barrios, C. 2008. Estudio de mercado de productos pecuarios en tres zonas piloto del proyecto “Desarrollo Participativo de Alternativas de Uso Sostenible de la Tierra para Áreas de Pasturas Degradadas en América Central” (Proyecto NORUEGA-PD). 108 p. (Serie Técnica, Informe Técnico no. 371). Disponible en <a className="animate-link" target="_blank" rel="noopener noreferrer" href="http://orton.catie.ac.cr/repdoc/A2694e/A2694e.pdf">http://orton.catie.ac.cr/repdoc/A2694e/A2694e.pdf</a></li>
