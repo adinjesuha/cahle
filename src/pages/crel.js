@@ -235,6 +235,9 @@ export default () => {
 
             <div className="col-lg-12">
               <img src={Creles} alt="Agafam Congreso de la leche 2020"/>
+              <div className="col-lg-9">
+                <p className="main-text"><strong>Figura 1.</strong> Ubicación geográfica de los CREL activos en Honduras y promedios de producción de leche entregados diariamente a la industria (LACTHOSA y LEYDE). <em>Fuente:</em> CAHLE (2023).</p>
+              </div>
             </div>
 
             <div className="col-lg-10">
