@@ -51,189 +51,832 @@ export default () => {
                 <div className="table">
                 
                   <div className="c-row header">
-                    <div className="cell">
-                      Departamento
-                    </div>
-                    <div className="cell">
-                      Municipio
-                    </div>
-                    <div className="cell">
-                      N° de CREL
-                    </div>
-                    <div className="cell">
-                      N° de productores
-                    </div>
+                    <div className="cell">NOMBRE PROVEEDOR</div>
+                    <div className="cell">UBICACIÓN</div>
+                    <div className="cell">DEPARTAMENTO</div>
                   </div>
                   
                   <div className="c-row">
-                    <div className="cell" data-title="Departamento">
-                    Colón
-                    </div>
-                    <div className="cell" data-title="Municipio">
-                    Bonito Oriental, Trujillo, Sabá, Sonaguera
-                    </div>
-                    <div className="cell" data-title="N° CREL">
-                    52
-                    </div>
-                    <div className="cell" data-title="N° Productores">
-                    1551
-                    </div>
+                    <div className="cell" data-title="Departamento">ADAN RIVERA Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">CORRALITOS, JUTIAPA</div>
+                    <div className="cell" data-title="N° CREL">ATLÁNTIDA</div>
                   </div>
 
                   <div className="c-row">
-                    <div className="cell" data-title="Departamento">
-                    Yoro
-                    </div>
-                    <div className="cell" data-title="Municipio">
-                    Olanchito, Victoria, El Negrito, Morazán
-                    </div>
-                    <div className="cell" data-title="N° CREL">
-                    28
-                    </div>
-                    <div className="cell" data-title="N° Productores">
-                    561
-                    </div>
+                    <div className="cell" data-title="Departamento">ALMENDARES CRUZ MURILLO Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">YARUCA, CEIBA</div>
+                    <div className="cell" data-title="N° CREL">ATLÁNTIDA</div>
                   </div>
 
                   <div className="c-row">
-                    <div className="cell" data-title="Departamento">
-                    Atlántida
-                    </div>
-                    <div className="cell" data-title="Municipio">
-                    Jutiapa, Ceiba, Esparta, San Francisco
-                    </div>
-                    <div className="cell" data-title="N° CREL">
-                    19
-                    </div>
-                    <div className="cell" data-title="N° Productores">
-                    281
-                    </div>
+                    <div className="cell" data-title="Departamento">AMAYA Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">LAS MARÍAS, JUTIAPA</div>
+                    <div className="cell" data-title="N° CREL">ATLÁNTIDA</div>
                   </div>
 
                   <div className="c-row">
-                    <div className="cell" data-title="Departamento">
-                    Olancho
-                    </div>
-                    <div className="cell" data-title="Municipio">
-                    San Esteban, Juticalpa y Gualaco
-                    </div>
-                    <div className="cell" data-title="N° CREL">
-                    9
-                    </div>
-                    <div className="cell" data-title="N° Productores">
-                    125
-                    </div>
+                    <div className="cell" data-title="Departamento">ANDRADE SÁNCHEZ Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">EL DIAMANTE</div>
+                    <div className="cell" data-title="N° CREL">ATLÁNTIDA</div>
                   </div>
 
                   <div className="c-row">
-                    <div className="cell" data-title="Departamento">
-                    Cortés
-                    </div>
-                    <div className="cell" data-title="Municipio">
-                    Omoa, San Fco. de Yojoa, San Antonio de Cortés
-                    </div>
-                    <div className="cell" data-title="N° CREL">
-                    8
-                    </div>
-                    <div className="cell" data-title="N° Productores">
-                    116
-                    </div>
+                    <div className="cell" data-title="Departamento">AUGUSTO GRAUNARD Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">SALITRAN, JUTIAPA</div>
+                    <div className="cell" data-title="N° CREL">ATLÁNTIDA</div>
                   </div>
 
                   <div className="c-row">
-                    <div className="cell" data-title="Departamento">
-                    Copán
-                    </div>
-                    <div className="cell" data-title="Municipio">
-                    La Jigua, Santa Rita, Santa Rosa
-                    </div>
-                    <div className="cell" data-title="N° CREL">
-                    4
-                    </div>
-                    <div className="cell" data-title="N° Productores">
-                    92
-                    </div>
+                    <div className="cell" data-title="Departamento">CERROS CLAROS Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">DESCOMBROS, JUTIAPA</div>
+                    <div className="cell" data-title="N° CREL">ATLÁNTIDA</div>
                   </div>
 
                   <div className="c-row">
-                    <div className="cell" data-title="Departamento">
-                    Francisco Morazán
-                    </div>
-                    <div className="cell" data-title="Municipio">
-                    San Antonio de Oriente
-                    </div>
-                    <div className="cell" data-title="N° CREL">
-                    2
-                    </div>
-                    <div className="cell" data-title="N° Productores">
-                    42
-                    </div>
+                    <div className="cell" data-title="Departamento">DANIEL POSAS Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">CANTOR, JUTIAPA</div>
+                    <div className="cell" data-title="N° CREL">ATLÁNTIDA</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">EULALIO ISAUL HERNÁNDEZ Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">CALIFORNIA, JUTIAPA</div>
+                    <div className="cell" data-title="N° CREL">ATLÁNTIDA</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">GARCÍA ORELLANA Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">CEIBITA WAY, ESPARTA</div>
+                    <div className="cell" data-title="N° CREL">ATLÁNTIDA</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">HUMBERTO BONILLA Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">CEFALÚ, JUTIAPA</div>
+                    <div className="cell" data-title="N° CREL">ATLÁNTIDA</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">JOSÉ OBDULIO ORELLANA Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">TOMALÁ, JUTIAPA</div>
+                    <div className="cell" data-title="N° CREL">ATLÁNTIDA</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">LA PROSPERIDAD S. DE R.L.</div>
+                    <div className="cell" data-title="Municipio">EL DULCE, JUTIAPA</div>
+                    <div className="cell" data-title="N° CREL">ATLÁNTIDA</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">LECHE FRÍA Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">AGUACATE LÍNEA, JUTIAPA</div>
+                    <div className="cell" data-title="N° CREL">ATLÁNTIDA</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">LEONEL CASTELLANOS Y/O FRANCISCO HERNÁNDEZ</div>
+                    <div className="cell" data-title="Municipio">SAN FRANCISCO</div>
+                    <div className="cell" data-title="N° CREL">ATLÁNTIDA</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">MATUTE NAVARRO Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">SAPOTE, JUTIAPA</div>
+                    <div className="cell" data-title="N° CREL">ATLÁNTIDA</div>
                   </div>
                   
                   <div className="c-row">
-                    <div className="cell" data-title="Departamento">
-                    Choluteca
-                    </div>
-                    <div className="cell" data-title="Municipio">
-                    Namasigue
-                    </div>
-                    <div className="cell" data-title="N° CREL">
-                    1
-                    </div>
-                    <div className="cell" data-title="N° Productores">
-                    19
-                    </div>
+                    <div className="cell" data-title="Departamento">NATAREN Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">LOS OLANCHITOS, JUTIAPA</div>
+                    <div className="cell" data-title="N° CREL">ATLÁNTIDA</div>
                   </div>
 
                   <div className="c-row">
-                    <div className="cell" data-title="Departamento">
-                    Santa Bárbara
-                    </div>
-                    <div className="cell" data-title="Municipio">
-                    San José, Ilama
-                    </div>
-                    <div className="cell" data-title="N° CREL">
-                    1
-                    </div>
-                    <div className="cell" data-title="N° Productores">
-                    15
-                    </div>
+                    <div className="cell" data-title="Departamento">OLIVA MELGAR Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">VENUS</div>
+                    <div className="cell" data-title="N° CREL">ATLÁNTIDA</div>
                   </div>
 
                   <div className="c-row">
-                    <div className="cell" data-title="Departamento">
-                    Comayagua
-                    </div>
-                    <div className="cell" data-title="Municipio">
-                    Taulabé
-                    </div>
-                    <div className="cell" data-title="N° CREL">
-                    1
-                    </div>
-                    <div className="cell" data-title="N° Productores">
-                    13
-                    </div>
+                    <div className="cell" data-title="Departamento">OSCAR RODRÍGUEZ Y ASOC. (CENTRO DE REC. DE LECHE SAN FRANCISCO)</div>
+                    <div className="cell" data-title="Municipio">SANTA ANA, SAN FRANCISCO</div>
+                    <div className="cell" data-title="N° CREL">ATLÁNTIDA</div>
                   </div>
 
                   <div className="c-row">
-                    <div className="cell" data-title="Departamento">
-                    El Paraíso
-                    </div>
-                    <div className="cell" data-title="Municipio">
-                    Jamastrán
-                    </div>
-                    <div className="cell" data-title="N° CREL">
-                    1
-                    </div>
-                    <div className="cell" data-title="N° Productores">
-                    5
-                    </div>
+                    <div className="cell" data-title="Departamento">POSAS ROMERO Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">AGUACATE MONTAÑA, JUTIAPA</div>
+                    <div className="cell" data-title="N° CREL">ATLÁNTIDA</div>
                   </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">RÍOS CABALLERO Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">ENTELINA, JUTIAPA</div>
+                    <div className="cell" data-title="N° CREL">ATLÁNTIDA</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">RIVERA SANTOS Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">CORRALITOS, JUTIAPA</div>
+                    <div className="cell" data-title="N° CREL">ATLÁNTIDA</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. COLECTIVA TELMA CASTAÑEDA</div>
+                    <div className="cell" data-title="Municipio">ARIZONA, TELA</div>
+                    <div className="cell" data-title="N° CREL">ATLÁNTIDA</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">ULLOA RODRÍGUEZ Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">LIMERAS, JUTIAPA</div>
+                    <div className="cell" data-title="N° CREL">ATLÁNTIDA</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">AGASAM</div>
+                    <div className="cell" data-title="Municipio">SAN MARCOS DE COLÓN</div>
+                    <div className="cell" data-title="N° CREL">CHOLUTECA</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">CREL LA ILUSIÓN</div>
+                    <div className="cell" data-title="Municipio">CHOLUTECA</div>
+                    <div className="cell" data-title="N° CREL">CHOLUTECA</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">CREL LA PATAGONIA S. DE R.L. DE C.V.</div>
+                    <div className="cell" data-title="Municipio">NAMASIGÜE</div>
+                    <div className="cell" data-title="N° CREL">CHOLUTECA</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">AGASA S.A.</div>
+                    <div className="cell" data-title="Municipio">LA ABISCINIA, TOCOA </div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">ALEMAN ACOSTA Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">LIS LIS, BALFATE</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">ASOC. DE AGRICUL. GANAD. RIO ARRIBA (AGARAT)</div>
+                    <div className="cell" data-title="Municipio">RÍO ARRIBA, TRUJILLO</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">ASOC. DE PROD. DE LECHE DE IRINEO (APROLEI)</div>
+                    <div className="cell" data-title="Municipio">IRINEOS, TRUJILLO</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">ASOC. DE PROD. DE LECHE Y DERIVAD. LA DANTA</div>
+                    <div className="cell" data-title="Municipio">LAS PILAS, TRUJILLO</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">ASOC. PROD. DE LECHE DE IRIONA (APRODELI)</div>
+                    <div className="cell" data-title="Municipio">SAMBITA, SICO</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">ASOC. PROD. DE LECHE Y DERIVAD. CERRO AZUL</div>
+                    <div className="cell" data-title="Municipio">UNIÓN POSEÑA, BONITO ORIENTAL</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">ASOC. PROD. LECHE Y DERIV. CATRACHO (APROLCA)</div>
+                    <div className="cell" data-title="Municipio">BONITO ORIENTAL</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">ASOC. PROD. LECHE Y DERIV. SOCIOS GANADEROS</div>
+                    <div className="cell" data-title="Municipio">BONITO ORIENTAL</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">PLANTEL, BONITO ORIENTAL</div>
+                    <div className="cell" data-title="Municipio">PLAYA GANADO, BONITO ORIENTAL</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">ASOC. PRODUC. DE LECHE Y DERIVADOS CANAAN</div>
+                    <div className="cell" data-title="Municipio">PLANTEL, BONITO ORIENTAL</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">CENTRO DE RECOLECCIÓN DE LECHE PINTO S.A</div>
+                    <div className="cell" data-title="Municipio">PLANTEL, BONITO ORIENTAL</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">CENTRO RECOLECTOR DE LECHE EL RANCHO</div>
+                    <div className="cell" data-title="Municipio">PLANES, SONAGUERA</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">CORRALES Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">SAN JOSÉ DE CORRALES</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">CREL JOSÉ OSCAR CEDILLO Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">QUEBRADA DE AGUA</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">CREL PLANES S. DE R.L</div>
+                    <div className="cell" data-title="Municipio">PLANES, SONAGUERA</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">CRÚZ AGUILAR Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">SONAGUERA</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">EMPRESA ASOCIATIVA CAMPESINA 27 DE MAYO</div>
+                    <div className="cell" data-title="Municipio">EL 15, TOCOA</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">EMPRESA DE PRODUCTOS LÁCTEOS S.A. EAPROL</div>
+                    <div className="cell" data-title="Municipio">SANTA ROSA DE AGUÁN</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">ESCOBAR PORTILLO Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">PARMAS, SONAGUERA</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">GANADEROS UNIDOS S. DE R.L</div>
+                    <div className="cell" data-title="Municipio">DOS BOCAS, SANTA ROSA DE AGUÁN</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">MARTÍNEZ FLORES Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">SABANA DE UTILA, SONAGUERA</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">MURILLO VALLECILLO Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">ELIXIR, SABÁ</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">ORTÍZ Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">EL COCO, TRUJILLO</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SANTOS CRISANTO Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">RÍO ESTEBAN, BALFATE</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. COL. GAN. LAS VEGAS ENCUENT. EL NOVILLO AGAVEN</div>
+                    <div className="cell" data-title="Municipio">EL NOVILLO, TOCOA</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. COLECT. CRUZ LOBO Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">FRANCIA, LIMÓN</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. COLECTIVA ANTÚNEZ SANDOVAL Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">PALMICHAL, BONITO ORIENTAL</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. COLECTIVA BORJAS RAMOS Y ASOC. / CREL LAUDA</div>
+                    <div className="cell" data-title="Municipio">LIMONCITO, LIMÓN</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. COLECTIVA CANELAS HERNÁNDEZ Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">LA ESPERANZA, BONITO ORIENTAL</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. COLECTIVA CÁRDENAS ZELAYA Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">BONITO ORIENTAL</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. COLECTIVA LÓPEZ URBINA Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">RIGORES, TRUJILLO</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. COLECTIVA MARTÍNEZ PAZ Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">BONITO ORIENTAL</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. COLECTIVA RAMOS ARNOLD Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">DOS BOCAS, SANTA ROSA DE AGUÁN</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. COLECTVA MONGE BARRIENTOS Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">EL 60, LIMÓN</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. COLETIVA WALDIR VALLADARES Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">LA ESPERANZA, BONITO ORIENTAL</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. DE PRODUC. DE LECHE CHACALAPA Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">CHACALAPA, TRUJILLO</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. DE PRODUC. DE LECHE COLECTIVA RIGORES</div>
+                    <div className="cell" data-title="Municipio">RIGORES, TRUJILLO </div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. DE PRODUCT. DE LECHE CHIRINOS Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">PLAYA GANADO, BONITO ORIENTAL</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. DE PRODUCT. DE LECHE LA ESPERANZA S.A</div>
+                    <div className="cell" data-title="Municipio">LA ESPERANZA, BONITO ORIENTAL</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. DE PRODUCT. LECHE AGALAC Y ASOC. S.A</div>
+                    <div className="cell" data-title="Municipio">CHACALAPA, TRUJILLO</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. DE PRODUCTORES DE LAS ICOTEAS S.A</div>
+                    <div className="cell" data-title="Municipio">ICOTEAS, BONITO ORIENTAL</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOCIEDAD SOGAABI</div>
+                    <div className="cell" data-title="Municipio">LA ABISCINIA, TOCOA </div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">ZÚNIGA Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">SABÁ</div>
+                    <div className="cell" data-title="N° CREL">COLÓN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">MARLENY NIETO Y SUCESORES</div>
+                    <div className="cell" data-title="Municipio">TAULABÉ</div>
+                    <div className="cell" data-title="N° CREL">COMAYAGUA</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">ASOC. GANAD. DE EL PARAISO COPAN (AGAPAC)</div>
+                    <div className="cell" data-title="Municipio">EL PARAÍSO</div>
+                    <div className="cell" data-title="N° CREL">COPÁN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">ASOC. PRODUCTORES LÁCTEOS STA ROSA COPAN / APROLAC</div>
+                    <div className="cell" data-title="Municipio">DULCE NOMBRE</div>
+                    <div className="cell" data-title="N° CREL">COPÁN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">EMP. DE SERV. MÚLTIPLES SAN ANTONIO COPAN / EMPRESAC</div>
+                    <div className="cell" data-title="Municipio">SAN ANTONIO DE COPÁN</div>
+                    <div className="cell" data-title="N° CREL">COPÁN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">JORGE BUESO ARIAS Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">SANTA RITA</div>
+                    <div className="cell" data-title="N° CREL">COPÁN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. COLECTIVA TÁBORA MADRID Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">LA JIGUA</div>
+                    <div className="cell" data-title="N° CREL">COPÁN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">ALTEG / AGAT</div>
+                    <div className="cell" data-title="Municipio">TEGUCIGALPITA, OMOA</div>
+                    <div className="cell" data-title="N° CREL">CORTÉS</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">GIILBERTO CERROS Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">NUEVA GRANADA, SAN ANTONIO</div>
+                    <div className="cell" data-title="N° CREL">CORTÉS</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">RODRÍGUEZ ALVARADO Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">CUYAMEL, CORTÉS</div>
+                    <div className="cell" data-title="N° CREL">CORTÉS</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. COLECTIVA PAZ SABILLÓN Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">SAN BUENAVENTURA</div>
+                    <div className="cell" data-title="N° CREL">CORTÉS</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. FERNÁNDEZ MEDINA Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">SAN ANTONIO DE CORTÉS</div>
+                    <div className="cell" data-title="N° CREL">CORTÉS</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOCIEDAD SABILLÓN FERNÁNDEZ</div>
+                    <div className="cell" data-title="Municipio">SAN BUENAVENTURA</div>
+                    <div className="cell" data-title="N° CREL">CORTÉS</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOSALAC SOC. COLECTIVA DE R.L</div>
+                    <div className="cell" data-title="Municipio">ARAULÍ, DANLÍ</div>
+                    <div className="cell" data-title="N° CREL">EL PARAISO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">AGAVICAN</div>
+                    <div className="cell" data-title="Municipio">VILLA DE SAN FRANCISCO</div>
+                    <div className="cell" data-title="N° CREL">FRANCISCO MORAZÁN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">AGAZA</div>
+                    <div className="cell" data-title="Municipio">ZAMORANO</div>
+                    <div className="cell" data-title="N° CREL">FRANCISCO MORAZÁN</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">CENTRO RECOL. DE LECHE ALMAGOR S.DE R.L</div>
+                    <div className="cell" data-title="Municipio">SAN ESTEBAN</div>
+                    <div className="cell" data-title="N° CREL">OLANCHO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">COOPERATIVA COAPLEGUAL</div>
+                    <div className="cell" data-title="Municipio">GUALACO</div>
+                    <div className="cell" data-title="N° CREL">OLANCHO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">CREL 10 DE MAYO (OLANCHO)</div>
+                    <div className="cell" data-title="Municipio">LA CONCEPCIÓN JUTICALPA</div>
+                    <div className="cell" data-title="N° CREL">OLANCHO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">CREL DE BECERRA (OLANCHO)</div>
+                    <div className="cell" data-title="Municipio">SAN FRANCISCO DE BECERRA</div>
+                    <div className="cell" data-title="N° CREL">OLANCHO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">CREL LA VENTA (OLANCHO)</div>
+                    <div className="cell" data-title="Municipio">LA VENTA, JUTICALPA</div>
+                    <div className="cell" data-title="N° CREL">OLANCHO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">RUBY LOBO Y ASOC. (OLANCHO)</div>
+                    <div className="cell" data-title="Municipio">EL BIJAGUAL JUTICALPA</div>
+                    <div className="cell" data-title="N° CREL">OLANCHO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. COLECTIVA BUENOS AMIGOS</div>
+                    <div className="cell" data-title="Municipio">CASA QUEMADA, SAN ESTEBAN </div>
+                    <div className="cell" data-title="N° CREL">OLANCHO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. COLECTIVA CARMEN MUNGUÍA Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">TAZAGERA</div>
+                    <div className="cell" data-title="N° CREL">OLANCHO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. COLECTIVA TULIO HERNÁN CROZIER Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">SAN ESTEBAN</div>
+                    <div className="cell" data-title="N° CREL">OLANCHO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. COLECTIVA ULISES ANTÚNEZ Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">SAN ESTEBAN</div>
+                    <div className="cell" data-title="N° CREL">OLANCHO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOC. COLECTIVA SABILLÓN PAZ Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">SAN JOSÉ DE ORIENTE, ILAMA</div>
+                    <div className="cell" data-title="N° CREL">SANTA BÁRBARA</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">ACOSTA OSEGUERA Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">TERRERO, OLANCHITO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">AGASUB</div>
+                    <div className="cell" data-title="Municipio">CHANCAYA</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">AGATY (ASOC. GANADEROS TULANGUARES YORO)</div>
+                    <div className="cell" data-title="Municipio">YORO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">ANDINO MUNGUÍA Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">CALPULES, OLANCHITO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">APROLARY</div>
+                    <div className="cell" data-title="Municipio">AYAPA</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">APROLELY</div>
+                    <div className="cell" data-title="Municipio">LOCOMAPA</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">APROLET</div>
+                    <div className="cell" data-title="Municipio">TRINIDAD</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">ASOC. GANAD. AGRICUL. DE LOMAS YORO (AGALOMY)</div>
+                    <div className="cell" data-title="Municipio">YORO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">ASOC. PROD. LECHE DEL VALLE YORO (APROLEVY)</div>
+                    <div className="cell" data-title="Municipio">PUNTA OCOTE</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">ASOC. PRODUCTORA LACTEOS YORO (APROLY) SRL</div>
+                    <div className="cell" data-title="Municipio">YORO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">BUSTILLO MARTÍNEZ Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">SANTA BÁRBARA, OLANCHITO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">CÁRCAMO MARTÍNEZ Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">EL OCOTE, OLANCHITO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">CENTRO RECOLECTOR LAS MERCEDES S.DE R.L</div>
+                    <div className="cell" data-title="Municipio">PUNTA OCOTE</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">COSME ROBERTO ISAULA MAYORQUIN / CREL MORAZAN</div>
+                    <div className="cell" data-title="Municipio">MORAZÁN</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">CREL CUPERTINO FUGÓN</div>
+                    <div className="cell" data-title="Municipio">EL MEDIO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">CREL LA BENDICIÓN S.DE R.L DE C.V</div>
+                    <div className="cell" data-title="Municipio">PUNTA OCOTE</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">CREL SUPERACIÓN Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">SAN MARCOS, OLANCHITO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">CRELCA CALPULES ALDEA</div>
+                    <div className="cell" data-title="Municipio">CALPULES, OLANCHITO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">CRUZ NÚÑEZ Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">SAN MARCOS, OLANCHITO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">EDY BONILLA Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">WISILKA, YORITO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">EL EDEN Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">OLANCHITO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">FABRICIO PUERTO Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">LA SABANA, OLANCHITO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">FUENTES Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">LIMONES, OLANCHITO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">HEBERTO CHIRINOS PONCE Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">JUNCAL, OLANCHITO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">JERÓNIMO ARMIN FIGUEROA Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">SAN FRANCISCO, OLANCHITO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">JOSÉ RIGOBERTO LOPEZ BURDET Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">YORO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">LECHE Y DERIVADOS MORAZÁN S.A (LEYDEM)</div>
+                    <div className="cell" data-title="Municipio">MORAZÁN</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">LEOPOLDO DURÁN DUEÑAS Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">SAN PATRICIO, OLANCHITO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">MARTÍNEZ HERNÁNDEZ Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">MALOA, OLANCHITO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">MARTÍNEZ LOBO Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">ARENAL</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">MEJÍA RODRÍGUEZ Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">LA ENVIDIA, OLANCHITO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">NUEVA ALIANZA</div>
+                    <div className="cell" data-title="Municipio">OLANCHITO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">PADILLA SARMIENTO Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">TEPUSTECA</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">PROLENY S. DE R. L. DE C. V.</div>
+                    <div className="cell" data-title="Municipio">NEGRITO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">PUERTO BUSTILLO Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">TEJERAS</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">PUERTO LOZANO Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">SAN GERÓNIMO, OLANCHITO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SALINAS GONZÁLES Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">COYOLES, OLANCHITO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SALVADOR FIGUEROA Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">EL BAMBÚ, OLANCHITO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOPROLE SAN FRANCISCO DE ASÍS</div>
+                    <div className="cell" data-title="Municipio">SAN FRANCISCO, OLANCHITO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
+                  <div className="c-row">
+                    <div className="cell" data-title="Departamento">SOPROLEC Y ASOC.</div>
+                    <div className="cell" data-title="Municipio">COYOLES, OLANCHITO</div>
+                    <div className="cell" data-title="N° CREL">YORO</div>
+                  </div>
+
                 </div>
               </div>
             </div>
 
-            <div className="col-lg-12">
+            <div className="col-lg-14">
               <img src={Creles} alt="Agafam Congreso de la leche 2020"/>
               <div className="col-lg-9">
                 <p className="main-text"><strong>Figura 1.</strong> Ubicación geográfica de los CREL activos en Honduras y promedios de producción de leche entregados diariamente a la industria (LACTHOSA y LEYDE). <em>Fuente:</em> CAHLE (2023).</p>
