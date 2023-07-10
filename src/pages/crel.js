@@ -44,7 +44,7 @@ export default () => {
               <p className="main-text">En la actualidad el país cuenta con 135 centros de recolección y enfriamiento de leche distribuidos en 11 departamentos del territorio nacional: Colón (43), Yoro (40), Atlántida (23), Olancho (10), Cortés (6), Copán (5), Choluteca (3), Francisco Morazán (2), Comayagua (1), Santa Bárbara (1), El Paraíso (1). Algunos de estos CREL en un principio se impulsaron con la ayuda de FENAGH, LACTHOSA y SAG, a partir del 2014 hasta la fecha con el apoyo de la Cámara Hondureña de la Leche (CAHLE) con proyectos de inseminación artificial y asistencia técnica y en la actualidad se han sumado otras instituciones de apoyo al rubro como HEIFER Internacional.</p>
             </div>
             <div className="col-lg-10">
-              <p className="main-text"><strong>Cuadro 1.</strong> Centros de recolección y enfriamiento de leche distribuidos por departamento y municipio en Honduras. <em>Fuente:</em> Cámara hondureña de la leche (2019).</p>
+              <p className="main-text"><strong>Cuadro 1.</strong> Centros de recolección y enfriamiento de leche activos en Honduras. <em>Fuente:</em> Cámara hondureña de la leche (2023).</p>
             </div>
             <div className="col-lg-10">
               <div className="wrapper">
