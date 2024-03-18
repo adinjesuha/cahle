@@ -75,7 +75,7 @@ const CongresoInscripciones = () => {
                   <div className="c-row header">
                     <div className="cell">Categoría</div>
                     <div className="cell">Hasta el 31 de marzo</div>
-                    <div className="cell">Del 01 de abril al 05 de mayo</div>
+                    <div className="cell">Del 01 de abril al 02 de mayo</div>
                   </div>
                   <div className="c-row">
                     <div className="cell" data-title="Categoría">
@@ -84,18 +84,18 @@ const CongresoInscripciones = () => {
                     <div className="cell" data-title="Hasta el 31 de marzo">
                       <p>500.00</p>
                     </div>
-                    <div className="cell" data-title="Del 01 de abril al 05 de mayo">
+                    <div className="cell" data-title="Del 01 de abril al 02 de mayo">
                       <p>600.00</p>
                     </div>
                   </div> 
                   <div className="c-row">
                     <div className="cell" data-title="Categoría">
-                      <p>Asociados CAHLE (L.)</p>
+                      <p>Asociados CAFOGAH y CAHLE (L.)</p>
                     </div>
                     <div className="cell" data-title="Hasta el 31 de marzo">
                       <p>600.00</p>
                     </div>
-                    <div className="cell" data-title="Del 01 de abril al 05 de mayo">
+                    <div className="cell" data-title="Del 01 de abril al 02 de mayo">
                       <p>700.00</p>
                     </div>
                   </div> 
@@ -106,7 +106,7 @@ const CongresoInscripciones = () => {
                     <div className="cell" data-title="Hasta el 31 de marzo">
                       <p>700.00</p>
                     </div>
-                    <div className="cell" data-title="Del 01 de abril al 05 de mayo">
+                    <div className="cell" data-title="Del 01 de abril al 02 de mayo">
                       <p>800.00</p>
                     </div>
                   </div> 
@@ -117,7 +117,7 @@ const CongresoInscripciones = () => {
                     <div className="cell" data-title="Hasta el 31 de marzo">
                       <p>50.00</p>
                     </div>
-                    <div className="cell" data-title="Del 01 de abril al 05 de mayo">
+                    <div className="cell" data-title="Del 01 de abril al 02 de mayo">
                       <p>60.00</p>
                     </div>
                   </div> 

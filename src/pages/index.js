@@ -113,7 +113,7 @@ const IndexPage = () => {
   }, [])
   return (
     <>
-    {/* <Portal>
+    <Portal>
     {toggle && (
       <React.Fragment>
         <ModalButton onClick={() => setToggle(false)}>
@@ -122,7 +122,7 @@ const IndexPage = () => {
         <Modal />
       </React.Fragment>
     )}
-    </Portal> */}
+    </Portal> 
     <Layout>
       <FullScreenBg>
         <video
