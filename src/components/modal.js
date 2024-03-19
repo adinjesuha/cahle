@@ -4,8 +4,8 @@ import { Link } from 'gatsby'
 import { useTransition, animated } from 'react-spring'
 
 import { device } from '../styles/breakpoints'
-import PopUpImage from '../images/popup-left-image.png'
-import CahelSago from '../images/cahle-sago-logos.png'
+import PopUpImage from '../images/popup-left-image.jpeg'
+import CahelCafogah from '../images/cahle-cafogah-logo.png'
 
 const Wrapper = styled(animated.main)`
   background-color: rgba(0,0,0, 0.6);
@@ -111,7 +111,7 @@ const Modal = () => {
           </div>
           <div className="pop-up__right-panel">
             <div className="content">
-              <img src={CahelSago} alt="Cahel Agafam"/>
+              <img src={CahelCafogah} alt="Cahel Agafam"/>
               <div className="content__text">
                 <h4>Te invitan al:</h4>
                 <h2>IX Congreso de la Leche</h2>
