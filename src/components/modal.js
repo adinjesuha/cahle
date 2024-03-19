@@ -114,7 +114,7 @@ const Modal = () => {
               <img src={CahelCafogah} alt="Cahel Agafam"/>
               <div className="content__text">
                 <h4>Te invitan al:</h4>
-                <h2>IX Congreso de la Leche</h2>
+                <h2>I Congreso de la Leche y Carne</h2>
                 <div className="buttons-group">
                   <ButtonLink to="/informacion-general-congreso-2023">Descubre más</ButtonLink>
                   <ButtonLink to="/inscripciones-congreso-2023" className="primary">Inscribete ya!</ButtonLink>
