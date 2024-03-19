@@ -116,8 +116,8 @@ const Modal = () => {
                 <h4>Te invitan al:</h4>
                 <h2>I Congreso de la Leche y Carne</h2>
                 <div className="buttons-group">
-                  <ButtonLink to="/informacion-general-congreso-2023">Descubre más</ButtonLink>
-                  <ButtonLink to="/inscripciones-congreso-2023" className="primary">Inscribete ya!</ButtonLink>
+                  {/* <ButtonLink to="/informacion-general-congreso-2023">Descubre más</ButtonLink> */}
+                  <ButtonLink to="/inscripciones-congreso-2024" className="primary">Inscribete ya!</ButtonLink>
                 </div>
               </div>
             </div>
