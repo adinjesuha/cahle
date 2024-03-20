@@ -125,11 +125,11 @@ const CongresoInscripciones = () => {
                 <p className="main-text navy">* Estudiantes con carnet de grado de carreras en ciencias agroalimentarias (agronomía, agro negocios, economía agrícola, zootecnia, medicina veterinaria, tecnología de alimentos, ingeniería de alimentos, etc.)</p>
               </div>
               <h2>Pago de la inscripción:</h2>
-              <p className="main-text navy">Banco de Occidente <br /> A nombre de la Asociación de Beneficio Mutuo Cámara Hondureña de la Leche <br />RTN 0801 9018 008314 <br />Cuenta de ahorro en Lempiras # 21401173406-2 <br/>Cuenta de cheques en Dólares # 124010129573</p>
+              <p className="main-text navy">Banco de Occidente <br /> A nombre de la Asociación de Beneficio Mutuo Cámara Hondureña de la Leche <br />RTN 0801 9018 008314 <br />Cuenta de ahorro en Lempiras # 21401173406-2</p>
             </div>
             <div className="col-lg-8">
               <h2>Registro:</h2>
-              <p className="main-text navy">Utilice el formulario adjunto para solicitar su registro al IX Congreso Nacional de la Leche</p>
+              <p className="main-text navy">Utilice el formulario adjunto para solicitar su registro al I Congreso de la Leche y Carne</p>
               <SubscribeForm />
             </div>
           </div>
