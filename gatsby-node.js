@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require("path")
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -39,3 +39,4 @@ exports.createPages = ({ graphql, actions }) => {
   })
   return Promise.all([loadPosts])
 }
+

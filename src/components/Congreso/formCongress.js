@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { navigate } from 'gatsby-link'
+import { navigate } from "gatsby"
 import styled from 'styled-components'
 
 const Form = styled.form`

@@ -44,36 +44,36 @@ export default () => (
       return(
         <Layout>
         <HeroPage title={reglamentaciones.title} tags="Documentación" bgImage={"documentos"}/>
-          <Wrapper>
-            <Container>
-              <div className="row justify-content-center">
-                <div className="col-lg-9">
-                  <h2 className="main-title variant-title">{reglamentaciones.downloadList[0].titleDocument}</h2>
-                  <div className="row">
-                    {reglamentaciones.downloadList[0].link.map(list => (
-                      <DownloadCard 
-                        columns="col-lg-6 col-md-6"
-                        link={`https:${list.file.url}`}
-                        title={list.title}
-                      />
-                    ))}
-                  </div>
-                </div>
-                <div className="col-lg-9">
-                  <h2 className="main-title variant-title">{reglamentaciones.downloadList[1].titleDocument}</h2>
-                  <div className="row">
-                    {reglamentaciones.downloadList[1].link.map(list => (
-                      <DownloadCard 
-                        columns="col-lg-6 col-md-6"
-                        link={`https:${list.file.url}`}
-                        title={list.title}
-                      />
-                    ))}
-                  </div>
+        <Wrapper>
+          <Container>
+            <div className="row justify-content-center">
+              <div className="col-lg-9">
+                <h2 className="main-title variant-title">{reglamentaciones.downloadList[0].titleDocument}</h2>
+                <div className="row">
+                  {reglamentaciones.downloadList[0].link.map(list => (
+                    <DownloadCard 
+                      columns="col-lg-6 col-md-6"
+                      link={`https:${list.file.url}`}
+                      title={list.title}
+                    />
+                  ))}
                 </div>
               </div>
-            </Container>
-          </Wrapper>
+              <div className="col-lg-9">
+                <h2 className="main-title variant-title">{reglamentaciones.downloadList[1].titleDocument}</h2>
+                <div className="row">
+                  {reglamentaciones.downloadList[1].link.map(list => (
+                    <DownloadCard 
+                      columns="col-lg-6 col-md-6"
+                      link={`https:${list.file.url}`}
+                      title={list.title}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </Container>
+        </Wrapper>
         </Layout>
       )
     }}

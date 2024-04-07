@@ -19,9 +19,12 @@ export default () => (
               slug
               heroImage{
                 title
-                fluid(maxWidth: 2000){
-                  ...GatsbyContentfulFluid
-                }
+                gatsbyImageData(
+                  layout: FULL_WIDTH
+                  placeholder: BLURRED
+                  formats: [AUTO, WEBP]
+                  quality: 100
+                )
               }
             }
           }

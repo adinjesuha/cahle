@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import Link from 'gatsby-link'
+import { Link } from "gatsby"
 
 import { NuestraGente, asociados, legislacion, documentacion, congreso } from '../utils/menuConfig'
 
@@ -10,7 +10,7 @@ const Container = styled.div`
   text-align: center;
 `
 
-const AccordionWrapper = styled.dl`
+const AccordionWrapper = styled.div`
   margin: 0 auto;
   width: 100%;
   .title {

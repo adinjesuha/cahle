@@ -5,20 +5,16 @@ import BackgroundImage from 'gatsby-background-image'
 
 const BackgroundSection = ({ children, className }) => (
   <StaticQuery
-    query={graphql`
-      query {
-        desktop: file(relativePath: { eq: "congreso-hero.png" }) {
-          childImageSharp {
-            fluid(quality: 90, maxWidth: 1920) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-      }
-    `}
+    query={graphql`{
+  desktop: file(relativePath: {eq: "congreso-hero.png"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 90, layout: FULL_WIDTH)
+    }
+  }
+}`}
     render={data => {
       // Set ImageData.
-      const imageData = data.desktop.childImageSharp.fluid
+      const imageData = data.desktop.childImageSharp.gatsbyImageData
       return (
         <BackgroundImage
           Tag="section"

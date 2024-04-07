@@ -7,6 +7,7 @@ module.exports = {
     title: 'Gatsby Default Starter',
   },
   plugins: [
+    'gatsby-plugin-image',
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-react-helmet',
     {
@@ -41,6 +42,7 @@ module.exports = {
     'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -54,4 +56,7 @@ module.exports = {
       },
     },
   ],
+  flags: {
+    DEV_SSR: true,
+  }
 }

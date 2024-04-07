@@ -1,5 +1,5 @@
 import React from 'react'
-import Img from "gatsby-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import styled from "styled-components"
 
 import { device } from '../styles/breakpoints'
@@ -7,20 +7,20 @@ import { device } from '../styles/breakpoints'
 const Wrapper =styled.div`
   position: relative;
   z-index: 100;
+  min-height: 300px;
+  height: 50vh;
+  @media ${device.tablet}{
+    height: 70vh;
+  }
 `
 
-const HeroImage = styled(Img)`
+const HeroImage = styled(GatsbyImage)`
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   z-index: -1;
-  min-height: 300px;
-  /*
-    Ensure golden ratio for the hero size while limiting it to some extend to
-    the viewport width
-  */
-  height: 50vh;
   &::before {
     content: '';
     background: rgba(0, 0, 0, 0.2);
@@ -33,9 +33,7 @@ const HeroImage = styled(Img)`
     width: 100%;
     z-index: 1;
   }
-  @media ${device.tablet}{
-    height: 70vh;
-  }
+  
 `
 const FutureTitle = styled.div`
   position: absolute;
@@ -72,14 +70,16 @@ const FutureTitle = styled.div`
   }
 `
 
-export default ({heroData, title, tags}) => (
-  <Wrapper>
-    <HeroImage 
-      fluid={heroData.fluid}
-    />
-    <FutureTitle>
-      <span>{tags}</span>
-      <h1>{title}</h1>
-    </FutureTitle>
-  </Wrapper>
-)
+export default ({heroData, title, tags}) => {
+  const myImage = getImage(heroData)
+  return (
+    <Wrapper>
+      <HeroImage
+        image={myImage}
+      />
+      <FutureTitle>
+        <span>{tags}</span>
+        <h1>{title}</h1>
+      </FutureTitle>
+    </Wrapper>
+)}
