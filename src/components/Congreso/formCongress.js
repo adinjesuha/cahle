@@ -118,6 +118,7 @@ const InputBlock = ({label, handleChange, classNames, isSelect, ...restProps}) =
 
 const SubscribeForm = () => {
   const [data, setData] = useState({})
+  const [serverResponse, setServerResponse] = useState({})
   const [disabled, setDisabled] = useState(false)
 
 
@@ -129,7 +130,7 @@ const SubscribeForm = () => {
     })
   }
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
 
     e.preventDefault();
 
@@ -159,18 +160,31 @@ const SubscribeForm = () => {
       }
     }
 
-    fetch("../../.netlify/functions/airtable", {
-      method: "POST",
-      body: JSON.stringify(fields)
-    })
-    .then(() => setDisabled(true))
-    .then(() => navigate('/thanks/'))
-    .catch(error => alert(error))
+    const response = await window
+      .fetch(`/api/form`, {
+        method: `POST`,
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(fields),
+      })
+      .then(res => res.json())
+
+    setServerResponse(response)
+
+    // fetch("../../.netlify/functions/airtable", {
+    //   method: "POST",
+    //   body: JSON.stringify(fields)
+    // })
+    // .then(() => setDisabled(true))
+    // .then(() => navigate('/thanks/'))
+    // .catch(error => alert(error))
+
 
   }
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form onSubmit={handleSubmit} method="POST" action="/api/form">
       <p><strong>Todos los campos son requeridos</strong></p>
       <div className="field-wrapper">
         <InputRow>
