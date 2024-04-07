@@ -23,7 +23,8 @@
     "gatsby-transformer-remark": "^6.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
     "gatsby-transformer-sqip": "^5.13.1",
-    "node-fetch": "^3.3.2",
+    "netlify-cli": "^17.21.2",
+    "node-fetch": "^2.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
@@ -42,9 +43,6 @@
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "engines": {
-    "node": "18.19.1"
   },
   "devDependencies": {
     "dotenv": "^16.4.5",
