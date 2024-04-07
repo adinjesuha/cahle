@@ -257,7 +257,7 @@ const SubscribeForm = () => {
             required
           />
         </InputRow>
-        <p><strong>* Adjuntar el recibo de pago, transferencia o depósito escaneado en formato jpg clara y legible al correo electronico <a href="admoncahle@gmail.com">admoncahle@gmail.com</a> (Recuerde llevar su comprobante en físico el día de ingreso)</strong></p>
+        <p><strong>* Adjuntar el recibo de pago, transferencia o depósito escaneado en formato jpg clara y legible al correo electronico <a href="congresocahle@gmail.com">congresocahle@gmail.com</a> (Recuerde llevar su comprobante en físico el día de ingreso)</strong></p>
         {/* { data.ocupacion === 'Otro' ? (
           <InputRow>
             <InputBlock 
