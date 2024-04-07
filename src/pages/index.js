@@ -160,7 +160,6 @@ const IndexPage = () => {
             </Link>
           </div>
         </Container>
-        <UploadWidget />
       </Wrapper>
     </Layout>
     </>
