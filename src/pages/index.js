@@ -10,6 +10,7 @@ import Container from '../components/container'
 import Portal from '../components/portal'
 import Modal from '../components/modal'
 import { IoMdClose } from 'react-icons/io'
+import UploadWidget from '../components/uploadWidget'
 
 const FullScreenBg = styled.div`
   left: 0;
@@ -159,6 +160,7 @@ const IndexPage = () => {
             </Link>
           </div>
         </Container>
+        <UploadWidget />
       </Wrapper>
     </Layout>
     </>
