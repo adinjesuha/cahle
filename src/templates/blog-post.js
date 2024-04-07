@@ -9,13 +9,11 @@ import Container from '../components/container'
 import {
   FacebookShareButton,
   TwitterShareButton,
-  GooglePlusShareButton,
   EmailShareButton,
   WhatsappShareButton,
 
   FacebookIcon,
   TwitterIcon,
-  GooglePlusIcon,
   EmailIcon,
   WhatsappIcon,
 
@@ -105,6 +103,7 @@ const ShareButtonsContainer = styled.div`
 
 const PostPage = ({data}) => {
   const { title, heroImage, body, tags, slug, customDate } = data.contentfulBlogPost
+  console.log('data', title, heroImage, body, tags, slug, customDate)
   return (
     <Layout> 
       <Wrapper>
@@ -121,51 +120,43 @@ const PostPage = ({data}) => {
             <div className="col-lg-9">
               <div className="blog-data">
                 <div dangerouslySetInnerHTML={{ __html: body.childMarkdownRemark.html }} />
-                <ShareButtonsContainer>
-                  <h3 style={{fontWeight: 400}}>Compartelo en tus redes</h3>
-                  <ul>
-                    <li className="social-share">
-                      <FacebookShareButton 
-                        url={`https://www.cahle.org/noticias-y-eventos/${slug}`}
-                        quote={title}
-                      >
-                        <FacebookIcon size={40} round />
-                      </FacebookShareButton>
-                    </li>
-                    <li className="social-share">
-                      <TwitterShareButton
-                        url={`https://www.cahle.org/noticias-y-eventos/${slug}`}
-                        quote={title}
-                      >
-                        <TwitterIcon size={40} round/>
-                      </TwitterShareButton>
-                    </li>
-                    <li className="social-share">
-                      <GooglePlusShareButton
-                        url={`https://www.cahle.org/noticias-y-eventos/${slug}`}
-                        quote={title}
-                      >
-                        <GooglePlusIcon size={40} round/>
-                      </GooglePlusShareButton>
-                    </li>
-                    <li className="social-share">
-                      <EmailShareButton
-                        url={`https://www.cahle.org/noticias-y-eventos/${slug}`}
-                        quote={title}
-                      >
-                        <EmailIcon size={40} round/>
-                      </EmailShareButton>
-                    </li>
-                    <li className="social-share">
-                      <WhatsappShareButton
-                        url={`https://www.cahle.org/noticias-y-eventos/${slug}`}
-                        quote={title}
-                      >
-                        <WhatsappIcon size={40} round/>
-                      </WhatsappShareButton>
-                    </li>
-                  </ul>
-                </ShareButtonsContainer>
+                  <ShareButtonsContainer>
+                    <h3 style={{fontWeight: 400}}>Compartelo en tus redes</h3>
+                    <ul>
+                      <li className="social-share">
+                        <FacebookShareButton 
+                          url={`https://www.cahle.org/noticias-y-eventos/${slug}`}
+                          quote={title}
+                        >
+                          <FacebookIcon size={40} round />
+                        </FacebookShareButton>
+                      </li>
+                      <li className="social-share">
+                        <TwitterShareButton
+                          url={`https://www.cahle.org/noticias-y-eventos/${slug}`}
+                          quote={title}
+                        >
+                          <TwitterIcon size={40} round/>
+                        </TwitterShareButton>
+                      </li>
+                      <li className="social-share">
+                        <EmailShareButton
+                          url={`https://www.cahle.org/noticias-y-eventos/${slug}`}
+                          quote={title}
+                        >
+                          <EmailIcon size={40} round/>
+                        </EmailShareButton>
+                      </li>
+                      <li className="social-share">
+                        <WhatsappShareButton
+                          url={`https://www.cahle.org/noticias-y-eventos/${slug}`}
+                          quote={title}
+                        >
+                          <WhatsappIcon size={40} round/>
+                        </WhatsappShareButton>
+                      </li>
+                    </ul>
+                  </ShareButtonsContainer>
               </div>
             </div>
           </div>
@@ -183,9 +174,12 @@ export const query = graphql`
       slug
       title
       heroImage{
-        fluid(maxWidth: 2000){
-          ...GatsbyContentfulFluid
-        }
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: [AUTO, WEBP]
+          quality: 100
+        )
       }
       tags
       customDate

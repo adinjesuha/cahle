@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { navigate } from "gatsby-link"
+import { navigate } from "gatsby"
 import { device } from '../styles/breakpoints'
 
 import { encode } from '../utils/encode'

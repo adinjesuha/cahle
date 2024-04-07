@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const ImageComponent = ({ imgName, className }) => {
   const data = useStaticQuery(graphql`
@@ -26,14 +26,13 @@ const ImageComponent = ({ imgName, className }) => {
   }
 
   return (
-    <Img
+    <GatsbyImage
+      image={image.childImageSharp.gatsbyImageData}
       className={className}
-      fluid={image.node.fluid}
       style={{ position: "relative", overflow: "hidden" }}
       objectFit="cover"
-      objectPosition="50% 50%"
-    />
-  )
+      objectPosition="50% 50%" />
+  );
 }
 
 export default ImageComponent

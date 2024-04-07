@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import Link from 'gatsby-link'
+import { Link } from "gatsby"
 
 import Layout from '../components/layout'
 import IndexPostListing from '../components/indexPostListing'

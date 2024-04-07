@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Img from 'gatsby-image'
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import styled, { css } from 'styled-components'
 
 import { device } from '../styles/breakpoints'
@@ -102,20 +102,23 @@ const Post = styled.article`
   `}
 `
 
-const CardPost = ({slug, heroImage, title, body, tags, customDate, intro, ...props}) => (
-  <Post featured={props.featured}>
-    <Link to={`/noticias-y-eventos/${slug}`}>
-      <Img fluid={heroImage.fluid}/>
-      <div className="data">  
-        <p className="meta">
-          <span className="tag">{tags}</span>
-          <span>{customDate}</span>
-        </p>
-        <h2 className="title">{title}</h2>
-        <p className="main-text">{intro}</p>
-      </div>
-    </Link>
-  </Post>
-)
+const CardPost = ({slug, heroImage, title, body, tags, customDate, intro, ...props}) => {
+  const image = getImage(heroImage)
+  return(
+    <Post featured={props.featured}>
+      <Link to={`/noticias-y-eventos/${slug}`}>
+        <GatsbyImage image={image}/>
+        <div className="data">  
+          <p className="meta">
+            <span className="tag">{tags}</span>
+            <span>{customDate}</span>
+          </p>
+          <h2 className="title">{title}</h2>
+          <p className="main-text">{intro}</p>
+        </div>
+      </Link>
+    </Post>
+  )
+}
 
 export default CardPost

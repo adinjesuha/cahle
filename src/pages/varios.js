@@ -5,13 +5,11 @@ import { graphql } from "gatsby"
 import {
   FacebookShareButton,
   TwitterShareButton,
-  GooglePlusShareButton,
   EmailShareButton,
   WhatsappShareButton,
 
   FacebookIcon,
   TwitterIcon,
-  GooglePlusIcon,
   EmailIcon,
   WhatsappIcon,
 
@@ -90,14 +88,6 @@ export default ({data}) => (
                 >
                   <TwitterIcon size={40} round/>
                 </TwitterShareButton>
-              </li>
-              <li className="social-share">
-                <GooglePlusShareButton
-                  url={`https://www.cahle.org/varios`}
-                  quote={data.contentfulDownloadList.titleDocument}
-                >
-                  <GooglePlusIcon size={40} round/>
-                </GooglePlusShareButton>
               </li>
               <li className="social-share">
                 <EmailShareButton

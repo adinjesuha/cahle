@@ -93,37 +93,65 @@ const ButtonLink = styled(Link)`
 
 const Modal = () => {
   const [state, toggle] = useState(true);
-  const transition = useTransition(state, null, { 
+
+  const transition = useTransition(state, {
     from: { opacity: 0 },
     enter: { opacity: 1 },
-    leave: { opacity: 0 }
-  });
+    leave: { opacity: 1 },
+  })
+
   useEffect(() => toggle(true), [toggle]);
-  return transition.map(({ item, key, props: fade }) =>
-    item &&
-      <Wrapper key={key} style={fade}>
-        <div className="pop-up">
-          <div className="pop-up__left-panel">
-            <img 
-              src={PopUpImage} 
-              alt="Congreso de la leche 2020"
-            />
-          </div>
-          <div className="pop-up__right-panel">
-            <div className="content">
-              <img src={CahelCafogah} alt="Cahel Agafam"/>
-              <div className="content__text">
-                <h4>Te invitan al:</h4>
-                <h2>I Congreso de la Leche y Carne</h2>
-                <div className="buttons-group">
-                  {/* <ButtonLink to="/informacion-general-congreso-2023">Descubre más</ButtonLink> */}
-                  <ButtonLink to="/inscripciones-congreso-2024" className="primary">Inscribete ya!</ButtonLink>
-                </div>
+
+  // return transition.map(({ item, key, props: fade }) =>
+  //   item &&
+  //     <Wrapper key={key} style={fade}>
+  //       <div className="pop-up">
+  //         <div className="pop-up__left-panel">
+  //           <img 
+  //             src={PopUpImage} 
+  //             alt="Congreso de la leche 2020"
+  //           />
+  //         </div>
+  //         <div className="pop-up__right-panel">
+  //           <div className="content">
+  //             <img src={CahelCafogah} alt="Cahel Agafam"/>
+  //             <div className="content__text">
+  //               <h4>Te invitan al:</h4>
+  //               <h2>I Congreso de la Leche y Carne</h2>
+  //               <div className="buttons-group">
+  //                 {/* <ButtonLink to="/informacion-general-congreso-2023">Descubre más</ButtonLink> */}
+  //                 <ButtonLink to="/inscripciones-congreso-2024" className="primary">Inscribete ya!</ButtonLink>
+  //               </div>
+  //             </div>
+  //           </div>
+  //         </div>
+  //       </div>
+  //     </Wrapper>
+  // )
+  return (
+    <Wrapper>
+      <div className="pop-up">
+        <div className="pop-up__left-panel">
+          <img 
+            src={PopUpImage} 
+            alt="Congreso de la leche 2020"
+          />
+        </div>
+        <div className="pop-up__right-panel">
+          <div className="content">
+            <img src={CahelCafogah} alt="Cahel Agafam"/>
+            <div className="content__text">
+              <h4>Te invitan al:</h4>
+              <h2>I Congreso de la Leche y Carne</h2>
+              <div className="buttons-group">
+                {/* <ButtonLink to="/informacion-general-congreso-2023">Descubre más</ButtonLink> */}
+                <ButtonLink to="/inscripciones-congreso-2024" className="primary">Inscribete ya!</ButtonLink>
               </div>
             </div>
           </div>
         </div>
-      </Wrapper>
+      </div>
+    </Wrapper>
   )
 }
 
