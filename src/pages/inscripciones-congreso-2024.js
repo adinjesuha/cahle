@@ -74,8 +74,8 @@ const CongresoInscripciones = () => {
                 <div className="table">
                   <div className="c-row header">
                     <div className="cell">Categoría</div>
-                    <div className="cell">Hasta el 31 de marzo</div>
-                    <div className="cell">Del 01 de abril al 02 de mayo</div>
+                    <div className="cell">En Línea</div>
+                    <div className="cell">Día del Congreso</div>
                   </div>
                   <div className="c-row">
                     <div className="cell" data-title="Categoría">
@@ -120,7 +120,16 @@ const CongresoInscripciones = () => {
                     <div className="cell" data-title="Del 01 de abril al 02 de mayo">
                       <p>70.00</p>
                     </div>
-                  </div> 
+                  </div>
+                  <div className="c-row">
+                    <div className="cell" data-title="Categoría">
+                      <p>Show de asados opcional y cupo limitado (L.) <br />Viernes 03 de mayo de 3:00 a 6:00 pm en Del Corral</p>
+                    </div>
+                    <div className="cell" data-title="Hasta el 31 de marzo"></div>
+                    <div className="cell" data-title="Del 01 de abril al 02 de mayo">
+                      <p>900.00</p>
+                    </div>
+                  </div>
                 </div>
                 <p className="main-text navy">* Estudiantes con carnet de grado de carreras en ciencias agroalimentarias (agronomía, agro negocios, economía agrícola, zootecnia, medicina veterinaria, tecnología de alimentos, ingeniería de alimentos, etc.)</p>
               </div>
