@@ -1,6 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { navigate } from "gatsby"
 import styled from 'styled-components'
+
+import { Image } from 'cloudinary-react'
+
+import { StaticImage } from "gatsby-plugin-image"
 
 const Form = styled.form`
   padding: 0 0 40px;
@@ -115,11 +119,49 @@ const InputBlock = ({label, handleChange, classNames, isSelect, ...restProps}) =
   </StyledInputWrapper>
 )
 
+const UploadWidget = ({onPhotosUploaded}) => {
+  const cloudinaryRef = useRef()
+  const widgetRef = useRef()
+  useEffect(() => {
+    cloudinaryRef.current = window.cloudinary
+    widgetRef.current = cloudinaryRef.current.createUploadWidget(
+      {
+        cloudName: 'adinjesuha', 
+        uploadPreset: 'cahle_hn', 
+        folder: 'cahle',
+      }, 
+      (error, result) => {
+        if (!error && result && result.event === 'success') {
+          onPhotosUploaded(result.info)
+        } else if (error) {
+          console.error(error)
+        }
+      })
+  }, [])
+  return (
+    <StyledButton
+      onClick={(e) => {
+        e.preventDefault(); 
+        widgetRef.current.open()
+      }}
+      style={{
+        backgroundColor: 'var(--mantis)'
+      }}
+      className='button-btn'
+    >
+      Subir Imagen
+    </StyledButton>
+  )
+}
+
 
 const SubscribeForm = () => {
   const [data, setData] = useState({})
   const [serverResponse, setServerResponse] = useState({})
+  const [imageUrl, setImageUrl] = useState('')
   const [disabled, setDisabled] = useState(false)
+
+  console.log(imageUrl.url)
 
 
   const handleChange = e => {
@@ -128,6 +170,10 @@ const SubscribeForm = () => {
       ...data,
       [name]: value
     })
+  }
+
+  const handleUploadPhoto = photoInfo => {
+    setImageUrl(photoInfo.secure_url)
   }
 
   const handleSubmit = async e => {
@@ -143,7 +189,7 @@ const SubscribeForm = () => {
       pais, 
       cuidad, 
       telefono, 
-      audiencia,
+      audiencia
     } = data
 
     const fields = {
@@ -157,6 +203,7 @@ const SubscribeForm = () => {
         "Ciudad": cuidad,
         "Teléfono": telefono,
         "Audiencia": audiencia,
+        "Recibos": [{ url: imageUrl }]
       }
     }
 
@@ -169,6 +216,9 @@ const SubscribeForm = () => {
         body: JSON.stringify(fields),
       })
       .then(res => res.json())
+      .then(() => setDisabled(true))
+      .then(() => navigate('/thanks/'))
+      .catch(error => alert(error))
 
     setServerResponse(response)
 
@@ -184,121 +234,115 @@ const SubscribeForm = () => {
   }
 
   return (
-    <Form onSubmit={handleSubmit} method="POST" action="/api/form">
-      <p><strong>Todos los campos son requeridos</strong></p>
-      <div className="field-wrapper">
-        <InputRow>
-          <InputBlock 
-            type="text"
-            name="nombre"
-            label="* Nombre"
-            handleChange={handleChange}
-            required
-          />
-          <InputBlock 
-            type="text"
-            name="apellido"
-            label="* Apellido"
-            handleChange={handleChange}
-            required
-          />
-        </InputRow>
-        <InputRow>
-          <InputBlock 
-            type="text"
-            name="genero"
-            label="* Genero"
-            isSelect={true}
-            options={["hombre", "mujer"]}
-            handleChange={handleChange}
-            required
-
-          />
-          <InputBlock 
-            type="text"
-            name="identificacion"
-            label="* ID o pasaporte"
-            handleChange={handleChange}
-            required
-          />
-        </InputRow>
-        <InputBlock 
-          type="email"
-          name="correo"
-          label="* Correo (lugar donde llegará su certificado de participación)"
-          handleChange={handleChange}
-          classNames="full-width"
-          required
-        />
-        <InputRow>
-          <InputBlock 
-            type="text"
-            name="pais"
-            label="* País de residencia"
-            handleChange={handleChange}
-            required
-
-          />
-          <InputBlock 
-            type="text"
-            name="cuidad"
-            label="* Ciudad de residencia"
-            handleChange={handleChange}
-            required
-          />
-        </InputRow>
-        <InputRow>
-          <InputBlock 
-            type="tel"
-            name="telefono"
-            label="* Teléfono"
-            handleChange={handleChange}
-            required
-          />
-          <InputBlock 
-            type="text"
-            name="audiencia"
-            label="* Tipo de audiencia: "
-            isSelect={true}
-            options={[
-              "Estudiante",
-              "Equipo patrocinador",
-              "Asociados CAHLE y CAFOGAH",
-              "Publico extranjero",
-              "Público en general" 
-            ]}
-            handleChange={handleChange}
-            required
-          />
-        </InputRow>
-        <p><strong>* Adjuntar el recibo de pago, transferencia o depósito escaneado en formato jpg clara y legible al correo electronico <a href="admoncahle@gmail.com">admoncahle@gmail.com</a> (Recuerde llevar su comprobante en físico el día de ingreso)</strong></p>
-        {/* { data.ocupacion === 'Otro' ? (
+    <>
+      <Form onSubmit={handleSubmit} method="POST" action="/api/form">
+        <p><strong>Todos los campos son requeridos</strong></p>
+        <div className="field-wrapper">
           <InputRow>
             <InputBlock 
               type="text"
-              name="otro"
-              label="Detallar ocupación *"
+              name="nombre"
+              label="* Nombre"
               handleChange={handleChange}
-              classNames="full-width"
+              required
+            />
+            <InputBlock 
+              type="text"
+              name="apellido"
+              label="* Apellido"
+              handleChange={handleChange}
               required
             />
           </InputRow>
-        ) : null }
-        <InputRow>
+          <InputRow>
+            <InputBlock 
+              type="text"
+              name="genero"
+              label="* Genero"
+              isSelect={true}
+              options={["hombre", "mujer"]}
+              handleChange={handleChange}
+              required
+
+            />
+            <InputBlock 
+              type="text"
+              name="identificacion"
+              label="* ID o pasaporte"
+              handleChange={handleChange}
+              required
+            />
+          </InputRow>
           <InputBlock 
-            type="text"
-            name="participacion"
-            label="Tipo de Participación *"
-            isSelect={true}
-            options={["Conferencista", "Patrocinador", "Audiencia" ]}
+            type="email"
+            name="correo"
+            label="* Correo (lugar donde llegará su certificado de participación)"
             handleChange={handleChange}
             classNames="full-width"
             required
           />
-        </InputRow> */}
-      </div>
-      <StyledButton type="submit" className={`${disabled ? 'disabled' : ''} button-btn`} disabled={disabled}>{disabled ? 'Enviando...' : 'Enviar'}</StyledButton>
-    </Form>
+          <InputRow>
+            <InputBlock 
+              type="text"
+              name="pais"
+              label="* País de residencia"
+              handleChange={handleChange}
+              required
+
+            />
+            <InputBlock 
+              type="text"
+              name="cuidad"
+              label="* Ciudad de residencia"
+              handleChange={handleChange}
+              required
+            />
+          </InputRow>
+          <InputRow>
+            <InputBlock 
+              type="tel"
+              name="telefono"
+              label="* Teléfono"
+              handleChange={handleChange}
+              required
+            />
+            <InputBlock 
+              type="text"
+              name="audiencia"
+              label="* Tipo de audiencia: "
+              isSelect={true}
+              options={[
+                "Estudiante",
+                "Equipo patrocinador",
+                "Asociados CAHLE y CAFOGAH",
+                "Publico extranjero",
+                "Público en general" 
+              ]}
+              handleChange={handleChange}
+              required
+            />
+          </InputRow>
+          <p><strong>* Adjuntar el recibo de pago, transferencia o depósito escaneado en formato jpg clara y legible al correo electronico <a href="congresocahle@gmail.com">congresocahle@gmail.com</a> (Recuerde llevar su comprobante en físico el día de ingreso)</strong></p>
+        </div>
+        {imageUrl.length ? (
+          <StyledButton type="submit" className={`${disabled ? 'disabled' : ''} button-btn`} disabled={disabled}>{disabled ? 'Enviando...' : 'Enviar'}</StyledButton>
+        ) : (
+          <UploadWidget onPhotosUploaded={handleUploadPhoto} />
+        )}
+      </Form>
+      {imageUrl.length ? (
+        <>
+          <StaticImage src={`${imageUrl}`} alt="Recibo" />
+          <StyledButton 
+            onClick={() => setImageUrl('')}
+            className='button-btn'
+            style={{ backgroundColor: '#dc2626' }}
+          >
+            Cargar otra imagen
+          </StyledButton>
+        </>
+      ) : null}
+    </>
   )
 }
 

@@ -115,10 +115,10 @@ const CongresoInscripciones = () => {
                       <p>Cuota general extranjeros ($.)</p>
                     </div>
                     <div className="cell" data-title="Hasta el 31 de marzo">
-                      <p>50.00</p>
+                      <p>60.00</p>
                     </div>
                     <div className="cell" data-title="Del 01 de abril al 02 de mayo">
-                      <p>60.00</p>
+                      <p>70.00</p>
                     </div>
                   </div> 
                 </div>
@@ -129,7 +129,7 @@ const CongresoInscripciones = () => {
             </div>
             <div className="col-lg-8">
               <h2>Registro:</h2>
-              <p className="main-text navy">Utilice el formulario adjunto para solicitar su registro al I Congreso de la Leche y Carne</p>
+              <p className="main-text navy">Utilice el formulario adjunto para solicitar su registro al IX Congreso Nacional de la Leche</p>
               <SubscribeForm />
             </div>
           </div>
