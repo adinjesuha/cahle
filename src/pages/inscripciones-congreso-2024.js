@@ -82,10 +82,10 @@ const CongresoInscripciones = () => {
                       <p>* Estudiantes (L.)</p>
                     </div>
                     <div className="cell" data-title="Hasta el 31 de marzo">
-                      <p>500.00</p>
+                      <p>600.00</p>
                     </div>
                     <div className="cell" data-title="Del 01 de abril al 02 de mayo">
-                      <p>600.00</p>
+                      <p>700.00</p>
                     </div>
                   </div> 
                   <div className="c-row">
@@ -93,10 +93,10 @@ const CongresoInscripciones = () => {
                       <p>Asociados CAFOGAH y CAHLE (L.)</p>
                     </div>
                     <div className="cell" data-title="Hasta el 31 de marzo">
-                      <p>600.00</p>
+                      <p>700.00</p>
                     </div>
                     <div className="cell" data-title="Del 01 de abril al 02 de mayo">
-                      <p>700.00</p>
+                      <p>800.00</p>
                     </div>
                   </div> 
                   <div className="c-row">
