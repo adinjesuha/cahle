@@ -74,21 +74,17 @@ const CongresoInscripciones = () => {
                 <div className="table">
                   <div className="c-row header">
                     <div className="cell">Categoría</div>
-                    <div className="cell">En Línea</div>
-                    <div className="cell">Día del Congreso</div>
+                    <div className="cell">Valor</div>
                   </div>
                   <div className="c-row">
                     <div className="cell" data-title="Categoría">
-                      <p>* Estudiantes (L.)</p>
+                      <p>Participación general (L.)</p>
                     </div>
                     <div className="cell" data-title="Hasta el 31 de marzo">
-                      <p>600.00</p>
-                    </div>
-                    <div className="cell" data-title="Del 01 de abril al 02 de mayo">
-                      <p>700.00</p>
+                      <p>800.00</p>
                     </div>
                   </div> 
-                  <div className="c-row">
+                  {/* <div className="c-row">
                     <div className="cell" data-title="Categoría">
                       <p>Asociados CAFOGAH y CAHLE (L.)</p>
                     </div>
@@ -120,18 +116,9 @@ const CongresoInscripciones = () => {
                     <div className="cell" data-title="Del 01 de abril al 02 de mayo">
                       <p>70.00</p>
                     </div>
-                  </div>
-                  <div className="c-row">
-                    <div className="cell" data-title="Categoría">
-                      <p>Show de asados opcional y cupo limitado (L.) <br />Viernes 03 de mayo de 3:00 a 6:00 pm en Del Corral</p>
-                    </div>
-                    <div className="cell" data-title="Hasta el 31 de marzo"></div>
-                    <div className="cell" data-title="Del 01 de abril al 02 de mayo">
-                      <p>900.00</p>
-                    </div>
-                  </div>
+                  </div> */}
                 </div>
-                <p className="main-text navy">* Estudiantes con carnet de grado de carreras en ciencias agroalimentarias (agronomía, agro negocios, economía agrícola, zootecnia, medicina veterinaria, tecnología de alimentos, ingeniería de alimentos, etc.)</p>
+                {/* <p className="main-text navy">* Estudiantes con carnet de grado de carreras en ciencias agroalimentarias (agronomía, agro negocios, economía agrícola, zootecnia, medicina veterinaria, tecnología de alimentos, ingeniería de alimentos, etc.)</p> */}
               </div>
               <h2>Pago de la inscripción:</h2>
               <p className="main-text navy">Banco de Occidente <br /> A nombre de la Asociación de Beneficio Mutuo Cámara Hondureña de la Leche <br />RTN 0801 9018 008314 <br />Cuenta de ahorro en Lempiras # 21401173406-2</p>

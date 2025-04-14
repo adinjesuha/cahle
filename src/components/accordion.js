@@ -126,10 +126,10 @@ class Accordion extends Component {
 
   render() {
     const accordionList = [
-      {
-        title: 'Congreso 2023',
-        content: congreso,
-      },
+      // {
+      //   title: 'Congreso 2025',
+      //   content: congreso,
+      // },
       {
         title: 'Nuestra Gente',
         content: NuestraGente,

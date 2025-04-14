@@ -306,7 +306,7 @@ const SubscribeForm = () => {
               handleChange={handleChange}
               required
             />
-            <InputBlock 
+            {/* <InputBlock 
               type="text"
               name="audiencia"
               label="* Tipo de audiencia: "
@@ -320,7 +320,7 @@ const SubscribeForm = () => {
               ]}
               handleChange={handleChange}
               required
-            />
+            /> */}
           </InputRow>
           <p><strong>* Adjuntar el recibo de pago, transferencia o depósito escaneado en formato jpg clara y legible al correo electronico <a href="congresocahle@gmail.com">congresocahle@gmail.com</a> (Recuerde llevar su comprobante en físico el día de ingreso)</strong></p>
         </div>

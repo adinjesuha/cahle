@@ -24,8 +24,8 @@ const HeroBg = () => (
   <StyledBackgroundSection>
     <ContentBackground>
       <img 
-        src={LogoCongreso} 
-        alt="Congreso de la leche 2020"
+        src={LogoCongreso}
+        alt="Congreso de la leche 2025"
       />
     </ContentBackground>
   </StyledBackgroundSection>
