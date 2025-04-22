@@ -65,7 +65,7 @@ const CongresoInscripciones = () => {
       <Wrapper>
         <Container>
           <HeroSection>
-            <h2>Inscripciones del Congreso</h2>
+            <h2>Inscripciones II Congreso <br /> Carne y Leche</h2>
           </HeroSection>
           <div className="row justify-content-center">
             <div className="col-lg-8">

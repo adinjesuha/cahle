@@ -306,21 +306,21 @@ const SubscribeForm = () => {
               handleChange={handleChange}
               required
             />
-            {/* <InputBlock 
+            <InputBlock 
               type="text"
               name="audiencia"
               label="* Tipo de audiencia: "
               isSelect={true}
               options={[
+                "Productor de Leche",
+                "Productor de Carne",
+                "Doble propósito",
                 "Estudiante",
-                "Equipo patrocinador",
-                "Asociados CAHLE y CAFOGAH",
-                "Publico extranjero",
-                "Público en general" 
+                "Otros"
               ]}
               handleChange={handleChange}
               required
-            /> */}
+            />
           </InputRow>
           <p><strong>* Adjuntar el recibo de pago, transferencia o depósito escaneado en formato jpg clara y legible al correo electronico <a href="congresocahle@gmail.com">congresocahle@gmail.com</a> (Recuerde llevar su comprobante en físico el día de ingreso)</strong></p>
         </div>

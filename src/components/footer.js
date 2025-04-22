@@ -80,7 +80,7 @@ const Footer = () => (
             <InfoContact>
               <li>
                 <span><PinIcon style={{verticalAlign: 'middle'}}/></span>
-                <p className="contact-info main-text">Colonia Ruben Dario, Calle Real de Minas, Frente a Edificio El Faro, Casa 701, Tegucigalpa, Honduras</p>
+                <p className="contact-info main-text">Colonia Lomas del Guijarro Sur, Edificio Torre Alianza I, Tercer Nivel, Tegucigalpa, Honduras.</p>
               </li>
               <li>
                 <span><PhoneIcon style={{verticalAlign: 'middle'}}/></span>
