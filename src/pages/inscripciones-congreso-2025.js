@@ -80,9 +80,6 @@ const CongresoInscripciones = () => {
                     <div className="cell" data-title="Categoría">
                       <p>Participación general (L.)</p>
                     </div>
-                    <div className="cell" data-title="Hasta el 31 de marzo">
-                      <p>800.00</p>
-                    </div>
                   </div> 
                   {/* <div className="c-row">
                     <div className="cell" data-title="Categoría">
