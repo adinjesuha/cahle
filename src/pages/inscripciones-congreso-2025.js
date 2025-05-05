@@ -125,7 +125,7 @@ const CongresoInscripciones = () => {
             </div>
             <div className="col-lg-8">
               <h2>Registro:</h2>
-              <p className="main-text navy">Utilice el formulario adjunto para solicitar su registro al IX Congreso Nacional de la Leche</p>
+              <p className="main-text navy">Utilice el formulario adjunto para solicitar su registro al 2do Congreso Nacional de la Carne y Leche</p>
               <SubscribeForm />
             </div>
           </div>
