@@ -28,6 +28,7 @@ const Wrapper = styled(animated.main)`
     margin: 0 20px;
     &__left-panel, &__right-panel{
         width: 100%;
+        min-width: 380px;
         height: 460px;
       }
     &__left-panel{
@@ -45,6 +46,9 @@ const Wrapper = styled(animated.main)`
         align-items: center;
         justify-content: space-around;
         height: 100%;
+        .desktop-logo-cahel{
+          display: none;
+        }
         &__text{
           text-align: center;
           h4{
@@ -77,6 +81,9 @@ const Wrapper = styled(animated.main)`
       }
       &__right-panel{
         .content{
+          .desktop-logo-cahel{
+            display: block;
+          }
           .mobile-logo-heifer{
             display: none;
           }
@@ -155,7 +162,7 @@ const Modal = () => {
         </div>
         <div className="pop-up__right-panel">
           <div className="content">
-            <img src={CahelCafogah} alt="Cahel Agafam"/>
+            <img src={CahelCafogah} alt="Cahel Agafam" className="desktop-logo-cahel"/>
             <div className="content__text">
               <h4>Te invitan al:</h4>
               <h2>3er Congreso <br/> Carne y Leche</h2>
