@@ -28,8 +28,8 @@ const Wrapper = styled(animated.main)`
     margin: 0 20px;
     &__left-panel, &__right-panel{
         width: 100%;
-        min-width: 380px;
         height: 460px;
+        max-width: 420px;
       }
     &__left-panel{
       display: none;
@@ -38,14 +38,17 @@ const Wrapper = styled(animated.main)`
       }
     }
     &__right-panel{
-      padding: 40px;
+      padding: 30px 20px 0 20px;
       position: relative;
+      display: flex;
+      flex-direction: column;
       .content{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-        height: 100%;
+        justify-content: center;
+        flex: 1;
+        gap: 20px;
         .desktop-logo-cahel{
           display: none;
         }
@@ -54,21 +57,22 @@ const Wrapper = styled(animated.main)`
           h4{
             color: var(--mantis);
             font-weight: normal;
+            margin-bottom: 5px;
           }
           h2{
             color: var(--oxford-blue);
+            margin-bottom: 15px;
           }
           .buttons-group{
             width: 100%;
           }
         }
-        .mobile-logo-heifer{
-          display: block;
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
-        }
+      }
+      .mobile-logo-heifer{
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
       }
     }
     @media ${device.tablet}{
@@ -80,13 +84,16 @@ const Wrapper = styled(animated.main)`
         display: block;
       }
       &__right-panel{
+        padding: 40px;
         .content{
+          justify-content: space-around;
+          gap: 0;
           .desktop-logo-cahel{
             display: block;
           }
-          .mobile-logo-heifer{
-            display: none;
-          }
+        }
+        .mobile-logo-heifer{
+          display: none;
         }
       }
     }
@@ -165,17 +172,17 @@ const Modal = () => {
             <img src={CahelCafogah} alt="Cahel Agafam" className="desktop-logo-cahel"/>
             <div className="content__text">
               <h4>Te invitan al:</h4>
-              <h2>3er Congreso <br/> Carne y Leche</h2>
+              <h2>3er Congreso Carne y Leche</h2>
               <div className="buttons-group">
                 <ButtonLink to="/inscripciones-congreso-2026" className="primary">Inscribete ya!</ButtonLink>
               </div>
             </div>
-            <img
-              src={LogoCAHLE_HEIFER}
-              alt="Congreso CAHLE / HEIFER 2026"
-              className="mobile-logo-heifer"
-            />
           </div>
+          <img
+            src={LogoCAHLE_HEIFER}
+            alt="Congreso CAHLE / HEIFER 2026"
+            className="mobile-logo-heifer"
+          />
         </div>
       </div>
     </Wrapper>
