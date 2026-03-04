@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import { useTransition, animated } from 'react-spring'
 
 import { device } from '../styles/breakpoints'
-import PopUpImage from '../images/popup-left-image.jpeg'
+import PopUpImage from '../images/popup-left-image-2026.png'
 import CahelCafogah from '../images/cahle-cafogah-logo.png'
 
 const Wrapper = styled(animated.main)`
@@ -142,9 +142,9 @@ const Modal = () => {
             <img src={CahelCafogah} alt="Cahel Agafam"/>
             <div className="content__text">
               <h4>Te invitan al:</h4>
-              <h2>2do Congreso <br/> Carne y Leche</h2>
+              <h2>3er Congreso <br/> Carne y Leche</h2>
               <div className="buttons-group">
-                <ButtonLink to="/inscripciones-congreso-2025" className="primary">Inscribete ya!</ButtonLink>
+                <ButtonLink to="/inscripciones-congreso-2026" className="primary">Inscribete ya!</ButtonLink>
               </div>
             </div>
           </div>

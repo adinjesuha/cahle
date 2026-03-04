@@ -65,7 +65,7 @@ const CongresoInscripciones = () => {
       <Wrapper>
         <Container>
           <HeroSection>
-            <h2>Inscripciones II Congreso <br /> Carne y Leche</h2>
+            <h2>Inscripciones III Congreso <br /> Carne y Leche</h2>
           </HeroSection>
           <div className="row justify-content-center">
             <div className="col-lg-8">
@@ -121,11 +121,11 @@ const CongresoInscripciones = () => {
                 {/* <p className="main-text navy">* Estudiantes con carnet de grado de carreras en ciencias agroalimentarias (agronomía, agro negocios, economía agrícola, zootecnia, medicina veterinaria, tecnología de alimentos, ingeniería de alimentos, etc.)</p> */}
               </div>
               <h2>Pago de la inscripción:</h2>
-              <p className="main-text navy">Banco de Occidente <br /> A nombre de la Asociación de Beneficio Mutuo Cámara Hondureña de la Leche <br />RTN 0801 9018 008314 <br />Cuenta de ahorro en Lempiras # 21401173406-2</p>
+              <p className="main-text navy">Banco de Occidente <br /> A nombre de la Asociación de Beneficio Mutuo Cámara Hondureña de la Leche <br />RTN 0801 9018 008314 <br />Cuenta de ahorro en Lempiras #11-201-017098-7</p>
             </div>
             <div className="col-lg-8">
               <h2>Registro:</h2>
-              <p className="main-text navy">Utilice el formulario adjunto para solicitar su registro al 2do Congreso Nacional de la Carne y Leche</p>
+              <p className="main-text navy">Utilice el formulario adjunto para solicitar su registro al 3er Congreso Nacional de la Carne y Leche</p>
               <SubscribeForm />
             </div>
           </div>

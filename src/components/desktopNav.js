@@ -118,6 +118,9 @@ export default class desktopNav extends Component {
             </div>
           </li> */}
           <li>
+            <Link to="/inscripciones-congreso-2026">Congreso 2026</Link>
+          </li>
+          <li>
             <Link to="/acerca-de-cahle">Acerca de CAHLE</Link>
           </li>
           <li className="has_dropdown">

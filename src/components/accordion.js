@@ -127,7 +127,7 @@ class Accordion extends Component {
   render() {
     const accordionList = [
       // {
-      //   title: 'Congreso 2025',
+      //   title: 'Congreso 2026',
       //   content: congreso,
       // },
       {
@@ -150,6 +150,7 @@ class Accordion extends Component {
 
     return (
       <Container>
+        <CustomLink to="/inscripciones-congreso-2026">Congreso 2026</CustomLink>
         <CustomLink to="/acerca-de-cahle">Acerca de CAHLE</CustomLink>
         <AccordionWrapper>
           {accordionList.map((item, index) => (

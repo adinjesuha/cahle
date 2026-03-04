@@ -2,7 +2,7 @@ import fetch from "node-fetch"
 
 export default async function formHandler(req, res) {
   // POST data to an authenticated API
-  const url = "https://api.airtable.com/v0/appcFDmT5NqriAOMJ/Row%20Data"
+  const url = "https://api.airtable.com/v0/appcFDmT5NqriAOMJ/3er%20Congreso"
   
   const headers = {
     "Content-Type": "application/json",
