@@ -6,6 +6,7 @@ import { useTransition, animated } from 'react-spring'
 import { device } from '../styles/breakpoints'
 import PopUpImage from '../images/popup-left-image-2026.png'
 import CahelCafogah from '../images/cahle-cafogah-logo.png'
+import LogoCAHLE_HEIFER from '../images/logo-heifer.png'
 
 const Wrapper = styled(animated.main)`
   background-color: rgba(0,0,0, 0.6);
@@ -37,6 +38,7 @@ const Wrapper = styled(animated.main)`
     }
     &__right-panel{
       padding: 40px;
+      position: relative;
       .content{
         display: flex;
         flex-direction: column;
@@ -56,6 +58,13 @@ const Wrapper = styled(animated.main)`
             width: 100%;
           }
         }
+        .mobile-logo-heifer{
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
       }
     }
     @media ${device.tablet}{
@@ -65,6 +74,13 @@ const Wrapper = styled(animated.main)`
       }
       &__left-panel{
         display: block;
+      }
+      &__right-panel{
+        .content{
+          .mobile-logo-heifer{
+            display: none;
+          }
+        }
       }
     }
   }
@@ -134,7 +150,7 @@ const Modal = () => {
         <div className="pop-up__left-panel">
           <img 
             src={PopUpImage} 
-            alt="Congreso de la leche 2020"
+            alt="Congreso CAHLE / HEIFER 2026"
           />
         </div>
         <div className="pop-up__right-panel">
@@ -147,6 +163,11 @@ const Modal = () => {
                 <ButtonLink to="/inscripciones-congreso-2026" className="primary">Inscribete ya!</ButtonLink>
               </div>
             </div>
+            <img
+              src={LogoCAHLE_HEIFER}
+              alt="Congreso CAHLE / HEIFER 2026"
+              className="mobile-logo-heifer"
+            />
           </div>
         </div>
       </div>
