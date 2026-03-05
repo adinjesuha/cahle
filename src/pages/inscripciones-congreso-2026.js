@@ -84,6 +84,14 @@ const CongresoInscripciones = () => {
                       <p>800.00</p>
                     </div>
                   </div> 
+                  <div className="c-row">
+                    <div className="cell" data-title="Categoría">
+                      <p>Representante Comercial (L.)</p>
+                    </div>
+                    <div className="cell" data-title="Valor">
+                      <p>1,500.00</p>
+                    </div>
+                  </div> 
                   {/* <div className="c-row">
                     <div className="cell" data-title="Categoría">
                       <p>Asociados CAFOGAH y CAHLE (L.)</p>
